@@ -35,11 +35,13 @@ When institutional investors rotate between factors simultaneously, the factor c
 
 ## Validation Summary
 
-| Market | Classification Rate | Key Events Detected |
-|--------|---------------------|---------------------|
+| Market | Backtest Accuracy | Events Flagged (Missed) |
+|--------|-------------------|-------------------------|
 | Commodities | 100% (3/3) | Q4 2018, WTI Negative, Ukraine |
 | Gold | 100% (2/2) | Q4 2018, $2000 Breakout |
 | Crypto | 67% (2/3) | Nov 2021, FTX (missed: Terra) |
+
+*Backtest Accuracy = % of major events where Lambda-F crossed P75 threshold before the event.*
 
 ---
 
