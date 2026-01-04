@@ -49,13 +49,6 @@ When institutional investors rotate between factors simultaneously, the factor c
 - *Black Swans Excluded* = External shocks (COVID, Terra, FTX) that correctly showed LOW Lambda-F
 
 The framework detects **factor rotation**, not all crashes. Black swans show LOW because there's no institutional repositioning to detect - this is correct behavior.
----
-
-## Real-Time Feed (Beta)
-
-I'm building a real-time API with alerts. Interested in early access?
-
-**[â†’ Join the Beta Waitlist](https://docs.google.com/forms/d/e/1FAIpQLSdo9MykqIj8n3_mJj54OzZNZ4P45Dg7GVBt0i4BqSHE1daSPQ/viewform)**
 
 ---
 
