@@ -52,6 +52,14 @@ The framework detects **factor rotation**, not all crashes. Black swans show LOW
 
 ---
 
+## Real-Time Feed (Beta)
+
+I'm building a real-time API with alerts. Interested in early access?
+
+**[Join the Beta Waitlist](https://docs.google.com/forms/d/e/1FAIpQLSdo9MykqIj8n3_mJj54OzZNZ4P45Dg7GVBt0i4BqSHE1daSPQ/viewform)**
+
+---
+
 ## Contact
 
 R.J. Mathews | mail.rjmathews@gmail.com
