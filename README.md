@@ -1,69 +1,73 @@
-# Lambda-F: Factor Rotation Stress Monitor
+# Lambda-F: Two-Signal Market Regime Detector
 
-A Lie algebra-based framework for detecting market regime shifts through non-commutativity of factor covariance dynamics.
+A Lie algebra-based framework for detecting market regime shifts through non-commutativity of factor covariance dynamics, enhanced with correlation synchronization detection.
 
 ## Live Signal (Updated Daily)
 
 <!-- LAMBDA_START -->
-| Market | Lambda-F | Corr | Regime | Since | Updated |
-|--------|----------|------|--------|-------|---------|
-| Commodities | 96% | 76% | **CRITICAL** (L) | Jan 04 | 2026-01-04 |
-| Gold | 80% | 55% | **CRITICAL** (L) | Jan 04 | 2026-01-04 |
-| Crypto (BTC) | 40% | 67% | Normal | Jan 02 | 2026-01-04 |
-| US Equity (SPY) | 65% | 26% | Normal | Nov 15 | 2026-01-04 |
-| UK Equity (EWU) | 45% | 12% | Normal | Dec 01 | 2026-01-04 |
-| Germany (EWG) | 23% | 22% | ELEVATED (L) | Jan 04 | 2026-01-04 |
+| Market | Lambda-F | L Pctl | Correlation | C Pctl | Regime | Since | Updated |
+|--------|----------|--------|-------------|--------|--------|-------|---------|
+| Commodities | 3.57 | 96% | 0.45 | 76% | **CRITICAL** (L) | Dec 18 | 2026-01-04 |
+| Gold | 3.57 | 80% | 0.38 | 55% | **CRITICAL** (L) | Dec 22 | 2026-01-04 |
+| Crypto (BTC) | 3.19 | 40% | 0.42 | 67% | Normal | Jan 02 | 2026-01-04 |
+| US Equity (SPY) | 3.49 | 65% | 0.28 | 26% | Normal | Nov 15 | 2026-01-04 |
+| UK Equity (EWU) | 3.29 | 45% | 0.22 | 12% | Normal | Dec 01 | 2026-01-04 |
+| Germany (EWG) | 3.14 | 23% | 0.25 | 22% | Normal | Dec 01 | 2026-01-04 |
 <!-- LAMBDA_END -->
 
-### Regime Classification
+### Signal Interpretation
 
-| Regime | Percentile | Interpretation |
-|--------|------------|----------------|
-| **CRITICAL** | >= 90% | Major factor rotation in progress |
-| **ELEVATED** | 75-89% | Above-normal stress |
-| Normal | < 75% | Baseline conditions |
+| Signal | Threshold | Detects |
+|--------|-----------|---------|
+| **Lambda-F (L)** | >= P75 | Factor rotation (institutions repositioning) |
+| **Correlation (C)** | >= P90 | Synchronized selloff (everything moving together) |
+
+| Regime | Condition | Interpretation |
+|--------|-----------|----------------|
+| **CRITICAL** | L >= P90 OR C >= P95 | Major stress--immediate attention |
+| **ELEVATED** | L >= P75 OR C >= P90 | Above-normal stress |
+| Normal | Below thresholds | Baseline conditions |
+
+---
+
+## Two-Signal System: 100% on Institutional Events
+
+| Market | Lambda-F | Correlation | Combined | Black Swans |
+|--------|----------|-------------|----------|-------------|
+| **Commodities** | 3/3 | -- | **100%** | -- |
+| **Gold** | 2/2 | -- | **100%** | -- |
+| **Crypto** | 3/3 | -- | **100%** | 3/3 excluded |
+| **US Equity** | 2/3 | 1/3 | **100%** | 1/1 excluded |
+| **UK Equity** | 1/2 | 1/2 | **100%** | -- |
+| **Germany** | 1/2 | 1/2 | **100%** | -- |
+| **TOTAL** | 12/15 | 3/15 | **15/15** | 4/4 excluded |
+
+### Key Detections
+
+- **GFC 2008:** Lambda-F peaked Aug 9-13, 2007 (86.5%) -- 57-day lead time before S&P 500 top
+- **Crypto Tops:** April 2021, Nov 2021, March 2024 -- all flagged 14-30+ days early
+- **Q4 2018 US:** Correlation spiked to 96.7% -- caught synchronized Fed panic
+- **UK Mini-budget:** Correlation hit 98.7% -- caught fiscal shock selloff
+
+### Correctly Excluded (By Design)
+
+COVID, Terra, 3AC, FTX -- all showed LOW on both signals. No institutional precursor = no signal. This is correct behavior.
 
 ---
 
 ## What Is This?
 
-Lambda-F measures the **curvature** of the market's path through factor space—not just volatility (speed) or returns (direction).
+**Lambda-F** measures the "curvature" of the market's path through factor space using the matrix commutator [F, F-dot]. When institutions rotate between factors simultaneously, the covariance matrix "twists."
 
-When institutional investors rotate between factors simultaneously, the factor covariance matrix "twists." This non-commutativity is detectable before the price impact fully materializes.
+**Correlation** measures synchronization--when all factors move together. Catches panic selloffs that Lambda-F misses.
 
----
+**Combined:** Either signal elevated = regime flagged. Achieves 100% detection on institutional events while correctly excluding exogenous shocks.
 
-## Validation Summary (15 Events, 6 Markets)
-
-**Two-Signal System:** Lambda-F (rotation) + Correlation (synchronization)
-
-| Market | Lambda-F Only | With Correlation | Key Events |
-|--------|---------------|------------------|------------|
-| **Commodities** | **3/3 (100%)** | **3/3 (100%)** | Q4 2018, WTI Negative, Ukraine |
-| **Gold** | **2/2 (100%)** | **2/2 (100%)** | Q4 2018, $2000 Breakout |
-| **Crypto** | **3/3 (100%)** | **3/3 (100%)** | April 2021, Nov 2021, March 2024 |
-| **US Equity** | 2/3 (67%) | **3/3 (100%)** | 2007 GFC, 2022 Bear, **Q4 2018 (C)** |
-| **UK Equity** | 1/2 (50%) | **2/2 (100%)** | Q4 2018, **Mini-budget (C)** |
-| **Germany** | 1/2 (50%) | **2/2 (100%)** | Q4 2018, **Energy Crisis (C)** |
-| **TOTAL** | **80% (12/15)** | **100% (15/15)** | + 4 black swans correctly excluded |
-
-**Reading this table:**
-- *Lambda-F Only* = Detection using rotation signal alone
-- *With Correlation* = Detection using combined two-signal system
-- **(C)** = Event detected by Correlation signal (synchronized selloff)
-- Black swans (COVID, Terra, 3AC, FTX) correctly showed LOW on both signals
-
-**Signal interpretation:**
-- **(L)** = Lambda-F triggered (factor rotation detected)
-- **(C)** = Correlation triggered (synchronized selloff detected)
-- **(LC)** = Both signals triggered (maximum alert)
-
-**Notable:** The October 2007 S&P 500 peak (pre-GFC) was detected with **86.5% peak percentile** and **57-day lead time**. The signal peaked during the BNP Paribas freeze (Aug 9, 2007) - the first public sign of subprime contagion.
 ---
 
 ## Real-Time Feed (Beta)
 
-I'm building a real-time API with alerts. Interested in early access?
+Building a real-time API with alerts. Interested in early access?
 
 **[Join the Beta Waitlist](https://docs.google.com/forms/d/e/1FAIpQLSdo9MykqIj8n3_mJj54OzZNZ4P45Dg7GVBt0i4BqSHE1daSPQ/viewform)**
 
@@ -73,4 +77,4 @@ I'm building a real-time API with alerts. Interested in early access?
 
 R.J. Mathews | mail.rjmathews@gmail.com
 
-Research use permitted with attribution
+Research use permitted with attribution. Full methodology available on request.
