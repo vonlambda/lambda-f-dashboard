@@ -8,11 +8,11 @@ A Lie algebra-based framework for detecting market regime shifts through non-com
 | Market | Lambda-F | Percentile | Regime | Since | Last Updated |
 |--------|----------|------------|--------|-------|--------------|
 | Commodities | 3.57 | 96% | **CRITICAL** | Dec 18 | 2026-01-04 |
-| Gold | 3.57 | 80% | ELEVATED | Dec 22 | 2026-01-04 |
+| Gold | 3.57 | 80% | **CRITICAL** | Jan 04 | 2026-01-04 |
 | Crypto (BTC) | 3.19 | 40% | Normal | Jan 02 | 2026-01-04 |
 | US Equity (SPY) | 3.49 | 65% | Normal | Nov 15 | 2026-01-04 |
 | UK Equity (EWU) | 3.29 | 45% | Normal | Dec 01 | 2026-01-04 |
-| Germany (EWG) | 3.14 | 23% | Normal | Dec 01 | 2026-01-04 |
+| Germany (EWG) | 3.14 | 23% | ELEVATED | Jan 04 | 2026-01-04 |
 <!-- LAMBDA_END -->
 
 ### Regime Classification
