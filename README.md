@@ -5,14 +5,14 @@ A framework for detecting market regime shifts through factor covariance dynamic
 ## Live Signal (Updated Daily)
 
 <!-- LAMBDA_START -->
-| Market | Lambda-F | Corr | Regime | Signal | Last Updated |
-|--------|----------|------|--------|--------|--------------|
-| Commodities | 2.34 | 0.45 | **CRITICAL** | L | 2026-01-05 |
-| Gold | 1.87 | 0.38 | ELEVATED | L | 2026-01-05 |
-| Crypto (BTC) | 1.45 | 0.52 | Normal | -- | 2026-01-05 |
-| US Equity (SPY) | 1.21 | 0.61 | Normal | -- | 2026-01-05 |
-| UK Equity (EWU) | 0.42 | 0.33 | Normal | -- | 2026-01-05 |
-| Germany (EWG) | 0.68 | 0.41 | Normal | -- | 2026-01-05 |
+| Market | Lambda-F | L Pctl | Correlation | C Pctl | Regime | Since | Updated |
+|--------|----------|--------|-------------|--------|--------|-------|---------|
+| Commodities | 3.58 | 96% | 0.25 | 76% | **CRITICAL** (L) | 2026-01-04 | 2026-01-05 |
+| Gold | 3.59 | 86% | 0.22 | 55% | **CRITICAL** (L) | 2026-01-04 | 2026-01-05 |
+| Crypto (BTC) | 3.33 | 68% | 0.83 | 68% | Normal | 2026-01-02 | 2026-01-05 |
+| US Equity (SPY) | 3.47 | 61% | 0.33 | 26% | Normal | 2025-11-15 | 2026-01-05 |
+| UK Equity (EWU) | 3.29 | 46% | 0.51 | 12% | Normal | 2025-12-01 | 2026-01-05 |
+| Germany (EWG) | 3.15 | 25% | 0.46 | 22% | ELEVATED (L) | 2026-01-04 | 2026-01-05 |
 <!-- LAMBDA_END -->
 
 ### Regime Classification
