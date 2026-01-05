@@ -33,14 +33,14 @@ When institutional investors rotate between factors simultaneously, the factor c
 
 ---
 
-## Validation Summary (17 Events, 6 Markets)
+## Validation Summary (18 Events, 6 Markets)
 
 | Market | Rotations Flagged | Black Swans Excluded | Key Events |
 |--------|-------------------|---------------------|------------|
 | **Commodities** | **3/3 (100%)** | - | Q4 2018, WTI Negative, Ukraine |
 | **Gold** | **2/2 (100%)** | - | Q4 2018, $2000 Breakout |
 | **Crypto** | **3/3 (100%)** | 3/3 correct | April 2021, Nov 2021, March 2024 |
-| US Equity | 1/2 (50%) | 1/1 correct | 2022 Bear, Q4 2018 missed |
+| **US Equity** | **2/3 (67%)** | 1/1 correct | **2007 GFC**, 2022 Bear, Q4 2018 missed |
 | UK Equity | 1/2 (50%) | - | Q4 2018, Mini-budget missed |
 | Germany | 1/2 (50%) | - | Q4 2018, Energy Crisis missed |
 
@@ -49,6 +49,8 @@ When institutional investors rotate between factors simultaneously, the factor c
 - *Black Swans Excluded* = External shocks (COVID, Terra, FTX) that correctly showed LOW Lambda-F
 
 The framework detects **factor rotation**, not all crashes. Black swans show LOW because there's no institutional repositioning to detect - this is correct behavior.
+
+**Notable:** The October 2007 S&P 500 peak (pre-GFC) was detected with **86.5% peak percentile** and **57-day lead time**. The signal peaked during the BNP Paribas freeze (Aug 9, 2007) - the first public sign of subprime contagion.
 
 **Notable:** The October 2007 S&P 500 peak (pre-GFC) was detected with **86.5% peak percentile** and **57-day lead time**. The signal peaked during the BNP Paribas freeze (Aug 9, 2007) - the first public sign of subprime contagion.
 
