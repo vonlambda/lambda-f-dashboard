@@ -14,6 +14,7 @@ A proprietary framework for detecting institutional regime shifts before price i
 | UK Equity (EWU) | 3.29 | 46% | -- | 0.51 | 12% | Normal | 2025-12-01 | 2026-01-05 |
 | Germany (EWG) | 3.15 | 25% | 6d | 0.46 | 22% | ELEVATED (L) | 2026-01-04 | 2026-01-05 |
 | Bonds | 3.21 | 27% | 3d* | 0.76 | 64% | **CRITICAL** (L) | 2026-01-05 | 2026-01-05 |
+| Emerging Markets | 2.88 | 5% | -- | 0.21 | 2% | Normal | 2026-01-05 | 2026-01-05 |
 <!-- LAMBDA_END -->
 
 ### Regime Classification
