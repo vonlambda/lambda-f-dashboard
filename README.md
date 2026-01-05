@@ -5,8 +5,8 @@ A proprietary framework for detecting institutional regime shifts before price i
 ## Live Signal (Updated Daily)
 
 <!-- LAMBDA_START -->
-| Market | Lambda-F | L Pctl | 30d | Correlation | C Pctl | Regime | Since | Updated |
-|--------|----------|--------|-----|-------------|--------|--------|-------|---------|
+| Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |
+|--------|----------|--------|------|-------------|--------|--------|-------|---------|
 | Commodities | 3.58 | 96% | 31d | 0.25 | 76% | **CRITICAL** (L) | 2026-01-04 | 2026-01-05 |
 | Gold | 3.59 | 86% | 16d | 0.22 | 55% | **CRITICAL** (L) | 2026-01-04 | 2026-01-05 |
 | Crypto (BTC) | 3.33 | 68% | 1d | 0.83 | 68% | Normal | 2026-01-02 | 2026-01-05 |
