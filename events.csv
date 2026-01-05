@@ -17,6 +17,7 @@ event_id,event_name,market,start_date,end_date,event_type,detected_by,result
 16,UK Mini-budget Crisis,UK,2022-09-01,2022-10-31,fiscal_shock,Correlation,DETECTED
 17,Germany Energy Crisis,Germany,2022-08-01,2022-10-31,supply_shock,Correlation,DETECTED
 18,March 2024 Crypto Top,Crypto,2024-02-15,2024-03-14,rotation,Lambda-F,DETECTED
+19,Dot-Com Crash,US Equity,2000-03-01,2000-10-09,concentration,Lambda-F,DETECTED
 BS1,COVID Crash,All,2020-02-15,2020-03-23,black_swan,None,EXCLUDED (correct)
 BS2,Terra/Luna Collapse,Crypto,2022-05-01,2022-05-15,black_swan,None,EXCLUDED (correct)
 BS3,3AC Collapse,Crypto,2022-06-15,2022-07-15,black_swan,None,EXCLUDED (correct)
