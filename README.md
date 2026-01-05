@@ -12,7 +12,7 @@ A Lie algebra-based framework for detecting market regime shifts through non-com
 | Crypto (BTC) | 3.19 | 40% | 0.82 | 67% | Normal | Jan 02 | 2026-01-04 |
 | US Equity (SPY) | 3.49 | 65% | 0.33 | 26% | Normal | Nov 15 | 2026-01-04 |
 | UK Equity (EWU) | 3.29 | 45% | 0.51 | 12% | Normal | Dec 01 | 2026-01-04 |
-| Germany (EWG) | 3.14 | 23% | 0.46 | 22% | Normal | Dec 01 | 2026-01-04 |
+| Germany (EWG) | 3.14 | 23% | 0.46 | 22% | ELEVATED (L) | Jan 04 | 2026-01-04 |
 <!-- LAMBDA_END -->
 
 ### Signal Interpretation
