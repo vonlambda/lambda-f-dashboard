@@ -52,8 +52,6 @@ The framework detects **factor rotation**, not all crashes. Black swans show LOW
 
 **Notable:** The October 2007 S&P 500 peak (pre-GFC) was detected with **86.5% peak percentile** and **57-day lead time**. The signal peaked during the BNP Paribas freeze (Aug 9, 2007) - the first public sign of subprime contagion.
 
-**Notable:** The October 2007 S&P 500 peak (pre-GFC) was detected with **86.5% peak percentile** and **57-day lead time**. The signal peaked during the BNP Paribas freeze (Aug 9, 2007) - the first public sign of subprime contagion.
-
 ---
 
 ## Real-Time Feed (Beta)
