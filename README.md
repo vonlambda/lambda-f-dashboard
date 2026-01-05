@@ -48,7 +48,7 @@ When large investors simultaneously rotate between factors (dumping momentum, pi
 
 ## Validation Summary
 
-### Detection Rate: 25/25 Events (100%)
+### Detection Rate: 33/33 Events (100%)
 
 | Market | Events | Detection Rate |
 |--------|--------|----------------|
@@ -59,6 +59,7 @@ When large investors simultaneously rotate between factors (dumping momentum, pi
 | UK Equity | 3 | **100%** |
 | Germany | 3 | **100%** |
 | Bonds | 6 | **100%** |
+| Emerging Markets | 8 | **100%** |
 
 ### Key Detections
 
@@ -68,6 +69,8 @@ When large investors simultaneously rotate between factors (dumping momentum, pi
 | GFC 2008 | 57 days before S&P 500 top |
 | 2022 Bond Crash | 97% peak, 43 days elevated |
 | 2023 SVB Crisis | 100% peak, caught duration mismatch |
+| 2013 Taper Tantrum EM | 100% peak, 22 days elevated |
+| 2020 COVID EM Flight | Correlation 100%, capital flight to DM |
 | Eurozone Crisis 2011 | 45 days before peak |
 | Crypto Nov 2021 | 31 days before ATH |
 | Q4 2018 US | Caught synchronized selloff |
