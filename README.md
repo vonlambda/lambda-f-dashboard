@@ -12,7 +12,7 @@ A Lie algebra-based framework for detecting market regime shifts through non-com
 | Crypto (BTC) | 3.19 | 40% | 0.82 | 67% | Normal | Jan 02 | 2026-01-04 |
 | US Equity (SPY) | 3.49 | 65% | 0.33 | 26% | Normal | Nov 15 | 2026-01-04 |
 | UK Equity (EWU) | 3.29 | 45% | 0.51 | 12% | Normal | Dec 01 | 2026-01-04 |
-| Germany (EWG) | 3.14 | 23% | 0.46 | 22% | ELEVATED (L) | Jan 04 | 2026-01-04 |
+| Germany (EWG) | 3.14 | 23% | 0.46 | 22% | Normal | Dec 01 | 2026-01-04 |
 <!-- LAMBDA_END -->
 
 ### Signal Interpretation
@@ -24,44 +24,55 @@ A Lie algebra-based framework for detecting market regime shifts through non-com
 
 | Regime | Condition | Interpretation |
 |--------|-----------|----------------|
-| **CRITICAL** | L >= P90 OR C >= P95 | Major stress--immediate attention |
+| **CRITICAL** | L >= P90 OR C >= P95 | Major stress -- immediate attention |
 | **ELEVATED** | L >= P75 OR C >= P90 | Above-normal stress |
 | Normal | Below thresholds | Baseline conditions |
 
 ---
 
-## Two-Signal System: 100% on Institutional Events
+## Validation: 18/18 Events Detected (100%)
 
-| Market | Lambda-F | Correlation | Combined | Black Swans |
-|--------|----------|-------------|----------|-------------|
-| **Commodities** | 3/3 | -- | **100%** | -- |
-| **Gold** | 2/2 | -- | **100%** | -- |
-| **Crypto** | 3/3 | -- | **100%** | 3/3 excluded |
-| **US Equity** | 2/3 | 1/3 | **100%** | 1/1 excluded |
-| **UK Equity** | 1/2 | 1/2 | **100%** | -- |
-| **Germany** | 1/2 | 1/2 | **100%** | -- |
-| **TOTAL** | 12/15 | 3/15 | **15/15** | 4/4 excluded |
+**Two-Signal System:** Lambda-F (rotation) + Correlation (synchronization)
+
+| Market | Events | Lambda-F | Correlation | Combined | Key Events |
+|--------|--------|----------|-------------|----------|------------|
+| **Commodities** | 4 | 4/4 | -- | **100%** | Q4 2018, WTI Negative, Ukraine, Oil Bust 2014-16 |
+| **Gold** | 2 | 2/2 | -- | **100%** | Q4 2018, $2000 Breakout |
+| **Crypto** | 3 | 3/3 | -- | **100%** | April 2021, Nov 2021, March 2024 |
+| **US Equity** | 4 | 3/4 | 1/4 | **100%** | 2007 GFC, 2022 Bear, Q4 2018 (C), 2011 Eurozone |
+| **UK Equity** | 3 | 2/3 | 2/3 | **100%** | Q4 2018, Mini-budget (C), 2011 Eurozone (L+C) |
+| **Germany** | 3 | 2/3 | 2/3 | **100%** | Q4 2018, Energy Crisis (C), 2011 Eurozone (L+C) |
+| **TOTAL** | **18** | 16/18 | 5/18 | **18/18** | + 4 black swans excluded |
+
+### Signal Distribution
+
+| Signal Type | Events Caught | Example |
+|-------------|---------------|---------|
+| Lambda-F only | 13 | Oil Bust 2014-16 (96.7%, 115 days elevated) |
+| Correlation only | 2 | Q4 2018 US (96.7% correlation spike) |
+| Both signals | 3 | 2011 Eurozone Crisis (L: 99%, C: 100%) |
 
 ### Key Detections
 
-- **GFC 2008:** Lambda-F peaked Aug 9-13, 2007 (86.5%) -- 57-day lead time before S&P 500 top
-- **Crypto Tops:** April 2021, Nov 2021, March 2024 -- all flagged 14-30+ days early
+- **GFC 2008:** Lambda-F peaked Aug 9-13, 2007 (86.5%) -- 57-day lead time
+- **2011 Eurozone Crisis:** Both signals at 99%+ -- maximum stress detection
+- **2014-16 Oil Bust:** Lambda-F caught slow rotation (115 days above P75, no correlation spike)
 - **Q4 2018 US:** Correlation spiked to 96.7% -- caught synchronized Fed panic
 - **UK Mini-budget:** Correlation hit 98.7% -- caught fiscal shock selloff
 
 ### Correctly Excluded (By Design)
 
-COVID, Terra, 3AC, FTX -- all showed LOW on both signals. No institutional precursor = no signal. This is correct behavior.
+COVID, Terra, 3AC, FTX -- all showed LOW on both signals. No institutional precursor = no signal. This is correct behavior for a factor rotation detector.
 
 ---
 
 ## What Is This?
 
-**Lambda-F** measures the "curvature" of the market's path through factor space using the matrix commutator [F, F-dot]. When institutions rotate between factors simultaneously, the covariance matrix "twists."
+**Lambda-F** measures the "curvature" of the market's path through factor space using the matrix commutator [F, F-dot]. When institutions rotate between factors simultaneously, the covariance matrix "twists." Detects slow institutional repositioning (weeks to months).
 
-**Correlation** measures synchronization--when all factors move together. Catches panic selloffs that Lambda-F misses.
+**Correlation** measures synchronization -- when all factors move together. Catches sudden panic selloffs and policy shocks that Lambda-F misses.
 
-**Combined:** Either signal elevated = regime flagged. Achieves 100% detection on institutional events while correctly excluding exogenous shocks.
+**Combined:** Either signal elevated = regime flagged. Achieves 100% detection on institutional events while correctly excluding exogenous shocks (black swans).
 
 ---
 
