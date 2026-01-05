@@ -47,14 +47,14 @@ When large investors simultaneously rotate between factors (dumping momentum, pi
 
 ## Validation Summary
 
-### Detection Rate: 18/18 Events (100%)
+### Detection Rate: 19/19 Events (100%)
 
 | Market | Events | Detection Rate |
 |--------|--------|----------------|
 | Commodities | 4 | **100%** |
 | Gold | 2 | **100%** |
 | Crypto | 3 | **100%** |
-| US Equity | 3 | **100%** |
+| US Equity | 4 | **100%** |
 | UK Equity | 3 | **100%** |
 | Germany | 3 | **100%** |
 
@@ -62,6 +62,7 @@ When large investors simultaneously rotate between factors (dumping momentum, pi
 
 | Event | Lead Time |
 |-------|-----------|
+| Dot-Com 2000 | 75% at NASDAQ peak |
 | GFC 2008 | 57 days before S&P 500 top |
 | Eurozone Crisis 2011 | 45 days before peak |
 | Crypto Nov 2021 | 31 days before ATH |
