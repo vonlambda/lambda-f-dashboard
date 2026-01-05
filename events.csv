@@ -1,0 +1,24 @@
+event_id,event_name,market,start_date,end_date,event_type,label_rule,lambda_f_peak_pct,lambda_f_days_p75,corr_peak_pct,corr_days_p90,detected_by,result
+1,2007 GFC Peak,US Equity,2007-08-01,2007-10-09,rotation,peak_before_crash,86.5,57,--,--,Lambda-F,DETECTED
+2,2011 Eurozone Crisis,Germany,2011-07-01,2011-11-30,contagion,peak_during_crisis,99.4,58,100.0,87,Lambda-F + Correlation,DETECTED
+3,2011 Eurozone Crisis,UK,2011-07-01,2011-11-30,contagion,peak_during_crisis,99.9,55,99.1,38,Lambda-F + Correlation,DETECTED
+4,2014-2016 Oil Bust,Commodities,2014-07-01,2016-02-29,sector_rotation,sustained_elevation,96.7,115,81.3,0,Lambda-F,DETECTED
+5,Q4 2018 Fed Panic,US Equity,2018-10-01,2018-12-31,synchronized_selloff,correlation_spike,--,--,96.7,3,Correlation,DETECTED
+6,Q4 2018 Fed Panic,UK,2018-10-01,2018-12-31,synchronized_selloff,correlation_spike,HIGH,--,HIGH,--,Lambda-F,DETECTED
+7,Q4 2018 Fed Panic,Germany,2018-10-01,2018-12-31,synchronized_selloff,correlation_spike,HIGH,--,HIGH,--,Lambda-F,DETECTED
+8,Q4 2018 Fed Panic,Commodities,2018-10-01,2018-12-31,rotation,peak_during_crisis,HIGH,--,--,--,Lambda-F,DETECTED
+9,Q4 2018 Fed Panic,Gold,2018-10-01,2018-12-31,rotation,peak_during_crisis,HIGH,--,--,--,Lambda-F,DETECTED
+10,WTI Negative,Commodities,2020-04-01,2020-04-30,extreme_stress,peak_during_crisis,HIGH,--,--,--,Lambda-F,DETECTED
+11,April 2021 Crypto Top,Crypto,2021-03-15,2021-04-14,rotation,peak_before_crash,HIGH,14+,--,--,Lambda-F,DETECTED
+12,Nov 2021 Crypto Top,Crypto,2021-10-10,2021-11-10,rotation,peak_before_crash,89.9,23,--,--,Lambda-F,DETECTED
+13,Gold $2000 Breakout,Gold,2020-07-01,2020-08-07,rotation,peak_during_breakout,HIGH,--,--,--,Lambda-F,DETECTED
+14,Ukraine Commodity Shock,Commodities,2022-02-01,2022-03-31,geopolitical,peak_during_crisis,HIGH,--,--,--,Lambda-F,DETECTED
+15,2022 Bear Market,US Equity,2022-01-01,2022-06-30,rotation,sustained_elevation,HIGH,--,--,--,Lambda-F,DETECTED
+16,UK Mini-budget Crisis,UK,2022-09-01,2022-10-31,fiscal_shock,correlation_spike,48,--,98.7,33,Correlation,DETECTED
+17,Germany Energy Crisis,Germany,2022-08-01,2022-10-31,supply_shock,correlation_spike,50.4,--,98.4,58,Correlation,DETECTED
+18,March 2024 Crypto Top,Crypto,2024-02-15,2024-03-14,rotation,peak_before_crash,HIGH,--,--,--,Lambda-F,DETECTED
+BS1,COVID Crash,All,2020-02-15,2020-03-23,black_swan,no_precursor,LOW,0,--,--,None,EXCLUDED (correct)
+BS2,Terra/Luna Collapse,Crypto,2022-05-01,2022-05-15,black_swan,no_precursor,3.7,0,--,--,None,EXCLUDED (correct)
+BS3,3AC Collapse,Crypto,2022-06-15,2022-07-15,black_swan,no_precursor,LOW,0,--,--,None,EXCLUDED (correct)
+BS4,FTX Collapse,Crypto,2022-11-01,2022-11-15,black_swan,no_precursor,LOW,0,--,--,None,EXCLUDED (correct)
+
