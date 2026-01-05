@@ -7,12 +7,12 @@ A Lie algebra-based framework for detecting market regime shifts through non-com
 <!-- LAMBDA_START -->
 | Market | Lambda-F | L Pctl | Correlation | C Pctl | Regime | Since | Updated |
 |--------|----------|--------|-------------|--------|--------|-------|---------|
-| Commodities | 3.57 | 96% | 0.45 | 76% | **CRITICAL** (L) | Dec 18 | 2026-01-04 |
-| Gold | 3.57 | 80% | 0.38 | 55% | **CRITICAL** (L) | Dec 22 | 2026-01-04 |
-| Crypto (BTC) | 3.19 | 40% | 0.42 | 67% | Normal | Jan 02 | 2026-01-04 |
-| US Equity (SPY) | 3.49 | 65% | 0.28 | 26% | Normal | Nov 15 | 2026-01-04 |
-| UK Equity (EWU) | 3.29 | 45% | 0.22 | 12% | Normal | Dec 01 | 2026-01-04 |
-| Germany (EWG) | 3.14 | 23% | 0.25 | 22% | Normal | Dec 01 | 2026-01-04 |
+| Commodities | 3.57 | 96% | 0.25 | 76% | **CRITICAL** (L) | Jan 04 | 2026-01-04 |
+| Gold | 3.57 | 80% | 0.22 | 55% | **CRITICAL** (L) | Jan 04 | 2026-01-04 |
+| Crypto (BTC) | 3.19 | 40% | 0.82 | 67% | Normal | Jan 02 | 2026-01-04 |
+| US Equity (SPY) | 3.49 | 65% | 0.33 | 26% | Normal | Nov 15 | 2026-01-04 |
+| UK Equity (EWU) | 3.29 | 45% | 0.51 | 12% | Normal | Dec 01 | 2026-01-04 |
+| Germany (EWG) | 3.14 | 23% | 0.46 | 22% | ELEVATED (L) | Jan 04 | 2026-01-04 |
 <!-- LAMBDA_END -->
 
 ### Signal Interpretation
