@@ -92,7 +92,7 @@ These were exogenous shocks with no institutional precursor. The framework detec
 
 ![Lambda-F and Correlation signals around 2008 GFC](assets/gfc_2008_signals.png)
 
-*Lambda-F crossed P75 in April 2007 (188-day lead), remaining elevated through BNP Paribas (Aug 2007), the S&P peak (Oct 2007), and Lehman (Sep 2008). The -55% drawdown that followed was preceded by months of elevated rotation signals.*
+*Lambda-F first crossed ELEVATED in April 2007 (188-day early warning). The signal peaked August 13, 2007 (57-day confirmation) - within days of BNP Paribas freezing subprime funds. Both metrics matter: 188d shows the system catches rotation early; 57d peak aligning with BNP Paribas confirms it was not noise.*
 
 ---
 ## Methodology
