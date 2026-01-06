@@ -92,7 +92,7 @@ These were exogenous shocks with no institutional precursor. The framework detec
 
 ![Lambda-F and Correlation signals around 2008 GFC](assets/gfc_2008_signals.png)
 
-*Both signals elevated months before the crash. The framework detected institutional rotation in April 2007, providing significant lead time before the October peak and subsequent 2008 collapse.*
+*Lambda-F crossed P75 in April 2007 (188-day lead), remaining elevated through BNP Paribas (Aug 2007), the S&P peak (Oct 2007), and Lehman (Sep 2008). The -55% drawdown that followed was preceded by months of elevated rotation signals.*
 
 ---
 ## Methodology
