@@ -85,6 +85,16 @@ These were exogenous shocks with no institutional precursor. The framework detec
 
 ---
 
+
+## Signal Visualization
+
+**2008 Global Financial Crisis** — Lambda-F crossed P75 **188 days** before the S&P 500 peak:
+
+![Lambda-F and Correlation signals around 2008 GFC](assets/gfc_2008_signals.png)
+
+*Both signals elevated months before the crash. The framework detected institutional rotation in April 2007, providing significant lead time before the October peak and subsequent 2008 collapse.*
+
+---
 ## Methodology
 
 **Patent Pending** -- US Provisional Application filed.
