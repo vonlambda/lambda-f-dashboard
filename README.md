@@ -17,7 +17,15 @@ A proprietary framework for detecting institutional regime shifts before price i
 | Emerging Markets | 2.88 | 5% | -- | 0.33 | 20% | Normal | 2026-01-05 | 2026-01-07 |
 <!-- LAMBDA_END -->
 
-### Regime Classification
+#
+
+### Live Signal Chart (90 Days)
+
+![Live Lambda-F Signals](assets/live_signals.png)
+
+*All markets on one chart. Colors sorted by current percentile. Updated daily.*
+
+## Regime Classification
 
 | Regime | Interpretation |
 |--------|----------------|
