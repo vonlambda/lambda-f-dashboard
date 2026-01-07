@@ -19,11 +19,11 @@ A proprietary framework for detecting institutional regime shifts before price i
 
 #
 
-### Live Signal Chart (90 Days)
+### Critical Market Alerts
 
-![Live Lambda-F Signals](assets/live_signals.png)
+![Critical Market Alerts](assets/live_signals.png?v=202601070855)
 
-*All markets on one chart. Colors sorted by current percentile. Updated daily.*
+*Shows only CRITICAL markets (>=3 days above P90 in trailing 30 days). Updated daily.*
 
 ## Regime Classification
 
