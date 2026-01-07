@@ -21,7 +21,7 @@ A proprietary framework for detecting institutional regime shifts before price i
 
 ### Critical Market Alerts
 
-![Critical Market Alerts](assets/live_signals.png?v=202601070855)
+![Critical Market Alerts](assets/live_signals.png?v=20260107090555202601070855)
 
 *Shows only CRITICAL markets (>=3 days above P90 in trailing 30 days). Updated daily.*
 
