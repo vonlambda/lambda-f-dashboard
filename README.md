@@ -98,7 +98,7 @@ These were exogenous shocks with no institutional precursor. The framework detec
 
 **2008 Global Financial Crisis** — Lambda-F crossed P75 **188 days** before the S&P 500 peak:
 
-![Lambda-F and Correlation signals around 2008 GFC](assets/gfc_2008_signals.png)
+![Lambda-F and Correlation signals around 2008 GFC](assets/gfc_2008_signals.png?v=20260107111707)
 
 *Lambda-F first crossed ELEVATED in April 2007 (188-day early warning). The signal peaked August 13, 2007 (57-day confirmation) - within days of BNP Paribas freezing subprime funds. Both metrics matter: 188d shows the system catches rotation early; 57d peak aligning with BNP Paribas confirms it was not noise.*
 
@@ -106,7 +106,7 @@ These were exogenous shocks with no institutional precursor. The framework detec
 
 **Crypto Nov 2021** — Lambda-F flagged rotation **115 days** before BTC ATH:
 
-![Lambda-F and Correlation signals around Crypto Nov 2021](assets/crypto_2021_signals.png)
+![Lambda-F and Correlation signals around Crypto Nov 2021](assets/crypto_2021_signals.png?v=20260107111707)
 
 *Both signals elevated well before the $69k top. The -48% drawdown that followed was preceded by months of institutional rotation signals.*
 
@@ -114,7 +114,7 @@ These were exogenous shocks with no institutional precursor. The framework detec
 
 **2022 Bond Crash** — Lambda-F detected duration risk **216 days** early:
 
-![Lambda-F and Correlation signals around 2022 Bond Crash](assets/bonds_2022_signals.png)
+![Lambda-F and Correlation signals around 2022 Bond Crash](assets/bonds_2022_signals.png?v=20260107111707)
 
 *Lambda-F caught the duration rotation before the worst bond year in 40 years. TLT fell -39% from peak ($134) to trough ($82).*
 
@@ -122,7 +122,7 @@ These were exogenous shocks with no institutional precursor. The framework detec
 
 **Q4 2018 Selloff** — Correlation signal caught synchronized panic:
 
-![Lambda-F and Correlation signals around Q4 2018](assets/q4_2018_signals.png)
+![Lambda-F and Correlation signals around Q4 2018](assets/q4_2018_signals.png?v=20260107111707)
 
 *This event demonstrates why two signals are better than one. The correlation signal (white) spiked during the selloff, catching the synchronized panic that Lambda-F rotation detection alone would have missed.*
 
