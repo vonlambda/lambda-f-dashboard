@@ -127,6 +127,17 @@ These were exogenous shocks with no institutional precursor. The framework detec
 *This event demonstrates why two signals are better than one. The correlation signal (white) spiked during the selloff, catching the synchronized panic that Lambda-F rotation detection alone would have missed.*
 
 ---
+
+## Notable Calls (Audit Trail)
+
+| Date Called | Market | Signal | Outcome | Archive |
+|-------------|--------|--------|---------|---------|
+| 2026-01-04 | Commodities | 96% CRITICAL | *pending* | [snapshot](archive/2026-01-04.md) |
+| 2026-01-04 | Gold | 80% CRITICAL | *pending* | [snapshot](archive/2026-01-04.md) |
+
+*Outcomes updated retroactively when events occur. All calls are timestamped via Git commits.*
+
+---
 ## Methodology
 
 **Patent Pending** -- US Provisional Application filed.
