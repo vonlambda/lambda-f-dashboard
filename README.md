@@ -27,21 +27,16 @@ A proprietary framework for detecting institutional regime shifts before price i
 
 ## Regime Classification
 
-| Regime | Interpretation |
-|--------|----------------|
-| **CRITICAL** | Major regime shift in progress |
-| **ELEVATED** | Above-normal institutional activity |
-| Normal | Baseline conditions |
+**Detection uses trailing 30-day persistence, not instantaneous percentile.**
 
-### Signal Attribution
+| Regime | Rule | Meaning |
+|--------|------|---------|
+| **CRITICAL** | >=3 days above P90 (LF or Corr) in trailing 30d | Sustained extreme stress |
+| ELEVATED | >=3 days above P75 (LF or Corr) in trailing 30d | Elevated but not critical |
+| Normal | <3 days above P75 in trailing 30d | Baseline conditions |
 
-| Code | Meaning |
-|------|---------|
-| L | Lambda-F triggered (factor rotation) |
-| C | Correlation triggered (synchronized move) |
-| LC | Both signals (maximum stress) |
+**Why persistence matters**: A market can show 82% today (below P90) but be CRITICAL if it spent 6 days above P90 last week. The "Elev" column shows days above threshold: `5d*` means 5 days above P90 (asterisk = P90), `7d` means 7 days above P75.
 
----
 
 ## What Is This?
 
@@ -132,8 +127,8 @@ These were exogenous shocks with no institutional precursor. The framework detec
 
 | Date Called | Market | Signal | Outcome | Archive |
 |-------------|--------|--------|---------|---------|
-| 2026-01-04 | Commodities | 96% CRITICAL | *pending* | [snapshot](archive/2026-01-04.md) |
-| 2026-01-04 | Gold | 80% CRITICAL | *pending* | [snapshot](archive/2026-01-04.md) |
+| 2026-01-04 | Commodities | CRITICAL (15d above P90) | *pending* | [snapshot](archive/2026-01-04.md) |
+| 2026-01-04 | Gold | CRITICAL (6d above P90) | *pending* | [snapshot](archive/2026-01-04.md) |
 
 *Outcomes updated retroactively when events occur. All calls are timestamped via Git commits.*
 
@@ -175,7 +170,7 @@ Why did Lambda-F detect SVB (March 2023) but exclude 3AC/Terra (May 2022)?
 
 | Event | Lambda-F | Correlation | Classification | Reason |
 |-------|----------|-------------|----------------|--------|
-| **SVB Crisis** (Mar 2023) | 89% | 94% | âœ… Detected | Institutional rotation visible in bond ETFs 45 days prior |
+| **SVB Crisis** (Mar 2023) | 89% | 94% |  Detected | Institutional rotation visible in bond ETFs 45 days prior |
 | **3AC/Terra** (May 2022) | 31% | 42% | âŒ Excluded | Crypto-native contagion; no cross-asset institutional flow |
 
 **SVB**: Regional bank stress triggered flight-to-quality rotation across rate-sensitive assets. Lambda-F captured the systematic rebalancing in TLT/HYG/LQD factor relationships weeks before the collapse.
@@ -210,7 +205,10 @@ Historical signals available for backtesting and integration:
 
 **CSV download:**
 ```bash
+# Markdown format (human-readable)
 curl https://raw.githubusercontent.com/vonlambda/lambda-f-dashboard/main/SIGNAL_LOG.md
+
+# For programmatic access, parse the markdown table or use the raw data from update script
 ```
 
 **Full signal log:** [SIGNAL_LOG.md](SIGNAL_LOG.md) - Daily readings with timestamps
