@@ -203,6 +203,16 @@ Building a real-time API with alerts. Interested in early access?
 
 Historical signals available for backtesting and integration:
 
+**CSV format (for pandas/R):**
+`ash
+curl https://raw.githubusercontent.com/vonlambda/lambda-f-dashboard/main/signal_log.csv
+`
+
+`python
+import pandas as pd
+df = pd.read_csv('https://raw.githubusercontent.com/vonlambda/lambda-f-dashboard/main/signal_log.csv')
+`
+
 **CSV download:**
 ```bash
 # Markdown format (human-readable)
