@@ -143,14 +143,14 @@ These were exogenous shocks with no institutional precursor. The framework detec
 
 The framework's predictive power measured by conditional probability of significant drawdowns:
 
-| Signal State | P(â‰¥15% DD in 90d) | Lift vs Baseline |
+| Signal State | P(≥15% DD in 90d) | Lift vs Baseline |
 |--------------|-------------------|------------------|
-| Î›F â‰¥ P90 | 24% | **4.0Ã—** |
-| Î›F âˆˆ [P75, P90) | 12% | 2.0Ã— |
-| Î›F < P75 | 4% | 0.7Ã— |
-| *Baseline* | *6%* | *1.0Ã—* |
+| ΛF ≥ P90 | 24% | **4.0×** |
+| ΛF ∈ [P75, P90) | 12% | 2.0× |
+| ΛF < P75 | 4% | 0.7× |
+| *Baseline* | *6%* | *1.0×* |
 
-**Interpretation**: When Lambda-F reaches CRITICAL (â‰¥P90), the probability of a â‰¥15% drawdown within 90 days is **4Ã— higher** than the unconditional baseline. This is the core value proposition: early warning with quantified lift.
+**Interpretation**: When Lambda-F reaches CRITICAL (≥P90), the probability of a ≥15% drawdown within 90 days is **4× higher** than the unconditional baseline. This is the core value proposition: early warning with quantified lift.
 
 
 ## Mechanical Exclusion Rule
@@ -158,12 +158,12 @@ The framework's predictive power measured by conditional probability of signific
 An event is **excluded** from validation (classified as exogenous/black swan) if:
 
 `
-max(Î›F_t) < P75  AND  max(Ï_t) < P90  for all t âˆˆ [t* - 30, t*]
+max(ΛF_t) < P75  AND  max(Ï_t) < P90  for all t ∈ [t* - 30, t*]
 `
 
 Where:
 - 	* = event date
-- Î›F_t = Lambda-F percentile at time t
+- ΛF_t = Lambda-F percentile at time t
 - Ï_t = Correlation percentile at time t
 
 **Both signals must remain below threshold for the entire 30 days preceding the event.** This mechanical rule prevents cherry-picking and ensures reproducibility.
@@ -202,6 +202,20 @@ Building a real-time API with alerts. Interested in early access?
 **[Join the Beta Waitlist](https://docs.google.com/forms/d/e/1FAIpQLSdo9MykqIj8n3_mJj54OzZNZ4P45Dg7GVBt0i4BqSHE1daSPQ/viewform)**
 
 ---
+
+
+## API / Backtesting Data
+
+Historical signals available for backtesting and integration:
+
+**CSV download:**
+```bash
+curl https://raw.githubusercontent.com/vonlambda/lambda-f-dashboard/main/SIGNAL_LOG.md
+```
+
+**Full signal log:** [SIGNAL_LOG.md](SIGNAL_LOG.md) - Daily readings with timestamps
+
+*All data is append-only with Git commit timestamps for audit verification.*
 
 ## Contact
 
