@@ -201,29 +201,21 @@ Building a real-time API with alerts. Interested in early access?
 
 ## API / Backtesting Data
 
-Historical signals available for backtesting and integration:
-
 **CSV format (for pandas/R):**
-`ash
-curl https://raw.githubusercontent.com/vonlambda/lambda-f-dashboard/main/signal_log.csv
-`
 
-`python
-import pandas as pd
-df = pd.read_csv('https://raw.githubusercontent.com/vonlambda/lambda-f-dashboard/main/signal_log.csv')
-`
-
-**CSV download:**
 ```bash
-# Markdown format (human-readable)
-curl https://raw.githubusercontent.com/vonlambda/lambda-f-dashboard/main/SIGNAL_LOG.md
-
-# For programmatic access, parse the markdown table or use the raw data from update script
+curl https://raw.githubusercontent.com/vonlambda/lambda-f-dashboard/main/signal_log.csv
 ```
 
-**Full signal log:** [SIGNAL_LOG.md](SIGNAL_LOG.md) - Daily readings with timestamps
+```python
+import pandas as pd
+df = pd.read_csv('https://raw.githubusercontent.com/vonlambda/lambda-f-dashboard/main/signal_log.csv')
+```
+
+**Markdown format (human-readable):** [SIGNAL_LOG.md](SIGNAL_LOG.md)
 
 *All data is append-only with Git commit timestamps for audit verification.*
+
 
 ## Contact
 
