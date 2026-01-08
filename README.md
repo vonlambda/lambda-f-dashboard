@@ -143,28 +143,28 @@ These were exogenous shocks with no institutional precursor. The framework detec
 
 The framework's predictive power measured by conditional probability of significant drawdowns:
 
-| Signal State | P(≥15% DD in 90d) | Lift vs Baseline |
+| Signal State | P(>=15% DD in 90d) | Lift vs Baseline |
 |--------------|-------------------|------------------|
-| ΛF ≥ P90 | 24% | **4.0×** |
-| ΛF ∈ [P75, P90) | 12% | 2.0× |
-| ΛF < P75 | 4% | 0.7× |
-| *Baseline* | *6%* | *1.0×* |
+| LF >= P90 | 24% | **4.0x** |
+| LF in [P75, P90) | 12% | 2.0x |
+| LF < P75 | 4% | 0.7x |
+| *Baseline* | *6%* | *1.0x* |
 
-**Interpretation**: When Lambda-F reaches CRITICAL (≥P90), the probability of a ≥15% drawdown within 90 days is **4× higher** than the unconditional baseline. This is the core value proposition: early warning with quantified lift.
+**Interpretation**: When Lambda-F reaches CRITICAL (>=P90), the probability of a >=15% drawdown within 90 days is **4x higher** than the unconditional baseline. This is the core value proposition: early warning with quantified lift.
 
 
 ## Mechanical Exclusion Rule
 
 An event is **excluded** from validation (classified as exogenous/black swan) if:
 
-`
-max(ΛF_t) < P75  AND  max(Ï_t) < P90  for all t ∈ [t* - 30, t*]
-`
+```
+max(LF_t) < P75  AND  max(Corr_t) < P90  for all t in [t* - 30, t*]
+```
 
 Where:
-- 	* = event date
-- ΛF_t = Lambda-F percentile at time t
-- Ï_t = Correlation percentile at time t
+- `t*` = event date
+- `LF_t` = Lambda-F percentile at time t
+- `Corr_t` = Correlation percentile at time t
 
 **Both signals must remain below threshold for the entire 30 days preceding the event.** This mechanical rule prevents cherry-picking and ensures reproducibility.
 
