@@ -170,8 +170,8 @@ Why did Lambda-F detect SVB (March 2023) but exclude 3AC/Terra (May 2022)?
 
 | Event | Lambda-F | Correlation | Classification | Reason |
 |-------|----------|-------------|----------------|--------|
-| **SVB Crisis** (Mar 2023) | 89% | 94% |  Detected | Institutional rotation visible in bond ETFs 45 days prior |
-| **3AC/Terra** (May 2022) | 31% | 42% | âŒ Excluded | Crypto-native contagion; no cross-asset institutional flow |
+| SVB Crisis (Mar 2023) | 89% | 94% | Detected | Institutional rotation visible in bond ETFs 45 days prior |
+| 3AC/Terra (May 2022) | 31% | 42% | Excluded | Crypto-native contagion; no cross-asset institutional flow |
 
 **SVB**: Regional bank stress triggered flight-to-quality rotation across rate-sensitive assets. Lambda-F captured the systematic rebalancing in TLT/HYG/LQD factor relationships weeks before the collapse.
 
