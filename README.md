@@ -128,7 +128,7 @@ These were exogenous shocks with no institutional precursor. The framework detec
 | Date Called | Market | Signal | Outcome | Archive |
 |-------------|--------|--------|---------|---------|
 | 2026-01-04 | Commodities | CRITICAL (15d above P90) | *pending* | [snapshot](archive/2026-01-04.md) |
-| 2026-01-04 | Gold | CRITICAL (6d above P90) | *pending* | [snapshot](archive/2026-01-04.md) |
+| 2026-01-04 | Gold | CRITICAL (5d above P90) | *pending* | [snapshot](archive/2026-01-04.md) |
 
 *Outcomes updated retroactively when events occur. All calls are timestamped via Git commits.*
 
