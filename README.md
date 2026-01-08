@@ -119,7 +119,7 @@ These were exogenous shocks with no institutional precursor. The framework detec
 
 ![Lambda-F and Correlation signals around Q4 2018](assets/q4_2018_signals.png?v=20260107111707)
 
-*This event demonstrates why two signals are better than one. The correlation signal (white) spiked during the selloff, catching the synchronized panic that Lambda-F rotation detection alone would have missed.*
+*This event demonstrates why two signals are better than one. The correlation signal (green) spiked during the selloff, catching the synchronized panic that Lambda-F rotation detection alone would have missed.*
 
 ---
 
