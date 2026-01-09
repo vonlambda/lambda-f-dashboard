@@ -52,7 +52,9 @@ When large investors simultaneously rotate between factors (dumping momentum, pi
 
 ## Validation Summary
 
-### Detection Rate: 33/33 Events (100%)
+### Detection Rate: 37/39 events (94.9% detection rate)
+**Note:** 2 events were not detected with documented reasons (ICO Bubble 2018: insufficient history; Supercycle Peak 2008: insufficient data). These are included in the validation set to demonstrate framework limitations and avoid cherry-picking.
+
 
 | Market | Events | Detection Rate |
 |--------|--------|----------------|
