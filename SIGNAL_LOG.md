@@ -13,5 +13,6 @@
 - **E** = ELEVATED (â‰¥3 days above P75 in trailing 30d)
 - Percentages are ex-ante Lambda-F percentiles
 - Events column filled retroactively when market moves occur
-| 2026-01-08 | 99% **C** | 88% **C** | 81% E | 76% | 63% | 33% E | 45% E | 3% | — |
-| 2026-01-09 | 98% **C** | 90% **C** | 76% E | 71% | 56% | 41% E | 42% E | 1% | — |
+| 2026-01-08 | 99% **C** | 88% **C** | 81% E | 76% | 63% | 33% E | 45% E | 3% | ï¿½ |
+| 2026-01-09 | 98% **C** | 90% **C** | 76% E | 71% | 56% | 41% E | 42% E | 1% | ï¿½ |
+| 2026-01-10 | 96% **C** | 90% **C** | 74% E | 71% | 45% | 58% E | 34% E | 0% | — |
