@@ -7,16 +7,16 @@ A proprietary framework for detecting institutional regime shifts before price i
 <!-- LAMBDA_START -->
 | Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |
 |--------|----------|--------|------|-------------|--------|--------|-------|---------|
-| Commodities | 3.50 | 83% | 14d* | 0.22 | 64% | **CRITICAL** (L) | 2026-01-04 | 2026-01-13 |
-| Gold | 3.64 | 90% | 14d | 0.24 | 74% | ELEVATED (L) | 2026-01-13 | 2026-01-13 |
-| Silver | 3.61 | 92% | 14d | 0.27 | 97% | **CRITICAL** (C) | 2026-01-13 | 2026-01-13 |
-| Crypto (BTC) | 3.37 | 71% | 3d | 0.68 | 25% | ELEVATED (L) | 2026-01-07 | 2026-01-13 |
-| Ethereum | 3.39 | 58% | -- | 0.68 | 21% | Normal | 2026-01-13 | 2026-01-13 |
-| US Equity (SPY) | 3.61 | 83% | 2d | 0.27 | 7% | Normal | 2025-11-15 | 2026-01-13 |
-| UK Equity (EWU) | 3.31 | 47% | -- | 0.45 | 1% | Normal | 2025-12-01 | 2026-01-13 |
-| Germany (EWG) | 3.26 | 53% | 6d | 0.39 | 16% | ELEVATED (L) | 2026-01-04 | 2026-01-13 |
-| Bonds | 3.27 | 36% | 3d | 0.71 | 43% | ELEVATED (L) | 2026-01-06 | 2026-01-13 |
-| Emerging Markets | 2.71 | 0% | -- | 0.46 | 39% | Normal | 2026-01-05 | 2026-01-13 |
+| Commodities | 3.42 | 69% | 13d* | 0.22 | 63% | **CRITICAL** (L) | 2026-01-04 | 2026-01-14 |
+| Gold | 3.70 | 93% | 14d | 0.24 | 68% | ELEVATED (L) | 2026-01-13 | 2026-01-14 |
+| Silver | 3.69 | 96% | 14d | 0.27 | 97% | **CRITICAL** (C) | 2026-01-13 | 2026-01-14 |
+| Crypto (BTC) | 3.31 | 64% | 3d | 0.67 | 22% | ELEVATED (L) | 2026-01-07 | 2026-01-14 |
+| Ethereum | 3.45 | 64% | -- | 0.67 | 20% | Normal | 2026-01-13 | 2026-01-14 |
+| US Equity (SPY) | 3.59 | 80% | 3d | 0.23 | 5% | ELEVATED (L) | 2026-01-14 | 2026-01-14 |
+| UK Equity (EWU) | 3.30 | 46% | -- | 0.38 | 0% | Normal | 2025-12-01 | 2026-01-14 |
+| Germany (EWG) | 3.23 | 41% | 5d | 0.35 | 9% | ELEVATED (L) | 2026-01-04 | 2026-01-14 |
+| Bonds | 3.33 | 49% | 2d | 0.65 | 34% | Normal | 2026-01-14 | 2026-01-14 |
+| Emerging Markets | 2.69 | 0% | -- | 0.44 | 36% | Normal | 2026-01-05 | 2026-01-14 |
 <!-- LAMBDA_END -->
 
 #
