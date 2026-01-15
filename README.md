@@ -7,16 +7,16 @@ A proprietary framework for detecting institutional regime shifts before price i
 <!-- LAMBDA_START -->
 | Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |
 |--------|----------|--------|------|-------------|--------|--------|-------|---------|
-| Commodities | 3.42 | 69% | 13d* | 0.22 | 63% | **CRITICAL** (L) | 2026-01-04 | 2026-01-14 |
-| Gold | 3.70 | 93% | 14d | 0.24 | 68% | ELEVATED (L) | 2026-01-13 | 2026-01-14 |
-| Silver | 3.69 | 96% | 14d | 0.27 | 97% | **CRITICAL** (C) | 2026-01-13 | 2026-01-14 |
-| Crypto (BTC) | 3.31 | 64% | 3d | 0.67 | 22% | ELEVATED (L) | 2026-01-07 | 2026-01-14 |
-| Ethereum | 3.45 | 64% | -- | 0.67 | 20% | Normal | 2026-01-13 | 2026-01-14 |
-| US Equity (SPY) | 3.59 | 80% | 3d | 0.23 | 5% | ELEVATED (L) | 2026-01-14 | 2026-01-14 |
-| UK Equity (EWU) | 3.30 | 46% | -- | 0.38 | 0% | Normal | 2025-12-01 | 2026-01-14 |
-| Germany (EWG) | 3.23 | 41% | 5d | 0.35 | 9% | ELEVATED (L) | 2026-01-04 | 2026-01-14 |
-| Bonds | 3.33 | 49% | 2d | 0.65 | 34% | Normal | 2026-01-14 | 2026-01-14 |
-| Emerging Markets | 2.69 | 0% | -- | 0.44 | 36% | Normal | 2026-01-05 | 2026-01-14 |
+| Commodities | 3.38 | 57% | 12d* | 0.23 | 70% | **CRITICAL** (L) | 2026-01-04 | 2026-01-15 |
+| Gold | 3.57 | 80% | 13d | 0.25 | 81% | ELEVATED (LC) | 2026-01-15 | 2026-01-15 |
+| Silver | 3.58 | 89% | 14d | 0.28 | 98% | **CRITICAL** (C) | 2026-01-13 | 2026-01-15 |
+| Crypto (BTC) | 3.34 | 67% | 3d | 0.69 | 27% | ELEVATED (L) | 2026-01-07 | 2026-01-15 |
+| Ethereum | 3.47 | 67% | -- | 0.72 | 29% | Normal | 2026-01-13 | 2026-01-15 |
+| US Equity (SPY) | 3.55 | 70% | 2d | 0.21 | 4% | Normal | 2026-01-15 | 2026-01-15 |
+| UK Equity (EWU) | 3.32 | 48% | -- | 0.42 | 1% | Normal | 2025-12-01 | 2026-01-15 |
+| Germany (EWG) | 3.22 | 39% | 4d | 0.35 | 9% | ELEVATED (L) | 2026-01-04 | 2026-01-15 |
+| Bonds | 3.35 | 51% | 1d | 0.65 | 34% | Normal | 2026-01-14 | 2026-01-15 |
+| Emerging Markets | 2.67 | 0% | -- | 0.51 | 46% | Normal | 2026-01-05 | 2026-01-15 |
 <!-- LAMBDA_END -->
 
 #
