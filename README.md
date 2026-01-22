@@ -7,16 +7,16 @@ A proprietary framework for detecting institutional regime shifts before price i
 <!-- LAMBDA_START -->
 | Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |
 |--------|----------|--------|------|-------------|--------|--------|-------|---------|
-| Commodities | 3.35 | 46% | 9d* | 0.17 | 40% | **CRITICAL** (L) | 2026-01-04 | 2026-01-21 |
-| Gold | 3.62 | 88% | 15d | 0.25 | 78% | ELEVATED (LC) | 2026-01-21 | 2026-01-21 |
-| Silver | 3.61 | 92% | 4d* | 0.26 | 97% | **CRITICAL** (LC) | 2026-01-16 | 2026-01-21 |
-| Crypto (BTC) | 3.54 | 89% | 7d | 0.68 | 24% | ELEVATED (L) | 2026-01-07 | 2026-01-21 |
-| Ethereum | 3.51 | 72% | -- | 0.73 | 31% | Normal | 2026-01-13 | 2026-01-21 |
-| US Equity (SPY) | 3.50 | 62% | 2d | 0.17 | 3% | Normal | 2026-01-15 | 2026-01-21 |
-| UK Equity (EWU) | 3.35 | 53% | -- | 0.39 | 1% | Normal | 2025-12-01 | 2026-01-21 |
-| Germany (EWG) | 3.12 | 18% | 1d | 0.31 | 8% | Normal | 2026-01-17 | 2026-01-21 |
-| Bonds | 3.29 | 39% | -- | 0.65 | 34% | Normal | 2026-01-14 | 2026-01-21 |
-| Emerging Markets | 2.76 | 3% | -- | 0.44 | 37% | Normal | 2026-01-05 | 2026-01-21 |
+| Commodities | 3.32 | 41% | 9d* | 0.16 | 33% | **CRITICAL** (L) | 2026-01-04 | 2026-01-22 |
+| Gold | 3.62 | 87% | 16d | 0.17 | 27% | ELEVATED (L) | 2026-01-22 | 2026-01-22 |
+| Silver | 3.56 | 86% | 4d* | 0.21 | 88% | **CRITICAL** (L) | 2026-01-22 | 2026-01-22 |
+| Crypto (BTC) | 3.49 | 84% | 7d | 0.72 | 34% | ELEVATED (L) | 2026-01-07 | 2026-01-22 |
+| Ethereum | 3.45 | 63% | -- | 0.76 | 39% | Normal | 2026-01-13 | 2026-01-22 |
+| US Equity (SPY) | 3.51 | 63% | 2d | 0.24 | 8% | Normal | 2026-01-15 | 2026-01-22 |
+| UK Equity (EWU) | 3.27 | 40% | -- | 0.36 | 0% | Normal | 2025-12-01 | 2026-01-22 |
+| Germany (EWG) | 3.12 | 18% | -- | 0.19 | 0% | Normal | 2026-01-17 | 2026-01-22 |
+| Bonds | 3.35 | 51% | -- | 0.68 | 40% | Normal | 2026-01-14 | 2026-01-22 |
+| Emerging Markets | 2.73 | 3% | -- | 0.37 | 23% | Normal | 2026-01-05 | 2026-01-22 |
 <!-- LAMBDA_END -->
 
 #
