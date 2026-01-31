@@ -7,16 +7,16 @@ A proprietary framework for detecting institutional regime shifts before price i
 <!-- LAMBDA_START -->
 | Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |
 |--------|----------|--------|------|-------------|--------|--------|-------|---------|
-| Commodities | 3.24 | 25% | 7d* | 0.18 | 44% | **CRITICAL** (L) | 2026-01-04 | 2026-01-30 |
-| Gold | 3.63 | 88% | 19d | 0.19 | 43% | ELEVATED (L) | 2026-01-22 | 2026-01-30 |
-| Silver | 3.64 | 92% | 5d* | 0.22 | 90% | **CRITICAL** (LC) | 2026-01-30 | 2026-01-30 |
-| Crypto (BTC) | 3.40 | 73% | 9d | 0.77 | 51% | ELEVATED (L) | 2026-01-07 | 2026-01-30 |
-| Ethereum | 3.58 | 83% | 2d | 0.81 | 67% | Normal | 2026-01-13 | 2026-01-30 |
-| US Equity (SPY) | 3.49 | 57% | 2d | 0.28 | 12% | Normal | 2026-01-15 | 2026-01-30 |
-| UK Equity (EWU) | 3.27 | 38% | -- | 0.45 | 6% | Normal | 2025-12-01 | 2026-01-30 |
-| Germany (EWG) | 3.14 | 19% | -- | 0.45 | 26% | Normal | 2026-01-17 | 2026-01-30 |
-| Bonds | 3.35 | 52% | -- | 0.64 | 33% | Normal | 2026-01-14 | 2026-01-30 |
-| Emerging Markets | 2.71 | 3% | -- | 0.48 | 43% | Normal | 2026-01-05 | 2026-01-30 |
+| Commodities | 3.19 | 15% | 7d* | 0.17 | 39% | **CRITICAL** (L) | 2026-01-04 | 2026-01-31 |
+| Gold | 3.67 | 91% | 20d | 0.17 | 24% | ELEVATED (L) | 2026-01-22 | 2026-01-31 |
+| Silver | 3.66 | 94% | 6d* | 0.18 | 72% | **CRITICAL** (L) | 2026-01-31 | 2026-01-31 |
+| Crypto (BTC) | 3.37 | 69% | 9d | 0.81 | 61% | ELEVATED (L) | 2026-01-07 | 2026-01-31 |
+| Ethereum | 3.54 | 78% | 3d | 0.84 | 80% | ELEVATED (LC) | 2026-01-31 | 2026-01-31 |
+| US Equity (SPY) | 3.37 | 41% | 2d | 0.27 | 10% | Normal | 2026-01-15 | 2026-01-31 |
+| UK Equity (EWU) | 3.28 | 40% | -- | 0.42 | 4% | Normal | 2025-12-01 | 2026-01-31 |
+| Germany (EWG) | 3.07 | 12% | -- | 0.38 | 18% | Normal | 2026-01-17 | 2026-01-31 |
+| Bonds | 3.30 | 39% | -- | 0.63 | 32% | Normal | 2026-01-14 | 2026-01-31 |
+| Emerging Markets | 2.69 | 2% | -- | 0.50 | 45% | Normal | 2026-01-05 | 2026-01-31 |
 <!-- LAMBDA_END -->
 
 #
