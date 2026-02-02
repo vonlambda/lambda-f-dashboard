@@ -7,16 +7,16 @@ A proprietary framework for detecting institutional regime shifts before price i
 <!-- LAMBDA_START -->
 | Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |
 |--------|----------|--------|------|-------------|--------|--------|-------|---------|
-| Commodities | 3.19 | 15% | 7d* | 0.17 | 39% | **CRITICAL** (L) | 2026-01-04 | 2026-02-01 |
-| Gold | 3.67 | 91% | 20d | 0.17 | 24% | ELEVATED (L) | 2026-01-22 | 2026-02-01 |
-| Silver | 3.66 | 94% | 6d* | 0.18 | 72% | **CRITICAL** (L) | 2026-01-31 | 2026-02-01 |
-| Crypto (BTC) | 3.32 | 60% | 9d | 0.79 | 58% | ELEVATED (L) | 2026-01-07 | 2026-02-01 |
-| Ethereum | 3.44 | 57% | 3d | 0.84 | 76% | ELEVATED (LC) | 2026-01-31 | 2026-02-01 |
-| US Equity (SPY) | 3.37 | 41% | 2d | 0.27 | 10% | Normal | 2026-01-15 | 2026-02-01 |
-| UK Equity (EWU) | 3.28 | 40% | -- | 0.42 | 4% | Normal | 2025-12-01 | 2026-02-01 |
-| Germany (EWG) | 3.07 | 12% | -- | 0.38 | 18% | Normal | 2026-01-17 | 2026-02-01 |
-| Bonds | 3.30 | 39% | -- | 0.63 | 32% | Normal | 2026-01-14 | 2026-02-01 |
-| Emerging Markets | 2.69 | 2% | -- | 0.50 | 45% | Normal | 2026-01-05 | 2026-02-01 |
+| Commodities | 3.19 | 15% | 7d* | 0.17 | 39% | **CRITICAL** (L) | 2026-01-04 | 2026-02-02 |
+| Gold | 3.67 | 91% | 20d | 0.17 | 24% | ELEVATED (L) | 2026-01-22 | 2026-02-02 |
+| Silver | 3.66 | 94% | 6d* | 0.18 | 72% | **CRITICAL** (L) | 2026-01-31 | 2026-02-02 |
+| Crypto (BTC) | 3.28 | 54% | 9d | 0.83 | 71% | ELEVATED (L) | 2026-01-07 | 2026-02-02 |
+| Ethereum | 3.38 | 51% | 3d | 0.86 | 85% | ELEVATED (LC) | 2026-01-31 | 2026-02-02 |
+| US Equity (SPY) | 3.37 | 41% | 2d | 0.27 | 10% | Normal | 2026-01-15 | 2026-02-02 |
+| UK Equity (EWU) | 3.28 | 40% | -- | 0.43 | 4% | Normal | 2025-12-01 | 2026-02-02 |
+| Germany (EWG) | 3.07 | 12% | -- | 0.39 | 18% | Normal | 2026-01-17 | 2026-02-02 |
+| Bonds | 3.30 | 39% | -- | 0.63 | 32% | Normal | 2026-01-14 | 2026-02-02 |
+| Emerging Markets | 2.69 | 2% | -- | 0.50 | 45% | Normal | 2026-01-05 | 2026-02-02 |
 <!-- LAMBDA_END -->
 
 #
