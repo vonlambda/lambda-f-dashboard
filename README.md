@@ -7,16 +7,16 @@ A proprietary framework for detecting institutional regime shifts before price i
 <!-- LAMBDA_START -->
 | Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |
 |--------|----------|--------|------|-------------|--------|--------|-------|---------|
-| Commodities | 3.16 | 13% | 7d* | 0.20 | 57% | **CRITICAL** (L) | 2026-01-04 | 2026-02-03 |
-| Gold | 3.68 | 91% | 3d* | 0.25 | 84% | **CRITICAL** (L) | 2026-02-03 | 2026-02-03 |
-| Silver | 3.65 | 92% | 6d* | 0.22 | 92% | **CRITICAL** (LC) | 2026-02-03 | 2026-02-03 |
-| Crypto (BTC) | 3.24 | 43% | 9d | 0.83 | 70% | ELEVATED (L) | 2026-01-07 | 2026-02-03 |
-| Ethereum | 3.30 | 43% | 3d | 0.86 | 84% | ELEVATED (LC) | 2026-01-31 | 2026-02-03 |
-| US Equity (SPY) | 3.41 | 47% | 2d | 0.25 | 8% | Normal | 2026-01-15 | 2026-02-03 |
-| UK Equity (EWU) | 3.29 | 43% | -- | 0.52 | 20% | Normal | 2025-12-01 | 2026-02-03 |
-| Germany (EWG) | 3.13 | 17% | -- | 0.47 | 30% | Normal | 2026-01-17 | 2026-02-03 |
-| Bonds | 3.34 | 48% | -- | 0.61 | 30% | Normal | 2026-01-14 | 2026-02-03 |
-| Emerging Markets | 2.69 | 2% | -- | 0.64 | 80% | ELEVATED (C) | 2026-02-03 | 2026-02-03 |
+| Commodities | 3.14 | 10% | 7d* | 0.27 | 78% | **CRITICAL** (L) | 2026-01-04 | 2026-02-04 |
+| Gold | 3.55 | 74% | 3d* | 0.23 | 69% | **CRITICAL** (L) | 2026-02-03 | 2026-02-04 |
+| Silver | 3.58 | 84% | 5d* | 0.22 | 89% | **CRITICAL** (L) | 2026-02-04 | 2026-02-04 |
+| Crypto (BTC) | 3.14 | 20% | 9d | 0.85 | 78% | ELEVATED (LC) | 2026-02-04 | 2026-02-04 |
+| Ethereum | 3.24 | 32% | 3d | 0.87 | 90% | **CRITICAL** (C) | 2026-02-04 | 2026-02-04 |
+| US Equity (SPY) | 3.40 | 44% | 2d | 0.22 | 6% | Normal | 2026-01-15 | 2026-02-04 |
+| UK Equity (EWU) | 3.25 | 33% | -- | 0.51 | 20% | Normal | 2025-12-01 | 2026-02-04 |
+| Germany (EWG) | 3.07 | 11% | -- | 0.45 | 27% | Normal | 2026-01-17 | 2026-02-04 |
+| Bonds | 3.39 | 59% | -- | 0.58 | 22% | Normal | 2026-01-14 | 2026-02-04 |
+| Emerging Markets | 2.71 | 4% | -- | 0.62 | 76% | ELEVATED (C) | 2026-02-03 | 2026-02-04 |
 <!-- LAMBDA_END -->
 
 #
