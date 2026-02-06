@@ -7,16 +7,16 @@ A proprietary framework for detecting institutional regime shifts before price i
 <!-- LAMBDA_START -->
 | Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |
 |--------|----------|--------|------|-------------|--------|--------|-------|---------|
-| Commodities | 3.19 | 16% | 7d* | 0.29 | 82% | **CRITICAL** (L) | 2026-01-04 | 2026-02-05 |
-| Gold | 3.52 | 65% | 3d* | 0.24 | 72% | **CRITICAL** (L) | 2026-02-03 | 2026-02-05 |
-| Silver | 3.52 | 80% | 5d* | 0.23 | 92% | **CRITICAL** (LC) | 2026-02-05 | 2026-02-05 |
-| Crypto (BTC) | 3.06 | 14% | 9d | 0.82 | 66% | ELEVATED (L) | 2026-02-05 | 2026-02-05 |
-| Ethereum | 3.22 | 25% | 3d | 0.85 | 81% | ELEVATED (LC) | 2026-02-05 | 2026-02-05 |
-| US Equity (SPY) | 3.44 | 53% | 3d | 0.20 | 4% | ELEVATED (L) | 2026-02-05 | 2026-02-05 |
-| UK Equity (EWU) | 3.24 | 31% | -- | 0.53 | 21% | Normal | 2025-12-01 | 2026-02-05 |
-| Germany (EWG) | 3.04 | 9% | -- | 0.43 | 24% | Normal | 2026-01-17 | 2026-02-05 |
-| Bonds | 3.43 | 65% | -- | 0.57 | 22% | Normal | 2026-01-14 | 2026-02-05 |
-| Emerging Markets | 2.80 | 9% | -- | 0.59 | 69% | Normal | 2026-02-05 | 2026-02-05 |
+| Commodities | 3.14 | 10% | 7d* | 0.28 | 81% | **CRITICAL** (L) | 2026-01-04 | 2026-02-06 |
+| Gold | 3.39 | 45% | 3d* | 0.23 | 63% | **CRITICAL** (L) | 2026-02-03 | 2026-02-06 |
+| Silver | 3.36 | 48% | 5d* | 0.21 | 88% | **CRITICAL** (L) | 2026-02-06 | 2026-02-06 |
+| Crypto (BTC) | 3.06 | 14% | 9d | 0.83 | 69% | ELEVATED (L) | 2026-02-05 | 2026-02-06 |
+| Ethereum | 3.17 | 20% | 3d | 0.83 | 72% | ELEVATED (L) | 2026-02-06 | 2026-02-06 |
+| US Equity (SPY) | 3.47 | 56% | 3d | 0.19 | 4% | ELEVATED (L) | 2026-02-05 | 2026-02-06 |
+| UK Equity (EWU) | 3.25 | 33% | -- | 0.50 | 17% | Normal | 2025-12-01 | 2026-02-06 |
+| Germany (EWG) | 3.06 | 10% | -- | 0.43 | 24% | Normal | 2026-01-17 | 2026-02-06 |
+| Bonds | 3.45 | 68% | -- | 0.52 | 12% | Normal | 2026-01-14 | 2026-02-06 |
+| Emerging Markets | 2.86 | 13% | -- | 0.63 | 76% | ELEVATED (C) | 2026-02-06 | 2026-02-06 |
 <!-- LAMBDA_END -->
 
 #
