@@ -7,16 +7,16 @@ A proprietary framework for detecting institutional regime shifts before price i
 <!-- LAMBDA_START -->
 | Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |
 |--------|----------|--------|------|-------------|--------|--------|-------|---------|
-| Commodities | 3.31 | 42% | 2d | 0.39 | 90% | **CRITICAL** (C) | 2026-02-24 | 2026-02-25 |
-| Gold | 3.48 | 54% | 3d* | 0.18 | 41% | **CRITICAL** (L) | 2026-02-03 | 2026-02-25 |
-| Silver | 3.72 | 96% | 9d* | 0.19 | 75% | **CRITICAL** (L) | 2026-02-06 | 2026-02-25 |
-| Crypto (BTC) | 3.19 | 30% | -- | 0.93 | 96% | **CRITICAL** (C) | 2026-02-07 | 2026-02-25 |
-| Ethereum | 3.19 | 28% | 5d | 0.92 | 94% | **CRITICAL** (C) | 2026-02-07 | 2026-02-25 |
-| US Equity (SPY) | 3.62 | 88% | 8d | 0.27 | 11% | ELEVATED (L) | 2026-02-05 | 2026-02-25 |
-| UK Equity (EWU) | 3.45 | 67% | -- | 0.59 | 39% | Normal | 2025-12-01 | 2026-02-25 |
-| Germany (EWG) | 3.19 | 27% | -- | 0.56 | 55% | Normal | 2026-01-17 | 2026-02-25 |
-| Bonds | 3.39 | 63% | -- | 0.45 | 3% | Normal | 2026-01-14 | 2026-02-25 |
-| Emerging Markets | 2.68 | 3% | -- | 0.70 | 83% | ELEVATED (C) | 2026-02-06 | 2026-02-25 |
+| Commodities | 3.25 | 31% | 1d | 0.37 | 89% | ELEVATED (C) | 2026-02-26 | 2026-02-26 |
+| Gold | 3.43 | 49% | 3d* | 0.18 | 39% | **CRITICAL** (L) | 2026-02-03 | 2026-02-26 |
+| Silver | 3.78 | 99% | 10d* | 0.18 | 69% | **CRITICAL** (L) | 2026-02-06 | 2026-02-26 |
+| Crypto (BTC) | 3.17 | 27% | -- | 0.93 | 98% | **CRITICAL** (C) | 2026-02-07 | 2026-02-26 |
+| Ethereum | 3.20 | 30% | 4d | 0.92 | 95% | **CRITICAL** (C) | 2026-02-07 | 2026-02-26 |
+| US Equity (SPY) | 3.65 | 91% | 3d* | 0.28 | 12% | **CRITICAL** (L) | 2026-02-26 | 2026-02-26 |
+| UK Equity (EWU) | 3.44 | 65% | -- | 0.60 | 40% | Normal | 2025-12-01 | 2026-02-26 |
+| Germany (EWG) | 3.18 | 26% | -- | 0.55 | 51% | Normal | 2026-01-17 | 2026-02-26 |
+| Bonds | 3.41 | 66% | -- | 0.46 | 4% | Normal | 2026-01-14 | 2026-02-26 |
+| Emerging Markets | 2.76 | 10% | -- | 0.68 | 81% | ELEVATED (C) | 2026-02-06 | 2026-02-26 |
 <!-- LAMBDA_END -->
 
 #
