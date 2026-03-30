@@ -7,16 +7,16 @@ A proprietary framework for detecting institutional regime shifts before price i
 <!-- LAMBDA_START -->
 | Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |
 |--------|----------|--------|------|-------------|--------|--------|-------|---------|
-| Commodities | 3.12 | 12% | -- | 0.14 | 27% | Normal | 2026-03-09 | 2026-03-29 |
-| Gold | 3.50 | 54% | 12d | 0.32 | 98% | **CRITICAL** (C) | 2026-03-21 | 2026-03-29 |
-| Silver | 3.42 | 46% | 13d* | 0.29 | 100% | **CRITICAL** (LC) | 2026-03-21 | 2026-03-29 |
-| Crypto (BTC) | 3.25 | 46% | -- | 0.92 | 89% | ELEVATED (C) | 2026-03-29 | 2026-03-29 |
-| Ethereum | 3.21 | 31% | -- | 0.89 | 85% | ELEVATED (C) | 2026-03-19 | 2026-03-29 |
-| US Equity (SPY) | 3.43 | 50% | 9d* | 0.34 | 41% | **CRITICAL** (L) | 2026-02-26 | 2026-03-29 |
-| UK Equity (EWU) | 3.28 | 28% | -- | 0.76 | 88% | ELEVATED (C) | 2026-03-27 | 2026-03-29 |
-| Germany (EWG) | 3.11 | 14% | 2d | 0.73 | 100% | **CRITICAL** (C) | 2026-03-09 | 2026-03-29 |
-| Bonds | 3.23 | 25% | 5d | 0.80 | 96% | **CRITICAL** (C) | 2026-03-27 | 2026-03-29 |
-| Emerging Markets | 3.39 | 70% | -- | 0.81 | 92% | **CRITICAL** (C) | 2026-03-09 | 2026-03-29 |
+| Commodities | 3.12 | 12% | -- | 0.14 | 27% | Normal | 2026-03-09 | 2026-03-30 |
+| Gold | 3.50 | 54% | 12d | 0.32 | 98% | **CRITICAL** (C) | 2026-03-21 | 2026-03-30 |
+| Silver | 3.42 | 46% | 13d* | 0.29 | 100% | **CRITICAL** (LC) | 2026-03-21 | 2026-03-30 |
+| Crypto (BTC) | 3.22 | 38% | -- | 0.92 | 89% | ELEVATED (C) | 2026-03-29 | 2026-03-30 |
+| Ethereum | 3.21 | 31% | -- | 0.89 | 85% | ELEVATED (C) | 2026-03-19 | 2026-03-30 |
+| US Equity (SPY) | 3.43 | 50% | 9d* | 0.34 | 41% | **CRITICAL** (L) | 2026-02-26 | 2026-03-30 |
+| UK Equity (EWU) | 3.28 | 28% | -- | 0.76 | 88% | ELEVATED (C) | 2026-03-27 | 2026-03-30 |
+| Germany (EWG) | 3.11 | 14% | 2d | 0.73 | 100% | **CRITICAL** (C) | 2026-03-09 | 2026-03-30 |
+| Bonds | 3.23 | 25% | 5d | 0.80 | 96% | **CRITICAL** (C) | 2026-03-27 | 2026-03-30 |
+| Emerging Markets | 3.39 | 70% | -- | 0.81 | 92% | **CRITICAL** (C) | 2026-03-09 | 2026-03-30 |
 <!-- LAMBDA_END -->
 
 #
