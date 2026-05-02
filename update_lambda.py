@@ -9,17 +9,29 @@ This script:
 4. Pushes to public GitHub repo via API
 """
 
+import sys
+import os
+
+# Make canonical lambda_factors.py (in parent C:\backtesting\) importable.
+# Append (not insert at 0) so the engine's own modules still take precedence
+# when other scripts here do `from update_lambda import ...`.
+_PARENT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _PARENT_DIR not in sys.path:
+    sys.path.append(_PARENT_DIR)
+
 import numpy as np
 import pandas as pd
 import yfinance as yf
 from datetime import datetime, timedelta
 from github import Github
 from dotenv import load_dotenv
-import os
 import re
 import json
 import warnings
 warnings.filterwarnings('ignore')
+
+# Canonical Lambda-F implementation (Method C — winner of 2026-05-02 bakeoff)
+from lambda_factors import compute_lambda_method_c
 
 # Paths
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -120,10 +132,12 @@ def fetch_data(tickers, days=900):
     common_idx = sorted(common_idx)
     
     # Build prices DataFrame
+    # Causal: ffill only — bfill would use a future close to fill an
+    # earlier missing close (lookahead). See docs/MASTER.md audit B-L1.
     prices = pd.DataFrame({
         t: data[t]['Close'].reindex(common_idx) for t in data.keys()
-    }).ffill().bfill()
-    
+    }).ffill()
+
     return prices
 
 
@@ -285,28 +299,33 @@ def get_regime(lambda_series, lookback_days=252):
 
 
 def get_current_percentile(lambda_series, lookback_days=252):
-    """Get current Lambda-F percentile for display"""
+    """Get current Lambda-F percentile (expanding ex-ante, matches Method C bakeoff)."""
     if lambda_series is None or len(lambda_series) < 2:
         return None
-    
+
     current_value = lambda_series.iloc[-1]
-    historical = lambda_series.iloc[-lookback_days:-1] if len(lambda_series) > lookback_days else lambda_series.iloc[:-1]
+    historical = lambda_series.iloc[:-1]
+    if len(historical) < lookback_days:
+        return None
     percentile = (historical < current_value).mean() * 100
     return percentile
 
 
 def get_days_elevated(lambda_series, lookback_days=252, trailing_days=31):
     """
-    Get count of elevated days in trailing window.
+    Get count of elevated days in the trailing window.
+    Thresholds use expanding ex-ante history (matches Method C bakeoff).
     Returns tuple: (days_above_p75, days_above_p90)
     """
     if lambda_series is None or len(lambda_series) < trailing_days:
         return 0, 0
-    
-    historical = lambda_series.iloc[-lookback_days:-1] if len(lambda_series) > lookback_days else lambda_series.iloc[:-1]
+
+    historical = lambda_series.iloc[:-1]
+    if len(historical) < lookback_days:
+        return 0, 0
     p75 = historical.quantile(0.75)
     p90 = historical.quantile(0.90)
-    
+
     trailing = lambda_series.iloc[-trailing_days:]
     days_p75 = int((trailing > p75).sum())
     days_p90 = int((trailing > p90).sum())
@@ -348,12 +367,12 @@ def compute_rolling_correlation(prices, window=21):
 
 
 def get_correlation_percentile(avg_corr, lookback_days=252):
-    """Get current correlation percentile"""
+    """Get current correlation percentile (expanding ex-ante, matches Method C bakeoff)."""
     if avg_corr is None or len(avg_corr) < lookback_days + 1:
         return None
-    
+
     current_value = avg_corr.iloc[-1]
-    historical = avg_corr.iloc[-lookback_days:-1]
+    historical = avg_corr.iloc[:-1]
     percentile = (historical < current_value).mean() * 100
     return percentile
 
@@ -379,9 +398,11 @@ def get_combined_regime(lambda_series, corr_series, lookback_days=252):
     corr_elevated = False
     corr_critical = False
     
-    # Check Lambda-F (using trailing window logic)
+    # Check Lambda-F (expanding ex-ante percentile, matches Method C bakeoff)
     if lambda_series is not None and len(lambda_series) >= 31:
-        historical = lambda_series.iloc[-lookback_days:-1] if len(lambda_series) > lookback_days else lambda_series.iloc[:-1]
+        historical = lambda_series.iloc[:-1]
+        if len(historical) < lookback_days:
+            return "Normal", ""
         p75 = historical.quantile(0.75)
         p90 = historical.quantile(0.90)
         
@@ -520,10 +541,11 @@ def compute_all_markets():
             })
             continue
         
-        # Compute Lambda-F
-        returns = compute_returns(prices)
-        factors = compute_factors(returns, prices)
-        current_lambda, _, lambda_series = compute_lambda_f(factors)
+        # Compute Lambda-F via canonical Method C (z-scored returns directly
+        # as factor matrix + 14d SMA smoothing). Replaces the prior inline
+        # CMKT/CSMB/CMOM/CVOL pipeline (Method B). See docs/BAKEOFF_RESULTS.md
+        # for the 2026-05-02 bakeoff that selected this method.
+        current_lambda, _, lambda_series = compute_lambda_method_c(prices)
         
         # Compute Correlation
         corr_series = compute_rolling_correlation(prices, window=CORR_WINDOW)
@@ -564,7 +586,8 @@ def compute_all_markets():
             if days_p90 >= 3:
                 # CRITICAL - show P90 count with marker
                 lambda_days_str = f"{days_p90}d*"
-            elif days_p75 > 0:
+            elif days_p75 >= 3:
+                # ELEVATED — match the regime classification rule (audit B1)
                 lambda_days_str = f"{days_p75}d"
             else:
                 lambda_days_str = "--"
