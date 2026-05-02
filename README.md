@@ -48,19 +48,8 @@ _No regime changes since yesterday._
 **Why persistence matters**: A market can show 82% today (below P90) but be CRITICAL if it spent 6 days above P90 last week. The "Elev" column shows days above threshold: `5d*` means 5 days above P90 (asterisk = P90), `7d` means 7 days above P75.
 
 
-## What Is This?
-
-Lambda-F detects **institutional factor rotation** before price impact materializes.
-
-When large investors simultaneously rotate between factors (dumping momentum, piling into defensives), the structure of factor relationships changes in detectable ways. Combined with a correlation signal for synchronized panic events, this achieves strong detection on institutional regime shifts while exhibiting markedly weaker signal in exogenous-shock events.
-
-**Think of it this way:**
-- Volatility tells you the car is speeding
-- Lambda-F tells you the steering wheel is jerking
-
----
-
-## Validation Summary
+<details open>
+<summary><b>📊 Validation Summary — 38/47 events (80.9%)</b> · click to collapse</summary>
 
 ### Detection Rate: 38/47 events (80.9%) on extended event ledger
 
@@ -106,10 +95,23 @@ The framework is **designed to under-detect** exogenous shocks with no instituti
 
 This is by design: Lambda-F detects institutional rotation, not all market events. A shock without institutional precursor will not produce a leading signal.
 
----
+</details>
 
+<details>
+<summary><b>💡 What is this?</b></summary>
 
-## Signal Visualization
+Lambda-F detects **institutional factor rotation** before price impact materializes.
+
+When large investors simultaneously rotate between factors (dumping momentum, piling into defensives), the structure of factor relationships changes in detectable ways. Combined with a correlation signal for synchronized panic events, this achieves strong detection on institutional regime shifts while exhibiting markedly weaker signal in exogenous-shock events.
+
+**Think of it this way:**
+- Volatility tells you the car is speeding
+- Lambda-F tells you the steering wheel is jerking
+
+</details>
+
+<details>
+<summary><b>📈 Signal visualization — historical events</b></summary>
 
 **2008 Global Financial Crisis** — Lambda-F crossed P75 **188 days** before the S&P 500 peak:
 
@@ -141,9 +143,10 @@ This is by design: Lambda-F detects institutional rotation, not all market event
 
 *This event demonstrates why two signals are better than one. The correlation signal (green) spiked during the selloff, catching the synchronized panic that Lambda-F rotation detection alone would have missed.*
 
----
+</details>
 
-## Notable Calls (Audit Trail)
+<details>
+<summary><b>📋 Notable calls (audit trail)</b></summary>
 
 | Date Called | Market | Signal | Outcome | Archive |
 |-------------|--------|--------|---------|---------|
@@ -152,9 +155,10 @@ This is by design: Lambda-F detects institutional rotation, not all market event
 
 *Outcomes updated retroactively when events occur. All calls are timestamped via Git commits.*
 
----
+</details>
 
-## Conditional Drawdown Analysis (Lift)
+<details>
+<summary><b>📐 Conditional drawdown analysis (lift)</b></summary>
 
 The framework's predictive power measured by conditional probability of significant drawdowns:
 
@@ -167,8 +171,10 @@ The framework's predictive power measured by conditional probability of signific
 
 **Interpretation**: When Lambda-F reaches CRITICAL (>=P90), the probability of a >=15% drawdown within 90 days is **4x higher** than the unconditional baseline. This is the core value proposition: early warning with quantified lift.
 
+</details>
 
-## Mechanical Exclusion Rule
+<details>
+<summary><b>⚙️ Mechanical exclusion rule</b></summary>
 
 An event is **excluded** from validation (classified as exogenous/black swan) if:
 
@@ -183,8 +189,10 @@ Where:
 
 **Both signals must remain below threshold for the entire 30 days preceding the event.** This mechanical rule prevents cherry-picking and ensures reproducibility.
 
+</details>
 
-## Case Study: SVB vs 3AC
+<details>
+<summary><b>🔍 Case study: SVB vs 3AC</b></summary>
 
 Why did Lambda-F detect SVB (March 2023) but exclude 3AC/Terra (May 2022)?
 
@@ -199,7 +207,10 @@ Why did Lambda-F detect SVB (March 2023) but exclude 3AC/Terra (May 2022)?
 
 *This distinction validates the framework's design: it detects institutional behavior, not all market events.*
 
-## Methodology
+</details>
+
+<details>
+<summary><b>📜 Methodology</b></summary>
 
 **Patent Pending** -- US Provisional Application filed.
 
@@ -207,6 +218,8 @@ Full methodology available under NDA for:
 - Research partnerships
 - Licensing discussions
 - Institutional due diligence
+
+</details>
 
 ---
 

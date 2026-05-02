@@ -575,9 +575,13 @@ def compute_all_markets():
             # Combined two-signal regime detection
             regime, source = get_combined_regime(lambda_series, corr_series, lookback_days=LOOKBACK_DAYS)
             regime_display = f"{regime} {source}".strip()
-            
+
+            # Capture prior regime BEFORE history is mutated, so we can show
+            # what changed today (Tier 1 T1.3 / T1.4 — Δ block + NEW badge)
+            prior_regime = history.get(market_name, {}).get('regime')
             since_date = update_regime_history(market_name, regime_display, history)
             since_display = format_since_date(since_date)
+            changed_today = (prior_regime is not None and prior_regime != regime_display)
             
             # Format values - show the relevant threshold count
             # If CRITICAL (P90 triggered), show P90 days; else show P75 days
@@ -604,6 +608,8 @@ def compute_all_markets():
                 'corr_val': corr_val_str,
                 'corr_pct': corr_pct_str,
                 'regime': regime_display,
+                'prior_regime': prior_regime,
+                'changed_today': changed_today,
                 'since': since_display,
                 'date': today
             })
@@ -625,8 +631,57 @@ def _severity_emoji(regime):
     return '⚪'
 
 
+def _severity_rank(regime):
+    """Numeric severity for diff direction. Higher = more severe."""
+    if 'CRITICAL' in regime:
+        return 3
+    if 'ELEVATED' in regime:
+        return 2
+    if 'Normal' in regime:
+        return 1
+    return 0
+
+
+def _generate_diff_block(results):
+    """Tier 1 T1.3: render 'what changed since yesterday' block.
+
+    Shows entries that crossed regime boundaries today; lists unchanged
+    markets compactly so readers know nothing was missed.
+    """
+    changed = [r for r in results if r.get('changed_today')]
+    if not changed:
+        return "_No regime changes since yesterday._"
+
+    # Categorize: escalations (more severe today) vs de-escalations
+    lines = []
+    for r in changed:
+        prior = r.get('prior_regime') or '--'
+        now = r.get('regime', '--')
+        prior_rank = _severity_rank(prior)
+        now_rank = _severity_rank(now)
+        emoji_now = _severity_emoji(now)
+        # Strip source flag like "(L)" / "(LC)" for the headline arrow
+        prior_label = prior.replace('**', '').split(' (')[0]
+        now_label = now.replace('**', '').split(' (')[0]
+        if now_rank > prior_rank:
+            arrow = "↑"
+        elif now_rank < prior_rank:
+            arrow = "↓"
+        else:
+            arrow = "→"
+        lines.append(f"- {emoji_now} **{r['market']}**: {prior_label} {arrow} {now_label}")
+
+    unchanged = [r['market'] for r in results if not r.get('changed_today')]
+    if unchanged:
+        lines.append("")
+        lines.append(f"_Unchanged: {', '.join(unchanged)}._")
+
+    return "\n".join(lines)
+
+
 def generate_table(results):
-    """Generate markdown table from results with severity emojis and headline counts."""
+    """Generate markdown table from results with severity emojis, headline counts,
+    Δ-since-yesterday block, and NEW badges (Tier 1: T1.1 / T1.2 / T1.3 / T1.4)."""
     n_crit = sum(1 for r in results if 'CRITICAL' in r.get('regime', ''))
     n_elev = sum(1 for r in results if 'ELEVATED' in r.get('regime', ''))
     n_norm = sum(1 for r in results if 'Normal' in r.get('regime', ''))
@@ -641,8 +696,17 @@ def generate_table(results):
         headline_parts.append(f"⚪ {n_na} N/A")
     headline = " · ".join(headline_parts)
 
+    today = datetime.now().strftime('%Y-%m-%d')
+    diff_block = _generate_diff_block(results)
+
     lines = [
         headline,
+        "",
+        f"### Δ since yesterday",
+        "",
+        diff_block,
+        "",
+        "### Live signal table",
         "",
         "| Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |",
         "|--------|----------|--------|------|-------------|--------|--------|-------|---------|",
@@ -650,7 +714,8 @@ def generate_table(results):
 
     for r in results:
         emoji = _severity_emoji(r.get('regime', ''))
-        market_with_emoji = f"{emoji} {r['market']}"
+        new_badge = "🆕 " if r.get('changed_today') else ""
+        market_with_emoji = f"{emoji} {new_badge}{r['market']}"
         lines.append(
             f"| {market_with_emoji} | {r.get('lambda_val', '--')} | {r.get('lambda_pct', '--')} | "
             f"{r.get('lambda_days', '--')} | {r.get('corr_val', '--')} | {r.get('corr_pct', '--')} | "
