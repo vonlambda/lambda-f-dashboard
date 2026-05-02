@@ -15,18 +15,18 @@ _No regime changes since yesterday._
 
 ### Live signal table
 
-| Market | Λ-F | Λ% | Elev | Corr | C% | R | Quadrant | Regime | Action | Since |
-|--------|-----|----|------|------|----|---|----------|--------|--------|-------|
-| 🔴 Commodities | 3.57 | 53% | 7d* | -0.06 | 0% | 34 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-05-02 |
-| 🔴 Gold | 3.94 | 80% | 13d* | 0.28 | 80% | 34 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-05-02 |
-| 🔴 Silver | 4.01 | 99% | 27d* | 0.21 | 77% | 34 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-04-22 |
-| 🟠 Crypto (BTC) | 3.96 | 80% | 11d | 0.80 | 71% | 70 | 🔴 Q4 | ELEVATED (L) | Reduce | 2026-05-02 |
-| 🔴 Ethereum | 4.04 | 76% | 8d* | 0.83 | 80% | 70 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-05-02 |
-| 🟢 US Equity (SPY) | 3.76 | 50% | -- | 0.23 | 6% | 34 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
-| 🔴 UK Equity (EWU) | 3.91 | 67% | 10d | 0.82 | 99% | 34 | 🟢 Q1 | **CRITICAL** (C) | Maintain | 2026-05-01 |
-| 🔴 Germany (EWG) | 3.97 | 81% | 3d* | 0.80 | 98% | 34 | 🟠 Q3 | **CRITICAL** (LC) | Prepare | 2026-05-02 |
-| 🔴 Bonds | 3.99 | 87% | 18d* | 0.81 | 71% | 34 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-05-02 |
-| 🔴 Emerging Markets | 3.78 | 62% | 8d* | 0.66 | 74% | 34 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-04-28 |
+| Market | Λ-F | Λ% | 30d Trend | Elev | Corr | C% | R | Quadrant | Regime | Action | Since |
+|--------|-----|----|-----------|------|------|----|---|----------|--------|--------|-------|
+| 🔴 Commodities | 3.57 | 53% | `▃▃▄▅▇█▆▅▃▂▁▁` | 7d* | -0.06 | 0% | 34 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-05-02 |
+| 🔴 Gold | 3.94 | 80% | `▆▇▇▇▆█▇▅▃▃▁▃` | 13d* | 0.28 | 80% | 34 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-05-02 |
+| 🔴 Silver | 4.01 | 99% | `▁▂▃▃▅█▆▄▃▃▃▃` | 27d* | 0.21 | 77% | 34 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-04-22 |
+| 🟠 Crypto (BTC) | 3.96 | 80% | `▂▂▁▂▁▂▃▅▄▇▆█` | 11d | 0.80 | 71% | 70 | 🔴 Q4 | ELEVATED (L) | Reduce | 2026-05-02 |
+| 🔴 Ethereum | 4.04 | 76% | `▂▂▁▃▁▃▅▆▆█▇▇` | 8d* | 0.83 | 80% | 70 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-05-02 |
+| 🟢 US Equity (SPY) | 3.76 | 50% | `▁▃▅▆▇▇▇█▇▇▆▆` | -- | 0.23 | 6% | 34 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
+| 🔴 UK Equity (EWU) | 3.91 | 67% | `▄▄▃▇▇▆█▅▁▅▅▅` | 10d | 0.82 | 99% | 34 | 🟢 Q1 | **CRITICAL** (C) | Maintain | 2026-05-01 |
+| 🔴 Germany (EWG) | 3.97 | 81% | `▁▂▅▇█▄▄▃▂▁▁▄` | 3d* | 0.80 | 98% | 34 | 🟠 Q3 | **CRITICAL** (LC) | Prepare | 2026-05-02 |
+| 🔴 Bonds | 3.99 | 87% | `▁▁▁▂▄▆▇▇█▆▅▅` | 18d* | 0.81 | 71% | 34 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-05-02 |
+| 🔴 Emerging Markets | 3.78 | 62% | `▁▁▃▅▇█▆▅▂▂▃▂` | 8d* | 0.66 | 74% | 34 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-04-28 |
 
 > **Quadrants** (patent §6.5): Q1 STABLE · Q2 FRAGILE · Q3 ROTATING · Q4 CRITICAL. Cuts at Λ-F percentile P75 and Reflexivity R≥60. *Asterisk* = reflexivity components partly unavailable.
 > **Actions** are diagnostic, not investment advice — see disclaimer at bottom of page.
