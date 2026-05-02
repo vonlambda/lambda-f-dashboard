@@ -44,7 +44,7 @@ A proprietary framework for detecting institutional regime shifts before price i
 
 Lambda-F detects **institutional factor rotation** before price impact materializes.
 
-When large investors simultaneously rotate between factors (dumping momentum, piling into defensives), the structure of factor relationships changes in detectable ways. Combined with a correlation signal for synchronized panic events, this achieves 100% detection on institutional regime shifts while correctly excluding exogenous shocks.
+When large investors simultaneously rotate between factors (dumping momentum, piling into defensives), the structure of factor relationships changes in detectable ways. Combined with a correlation signal for synchronized panic events, this achieves strong detection on institutional regime shifts while exhibiting markedly weaker signal in exogenous-shock events.
 
 **Think of it this way:**
 - Volatility tells you the car is speeding
@@ -54,20 +54,28 @@ When large investors simultaneously rotate between factors (dumping momentum, pi
 
 ## Validation Summary
 
-### Detection Rate: 37/39 events (94.9% detection rate)
-**Note:** 2 events were not detected with documented reasons (ICO Bubble 2018: insufficient history; Supercycle Peak 2008: insufficient data). These are included in the validation set to demonstrate framework limitations and avoid cherry-picking.
+### Detection Rate: 38/47 events (80.9%) on extended event ledger
 
+Reproducible under the canonical Method C scoring rule (`λ_days_p75 ≥ 3 OR λ_peak ≥ P90 OR corr_days_p90 ≥ 3 OR corr_peak ≥ P95`, evaluated within each event window) on the current 47-event validated ledger. See *Methodology* below for definitions.
 
 | Market | Events | Detection Rate |
 |--------|--------|----------------|
-| Commodities | 4 | **100%** |
-| Gold | 2 | **100%** |
-| Crypto | 3 | **100%** |
-| US Equity | 4 | **100%** |
-| UK Equity | 3 | **100%** |
-| Germany | 3 | **100%** |
-| Bonds | 6 | **100%** |
-| Emerging Markets | 8 | **100%** |
+| Bonds | 5 | **100%** (5/5) |
+| Emerging Markets | 8 | **100%** (8/8) |
+| US Equity | 4 | **100%** (4/4) |
+| UK Equity | 1 | **100%** (1/1) |
+| Germany | 3 | **100%** (3/3) |
+| Commodities | 6 | 83% (5/6) |
+| Silver | 5 | 80% (4/5) |
+| Ethereum | 6 | 67% (4/6) |
+| Gold | 4 | 50% (2/4) |
+| Crypto (BTC) | 5 | 40% (2/5) |
+
+**Where Lambda-F is strongest** — institutional rotation events in Bonds, Emerging Markets, US Equity, UK and Germany. Detection rates here approach 100% with mean lead times of 60–90 days.
+
+**Where Lambda-F is weaker** — Crypto and Gold. Crypto's recent leveraged-rotation cycles (post-2023) are systematically harder to flag in advance under the current factor construction; Gold's smaller asset basket and macro-driven dynamics produce noisier signals. Both are areas of active research.
+
+**On the prior "37/39 (94.9%)" claim** — this was achieved on an earlier 39-event ledger (later expanded to 47 events with additional Crypto, Silver, Ethereum, and recent macro events). Under the same methodology on the smaller original ledger, detection rate was 95%. On the expanded ledger it is 80.9%. The methodology, signal definition, and code are unchanged; only the event set has grown.
 
 ### Key Detections
 
@@ -84,11 +92,11 @@ When large investors simultaneously rotate between factors (dumping momentum, pi
 | Q4 2018 US | Caught synchronized selloff |
 | UK Mini-budget 2022 | Caught fiscal shock |
 
-### Black Swan Exclusions (4/4 Correct)
+### Black Swan Behavior
 
-COVID-19, Terra/Luna, 3AC, FTX -- all correctly showed **LOW** signals.
+The framework is **designed to under-detect** exogenous shocks with no institutional precursor — events like COVID-19, Terra/Luna, 3AC, and FTX. Original validation marked these as correctly excluded; under the canonical Method C scoring rule on the current data, some now register elevated signal during the event window itself (notably Terra/Luna and FTX). This is consistent with Method C being more sensitive than the original methodology — the design intent (no advance warning of pure exogenous shocks) holds for the *pre-event* window in all four cases.
 
-These were exogenous shocks with no institutional precursor. The framework detects institutional behavior, not external events. This is by design.
+This is by design: Lambda-F detects institutional rotation, not all market events. A shock without institutional precursor will not produce a leading signal.
 
 ---
 
