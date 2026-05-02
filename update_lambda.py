@@ -1107,6 +1107,17 @@ if __name__ == "__main__":
     
     # Generate and upload live chart
     generate_and_upload_live_chart()
+
+    # Tier 2: render and upload Λ × R quadrant matrix
+    try:
+        from quadrant_matrix import generate_quadrant_matrix, push_quadrant_matrix_to_github
+        print("\n" + "-" * 60)
+        print("Generating Quadrant Matrix")
+        print("-" * 60)
+        if generate_quadrant_matrix(results):
+            push_quadrant_matrix_to_github()
+    except Exception as e:
+        print(f"Quadrant matrix step failed: {e}")
     
     # === AUDIT TRAIL ===
     print("\n" + "-" * 60)

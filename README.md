@@ -34,6 +34,16 @@ _No regime changes since yesterday._
 
 #
 
+### Λ × R Quadrant Map
+
+![Quadrant Matrix](assets/quadrant_matrix.png)
+
+*Live position of every tracked market on the patent's 2x2 quadrant grid.
+Q4 (top-right) is the only quadrant where the patent's framework expects
+elevated crash risk: high geometric instability AND high behavioral cascade
+conditions. Q3 (top-left) is structural rotation without crash conditions —
+flagged as ELEVATED but distinct from Q4.*
+
 ### Critical Market Alerts
 
 ![Critical Market Alerts](assets/live_signals.png?v=20260107090555202601070855)
