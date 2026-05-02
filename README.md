@@ -7,6 +7,12 @@ A proprietary framework for detecting institutional regime shifts before price i
 <!-- LAMBDA_START -->
 🔴 **8 CRITICAL** · 🟠 **1 ELEVATED** · 🟢 **1 NORMAL**
 
+### Δ since yesterday
+
+_No regime changes since yesterday._
+
+### Live signal table
+
 | Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |
 |--------|----------|--------|------|-------------|--------|--------|-------|---------|
 | 🔴 Commodities | 3.57 | 53% | 7d* | -0.06 | 0% | **CRITICAL** (L) | 2026-05-02 | 2026-05-02 |
