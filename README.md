@@ -260,3 +260,17 @@ df = pd.read_csv('https://raw.githubusercontent.com/vonlambda/lambda-f-dashboard
 R.J. Mathews | [mail.rjmathews@gmail.com](mailto:mail.rjmathews@gmail.com)
 
 (c) 2026 -- All rights reserved. Patent pending.
+
+---
+
+## Disclaimer
+
+Lambda-F is a research and diagnostic tool, not investment advice. The
+quadrant classifications, regime labels, and per-quadrant action words shown
+here ("Maintain", "Monitor", "Prepare", "Reduce") reflect the operator's
+interpretation of underlying signals; they do not constitute a fiduciary
+recommendation, solicitation, or guarantee of any market outcome. Do not act
+on these signals without independent analysis and consultation with a
+licensed advisor. Past detection rates are no guarantee of future
+performance. The framework is provided "as-is" without warranty of any kind.
+Use at your own risk.

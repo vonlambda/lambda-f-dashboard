@@ -33,6 +33,19 @@ warnings.filterwarnings('ignore')
 # Canonical Lambda-F implementation (Method C — winner of 2026-05-02 bakeoff)
 from lambda_factors import compute_lambda_method_c
 
+# Game-theoretic enhancement layer (patent Claims 2, 3, 10, 21, 22)
+from reflexivity_calculator import get_reflexivity, get_quadrant
+
+# Per-quadrant recommended actions (patent §6.6.2)
+QUADRANT_ACTION = {
+    'Q1':  'Maintain',
+    'Q2':  'Monitor',
+    'Q3':  'Prepare',
+    'Q4':  'Reduce',
+    'Q1*': 'Maintain',  # asterisk = reflexivity unavailable; behaves as Q1
+    'Q3*': 'Prepare',   # asterisk = reflexivity unavailable; behaves as Q3
+}
+
 # Paths
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REGIME_HISTORY_FILE = os.path.join(SCRIPT_DIR, 'regime_history.json')
@@ -562,6 +575,9 @@ def compute_all_markets():
                 'corr_val': '--',
                 'corr_pct': '--',
                 'regime': '--',
+                'reflexivity': None,
+                'quadrant': '--',
+                'action': '--',
                 'since': '--',
                 'date': today
             })
@@ -582,6 +598,12 @@ def compute_all_markets():
             since_date = update_regime_history(market_name, regime_display, history)
             since_display = format_since_date(since_date)
             changed_today = (prior_regime is not None and prior_regime != regime_display)
+
+            # Tier 2: reflexivity score + 4-quadrant classification
+            # (patent Claims 2, 3, 10, 21, 22)
+            reflexivity = get_reflexivity(market_name)
+            quadrant = get_quadrant(lambda_pct, reflexivity)
+            action = QUADRANT_ACTION.get(quadrant, '--')
             
             # Format values - show the relevant threshold count
             # If CRITICAL (P90 triggered), show P90 days; else show P75 days
@@ -610,6 +632,9 @@ def compute_all_markets():
                 'regime': regime_display,
                 'prior_regime': prior_regime,
                 'changed_today': changed_today,
+                'reflexivity': reflexivity,    # Tier 2: R_t score, 0-100 or None
+                'quadrant': quadrant,           # Tier 2: Q1/Q2/Q3/Q4 (or Q1*/Q3*)
+                'action': action,               # Tier 2: per-quadrant action word
                 'since': since_display,
                 'date': today
             })
@@ -627,6 +652,19 @@ def _severity_emoji(regime):
     if 'ELEVATED' in regime:
         return '🟠'
     if 'Normal' in regime:
+        return '🟢'
+    return '⚪'
+
+
+def _quadrant_emoji(quadrant):
+    """Map a quadrant string to its severity-aligned emoji."""
+    if quadrant == 'Q4':
+        return '🔴'
+    if quadrant in ('Q3', 'Q3*'):
+        return '🟠'
+    if quadrant == 'Q2':
+        return '🟡'
+    if quadrant in ('Q1', 'Q1*'):
         return '🟢'
     return '⚪'
 
@@ -680,47 +718,83 @@ def _generate_diff_block(results):
 
 
 def generate_table(results):
-    """Generate markdown table from results with severity emojis, headline counts,
-    Δ-since-yesterday block, and NEW badges (Tier 1: T1.1 / T1.2 / T1.3 / T1.4)."""
+    """Generate markdown table from results with severity emojis, regime counts,
+    quadrant counts, Δ-since-yesterday, NEW badges, and per-quadrant action.
+
+    Tier 1: T1.1 / T1.2 / T1.3 / T1.4 — headline state, emoji prefix, diff block, NEW badge
+    Tier 2: T2.5 / T2.6 — quadrant counts in headline, R + Quadrant + Action columns
+    """
+    # Regime counts (Tier 1)
     n_crit = sum(1 for r in results if 'CRITICAL' in r.get('regime', ''))
     n_elev = sum(1 for r in results if 'ELEVATED' in r.get('regime', ''))
     n_norm = sum(1 for r in results if 'Normal' in r.get('regime', ''))
     n_na   = len(results) - n_crit - n_elev - n_norm
 
-    headline_parts = [
+    regime_parts = [
         f"🔴 **{n_crit} CRITICAL**",
         f"🟠 **{n_elev} ELEVATED**",
         f"🟢 **{n_norm} NORMAL**",
     ]
     if n_na:
-        headline_parts.append(f"⚪ {n_na} N/A")
-    headline = " · ".join(headline_parts)
+        regime_parts.append(f"⚪ {n_na} N/A")
+    regime_headline = " · ".join(regime_parts)
 
-    today = datetime.now().strftime('%Y-%m-%d')
+    # Quadrant counts (Tier 2)
+    n_q4 = sum(1 for r in results if r.get('quadrant') == 'Q4')
+    n_q3 = sum(1 for r in results if r.get('quadrant') in ('Q3', 'Q3*'))
+    n_q2 = sum(1 for r in results if r.get('quadrant') == 'Q2')
+    n_q1 = sum(1 for r in results if r.get('quadrant') in ('Q1', 'Q1*'))
+
+    quad_parts = [
+        f"🔴 **{n_q4} Q4** *(Crash Risk)*",
+        f"🟠 **{n_q3} Q3** *(Rotating)*",
+        f"🟡 **{n_q2} Q2** *(Fragile)*",
+        f"🟢 **{n_q1} Q1** *(Stable)*",
+    ]
+    quad_headline = " · ".join(quad_parts)
+
     diff_block = _generate_diff_block(results)
 
     lines = [
-        headline,
+        regime_headline,
         "",
-        f"### Δ since yesterday",
+        quad_headline,
+        "",
+        "### Δ since yesterday",
         "",
         diff_block,
         "",
         "### Live signal table",
         "",
-        "| Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |",
-        "|--------|----------|--------|------|-------------|--------|--------|-------|---------|",
+        "| Market | Λ-F | Λ% | Elev | Corr | C% | R | Quadrant | Regime | Action | Since |",
+        "|--------|-----|----|------|------|----|---|----------|--------|--------|-------|",
     ]
 
     for r in results:
         emoji = _severity_emoji(r.get('regime', ''))
         new_badge = "🆕 " if r.get('changed_today') else ""
         market_with_emoji = f"{emoji} {new_badge}{r['market']}"
+
+        # R: format reflexivity (or "--" if unavailable)
+        reflex = r.get('reflexivity')
+        r_str = f"{reflex:.0f}" if reflex is not None else "--"
+
+        # Quadrant: emoji + label
+        q = r.get('quadrant', '--')
+        q_emoji = _quadrant_emoji(q)
+        q_str = f"{q_emoji} {q}" if q != '--' else '--'
+
         lines.append(
             f"| {market_with_emoji} | {r.get('lambda_val', '--')} | {r.get('lambda_pct', '--')} | "
             f"{r.get('lambda_days', '--')} | {r.get('corr_val', '--')} | {r.get('corr_pct', '--')} | "
-            f"{r['regime']} | {r.get('since', '--')} | {r['date']} |"
+            f"{r_str} | {q_str} | {r['regime']} | {r.get('action', '--')} | {r.get('since', '--')} |"
         )
+
+    # Quadrant + action legend below the table
+    lines.append("")
+    lines.append("> **Quadrants** (patent §6.5): Q1 STABLE · Q2 FRAGILE · Q3 ROTATING · Q4 CRITICAL. "
+                 "Cuts at Λ-F percentile P75 and Reflexivity R≥60. *Asterisk* = reflexivity components partly unavailable.")
+    lines.append("> **Actions** are diagnostic, not investment advice — see disclaimer at bottom of page.")
 
     return "\n".join(lines)
 

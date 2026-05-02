@@ -133,37 +133,115 @@ def score_funding_rate(annual_rate: Optional[float]) -> int:
     return 0  # Negative funding (shorts paying longs)
 
 
+def fetch_vix_percentile() -> Optional[int]:
+    """
+    VIX percentile vs trailing 252-day history. 0-100 scale.
+
+    High VIX = elevated equity-market uncertainty premium = behavioral
+    cascade conditions present. Used as macro-stress component for
+    non-crypto markets where funding-rate data doesn't apply.
+    """
+    cached = _get_cached('vix_pct')
+    if cached is not None:
+        return cached
+
+    try:
+        import yfinance as yf
+        vix = yf.download('^VIX', period='2y', interval='1d',
+                          progress=False, auto_adjust=False)['Close']
+        # yfinance may return a DataFrame for single-ticker downloads in
+        # newer versions — flatten to Series.
+        if hasattr(vix, 'columns'):
+            vix = vix.iloc[:, 0]
+        vix = vix.dropna()
+        if len(vix) < 200:
+            return None
+        current = float(vix.iloc[-1])
+        history = vix.iloc[-252:-1] if len(vix) > 252 else vix.iloc[:-1]
+        pct = int((history < current).mean() * 100)
+        _set_cache('vix_pct', pct)
+        return pct
+    except Exception as e:
+        print(f"  Warning: Failed to fetch VIX: {e}")
+        return None
+
+
+def fetch_dxy_momentum_percentile() -> Optional[int]:
+    """
+    Dollar-index 21-day momentum percentile vs trailing 252-day history.
+
+    Strong dollar momentum = global flight-to-safety / risk-off behavior =
+    elevated reflexivity. Uses UUP as DXY proxy (free via yfinance).
+    """
+    cached = _get_cached('dxy_momentum')
+    if cached is not None:
+        return cached
+
+    try:
+        import yfinance as yf
+        dxy = yf.download('UUP', period='2y', interval='1d',
+                          progress=False, auto_adjust=False)['Close']
+        if hasattr(dxy, 'columns'):
+            dxy = dxy.iloc[:, 0]
+        dxy = dxy.dropna()
+        if len(dxy) < 250:
+            return None
+        mom = dxy.pct_change(21).dropna()
+        if len(mom) < 200:
+            return None
+        current = float(mom.iloc[-1])
+        history = mom.iloc[-252:-1] if len(mom) > 252 else mom.iloc[:-1]
+        pct = int((history < current).mean() * 100)
+        _set_cache('dxy_momentum', pct)
+        return pct
+    except Exception as e:
+        print(f"  Warning: Failed to fetch DXY: {e}")
+        return None
+
+
+def get_macro_stress_score() -> Optional[float]:
+    """
+    Composite macro reflexivity for non-crypto markets:
+    average of VIX percentile and DXY momentum percentile.
+
+    Per patent Claim 21 (configurable component family), this is an
+    additional reflexivity embodiment beyond funding+sentiment. Both
+    components serve as proxies for "behavioral cascade conditions" in
+    non-crypto markets where perpetual-futures funding rate doesn't apply.
+    """
+    vix = fetch_vix_percentile()
+    dxy = fetch_dxy_momentum_percentile()
+    components = [c for c in [vix, dxy] if c is not None]
+    if not components:
+        return None
+    return sum(components) / len(components)
+
+
 def get_reflexivity(market: str) -> Optional[float]:
     """
     Calculate composite reflexivity score for a market.
 
-    For crypto markets: Average of funding rate score and Fear & Greed
-    For non-crypto: Returns None (reflexivity data not available)
+    Crypto markets (BTC, Ethereum): funding rate + Fear & Greed Index
+    Non-crypto markets: VIX percentile + DXY momentum percentile
 
-    Returns: Reflexivity score 0-100, or None if unavailable
+    Returns: Reflexivity score 0-100, or None if all components fail
     """
-    # Only crypto markets have reliable reflexivity data
     crypto_markets = ['Crypto (BTC)', 'Ethereum']
 
-    if market not in crypto_markets:
-        # For non-crypto, we don't have reliable reflexivity data
-        # Return None to indicate Q4 classification not possible
-        return None
+    if market in crypto_markets:
+        # Patent Claim 10: R_t = (S_funding + S_sentiment) / 2
+        fear_greed = fetch_fear_greed()
+        funding_rate = fetch_btc_funding_rate()
+        funding_score = score_funding_rate(funding_rate)
 
-    # Fetch components
-    fear_greed = fetch_fear_greed()
-    funding_rate = fetch_btc_funding_rate()
-    funding_score = score_funding_rate(funding_rate)
-
-    # Compute composite
-    if fear_greed is not None:
-        # Average of sentiment and leverage
-        reflexivity = (fear_greed + funding_score) / 2
+        if fear_greed is not None:
+            return (fear_greed + funding_score) / 2
+        else:
+            return funding_score
     else:
-        # Use funding alone if sentiment unavailable
-        reflexivity = funding_score
-
-    return reflexivity
+        # Patent Claim 21: configurable component family — macro stress
+        # variant for markets without funding-rate data
+        return get_macro_stress_score()
 
 
 def get_quadrant(lambda_pct: float, reflexivity: Optional[float]) -> str:
