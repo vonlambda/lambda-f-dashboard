@@ -5,18 +5,20 @@ A proprietary framework for detecting institutional regime shifts before price i
 ## Live Signal (Updated Daily)
 
 <!-- LAMBDA_START -->
+🔴 **8 CRITICAL** · 🟠 **1 ELEVATED** · 🟢 **1 NORMAL**
+
 | Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |
 |--------|----------|--------|------|-------------|--------|--------|-------|---------|
-| Commodities | 3.57 | 53% | 7d* | -0.06 | 0% | **CRITICAL** (L) | 2026-05-02 | 2026-05-02 |
-| Gold | 3.94 | 80% | 13d* | 0.28 | 80% | **CRITICAL** (L) | 2026-05-02 | 2026-05-02 |
-| Silver | 4.01 | 99% | 27d* | 0.21 | 77% | **CRITICAL** (L) | 2026-04-22 | 2026-05-02 |
-| Crypto (BTC) | 3.96 | 80% | 11d | 0.80 | 71% | ELEVATED (L) | 2026-05-02 | 2026-05-02 |
-| Ethereum | 4.04 | 76% | 8d* | 0.83 | 80% | **CRITICAL** (L) | 2026-05-02 | 2026-05-02 |
-| US Equity (SPY) | 3.76 | 50% | -- | 0.23 | 6% | Normal | 2026-05-02 | 2026-05-02 |
-| UK Equity (EWU) | 3.91 | 67% | 10d | 0.82 | 99% | **CRITICAL** (C) | 2026-05-01 | 2026-05-02 |
-| Germany (EWG) | 3.97 | 81% | 3d* | 0.80 | 98% | **CRITICAL** (LC) | 2026-05-02 | 2026-05-02 |
-| Bonds | 3.99 | 87% | 18d* | 0.81 | 71% | **CRITICAL** (L) | 2026-05-02 | 2026-05-02 |
-| Emerging Markets | 3.78 | 62% | 8d* | 0.66 | 74% | **CRITICAL** (L) | 2026-04-28 | 2026-05-02 |
+| 🔴 Commodities | 3.57 | 53% | 7d* | -0.06 | 0% | **CRITICAL** (L) | 2026-05-02 | 2026-05-02 |
+| 🔴 Gold | 3.94 | 80% | 13d* | 0.28 | 80% | **CRITICAL** (L) | 2026-05-02 | 2026-05-02 |
+| 🔴 Silver | 4.01 | 99% | 27d* | 0.21 | 77% | **CRITICAL** (L) | 2026-04-22 | 2026-05-02 |
+| 🟠 Crypto (BTC) | 3.96 | 80% | 11d | 0.80 | 71% | ELEVATED (L) | 2026-05-02 | 2026-05-02 |
+| 🔴 Ethereum | 4.04 | 76% | 8d* | 0.83 | 80% | **CRITICAL** (L) | 2026-05-02 | 2026-05-02 |
+| 🟢 US Equity (SPY) | 3.76 | 50% | -- | 0.23 | 6% | Normal | 2026-05-02 | 2026-05-02 |
+| 🔴 UK Equity (EWU) | 3.91 | 67% | 10d | 0.82 | 99% | **CRITICAL** (C) | 2026-05-01 | 2026-05-02 |
+| 🔴 Germany (EWG) | 3.97 | 81% | 3d* | 0.80 | 98% | **CRITICAL** (LC) | 2026-05-02 | 2026-05-02 |
+| 🔴 Bonds | 3.99 | 87% | 18d* | 0.81 | 71% | **CRITICAL** (L) | 2026-05-02 | 2026-05-02 |
+| 🔴 Emerging Markets | 3.78 | 62% | 8d* | 0.66 | 74% | **CRITICAL** (L) | 2026-04-28 | 2026-05-02 |
 <!-- LAMBDA_END -->
 
 #
