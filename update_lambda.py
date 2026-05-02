@@ -614,20 +614,49 @@ def compute_all_markets():
     return results
 
 
+def _severity_emoji(regime):
+    """Map a regime string to a severity emoji for at-a-glance reading."""
+    if 'CRITICAL' in regime:
+        return '🔴'
+    if 'ELEVATED' in regime:
+        return '🟠'
+    if 'Normal' in regime:
+        return '🟢'
+    return '⚪'
+
+
 def generate_table(results):
-    """Generate markdown table from results with two-signal system"""
-    lines = [
-        "| Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |",
-        "|--------|----------|--------|------|-------------|--------|--------|-------|---------|"
+    """Generate markdown table from results with severity emojis and headline counts."""
+    n_crit = sum(1 for r in results if 'CRITICAL' in r.get('regime', ''))
+    n_elev = sum(1 for r in results if 'ELEVATED' in r.get('regime', ''))
+    n_norm = sum(1 for r in results if 'Normal' in r.get('regime', ''))
+    n_na   = len(results) - n_crit - n_elev - n_norm
+
+    headline_parts = [
+        f"🔴 **{n_crit} CRITICAL**",
+        f"🟠 **{n_elev} ELEVATED**",
+        f"🟢 **{n_norm} NORMAL**",
     ]
-    
+    if n_na:
+        headline_parts.append(f"⚪ {n_na} N/A")
+    headline = " · ".join(headline_parts)
+
+    lines = [
+        headline,
+        "",
+        "| Market | Lambda-F | L Pctl | Elev | Correlation | C Pctl | Regime | Since | Updated |",
+        "|--------|----------|--------|------|-------------|--------|--------|-------|---------|",
+    ]
+
     for r in results:
+        emoji = _severity_emoji(r.get('regime', ''))
+        market_with_emoji = f"{emoji} {r['market']}"
         lines.append(
-            f"| {r['market']} | {r.get('lambda_val', '--')} | {r.get('lambda_pct', '--')} | "
+            f"| {market_with_emoji} | {r.get('lambda_val', '--')} | {r.get('lambda_pct', '--')} | "
             f"{r.get('lambda_days', '--')} | {r.get('corr_val', '--')} | {r.get('corr_pct', '--')} | "
             f"{r['regime']} | {r.get('since', '--')} | {r['date']} |"
         )
-    
+
     return "\n".join(lines)
 
 
@@ -711,29 +740,30 @@ def append_to_signal_log(results):
         if market in col_map:
             row_data[col_map[market]] = val
     
-    # Build markdown row
+    # Build markdown row (ASCII-only — em-dashes/special chars cause encoding
+    # corruption when this file is read on Windows without explicit utf-8)
     row = f"| {today} | {row_data.get('commodities', '--')} | {row_data.get('gold', '--')} | " \
           f"{row_data.get('silver', '--')} | {row_data.get('crypto', '--')} | " \
           f"{row_data.get('ethereum', '--')} | {row_data.get('us_eq', '--')} | " \
           f"{row_data.get('uk_eq', '--')} | {row_data.get('germany', '--')} | " \
-          f"{row_data.get('bonds', '--')} | {row_data.get('em', '--')} | — |"
-    
-    # Read existing log
+          f"{row_data.get('bonds', '--')} | {row_data.get('em', '--')} | -- |"
+
+    # Read existing log (utf-8 explicit — fixes mojibake bug)
     if os.path.exists(SIGNAL_LOG_FILE):
-        with open(SIGNAL_LOG_FILE, 'r') as f:
+        with open(SIGNAL_LOG_FILE, 'r', encoding='utf-8', errors='replace') as f:
             content = f.read()
-        
+
         # Check if today's entry already exists
         if f"| {today} |" in content:
             print(f"SIGNAL_LOG.md: {today} entry already exists, skipping")
             return
-        
+
         # Find last table row and append after it
         lines = content.rstrip().split('\n')
         lines.append(row)
         content = '\n'.join(lines) + '\n'
     else:
-        # Create new log
+        # Create new log (ASCII-safe — no em-dashes or >= unicode)
         content = f"""# Lambda-F Signal History
 
 *Append-only log. Each row is a cryptographically timestamped Git commit.*
@@ -745,15 +775,15 @@ def append_to_signal_log(results):
 ---
 
 **Legend:**
-- **C** = CRITICAL (≥3 days above P90 in trailing 30d)
-- **E** = ELEVATED (≥3 days above P75 in trailing 30d)
+- **C** = CRITICAL (>=3 days above P90 in trailing 30d)
+- **E** = ELEVATED (>=3 days above P75 in trailing 30d)
 - Percentages are ex-ante Lambda-F percentiles
 - Events column filled retroactively when market moves occur
 """
-    
-    with open(SIGNAL_LOG_FILE, 'w') as f:
+
+    with open(SIGNAL_LOG_FILE, 'w', encoding='utf-8') as f:
         f.write(content)
-    
+
     print(f"SIGNAL_LOG.md: Appended {today} entry")
 
 
@@ -826,9 +856,9 @@ def push_signal_log_to_github():
         g = Github(GITHUB_TOKEN)
         repo = g.get_repo(GITHUB_REPO)
         
-        with open(SIGNAL_LOG_FILE, 'r') as f:
+        with open(SIGNAL_LOG_FILE, 'r', encoding='utf-8', errors='replace') as f:
             content = f.read()
-        
+
         try:
             existing = repo.get_contents('SIGNAL_LOG.md')
             repo.update_file(
