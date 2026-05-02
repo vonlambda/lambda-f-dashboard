@@ -1,0 +1,75 @@
+# =============================================================================
+# Lambda-F Engine — .gitignore
+#
+# IP PROTECTION NOTICE
+# --------------------
+# The Lambda-F patent (E5 embodiment) is provisionally filed but NOT yet
+# published. Planning docs, patent text, and the patent-claim-to-code map are
+# TRADE SECRETS until publication (~mid-2027 per US provisional → non-provisional
+# timeline). Public disclosure before filing completion can:
+#   - Forfeit foreign filing rights in some jurisdictions
+#   - Provide competitive roadmap intelligence
+#   - Create prior-art interference for related patents
+#
+# Do NOT remove `docs/` or `*_patent*` from this file without explicit
+# IP-counsel review. Defense-in-depth: even if removed, `update_lambda.py`'s
+# PyGithub push does not push the working tree — but a future manual
+# `git push` would expose everything tracked by git.
+# =============================================================================
+
+# ---------- Secrets ----------
+.env
+.env.*
+*.token
+*.key
+secrets/
+
+# ---------- Internal planning + IP-sensitive docs ----------
+docs/
+*_INTERNAL*.md
+*_PRIVATE*.md
+INTERNAL_*
+
+# ---------- Patent files (defense-in-depth) ----------
+# The .tex/.pdf live in the parent directory, but any copy here is sensitive.
+*.tex
+*_patent*.pdf
+*_patent*.docx
+
+# ---------- Python ----------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+
+# ---------- Logs (rotate locally; don't push history) ----------
+logs/
+*.log
+
+# ---------- Local data caches ----------
+data_cache/
+.cache/
+*.cache
+
+# ---------- IDE / editor ----------
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---------- OS junk ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Generated assets that re-render daily ----------
+# (PNGs in assets/ are kept since they're the public dashboard chart;
+#  but local scratch images are ignored)
+*_scratch.png
+scratch_*.png
