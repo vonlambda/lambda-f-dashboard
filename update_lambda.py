@@ -578,6 +578,7 @@ def compute_all_markets():
                 'reflexivity': None,
                 'quadrant': '--',
                 'action': '--',
+                'trend': '─' * 12,
                 'since': '--',
                 'date': today
             })
@@ -604,6 +605,9 @@ def compute_all_markets():
             reflexivity = get_reflexivity(market_name)
             quadrant = get_quadrant(lambda_pct, reflexivity)
             action = QUADRANT_ACTION.get(quadrant, '--')
+
+            # Tier 1 T1.7: 30-day Λ-F trajectory sparkline
+            trend_spark = _make_sparkline(lambda_series, n_chars=12)
             
             # Format values - show the relevant threshold count
             # If CRITICAL (P90 triggered), show P90 days; else show P75 days
@@ -635,6 +639,7 @@ def compute_all_markets():
                 'reflexivity': reflexivity,    # Tier 2: R_t score, 0-100 or None
                 'quadrant': quadrant,           # Tier 2: Q1/Q2/Q3/Q4 (or Q1*/Q3*)
                 'action': action,               # Tier 2: per-quadrant action word
+                'trend': trend_spark,           # Tier 1 T1.7: 30d sparkline
                 'since': since_display,
                 'date': today
             })
@@ -654,6 +659,41 @@ def _severity_emoji(regime):
     if 'Normal' in regime:
         return '🟢'
     return '⚪'
+
+
+_SPARK_CHARS = '▁▂▃▄▅▆▇█'
+
+
+def _make_sparkline(series, n_chars=12):
+    """Render a unicode sparkline from a numeric series (last 30 values).
+
+    Returns a string of n_chars block characters showing the trajectory.
+    Used in the dashboard table to give an at-a-glance sense of where the
+    Λ-F signal is heading per market.
+    """
+    if series is None or len(series) < 5:
+        return '─' * n_chars
+    recent = series.iloc[-30:].dropna()
+    n = len(recent)
+    if n == 0:
+        return '─' * n_chars
+
+    # Bin into n_chars buckets by mean
+    bin_size = max(1, n // n_chars)
+    bins = []
+    for i in range(n_chars):
+        start = i * bin_size
+        end = start + bin_size if i < n_chars - 1 else n
+        slice_ = recent.iloc[start:end]
+        bins.append(slice_.mean() if len(slice_) > 0 else recent.iloc[-1])
+
+    lo, hi = min(bins), max(bins)
+    rng = hi - lo if hi > lo else 1.0
+    return ''.join(
+        _SPARK_CHARS[max(0, min(len(_SPARK_CHARS) - 1,
+                                  int((v - lo) / rng * (len(_SPARK_CHARS) - 1))))]
+        for v in bins
+    )
 
 
 def _quadrant_emoji(quadrant):
@@ -766,8 +806,8 @@ def generate_table(results):
         "",
         "### Live signal table",
         "",
-        "| Market | Λ-F | Λ% | Elev | Corr | C% | R | Quadrant | Regime | Action | Since |",
-        "|--------|-----|----|------|------|----|---|----------|--------|--------|-------|",
+        "| Market | Λ-F | Λ% | 30d Trend | Elev | Corr | C% | R | Quadrant | Regime | Action | Since |",
+        "|--------|-----|----|-----------|------|------|----|---|----------|--------|--------|-------|",
     ]
 
     for r in results:
@@ -784,9 +824,13 @@ def generate_table(results):
         q_emoji = _quadrant_emoji(q)
         q_str = f"{q_emoji} {q}" if q != '--' else '--'
 
+        # Trend sparkline (12-char unicode block) — wrap in backticks for fixed-width
+        trend = r.get('trend', '─' * 12)
+        trend_str = f"`{trend}`"
+
         lines.append(
             f"| {market_with_emoji} | {r.get('lambda_val', '--')} | {r.get('lambda_pct', '--')} | "
-            f"{r.get('lambda_days', '--')} | {r.get('corr_val', '--')} | {r.get('corr_pct', '--')} | "
+            f"{trend_str} | {r.get('lambda_days', '--')} | {r.get('corr_val', '--')} | {r.get('corr_pct', '--')} | "
             f"{r_str} | {q_str} | {r['regime']} | {r.get('action', '--')} | {r.get('since', '--')} |"
         )
 
