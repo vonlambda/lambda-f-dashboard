@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-05-03T02:28:21+00:00",
+  "generated_at": "2026-05-03T11:00:33+00:00",
   "count": 2,
   "history": [
     {
@@ -30,13 +30,13 @@
           "regime": "CRITICAL"
         },
         "Crypto (BTC)": {
-          "lambda_pct": 80.0,
+          "lambda_pct": 97.0,
           "reflexivity": 73.5,
           "quadrant": "Q4",
           "regime": "ELEVATED"
         },
         "Ethereum": {
-          "lambda_pct": 78.0,
+          "lambda_pct": 85.0,
           "reflexivity": 73.5,
           "quadrant": "Q4",
           "regime": "CRITICAL"
