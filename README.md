@@ -279,20 +279,53 @@ Building a real-time API with alerts. Interested in early access?
 ---
 
 
-## API / Backtesting Data
+## API / Data Endpoints
 
-**CSV format (for pandas/R):**
+All data is updated daily and served as static files via GitHub Pages
+(low-latency CDN, no per-user rate limit) — and as a fallback from
+`raw.githubusercontent.com` (5K req/hour soft cap per IP).
+
+**Today's full state (JSON):**
 
 ```bash
-curl https://raw.githubusercontent.com/vonlambda/lambda-f-dashboard/main/signal_log.csv
+curl https://vonlambda.github.io/lambda-f-dashboard/signals/latest.json
+```
+
+```python
+import requests
+state = requests.get('https://vonlambda.github.io/lambda-f-dashboard/signals/latest.json').json()
+print(state['headline']['systemic_score'])      # {'score': 14, 'max': 30, 'label': 'WATCH', ...}
+for m in state['markets']:
+    print(m['market'], m['quadrant'], m['action'])
+```
+
+**Last 365 days of compact history (JSON):**
+
+```bash
+curl https://vonlambda.github.io/lambda-f-dashboard/signals/history.json
+```
+
+**Outcome ledger (CSV — every CRITICAL/Q4 call with t+30/t+60/t+90 max drawdowns):**
+
+```bash
+curl https://vonlambda.github.io/lambda-f-dashboard/outcomes.csv
+```
+
+**Append-only signal log (CSV / Markdown):**
+
+```bash
+curl https://vonlambda.github.io/lambda-f-dashboard/signal_log.csv
 ```
 
 ```python
 import pandas as pd
-df = pd.read_csv('https://raw.githubusercontent.com/vonlambda/lambda-f-dashboard/main/signal_log.csv')
+df = pd.read_csv('https://vonlambda.github.io/lambda-f-dashboard/signal_log.csv')
 ```
 
-**Markdown format (human-readable):** [SIGNAL_LOG.md](SIGNAL_LOG.md)
+**Schema:** `signals/latest.json` includes per-market `lambda_value`, `lambda_pct`,
+`reflexivity`, `quadrant`, `regime`, `action`, `since`, plus headline aggregates
+(regime counts, quadrant counts, systemic score, live forward detection rate).
+Schema version exposed at `state['schema_version']`.
 
 *All data is append-only with Git commit timestamps for audit verification.*
 

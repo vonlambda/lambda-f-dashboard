@@ -37,6 +37,9 @@ from outcome_tracker import (
     render_recent_calls_table,
 )
 
+# Tier 3 Phase B: public JSON API endpoints (patent Claim 23)
+from signals_api import write_signals_files, push_signals_to_github
+
 # Per-quadrant recommended actions (patent §6.6.2)
 QUADRANT_ACTION = {
     'Q1':  'Maintain',
@@ -1240,6 +1243,17 @@ if __name__ == "__main__":
         push_outcomes_to_github()
     except Exception as e:
         print(f"  Outcome tracking failed: {e}")
+
+    # Tier 3 Phase B: public JSON API — write signals/latest.json + history.json
+    print("\n" + "-" * 60)
+    print("Public JSON API (Tier 3 Phase B)")
+    print("-" * 60)
+    try:
+        latest_path, history_path = write_signals_files(results)
+        print(f"  wrote {os.path.basename(latest_path)} and {os.path.basename(history_path)}")
+        push_signals_to_github()
+    except Exception as e:
+        print(f"  signals_api step failed: {e}")
 
     # Update GitHub README table
     print("\nPushing table to GitHub...")

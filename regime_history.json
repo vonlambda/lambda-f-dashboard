@@ -1,0 +1,42 @@
+{
+  "Commodities": {
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-05-02"
+  },
+  "Gold": {
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-05-02"
+  },
+  "Crypto (BTC)": {
+    "regime": "ELEVATED (L)",
+    "since": "2026-05-02"
+  },
+  "US Equity (SPY)": {
+    "regime": "Normal",
+    "since": "2026-05-02"
+  },
+  "UK Equity (EWU)": {
+    "regime": "**CRITICAL** (C)",
+    "since": "2026-05-01"
+  },
+  "Germany (EWG)": {
+    "regime": "**CRITICAL** (LC)",
+    "since": "2026-05-02"
+  },
+  "Bonds": {
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-05-02"
+  },
+  "Emerging Markets": {
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-04-28"
+  },
+  "Silver": {
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-04-22"
+  },
+  "Ethereum": {
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-05-02"
+  }
+}

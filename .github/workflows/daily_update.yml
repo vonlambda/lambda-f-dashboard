@@ -1,0 +1,71 @@
+name: Daily Lambda-F Update
+
+# Runs the daily Lambda-F pipeline in GitHub-hosted runners so the dashboard
+# updates without depending on the local Windows scheduler. Cron at 12:00 UTC
+# (after US market close + processing time). Manual dispatch also supported.
+#
+# IMPORTANT: once this workflow is verified running cleanly, disable the local
+# `LambdaFDashboard` Windows Scheduled Task (Task Scheduler → Disable) to
+# avoid duplicate pushes.
+#
+# State files (regime_history.json, active_episodes.json, signal_log.csv) are
+# tracked in git so each run picks up where the previous run left off.
+
+on:
+  schedule:
+    - cron: '0 12 * * *'   # 12:00 UTC daily
+  workflow_dispatch:        # allow manual trigger from Actions tab
+
+permissions:
+  contents: write           # allow pushing back to this repo
+
+# Prevent overlapping runs (long fetch + push could conflict if cron + manual
+# both fire close together)
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history for rebase)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install matplotlib
+
+      - name: Run daily Lambda-F update
+        env:
+          # The auto-provided GITHUB_TOKEN has write permission to this repo
+          # (set above). PyGithub uses it via os.getenv('GITHUB_TOKEN').
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPO:  ${{ github.repository }}
+        run: |
+          python update_lambda.py
+
+      - name: Commit state file changes (regime/episode/log)
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name  "github-actions[bot]"
+          # PyGithub may have pushed README/charts/JSON during the run; rebase
+          # so our state-file commit goes on top.
+          git pull --rebase --autostash origin main || true
+          git add regime_history.json active_episodes.json signal_log.csv 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "no local state file changes to commit"
+          else
+            git commit -m "Update state files $(date -u +'%Y-%m-%d')"
+            git push origin main
+          fi
