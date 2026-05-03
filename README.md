@@ -176,7 +176,39 @@ hard-coded numbers, no selection bias. Full ledger at
 [`outcomes.csv`](outcomes.csv).
 
 <!-- RECENT_CALLS_START -->
-_No tracked calls yet — outcomes accumulate from the first CRITICAL/Q4 entry going forward._
+| Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
+|------|--------|--------|----------|---------|---------|---------|--------|
+| 2026-05-02 | Bonds | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-05-02 | Commodities | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-05-02 | Crypto (BTC) | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-05-02 | Emerging Markets | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-05-02 | Ethereum | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-05-02 | Germany (EWG) | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-05-02 | Gold | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-05-02 | Silver | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-05-02 | UK Equity (EWU) | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-05-01 | UK Equity (EWU) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-04-30 | Bonds | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-04-28 | Emerging Markets | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-04-28 | UK Equity (EWU) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-04-22 | UK Equity (EWU) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-04-12 | Bonds | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-04-12 | UK Equity (EWU) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-04-04 | Crypto (BTC) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-04-01 | Bonds | CRITICAL |  | 0.8% | _pending_ | _pending_ | _pending_ |
+| 2026-03-28 | Crypto (BTC) | CRITICAL |  | 0.5% | _pending_ | _pending_ | _pending_ |
+| 2026-03-27 | Bonds | CRITICAL |  | 0.0% | _pending_ | _pending_ | _pending_ |
+| 2026-03-25 | UK Equity (EWU) | CRITICAL |  | 2.3% | _pending_ | _pending_ | _pending_ |
+| 2026-03-21 | Gold | CRITICAL |  | 0.8% | _pending_ | _pending_ | _pending_ |
+| 2026-03-20 | UK Equity (EWU) | CRITICAL |  | 0.0% | _pending_ | _pending_ | _pending_ |
+| 2026-03-10 | Crypto (BTC) | CRITICAL |  | 5.7% | _pending_ | _pending_ | _pending_ |
+| 2026-03-09 | Emerging Markets | CRITICAL |  | 6.3% | _pending_ | _pending_ | _pending_ |
+| 2026-03-09 | Germany (EWG) | CRITICAL |  | 7.3% | _pending_ | _pending_ | _pending_ |
+| 2026-02-26 | US Equity (SPY) | CRITICAL |  | 8.0% | 8.3% | _pending_ | _pending_ |
+| 2026-02-07 | Crypto (BTC) | CRITICAL |  | 7.5% | 7.5% | _pending_ | _pending_ |
+| 2026-02-07 | Ethereum | CRITICAL |  | 11.4% | 11.4% | _pending_ | _pending_ |
+| 2026-02-04 | Ethereum | CRITICAL |  | 15.0% | 15.0% | _pending_ | _pending_ |
+| 2026-02-03 | Gold | CRITICAL |  | 2.7% | 11.8% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
