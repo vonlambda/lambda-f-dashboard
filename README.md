@@ -178,15 +178,6 @@ hard-coded numbers, no selection bias. Full ledger at
 <!-- RECENT_CALLS_START -->
 | Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
 |------|--------|--------|----------|---------|---------|---------|--------|
-| 2026-05-02 | Bonds | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-05-02 | Commodities | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-05-02 | Crypto (BTC) | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-05-02 | Emerging Markets | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-05-02 | Ethereum | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-05-02 | Germany (EWG) | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-05-02 | Gold | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-05-02 | Silver | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-05-02 | UK Equity (EWU) | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-01 | UK Equity (EWU) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-04-30 | Bonds | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-04-28 | Emerging Markets | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
