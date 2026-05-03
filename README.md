@@ -11,7 +11,7 @@ A proprietary framework for detecting institutional regime shifts before price i
 
 🌐 **Systemic Regime Score: 14/30** — 🟠 *WATCH*
 
-🎯 **Live forward detection: 1/3 resolved (33.3%)** · 31 pending
+🎯 **Live forward detection: 1/3 resolved (33.3%)** · 22 pending
 
 ### Δ since yesterday
 
