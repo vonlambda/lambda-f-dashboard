@@ -307,3 +307,4 @@
 
 
 - Events column filled retroactively when market moves occur
+| 2026-05-03 | 52% **C** | 81% **C** | 99% **C** | 80% E | 78% **C** | 50% | 67% **C** | 80% **C** | 87% **C** | 62% **C** | -- |
