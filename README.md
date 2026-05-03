@@ -9,6 +9,10 @@ A proprietary framework for detecting institutional regime shifts before price i
 
 🔴 **2 Q4** *(Crash Risk)* · 🟠 **4 Q3** *(Rotating)* · 🟡 **0 Q2** *(Fragile)* · 🟢 **4 Q1** *(Stable)*
 
+🌐 **Systemic Regime Score: 14/30** — 🟠 *WATCH*
+
+🎯 **Live forward detection: 1/3 resolved (33.3%)** · 31 pending
+
 ### Δ since yesterday
 
 _No regime changes since yesterday._
@@ -20,8 +24,8 @@ _No regime changes since yesterday._
 | 🔴 Commodities | 3.57 | 53% | `▃▃▄▅▇█▆▅▃▂▁▁` | 7d* | -0.06 | 0% | 34 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-05-02 |
 | 🔴 Gold | 3.94 | 80% | `▆▇▇▇▆█▇▅▃▃▁▃` | 13d* | 0.28 | 80% | 34 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-05-02 |
 | 🔴 Silver | 4.01 | 99% | `▁▂▃▃▅█▆▄▃▃▃▃` | 27d* | 0.21 | 77% | 34 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-04-22 |
-| 🟠 Crypto (BTC) | 3.96 | 80% | `▂▂▁▂▁▂▃▅▄▇▆█` | 11d | 0.80 | 71% | 70 | 🔴 Q4 | ELEVATED (L) | Reduce | 2026-05-02 |
-| 🔴 Ethereum | 4.04 | 76% | `▂▂▁▃▁▃▅▆▆█▇▇` | 8d* | 0.83 | 80% | 70 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-05-02 |
+| 🟠 Crypto (BTC) | 3.96 | 80% | `▂▂▁▂▁▂▃▅▄▇▆█` | 11d | 0.80 | 71% | 74 | 🔴 Q4 | ELEVATED (L) | Reduce | 2026-05-02 |
+| 🔴 Ethereum | 4.04 | 76% | `▂▂▁▃▁▃▅▆▆█▇▇` | 8d* | 0.83 | 80% | 74 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-05-02 |
 | 🟢 US Equity (SPY) | 3.76 | 50% | `▁▃▅▆▇▇▇█▇▇▆▆` | -- | 0.23 | 6% | 34 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
 | 🔴 UK Equity (EWU) | 3.91 | 67% | `▄▄▃▇▇▆█▅▁▅▅▅` | 10d | 0.82 | 99% | 34 | 🟢 Q1 | **CRITICAL** (C) | Maintain | 2026-05-01 |
 | 🔴 Germany (EWG) | 3.97 | 81% | `▁▂▅▇█▄▄▃▂▁▁▄` | 3d* | 0.80 | 98% | 34 | 🟠 Q3 | **CRITICAL** (LC) | Prepare | 2026-05-02 |
