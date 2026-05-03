@@ -9,15 +9,7 @@ This script:
 4. Pushes to public GitHub repo via API
 """
 
-import sys
 import os
-
-# Make canonical lambda_factors.py (in parent C:\backtesting\) importable.
-# Append (not insert at 0) so the engine's own modules still take precedence
-# when other scripts here do `from update_lambda import ...`.
-_PARENT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if _PARENT_DIR not in sys.path:
-    sys.path.append(_PARENT_DIR)
 
 import numpy as np
 import pandas as pd

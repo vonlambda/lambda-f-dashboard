@@ -1,0 +1,40 @@
+name: Smoke Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install runtime + test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install matplotlib
+
+      - name: Run smoke tests
+        run: |
+          python -m unittest tests.smoke_test -v
+
+      - name: Sanity check — main pipeline imports cleanly
+        run: |
+          python -c "import update_lambda; print('update_lambda imports OK')"
+          python -c "from lambda_factors import compute_lambda_method_c; print('canonical Lambda-F OK')"
+          python -c "from outcome_tracker import compute_systemic_score; print('outcome_tracker OK')"
+          python -c "from quadrant_matrix import generate_quadrant_matrix; print('quadrant_matrix OK')"
+          python -c "from reflexivity_calculator import get_reflexivity, get_quadrant; print('reflexivity_calculator OK')"
