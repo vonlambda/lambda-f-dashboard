@@ -36,6 +36,15 @@ from lambda_factors import compute_lambda_method_c
 # Game-theoretic enhancement layer (patent Claims 2, 3, 10, 21, 22)
 from reflexivity_calculator import get_reflexivity, get_quadrant
 
+# Per-call outcome tracking + systemic regime score (patent Claims 16, 17, 18)
+from outcome_tracker import (
+    track_new_calls,
+    update_pending_outcomes,
+    compute_detection_stats,
+    compute_systemic_score,
+    render_recent_calls_table,
+)
+
 # Per-quadrant recommended actions (patent §6.6.2)
 QUADRANT_ACTION = {
     'Q1':  'Maintain',
@@ -793,12 +802,32 @@ def generate_table(results):
     ]
     quad_headline = " · ".join(quad_parts)
 
+    # Tier 3 T3.3 — cross-market systemic regime score (patent Claim 16)
+    sys_score = compute_systemic_score(results)
+    systemic_line = (f"🌐 **Systemic Regime Score: {sys_score['score']}/{sys_score['max_score']}** "
+                     f"— {sys_score['emoji']} *{sys_score['label']}*")
+
+    # Tier 3 T3.2 — live forward detection rate (auto-tracked outcomes)
+    stats = compute_detection_stats()
+    if stats['total_resolved'] > 0:
+        det_line = (f"🎯 **Live forward detection: {stats['true_positives']}/"
+                    f"{stats['total_resolved']} resolved ({stats['detection_rate']:.1f}%)** "
+                    f"· {stats['pending']} pending")
+    elif stats['pending'] > 0:
+        det_line = f"🎯 **Live forward detection: 0/0 resolved** · {stats['pending']} tracking"
+    else:
+        det_line = "🎯 **Live forward detection: tracking begins on first CRITICAL/Q4 entry**"
+
     diff_block = _generate_diff_block(results)
 
     lines = [
         regime_headline,
         "",
         quad_headline,
+        "",
+        systemic_line,
+        "",
+        det_line,
         "",
         "### Δ since yesterday",
         "",
@@ -841,6 +870,68 @@ def generate_table(results):
     lines.append("> **Actions** are diagnostic, not investment advice — see disclaimer at bottom of page.")
 
     return "\n".join(lines)
+
+
+def push_outcomes_to_github():
+    """Push outcomes.csv to GitHub (Tier 3 Phase A — public outcome ledger)."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return False
+    outcomes_path = os.path.join(SCRIPT_DIR, 'outcomes.csv')
+    if not os.path.exists(outcomes_path):
+        return False
+    try:
+        with open(outcomes_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        g = Github(GITHUB_TOKEN)
+        repo = g.get_repo(GITHUB_REPO)
+        try:
+            existing = repo.get_contents('outcomes.csv')
+            repo.update_file(
+                'outcomes.csv',
+                f'Update outcome ledger {datetime.now().strftime("%Y-%m-%d")}',
+                content,
+                existing.sha,
+            )
+        except Exception:
+            repo.create_file(
+                'outcomes.csv',
+                f'Create outcome ledger {datetime.now().strftime("%Y-%m-%d")}',
+                content,
+            )
+        print("  outcomes.csv pushed to GitHub")
+        return True
+    except Exception as e:
+        print(f"  outcomes.csv push failed: {e}")
+        return False
+
+
+def update_recent_calls_section():
+    """Tier 3 Phase A — update Recent Calls table inside README markers."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return False
+    try:
+        g = Github(GITHUB_TOKEN)
+        repo = g.get_repo(GITHUB_REPO)
+        readme_file = repo.get_contents("README.md")
+        current_content = readme_file.decoded_content.decode('utf-8')
+
+        new_table = render_recent_calls_table()
+        pattern = r'<!-- RECENT_CALLS_START -->.*?<!-- RECENT_CALLS_END -->'
+        replacement = f"<!-- RECENT_CALLS_START -->\n{new_table}\n<!-- RECENT_CALLS_END -->"
+        new_content = re.sub(pattern, replacement, current_content, flags=re.DOTALL)
+
+        if new_content != current_content:
+            repo.update_file(
+                path="README.md",
+                message=f"Update Recent Calls {datetime.now().strftime('%Y-%m-%d')}",
+                content=new_content,
+                sha=readme_file.sha,
+            )
+            print("  Recent Calls section updated on GitHub")
+        return True
+    except Exception as e:
+        print(f"  Recent Calls update failed: {e}")
+        return False
 
 
 def update_github_readme(results):
@@ -1144,10 +1235,24 @@ if __name__ == "__main__":
     regime_changed = check_regime_changes(results, old_history)
     if regime_changed:
         print("\n*** REGIME CHANGE DETECTED ***")
-    
+
+    # Tier 3 Phase A: outcome tracking — append new CRITICAL/Q4 calls,
+    # update pending rows with t+30/t+60/t+90 drawdowns, push outcomes.csv
+    print("\n" + "-" * 60)
+    print("Outcome tracking (Tier 3 Phase A)")
+    print("-" * 60)
+    try:
+        added = track_new_calls(results)
+        updated = update_pending_outcomes()
+        print(f"  outcomes.csv: +{added} new tracked call(s), {updated} pending row(s) updated")
+        push_outcomes_to_github()
+    except Exception as e:
+        print(f"  Outcome tracking failed: {e}")
+
     # Update GitHub README table
     print("\nPushing table to GitHub...")
     update_github_readme(results)
+    update_recent_calls_section()
     
     # Generate and upload live chart
     generate_and_upload_live_chart()

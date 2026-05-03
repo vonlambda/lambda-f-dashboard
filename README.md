@@ -164,15 +164,20 @@ When large investors simultaneously rotate between factors (dumping momentum, pi
 
 </details>
 
-<details>
-<summary><b>📋 Notable calls (audit trail)</b></summary>
+<details open>
+<summary><b>📋 Recent calls — auto-tracked outcomes (last 90 days)</b></summary>
 
-| Date Called | Market | Signal | Outcome | Archive |
-|-------------|--------|--------|---------|---------|
-| 2026-01-04 | Commodities | CRITICAL (15d above P90) | *pending* | [snapshot](archive/2026-01-04.md) |
-| 2026-01-04 | Gold | CRITICAL (5d above P90) | *pending* | [snapshot](archive/2026-01-04.md) |
+Every CRITICAL or Q4 entry is auto-tracked. After 30/60/90 days the
+representative-asset peak-to-trough drawdown from the call price is
+recorded mechanically. **True positive** = ≥20% drawdown within 90 days
+(industry-standard bear-market threshold). The "Live forward detection"
+metric at the top of this README is computed from this table — no
+hard-coded numbers, no selection bias. Full ledger at
+[`outcomes.csv`](outcomes.csv).
 
-*Outcomes updated retroactively when events occur. All calls are timestamped via Git commits.*
+<!-- RECENT_CALLS_START -->
+_No tracked calls yet — outcomes accumulate from the first CRITICAL/Q4 entry going forward._
+<!-- RECENT_CALLS_END -->
 
 </details>
 
