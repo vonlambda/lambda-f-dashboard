@@ -31,13 +31,20 @@ if ENGINE_DIR not in sys.path:
 
 
 def _make_synthetic_prices(n_days=700, n_assets=6, seed=42):
-    """Generate plausible synthetic price series for n_assets over n_days."""
+    """Generate plausible synthetic price series for n_assets over n_days.
+
+    Date count is derived from the requested business-day range to avoid
+    weekend/calendar mismatches between local and CI runners.
+    """
+    dates = pd.date_range(end=pd.Timestamp.today().normalize(),
+                          periods=n_days, freq='B')
+    actual = len(dates)  # may be slightly less than n_days near weekends
     rng = np.random.default_rng(seed)
-    returns = rng.normal(0.0005, 0.02, size=(n_days, n_assets))
+    returns = rng.normal(0.0005, 0.02, size=(actual, n_assets))
     # Inject a regime shift in the second half
-    returns[n_days // 2:, :] += rng.normal(0, 0.01, size=(n_days - n_days // 2, n_assets))
+    half = actual // 2
+    returns[half:, :] += rng.normal(0, 0.01, size=(actual - half, n_assets))
     prices_arr = 100 * np.exp(np.cumsum(returns, axis=0))
-    dates = pd.date_range(end=pd.Timestamp.today().normalize(), periods=n_days, freq='B')
     return pd.DataFrame(prices_arr, index=dates,
                         columns=[f'TKR{i}' for i in range(n_assets)])
 
