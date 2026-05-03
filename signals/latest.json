@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-05-03T02:25:37+00:00",
-  "date": "2026-05-02",
+  "generated_at": "2026-05-03T02:28:21+00:00",
+  "date": "2026-05-03",
   "headline": {
     "regime_counts": {
       "CRITICAL": 8,
@@ -31,7 +31,7 @@
     {
       "market": "Commodities",
       "lambda_value": 3.57,
-      "lambda_pct": 53.0,
+      "lambda_pct": 52.0,
       "elevated_days": 7,
       "elevated_threshold": "p90",
       "correlation": -0.06,
@@ -47,7 +47,7 @@
     {
       "market": "Gold",
       "lambda_value": 3.94,
-      "lambda_pct": 80.0,
+      "lambda_pct": 81.0,
       "elevated_days": 13,
       "elevated_threshold": "p90",
       "correlation": 0.28,
@@ -95,7 +95,7 @@
     {
       "market": "Ethereum",
       "lambda_value": 4.04,
-      "lambda_pct": 76.0,
+      "lambda_pct": 78.0,
       "elevated_days": 8,
       "elevated_threshold": "p90",
       "correlation": 0.83,
@@ -143,7 +143,7 @@
     {
       "market": "Germany (EWG)",
       "lambda_value": 3.97,
-      "lambda_pct": 81.0,
+      "lambda_pct": 80.0,
       "elevated_days": 3,
       "elevated_threshold": "p90",
       "correlation": 0.8,
