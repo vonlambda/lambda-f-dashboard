@@ -138,12 +138,37 @@ def _is_tracked_signal(quadrant: str, regime: str) -> Optional[str]:
     return None
 
 
+def _market_already_in_open_episode(rows, market: str) -> bool:
+    """True if market has any pending row OR a recent (last 30d) row.
+
+    Used to enforce one-tracked-call-per-CRITICAL-episode semantics:
+    don't open a new outcome row while the market is still in an active
+    CRITICAL/Q4 streak that we already opened.
+    """
+    today = pd.Timestamp.today().normalize()
+    for r in rows:
+        if r.get('market') != market:
+            continue
+        try:
+            d = pd.Timestamp(r.get('call_date'))
+        except Exception:
+            continue
+        if r.get('status') == 'pending':
+            return True  # any pending row counts as open
+        if (today - d).days <= 30:
+            return True  # recent resolved row — wait for clean exit
+    return False
+
+
 def track_new_calls(results: List[Dict], today: Optional[str] = None) -> int:
     """
-    Append new tracked-signal rows to outcomes.csv for any market that
-    is in CRITICAL/Q4 today AND wasn't already recorded for today.
+    Append a new tracked-signal row for a market only when:
+      - market is in CRITICAL or Q4 today, AND
+      - the regime CHANGED today (first day of streak), AND
+      - no recent open episode for this market
 
-    Returns the number of new rows added.
+    This prevents duplicate rows while a market sits in the same regime
+    for many days. Returns number of new rows added.
     """
     if today is None:
         today = datetime.now().strftime('%Y-%m-%d')
@@ -159,8 +184,14 @@ def track_new_calls(results: List[Dict], today: Optional[str] = None) -> int:
         signal_type = _is_tracked_signal(r.get('quadrant', ''), r.get('regime', ''))
         if signal_type is None:
             continue
-        key = (today, market)
-        if key in existing_keys:
+        # Only record on first-day-of-streak (changed_today flag from main loop).
+        # If changed_today isn't supplied, fall back to "no open episode" check.
+        changed = r.get('changed_today')
+        if changed is False:
+            continue
+        if changed is None and _market_already_in_open_episode(rows, market):
+            continue
+        if (today, market) in existing_keys:
             continue
 
         ticker = REPRESENTATIVE_TICKER[market]
@@ -184,7 +215,6 @@ def track_new_calls(results: List[Dict], today: Optional[str] = None) -> int:
         added += 1
 
     if added:
-        # Sort by call_date desc then market for stable display
         rows.sort(key=lambda r: (r['call_date'], r['market']))
         save_outcomes(rows)
     return added
