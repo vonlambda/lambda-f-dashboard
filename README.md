@@ -185,7 +185,7 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-04-22 | UK Equity (EWU) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-04-12 | Bonds | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-04-12 | UK Equity (EWU) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-04-04 | Crypto (BTC) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-04-04 | Crypto (BTC) | CRITICAL |  | 0.0% | _pending_ | _pending_ | _pending_ |
 | 2026-04-01 | Bonds | CRITICAL |  | 0.8% | _pending_ | _pending_ | _pending_ |
 | 2026-03-28 | Crypto (BTC) | CRITICAL |  | 0.5% | _pending_ | _pending_ | _pending_ |
 | 2026-03-27 | Bonds | CRITICAL |  | 0.0% | _pending_ | _pending_ | _pending_ |
@@ -199,7 +199,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-02-07 | Crypto (BTC) | CRITICAL |  | 7.5% | 7.5% | _pending_ | _pending_ |
 | 2026-02-07 | Ethereum | CRITICAL |  | 11.4% | 11.4% | _pending_ | _pending_ |
 | 2026-02-04 | Ethereum | CRITICAL |  | 15.0% | 15.0% | _pending_ | _pending_ |
-| 2026-02-03 | Gold | CRITICAL |  | 2.7% | 11.8% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
