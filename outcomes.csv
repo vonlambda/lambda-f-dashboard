@@ -3,7 +3,7 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-01-07,Gold,CRITICAL,,GLD,409.2300,0.0000,0.0000,0.0210,false_positive
 2026-01-13,Silver,CRITICAL,,SLV,78.6000,0.1515,0.1556,0.2268,true_positive
 2026-02-03,Gold,CRITICAL,,GLD,454.2900,0.0273,0.1181,0.1181,false_positive
-2026-02-04,Ethereum,CRITICAL,,ETH-USD,2143.5042,0.1501,0.1501,,pending
+2026-02-04,Ethereum,CRITICAL,,ETH-USD,2143.5042,0.1501,0.1501,0.1501,false_positive
 2026-02-07,Crypto (BTC),CRITICAL,,BTC-USD,69281.9688,0.0751,0.0751,,pending
 2026-02-07,Ethereum,CRITICAL,,ETH-USD,2090.5493,0.1136,0.1136,,pending
 2026-02-26,US Equity (SPY),CRITICAL,,SPY,689.3000,0.0801,0.0832,,pending
