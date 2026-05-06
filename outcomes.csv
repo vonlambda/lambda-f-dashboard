@@ -24,3 +24,5 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-04-28,UK Equity (EWU),CRITICAL,,EWU,46.5500,,,,pending
 2026-04-30,Bonds,CRITICAL,,TLT,85.6200,,,,pending
 2026-05-01,UK Equity (EWU),CRITICAL,,EWU,47.0200,,,,pending
+2026-05-06,Gold,CRITICAL,Q1,GLD,418.2700,,,,pending
+2026-05-06,Silver,CRITICAL,Q3,SLV,65.9100,,,,pending
