@@ -180,6 +180,7 @@ hard-coded numbers, no selection bias. Full ledger at
 <!-- RECENT_CALLS_START -->
 | Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
 |------|--------|--------|----------|---------|---------|---------|--------|
+| 2026-05-07 | Silver | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-06 | Gold | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-06 | Silver | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-01 | UK Equity (EWU) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
