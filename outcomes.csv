@@ -7,8 +7,8 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-02-07,Crypto (BTC),CRITICAL,,BTC-USD,69281.9688,0.0751,0.0751,0.0751,false_positive
 2026-02-07,Ethereum,CRITICAL,,ETH-USD,2090.5493,0.1136,0.1136,0.1136,false_positive
 2026-02-26,US Equity (SPY),CRITICAL,,SPY,689.3000,0.0801,0.0832,,pending
-2026-03-09,Emerging Markets,CRITICAL,,EEM,58.4500,0.0633,,,pending
-2026-03-09,Germany (EWG),CRITICAL,,EWG,41.0900,0.0733,,,pending
+2026-03-09,Emerging Markets,CRITICAL,,EEM,58.4500,0.0633,0.0633,,pending
+2026-03-09,Germany (EWG),CRITICAL,,EWG,41.0900,0.0733,0.0733,,pending
 2026-03-10,Crypto (BTC),CRITICAL,,BTC-USD,69926.9219,0.0568,,,pending
 2026-03-20,UK Equity (EWU),CRITICAL,,EWU,43.8500,0.0000,,,pending
 2026-03-21,Gold,CRITICAL,,GLD,404.0400,0.0084,,,pending
