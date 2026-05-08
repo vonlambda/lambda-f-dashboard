@@ -199,8 +199,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-03-09 | Emerging Markets | CRITICAL |  | 6.3% | _pending_ | _pending_ | _pending_ |
 | 2026-03-09 | Germany (EWG) | CRITICAL |  | 7.3% | _pending_ | _pending_ | _pending_ |
 | 2026-02-26 | US Equity (SPY) | CRITICAL |  | 8.0% | 8.3% | _pending_ | _pending_ |
-| 2026-02-07 | Crypto (BTC) | CRITICAL |  | 7.5% | 7.5% | _pending_ | _pending_ |
-| 2026-02-07 | Ethereum | CRITICAL |  | 11.4% | 11.4% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
