@@ -21,16 +21,16 @@ _No regime changes since yesterday._
 
 | Market | Λ-F | Λ% | 30d Trend | Elev | Corr | C% | R | Quadrant | Regime | Action | Since |
 |--------|-----|----|-----------|------|------|----|---|----------|--------|--------|-------|
-| 🔴 Commodities | 3.70 | 84% | `▄▅▇█▇▆▄▃▂▁▁▃` | 7d* | -0.10 | 0% | 44 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-05-02 |
-| 🔴 Gold | 3.88 | 66% | `▇▇▆█▇▅▃▃▁▂▃▃` | 11d* | 0.34 | 96% | 44 | 🟢 Q1 | **CRITICAL** (LC) | Maintain | 2026-05-06 |
-| 🔴 Silver | 3.92 | 91% | `▁▂▄█▅▃▁▁▂▁▁▃` | 29d* | 0.23 | 84% | 44 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-05-07 |
+| 🔴 Commodities | 3.70 | 84% | `▄▅▇█▇▆▄▃▂▁▁▃` | 7d* | -0.10 | 0% | 42 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-05-02 |
+| 🔴 Gold | 3.88 | 66% | `▇▇▆█▇▅▃▃▁▂▃▃` | 11d* | 0.34 | 96% | 42 | 🟢 Q1 | **CRITICAL** (LC) | Maintain | 2026-05-06 |
+| 🔴 Silver | 3.92 | 91% | `▁▂▄█▅▃▁▁▂▁▁▃` | 29d* | 0.23 | 84% | 42 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-05-07 |
 | 🟠 Crypto (BTC) | 3.98 | 83% | `▂▁▂▃▅▄▆▆▇█▇▇` | 15d | 0.69 | 45% | 69 | 🔴 Q4 | ELEVATED (L) | Reduce | 2026-05-02 |
 | 🔴 Ethereum | 3.98 | 64% | `▃▁▂▄▅▆▇▆█▇▆▄` | 9d* | 0.72 | 53% | 69 | 🟡 Q2 | **CRITICAL** (L) | Monitor | 2026-05-02 |
-| 🟢 US Equity (SPY) | 3.75 | 46% | `▁▄▇▇▆█▇▆▄▅▆▃` | -- | 0.25 | 9% | 44 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
-| 🔴 UK Equity (EWU) | 3.92 | 66% | `▃▇▆▅▇▅▁▄▅▅█▆` | 9d | 0.84 | 100% | 44 | 🟢 Q1 | **CRITICAL** (C) | Maintain | 2026-05-01 |
-| 🔴 Germany (EWG) | 4.05 | 96% | `▅▇█▄▄▃▂▁▁▁▄▆` | 6d* | 0.83 | 100% | 44 | 🟠 Q3 | **CRITICAL** (LC) | Prepare | 2026-05-02 |
-| 🔴 Bonds | 4.13 | 99% | `▁▂▄▆▇▇█▆▄▅▆▅` | 20d* | 0.82 | 76% | 44 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-05-02 |
-| 🔴 Emerging Markets | 3.88 | 90% | `▂▅▆█▆▄▁▁▂▂▁▃` | 10d* | 0.69 | 79% | 44 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-04-28 |
+| 🟢 US Equity (SPY) | 3.75 | 46% | `▁▄▇▇▆█▇▆▄▅▆▃` | -- | 0.25 | 9% | 42 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
+| 🔴 UK Equity (EWU) | 3.92 | 66% | `▃▇▆▅▇▅▁▄▅▅█▆` | 9d | 0.84 | 100% | 42 | 🟢 Q1 | **CRITICAL** (C) | Maintain | 2026-05-01 |
+| 🔴 Germany (EWG) | 4.05 | 96% | `▅▇█▄▄▃▂▁▁▁▄▆` | 6d* | 0.83 | 100% | 42 | 🟠 Q3 | **CRITICAL** (LC) | Prepare | 2026-05-02 |
+| 🔴 Bonds | 4.13 | 99% | `▁▂▄▆▇▇█▆▄▅▆▅` | 20d* | 0.82 | 76% | 42 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-05-02 |
+| 🔴 Emerging Markets | 3.88 | 90% | `▂▅▆█▆▄▁▁▂▂▁▃` | 10d* | 0.69 | 79% | 42 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-04-28 |
 
 > **Quadrants** (patent §6.5): Q1 STABLE · Q2 FRAGILE · Q3 ROTATING · Q4 CRITICAL. Cuts at Λ-F percentile P75 and Reflexivity R≥60. *Asterisk* = reflexivity components partly unavailable.
 > **Actions** are diagnostic, not investment advice — see disclaimer at bottom of page.
