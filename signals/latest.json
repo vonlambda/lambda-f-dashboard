@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-05-09T13:22:04+00:00",
-  "date": "2026-05-09",
+  "generated_at": "2026-05-10T11:00:32+00:00",
+  "date": "2026-05-10",
   "headline": {
     "regime_counts": {
       "CRITICAL": 8,
@@ -9,16 +9,16 @@
       "NORMAL": 1
     },
     "quadrant_counts": {
-      "Q4": 0,
+      "Q4": 1,
       "Q3": 6,
-      "Q2": 2,
+      "Q2": 1,
       "Q1": 2
     },
     "systemic_score": {
-      "score": 14,
+      "score": 16,
       "max": 30,
-      "pct": 46.7,
-      "label": "WATCH"
+      "pct": 53.3,
+      "label": "ELEVATED SYSTEMIC RISK"
     },
     "live_forward_detection": {
       "true_positives": 1,
@@ -31,7 +31,7 @@
     {
       "market": "Commodities",
       "lambda_value": 3.73,
-      "lambda_pct": 89.0,
+      "lambda_pct": 88.0,
       "elevated_days": 7,
       "elevated_threshold": "p90",
       "correlation": -0.1,
@@ -78,29 +78,29 @@
     },
     {
       "market": "Crypto (BTC)",
-      "lambda_value": 3.9,
-      "lambda_pct": 64.0,
-      "elevated_days": 15,
+      "lambda_value": 3.96,
+      "lambda_pct": 78.0,
+      "elevated_days": 16,
       "elevated_threshold": "p75",
-      "correlation": 0.77,
-      "correlation_pct": 63.0,
-      "reflexivity": 69.0,
-      "quadrant": "Q2",
+      "correlation": 0.75,
+      "correlation_pct": 58.0,
+      "reflexivity": 73.5,
+      "quadrant": "Q4",
       "regime": "ELEVATED",
       "regime_source": "L",
-      "action": "Monitor",
+      "action": "Reduce",
       "changed_today": false,
       "since": "2026-05-02"
     },
     {
       "market": "Ethereum",
-      "lambda_value": 3.95,
-      "lambda_pct": 53.0,
-      "elevated_days": 8,
+      "lambda_value": 4.0,
+      "lambda_pct": 71.0,
+      "elevated_days": 9,
       "elevated_threshold": "p90",
       "correlation": 0.77,
       "correlation_pct": 64.0,
-      "reflexivity": 69.0,
+      "reflexivity": 73.5,
       "quadrant": "Q2",
       "regime": "CRITICAL",
       "regime_source": "L",
@@ -111,7 +111,7 @@
     {
       "market": "US Equity (SPY)",
       "lambda_value": 3.75,
-      "lambda_pct": 48.0,
+      "lambda_pct": 49.0,
       "elevated_days": null,
       "elevated_threshold": null,
       "correlation": 0.2,
