@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-05-12T11:00:34+00:00",
+  "generated_at": "2026-05-12T14:29:43+00:00",
   "date": "2026-05-12",
   "headline": {
     "regime_counts": {
@@ -9,16 +9,16 @@
       "NORMAL": 1
     },
     "quadrant_counts": {
-      "Q4": 0,
-      "Q3": 6,
-      "Q2": 2,
-      "Q1": 2
+      "Q4": 6,
+      "Q3": 0,
+      "Q2": 4,
+      "Q1": 0
     },
     "systemic_score": {
-      "score": 14,
+      "score": 22,
       "max": 30,
-      "pct": 46.7,
-      "label": "WATCH"
+      "pct": 73.3,
+      "label": "ELEVATED SYSTEMIC RISK"
     },
     "live_forward_detection": {
       "true_positives": 1,
@@ -36,11 +36,11 @@
       "elevated_threshold": "p90",
       "correlation": -0.1,
       "correlation_pct": 0.0,
-      "reflexivity": 56.5,
-      "quadrant": "Q3",
+      "reflexivity": 63.0,
+      "quadrant": "Q4",
       "regime": "CRITICAL",
       "regime_source": "L",
-      "action": "Prepare",
+      "action": "Reduce",
       "changed_today": false,
       "since": "2026-05-02"
     },
@@ -52,11 +52,11 @@
       "elevated_threshold": "p90",
       "correlation": 0.33,
       "correlation_pct": 95.0,
-      "reflexivity": 56.5,
-      "quadrant": "Q3",
+      "reflexivity": 63.0,
+      "quadrant": "Q4",
       "regime": "CRITICAL",
       "regime_source": "LC",
-      "action": "Prepare",
+      "action": "Reduce",
       "changed_today": false,
       "since": "2026-05-06"
     },
@@ -68,11 +68,11 @@
       "elevated_threshold": "p90",
       "correlation": 0.22,
       "correlation_pct": 81.0,
-      "reflexivity": 56.5,
-      "quadrant": "Q3",
+      "reflexivity": 63.0,
+      "quadrant": "Q4",
       "regime": "CRITICAL",
       "regime_source": "L",
-      "action": "Prepare",
+      "action": "Reduce",
       "changed_today": false,
       "since": "2026-05-07"
     },
@@ -116,11 +116,11 @@
       "elevated_threshold": null,
       "correlation": 0.19,
       "correlation_pct": 3.0,
-      "reflexivity": 56.5,
-      "quadrant": "Q1",
+      "reflexivity": 63.0,
+      "quadrant": "Q2",
       "regime": "Normal",
       "regime_source": null,
-      "action": "Maintain",
+      "action": "Monitor",
       "changed_today": false,
       "since": "2026-05-02"
     },
@@ -132,11 +132,11 @@
       "elevated_threshold": "p75",
       "correlation": 0.81,
       "correlation_pct": 98.0,
-      "reflexivity": 56.5,
-      "quadrant": "Q1",
+      "reflexivity": 63.0,
+      "quadrant": "Q2",
       "regime": "CRITICAL",
       "regime_source": "C",
-      "action": "Maintain",
+      "action": "Monitor",
       "changed_today": false,
       "since": "2026-05-01"
     },
@@ -148,11 +148,11 @@
       "elevated_threshold": "p90",
       "correlation": 0.8,
       "correlation_pct": 98.0,
-      "reflexivity": 56.5,
-      "quadrant": "Q3",
+      "reflexivity": 63.0,
+      "quadrant": "Q4",
       "regime": "CRITICAL",
       "regime_source": "LC",
-      "action": "Prepare",
+      "action": "Reduce",
       "changed_today": false,
       "since": "2026-05-02"
     },
@@ -164,11 +164,11 @@
       "elevated_threshold": "p90",
       "correlation": 0.85,
       "correlation_pct": 90.0,
-      "reflexivity": 56.5,
-      "quadrant": "Q3",
+      "reflexivity": 63.0,
+      "quadrant": "Q4",
       "regime": "CRITICAL",
       "regime_source": "LC",
-      "action": "Prepare",
+      "action": "Reduce",
       "changed_today": true,
       "since": "2026-05-12"
     },
@@ -180,11 +180,11 @@
       "elevated_threshold": "p90",
       "correlation": 0.61,
       "correlation_pct": 62.0,
-      "reflexivity": 56.5,
-      "quadrant": "Q3",
+      "reflexivity": 63.0,
+      "quadrant": "Q4",
       "regime": "CRITICAL",
       "regime_source": "L",
-      "action": "Prepare",
+      "action": "Reduce",
       "changed_today": false,
       "since": "2026-04-28"
     }
