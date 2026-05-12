@@ -74,7 +74,7 @@ flagged as ELEVATED but distinct from Q4.*
 
 ### Detection Rate: 38/47 events (80.9%) on extended event ledger
 
-Reproducible under the canonical Method C scoring rule (`λ_days_p75 ≥ 3 OR λ_peak ≥ P90 OR corr_days_p90 ≥ 3 OR corr_peak ≥ P95`, evaluated within each event window) on the current 47-event validated ledger. See *Methodology* below for definitions.
+Reproducible under the canonical **Method C** scoring rule — Method C is this project's breadth-tuned methodology that flags an event if **any** of `λ_days_p75 ≥ 3` (sustained elevated Λ-F), `λ_peak ≥ P90` (Λ-F percentile peak), `corr_days_p90 ≥ 3` (sustained high correlation), or `corr_peak ≥ P95` triggers within the event window, evaluated against the current 47-event validated ledger. See *Methodology* below for the full definition and rationale.
 
 | Market | Events | Detection Rate |
 |--------|--------|----------------|
