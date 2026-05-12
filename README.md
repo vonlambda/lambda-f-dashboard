@@ -189,8 +189,8 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-04-28 | Emerging Markets | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-04-28 | UK Equity (EWU) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-04-22 | UK Equity (EWU) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-04-12 | Bonds | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-04-12 | UK Equity (EWU) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-04-12 | Bonds | CRITICAL |  | 2.1% | _pending_ | _pending_ | _pending_ |
+| 2026-04-12 | UK Equity (EWU) | CRITICAL |  | 3.9% | _pending_ | _pending_ | _pending_ |
 | 2026-04-04 | Crypto (BTC) | CRITICAL |  | 0.0% | _pending_ | _pending_ | _pending_ |
 | 2026-04-01 | Bonds | CRITICAL |  | 0.8% | _pending_ | _pending_ | _pending_ |
 | 2026-03-28 | Crypto (BTC) | CRITICAL |  | 0.5% | _pending_ | _pending_ | _pending_ |
