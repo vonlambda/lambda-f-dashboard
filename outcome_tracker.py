@@ -404,3 +404,119 @@ def render_recent_calls_table(rows: Optional[List[Dict]] = None,
         )
 
     return "\n".join(lines)
+
+
+def render_episode_ledger_table(active_path: Optional[str] = None,
+                                outcomes: Optional[List[Dict]] = None,
+                                limit_rows: int = 15) -> str:
+    """
+    Unified ledger of active + resolved episodes.
+
+    Pulls:
+      - OPEN episodes from active_episodes.json (status='ACTIVE')
+      - RESOLVED episodes from outcomes.csv (status in
+        {'true_positive', 'false_positive'})
+
+    Renders one table sorted most-recent-first, capped at limit_rows.
+    Below the table: summary counts + resolved hit-rate + resolution rate
+    so readers can see which alerts materialized as real events.
+    """
+    import json
+
+    if active_path is None:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        active_path = os.path.join(script_dir, 'active_episodes.json')
+
+    try:
+        with open(active_path) as f:
+            active_data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        active_data = {}
+
+    active_rows = []
+    for market, ep in active_data.items():
+        if ep.get('status') != 'ACTIVE':
+            continue
+        active_rows.append({
+            'episode_id': ep.get('episode_id', f"{market}-{ep.get('start_date','?')}"),
+            'market': market,
+            'opened': ep.get('start_date', '--'),
+            'quadrant': ep.get('quadrant', '--'),
+            'peak_lambda_pct': ep.get('peak_lambda_pct'),
+            'status': 'ACTIVE',
+            'outcome': 'OPEN',
+            'drawdown': None,
+        })
+
+    if outcomes is None:
+        outcomes = load_outcomes()
+
+    resolved_rows = []
+    for r in outcomes:
+        status = r.get('status', 'pending')
+        if status not in ('true_positive', 'false_positive'):
+            continue
+        market = r.get('market', '--')
+        call_date = r.get('call_date', '--')
+        resolved_rows.append({
+            'episode_id': f"{market}-{call_date}",
+            'market': market,
+            'opened': call_date,
+            'quadrant': r.get('quadrant', '--'),
+            'peak_lambda_pct': None,
+            'status': 'RESOLVED',
+            'outcome': 'TP' if status == 'true_positive' else 'FP',
+            'drawdown': r.get('max_dd_90d'),
+        })
+
+    all_rows = active_rows + resolved_rows
+    if not all_rows:
+        return "_No episodes yet — opens accumulate as Λ_F crosses ELEVATED/CRITICAL going forward._"
+
+    all_rows.sort(key=lambda r: str(r['opened']), reverse=True)
+    display_rows = all_rows[:limit_rows]
+
+    def _fmt_dd_le(v):
+        try:
+            return f"{float(v) * 100:.1f}%"
+        except (ValueError, TypeError):
+            return "_n/a_"
+
+    def _fmt_pct_le(v):
+        try:
+            return f"{float(v):.1f}"
+        except (ValueError, TypeError):
+            return "_n/a_"
+
+    outcome_pill = {
+        'OPEN': '🟡 OPEN',
+        'TP':   '✅ TP',
+        'FP':   '⚪ FP',
+    }
+
+    lines = [
+        "| Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |",
+        "|---------|--------|--------|----------|---------|--------|---------|----------|",
+    ]
+    for r in display_rows:
+        lines.append(
+            f"| `{r['episode_id']}` | {r['market']} | {r['opened']} | {r['quadrant']} | "
+            f"{_fmt_pct_le(r['peak_lambda_pct'])} | {r['status']} | "
+            f"{outcome_pill.get(r['outcome'], r['outcome'])} | "
+            f"{_fmt_dd_le(r['drawdown'])} |"
+        )
+
+    n_open = len(active_rows)
+    n_tp = sum(1 for r in resolved_rows if r['outcome'] == 'TP')
+    n_fp = sum(1 for r in resolved_rows if r['outcome'] == 'FP')
+    n_resolved = n_tp + n_fp
+    n_total_outcomes = len(outcomes)
+    hit_rate_str = f"{(n_tp / n_resolved * 100):.1f}%" if n_resolved else "_n/a_"
+
+    summary = (
+        f"\n\n**{n_open} open · {n_tp} TP · {n_fp} FP · "
+        f"Resolved hit-rate: {hit_rate_str} · "
+        f"Resolution rate: {n_resolved}/{n_total_outcomes}**"
+    )
+
+    return "\n".join(lines) + summary

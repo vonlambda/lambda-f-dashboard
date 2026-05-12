@@ -206,6 +206,22 @@ hard-coded numbers, no selection bias. Full ledger at
 
 </details>
 
+<details open>
+<summary><b>📊 Episode ledger — opened vs resolved alerts</b></summary>
+
+Every ELEVATED/CRITICAL call opens an episode; episodes resolve as
+TRUE_POSITIVE (≥20% drawdown within 90d on the representative ticker),
+FALSE_POSITIVE (no such drawdown in window), or remain OPEN until the
+90-day forward window closes. This unifies the live picture (which alerts
+are still pending outcome) with the historical record (which alerts
+materialized as real events).
+
+<!-- EPISODE_LEDGER_START -->
+_Ledger renders on the next daily update._
+<!-- EPISODE_LEDGER_END -->
+
+</details>
+
 <details>
 <summary><b>📐 Conditional drawdown analysis (lift)</b></summary>
 

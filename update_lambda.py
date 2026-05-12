@@ -35,6 +35,7 @@ from outcome_tracker import (
     compute_detection_stats,
     compute_systemic_score,
     render_recent_calls_table,
+    render_episode_ledger_table,
 )
 
 # Tier 3 Phase B: public JSON API endpoints (patent Claim 23)
@@ -805,8 +806,10 @@ def generate_table(results):
     # Tier 3 T3.2 — live forward detection rate (auto-tracked outcomes)
     stats = compute_detection_stats()
     if stats['total_resolved'] > 0:
-        det_line = (f"🎯 **Live forward detection: {stats['true_positives']}/"
+        total_tracked = stats['total_resolved'] + stats['pending']
+        det_line = (f"🎯 **Hit rate: {stats['true_positives']}/"
                     f"{stats['total_resolved']} resolved ({stats['detection_rate']:.1f}%)** "
+                    f"· Resolution rate: {stats['total_resolved']}/{total_tracked} "
                     f"· {stats['pending']} pending")
     elif stats['pending'] > 0:
         det_line = f"🎯 **Live forward detection: 0/0 resolved** · {stats['pending']} tracking"
@@ -914,6 +917,11 @@ def update_recent_calls_section():
         pattern = r'<!-- RECENT_CALLS_START -->.*?<!-- RECENT_CALLS_END -->'
         replacement = f"<!-- RECENT_CALLS_START -->\n{new_table}\n<!-- RECENT_CALLS_END -->"
         new_content = re.sub(pattern, replacement, current_content, flags=re.DOTALL)
+
+        ledger_table = render_episode_ledger_table()
+        ledger_pattern = r'<!-- EPISODE_LEDGER_START -->.*?<!-- EPISODE_LEDGER_END -->'
+        ledger_replacement = f"<!-- EPISODE_LEDGER_START -->\n{ledger_table}\n<!-- EPISODE_LEDGER_END -->"
+        new_content = re.sub(ledger_pattern, ledger_replacement, new_content, flags=re.DOTALL)
 
         if new_content != current_content:
             repo.update_file(
