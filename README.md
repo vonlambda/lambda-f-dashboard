@@ -181,6 +181,8 @@ hard-coded numbers, no selection bias. Full ledger at
 <!-- RECENT_CALLS_START -->
 | Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
 |------|--------|--------|----------|---------|---------|---------|--------|
+| 2026-05-13 | Bonds | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-05-13 | Gold | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-12 | Bonds | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-07 | Silver | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-06 | Gold | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
@@ -218,7 +220,25 @@ are still pending outcome) with the historical record (which alerts
 materialized as real events).
 
 <!-- EPISODE_LEDGER_START -->
-_Ledger renders on the next daily update._
+| Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
+|---------|--------|--------|----------|---------|--------|---------|----------|
+| `COMM-2026-05-03` | Commodities | 2026-05-03 | Q3 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `GOLD-2026-05-03` | Gold | 2026-05-03 | Q3 | 84.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `SILV-2026-05-03` | Silver | 2026-05-03 | Q3 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `CRYP-2026-05-03` | Crypto (BTC) | 2026-05-03 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `ETHE-2026-05-03` | Ethereum | 2026-05-03 | Q4 | 85.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q1 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `GERM-2026-05-03` | Germany (EWG) | 2026-05-03 | Q3 | 94.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `BOND-2026-05-03` | Bonds | 2026-05-03 | Q3 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `EMER-2026-05-03` | Emerging Markets | 2026-05-03 | Q3 | 94.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `Crypto (BTC)-2026-02-07` | Crypto (BTC) | 2026-02-07 |  | _n/a_ | RESOLVED | ⚪ FP | 7.5% |
+| `Ethereum-2026-02-07` | Ethereum | 2026-02-07 |  | _n/a_ | RESOLVED | ⚪ FP | 11.4% |
+| `Ethereum-2026-02-04` | Ethereum | 2026-02-04 |  | _n/a_ | RESOLVED | ⚪ FP | 15.0% |
+| `Gold-2026-02-03` | Gold | 2026-02-03 |  | _n/a_ | RESOLVED | ⚪ FP | 11.8% |
+| `Silver-2026-01-13` | Silver | 2026-01-13 |  | _n/a_ | RESOLVED | ✅ TP | 22.7% |
+| `Commodities-2026-01-07` | Commodities | 2026-01-07 |  | _n/a_ | RESOLVED | ⚪ FP | 0.0% |
+
+**9 open · 1 TP · 6 FP · Resolved hit-rate: 14.3% · Resolution rate: 7/31**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
