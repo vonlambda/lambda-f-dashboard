@@ -28,5 +28,5 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-05-06,Silver,CRITICAL,Q3,SLV,65.9100,,,,pending
 2026-05-07,Silver,CRITICAL,Q3,SLV,70.1300,,,,pending
 2026-05-12,Bonds,CRITICAL,Q3,TLT,85.5600,,,,pending
-2026-05-13,Bonds,Q4,Q4,TLT,84.7750,,,,pending
-2026-05-13,Gold,Q4,Q4,GLD,430.1700,,,,pending
+2026-05-14,Bonds,Q4,Q4,TLT,84.8000,,,,pending
+2026-05-14,Gold,CRITICAL,Q2,GLD,430.5000,,,,pending
