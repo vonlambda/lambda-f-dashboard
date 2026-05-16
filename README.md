@@ -225,7 +225,7 @@ materialized as real events).
 | `GOLD-2026-05-03` | Gold | 2026-05-03 | Q2 | 84.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-05-03` | Silver | 2026-05-03 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-05-03` | Crypto (BTC) | 2026-05-03 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `ETHE-2026-05-03` | Ethereum | 2026-05-03 | Q4 | 88.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `ETHE-2026-05-03` | Ethereum | 2026-05-03 | Q4 | 93.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q2 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-05-03` | Germany (EWG) | 2026-05-03 | Q4 | 94.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-05-03` | Bonds | 2026-05-03 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
