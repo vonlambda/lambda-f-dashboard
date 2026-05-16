@@ -16,8 +16,8 @@
     "since": "2026-05-02"
   },
   "UK Equity (EWU)": {
-    "regime": "**CRITICAL** (C)",
-    "since": "2026-05-01"
+    "regime": "ELEVATED (LC)",
+    "since": "2026-05-16"
   },
   "Germany (EWG)": {
     "regime": "**CRITICAL** (LC)",
