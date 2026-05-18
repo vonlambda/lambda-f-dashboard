@@ -30,3 +30,4 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-05-12,Bonds,CRITICAL,Q3,TLT,85.5600,,,,pending
 2026-05-14,Bonds,Q4,Q4,TLT,84.8000,,,,pending
 2026-05-14,Gold,CRITICAL,Q2,GLD,430.5000,,,,pending
+2026-05-18,Crypto (BTC),Q4,Q4,BTC-USD,76719.3516,,,,pending
