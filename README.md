@@ -184,6 +184,7 @@ hard-coded numbers, no selection bias. Full ledger at
 | Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
 |------|--------|--------|----------|---------|---------|---------|--------|
 | 2026-05-20 | Bonds | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-05-20 | Germany (EWG) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-20 | Silver | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-20 | UK Equity (EWU) | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-19 | Germany (EWG) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
@@ -206,7 +207,7 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-03-28 | Crypto (BTC) | CRITICAL |  | 0.5% | _pending_ | _pending_ | _pending_ |
 | 2026-03-27 | Bonds | CRITICAL |  | 0.0% | _pending_ | _pending_ | _pending_ |
 | 2026-03-25 | UK Equity (EWU) | CRITICAL |  | 2.3% | _pending_ | _pending_ | _pending_ |
-| 2026-03-21 | Gold | CRITICAL |  | 0.8% | _pending_ | _pending_ | _pending_ |
+| 2026-03-21 | Gold | CRITICAL |  | 0.8% | 0.8% | _pending_ | _pending_ |
 | 2026-03-20 | UK Equity (EWU) | CRITICAL |  | 0.0% | 4.7% | _pending_ | _pending_ |
 | 2026-03-10 | Crypto (BTC) | CRITICAL |  | 5.7% | 5.7% | _pending_ | _pending_ |
 | 2026-03-09 | Emerging Markets | CRITICAL |  | 6.3% | 6.3% | _pending_ | _pending_ |
@@ -245,7 +246,7 @@ materialized as real events).
 | `Silver-2026-01-13` | Silver | 2026-01-13 |  | _n/a_ | RESOLVED | ✅ TP | 22.7% |
 | `Commodities-2026-01-07` | Commodities | 2026-01-07 |  | _n/a_ | RESOLVED | ⚪ FP | 0.0% |
 
-**9 open · 1 TP · 6 FP · Resolved hit-rate: 14.3% · Resolution rate: 7/36**
+**9 open · 1 TP · 6 FP · Resolved hit-rate: 14.3% · Resolution rate: 7/37**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
