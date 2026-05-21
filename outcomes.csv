@@ -33,6 +33,6 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-05-18,Crypto (BTC),Q4,Q4,BTC-USD,76719.3516,,,,pending
 2026-05-19,Germany (EWG),CRITICAL,Q2,EWG,42.3400,,,,pending
 2026-05-20,Bonds,Q4,Q4,TLT,83.0200,,,,pending
-2026-05-20,Germany (EWG),CRITICAL,Q2,EWG,42.9039,,,,pending
 2026-05-20,Silver,Q4,Q4,SLV,66.9000,,,,pending
 2026-05-20,UK Equity (EWU),Q4,Q4,EWU,46.2900,,,,pending
+2026-05-21,Silver,Q4,Q4,SLV,68.7300,,,,pending
