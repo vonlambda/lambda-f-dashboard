@@ -184,7 +184,9 @@ hard-coded numbers, no selection bias. Full ledger at
 | Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
 |------|--------|--------|----------|---------|---------|---------|--------|
 | 2026-05-22 | Bonds | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-05-22 | Germany (EWG) | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-22 | Silver | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-05-22 | UK Equity (EWU) | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-21 | Silver | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-20 | Bonds | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-20 | Silver | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
@@ -201,7 +203,7 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-04-30 | Bonds | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-04-28 | Emerging Markets | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-04-28 | UK Equity (EWU) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-04-22 | UK Equity (EWU) | CRITICAL |  | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-04-22 | UK Equity (EWU) | CRITICAL |  | 3.4% | _pending_ | _pending_ | _pending_ |
 | 2026-04-12 | Bonds | CRITICAL |  | 2.1% | _pending_ | _pending_ | _pending_ |
 | 2026-04-12 | UK Equity (EWU) | CRITICAL |  | 3.9% | _pending_ | _pending_ | _pending_ |
 | 2026-04-04 | Crypto (BTC) | CRITICAL |  | 0.0% | _pending_ | _pending_ | _pending_ |
@@ -237,7 +239,7 @@ materialized as real events).
 | `SILV-2026-05-03` | Silver | 2026-05-03 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-05-03` | Crypto (BTC) | 2026-05-03 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-05-03` | Ethereum | 2026-05-03 | Q4 | 100.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q4 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q2 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-05-03` | Germany (EWG) | 2026-05-03 | Q4 | 94.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-05-03` | Bonds | 2026-05-03 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `EMER-2026-05-03` | Emerging Markets | 2026-05-03 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
@@ -248,7 +250,7 @@ materialized as real events).
 | `Silver-2026-01-13` | Silver | 2026-01-13 |  | _n/a_ | RESOLVED | ✅ TP | 22.7% |
 | `Commodities-2026-01-07` | Commodities | 2026-01-07 |  | _n/a_ | RESOLVED | ⚪ FP | 0.0% |
 
-**9 open · 1 TP · 6 FP · Resolved hit-rate: 14.3% · Resolution rate: 7/39**
+**9 open · 1 TP · 6 FP · Resolved hit-rate: 14.3% · Resolution rate: 7/41**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
