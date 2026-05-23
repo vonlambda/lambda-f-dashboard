@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-05-23T11:00:31+00:00",
+  "generated_at": "2026-05-23T13:39:08+00:00",
   "date": "2026-05-23",
   "headline": {
     "regime_counts": {
@@ -23,7 +23,7 @@
     "live_forward_detection": {
       "true_positives": 1,
       "false_positives": 6,
-      "pending": 35,
+      "pending": 36,
       "rate_pct": 14.3
     }
   },
@@ -73,8 +73,8 @@
       "regime": "CRITICAL",
       "regime_source": "L",
       "action": "Prepare",
-      "changed_today": true,
-      "since": "2026-05-23"
+      "changed_today": false,
+      "since": "2026-05-07"
     },
     {
       "market": "Crypto (BTC)",
@@ -137,8 +137,8 @@
       "regime": "CRITICAL",
       "regime_source": "C",
       "action": "Prepare",
-      "changed_today": false,
-      "since": "2026-05-20"
+      "changed_today": true,
+      "since": "2026-05-23"
     },
     {
       "market": "Germany (EWG)",
@@ -153,8 +153,8 @@
       "regime": "CRITICAL",
       "regime_source": "LC",
       "action": "Maintain",
-      "changed_today": true,
-      "since": "2026-05-23"
+      "changed_today": false,
+      "since": "2026-05-02"
     },
     {
       "market": "Bonds",
@@ -170,7 +170,7 @@
       "regime_source": "LC",
       "action": "Prepare",
       "changed_today": false,
-      "since": "2026-05-22"
+      "since": "2026-05-14"
     },
     {
       "market": "Emerging Markets",
@@ -185,8 +185,8 @@
       "regime": "CRITICAL",
       "regime_source": "L",
       "action": "Maintain",
-      "changed_today": true,
-      "since": "2026-05-23"
+      "changed_today": false,
+      "since": "2026-04-28"
     }
   ]
 }
