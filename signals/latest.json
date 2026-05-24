@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-05-23T13:39:08+00:00",
-  "date": "2026-05-23",
+  "generated_at": "2026-05-24T11:00:32+00:00",
+  "date": "2026-05-24",
   "headline": {
     "regime_counts": {
-      "CRITICAL": 8,
-      "ELEVATED": 1,
+      "CRITICAL": 7,
+      "ELEVATED": 2,
       "NORMAL": 1
     },
     "quadrant_counts": {
@@ -23,7 +23,7 @@
     "live_forward_detection": {
       "true_positives": 1,
       "false_positives": 6,
-      "pending": 36,
+      "pending": 35,
       "rate_pct": 14.3
     }
   },
@@ -31,18 +31,18 @@
     {
       "market": "Commodities",
       "lambda_value": 3.66,
-      "lambda_pct": 73.0,
-      "elevated_days": 5,
-      "elevated_threshold": "p90",
+      "lambda_pct": 71.0,
+      "elevated_days": 13,
+      "elevated_threshold": "p75",
       "correlation": 0.07,
       "correlation_pct": 10.0,
       "reflexivity": 52.0,
       "quadrant": "Q1",
-      "regime": "CRITICAL",
+      "regime": "ELEVATED",
       "regime_source": "L",
       "action": "Maintain",
-      "changed_today": false,
-      "since": "2026-05-02"
+      "changed_today": true,
+      "since": "2026-05-24"
     },
     {
       "market": "Gold",
@@ -57,14 +57,14 @@
       "regime": "ELEVATED",
       "regime_source": "LC",
       "action": "Prepare",
-      "changed_today": true,
+      "changed_today": false,
       "since": "2026-05-23"
     },
     {
       "market": "Silver",
       "lambda_value": 3.94,
       "lambda_pct": 94.0,
-      "elevated_days": 19,
+      "elevated_days": 18,
       "elevated_threshold": "p90",
       "correlation": 0.24,
       "correlation_pct": 87.0,
@@ -74,17 +74,17 @@
       "regime_source": "L",
       "action": "Prepare",
       "changed_today": false,
-      "since": "2026-05-07"
+      "since": "2026-05-23"
     },
     {
       "market": "Crypto (BTC)",
-      "lambda_value": 3.91,
-      "lambda_pct": 64.0,
+      "lambda_value": 3.86,
+      "lambda_pct": 51.0,
       "elevated_days": 3,
       "elevated_threshold": "p90",
-      "correlation": 0.75,
-      "correlation_pct": 58.0,
-      "reflexivity": 64.0,
+      "correlation": 0.78,
+      "correlation_pct": 66.0,
+      "reflexivity": 62.5,
       "quadrant": "Q2",
       "regime": "CRITICAL",
       "regime_source": "L",
@@ -94,13 +94,13 @@
     },
     {
       "market": "Ethereum",
-      "lambda_value": 4.01,
-      "lambda_pct": 72.0,
-      "elevated_days": 11,
+      "lambda_value": 3.98,
+      "lambda_pct": 62.0,
+      "elevated_days": 10,
       "elevated_threshold": "p90",
-      "correlation": 0.73,
-      "correlation_pct": 54.0,
-      "reflexivity": 64.0,
+      "correlation": 0.77,
+      "correlation_pct": 64.0,
+      "reflexivity": 62.5,
       "quadrant": "Q2",
       "regime": "CRITICAL",
       "regime_source": "L",
@@ -127,8 +127,8 @@
     {
       "market": "UK Equity (EWU)",
       "lambda_value": 3.95,
-      "lambda_pct": 80.0,
-      "elevated_days": 10,
+      "lambda_pct": 81.0,
+      "elevated_days": 11,
       "elevated_threshold": "p75",
       "correlation": 0.81,
       "correlation_pct": 96.0,
@@ -137,13 +137,13 @@
       "regime": "CRITICAL",
       "regime_source": "C",
       "action": "Prepare",
-      "changed_today": true,
-      "since": "2026-05-23"
+      "changed_today": false,
+      "since": "2026-05-20"
     },
     {
       "market": "Germany (EWG)",
       "lambda_value": 3.9,
-      "lambda_pct": 63.0,
+      "lambda_pct": 64.0,
       "elevated_days": 3,
       "elevated_threshold": "p90",
       "correlation": 0.8,
@@ -154,7 +154,7 @@
       "regime_source": "LC",
       "action": "Maintain",
       "changed_today": false,
-      "since": "2026-05-02"
+      "since": "2026-05-23"
     },
     {
       "market": "Bonds",
@@ -170,7 +170,7 @@
       "regime_source": "LC",
       "action": "Prepare",
       "changed_today": false,
-      "since": "2026-05-14"
+      "since": "2026-05-22"
     },
     {
       "market": "Emerging Markets",
@@ -186,7 +186,7 @@
       "regime_source": "L",
       "action": "Maintain",
       "changed_today": false,
-      "since": "2026-04-28"
+      "since": "2026-05-23"
     }
   ]
 }
