@@ -41,4 +41,3 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-05-23,Emerging Markets,CRITICAL,Q1,EEM,65.8800,,,,pending
 2026-05-23,Germany (EWG),CRITICAL,Q1,EWG,42.9100,,,,pending
 2026-05-23,Silver,CRITICAL,Q3,SLV,68.3600,,,,pending
-2026-05-23,UK Equity (EWU),CRITICAL,Q3,EWU,47.0900,,,,pending
