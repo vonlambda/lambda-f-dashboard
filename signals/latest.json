@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-05-27T11:00:24+00:00",
+  "generated_at": "2026-05-27T15:48:19+00:00",
   "date": "2026-05-27",
   "headline": {
     "regime_counts": {
@@ -22,9 +22,9 @@
     },
     "live_forward_detection": {
       "true_positives": 1,
-      "false_positives": 6,
+      "false_positives": 7,
       "pending": 36,
-      "rate_pct": 14.3
+      "rate_pct": 12.5
     }
   },
   "markets": [
@@ -36,13 +36,13 @@
       "elevated_threshold": "p75",
       "correlation": 0.08,
       "correlation_pct": 11.0,
-      "reflexivity": 55.5,
+      "reflexivity": 57.0,
       "quadrant": "Q1",
       "regime": "ELEVATED",
       "regime_source": "L",
       "action": "Maintain",
-      "changed_today": false,
-      "since": "2026-05-24"
+      "changed_today": true,
+      "since": "2026-05-27"
     },
     {
       "market": "Gold",
@@ -52,13 +52,13 @@
       "elevated_threshold": "p75",
       "correlation": 0.29,
       "correlation_pct": 80.0,
-      "reflexivity": 55.5,
+      "reflexivity": 57.0,
       "quadrant": "Q3",
       "regime": "ELEVATED",
       "regime_source": "LC",
       "action": "Prepare",
-      "changed_today": false,
-      "since": "2026-05-23"
+      "changed_today": true,
+      "since": "2026-05-27"
     },
     {
       "market": "Silver",
@@ -68,7 +68,7 @@
       "elevated_threshold": "p90",
       "correlation": 0.25,
       "correlation_pct": 90.0,
-      "reflexivity": 55.5,
+      "reflexivity": 57.0,
       "quadrant": "Q3",
       "regime": "CRITICAL",
       "regime_source": "LC",
@@ -116,7 +116,7 @@
       "elevated_threshold": null,
       "correlation": 0.18,
       "correlation_pct": 4.0,
-      "reflexivity": 55.5,
+      "reflexivity": 57.0,
       "quadrant": "Q1",
       "regime": "Normal",
       "regime_source": null,
@@ -132,13 +132,13 @@
       "elevated_threshold": "p75",
       "correlation": 0.8,
       "correlation_pct": 96.0,
-      "reflexivity": 55.5,
+      "reflexivity": 57.0,
       "quadrant": "Q1",
       "regime": "CRITICAL",
       "regime_source": "C",
       "action": "Maintain",
-      "changed_today": false,
-      "since": "2026-05-20"
+      "changed_today": true,
+      "since": "2026-05-27"
     },
     {
       "market": "Germany (EWG)",
@@ -148,13 +148,13 @@
       "elevated_threshold": "p90",
       "correlation": 0.8,
       "correlation_pct": 97.0,
-      "reflexivity": 55.5,
+      "reflexivity": 57.0,
       "quadrant": "Q1",
       "regime": "CRITICAL",
       "regime_source": "LC",
       "action": "Maintain",
       "changed_today": false,
-      "since": "2026-05-23"
+      "since": "2026-05-02"
     },
     {
       "market": "Bonds",
@@ -164,13 +164,13 @@
       "elevated_threshold": "p90",
       "correlation": 0.87,
       "correlation_pct": 93.0,
-      "reflexivity": 55.5,
+      "reflexivity": 57.0,
       "quadrant": "Q3",
       "regime": "CRITICAL",
       "regime_source": "LC",
       "action": "Prepare",
       "changed_today": false,
-      "since": "2026-05-22"
+      "since": "2026-05-14"
     },
     {
       "market": "Emerging Markets",
@@ -180,7 +180,7 @@
       "elevated_threshold": "p75",
       "correlation": 0.55,
       "correlation_pct": 45.0,
-      "reflexivity": 55.5,
+      "reflexivity": 57.0,
       "quadrant": "Q1",
       "regime": "ELEVATED",
       "regime_source": "L",
