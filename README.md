@@ -184,6 +184,8 @@ hard-coded numbers, no selection bias. Full ledger at
 <!-- RECENT_CALLS_START -->
 | Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
 |------|--------|--------|----------|---------|---------|---------|--------|
+| 2026-05-31 | Silver | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-05-31 | UK Equity (EWU) | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-30 | Silver | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-30 | UK Equity (EWU) | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-05-29 | Silver | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
@@ -258,7 +260,7 @@ materialized as real events).
 | `Gold-2026-02-03` | Gold | 2026-02-03 |  | _n/a_ | RESOLVED | ⚪ FP | 11.8% |
 | `Silver-2026-01-13` | Silver | 2026-01-13 |  | _n/a_ | RESOLVED | ✅ TP | 22.7% |
 
-**9 open · 1 TP · 7 FP · Resolved hit-rate: 12.5% · Resolution rate: 8/49**
+**9 open · 1 TP · 7 FP · Resolved hit-rate: 12.5% · Resolution rate: 8/51**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
