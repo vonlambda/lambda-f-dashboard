@@ -48,3 +48,5 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-05-29,UK Equity (EWU),CRITICAL,Q3,EWU,47.0700,,,,pending
 2026-05-30,Silver,CRITICAL,Q3,SLV,68.3300,,,,pending
 2026-05-30,UK Equity (EWU),CRITICAL,Q3,EWU,46.9300,,,,pending
+2026-05-31,Silver,CRITICAL,Q3,SLV,68.3300,,,,pending
+2026-05-31,UK Equity (EWU),CRITICAL,Q3,EWU,46.9300,,,,pending
