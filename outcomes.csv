@@ -15,15 +15,15 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-03-25,UK Equity (EWU),CRITICAL,,EWU,45.1400,0.0226,0.0226,,pending
 2026-03-27,Bonds,CRITICAL,,TLT,85.6400,0.0000,0.0306,,pending
 2026-03-28,Crypto (BTC),CRITICAL,,BTC-USD,66319.6953,0.0055,0.0055,,pending
-2026-04-01,Bonds,CRITICAL,,TLT,86.2600,0.0075,,,pending
+2026-04-01,Bonds,CRITICAL,,TLT,86.2600,0.0075,0.0376,,pending
 2026-04-04,Crypto (BTC),CRITICAL,,BTC-USD,67290.5156,0.0000,,,pending
 2026-04-12,Bonds,CRITICAL,,TLT,86.7500,0.0206,,,pending
 2026-04-12,UK Equity (EWU),CRITICAL,,EWU,47.8600,0.0391,,,pending
 2026-04-22,UK Equity (EWU),CRITICAL,,EWU,47.1500,0.0335,,,pending
 2026-04-28,Emerging Markets,CRITICAL,,EEM,62.9900,0.0048,,,pending
 2026-04-28,UK Equity (EWU),CRITICAL,,EWU,46.5500,0.0211,,,pending
-2026-04-30,Bonds,CRITICAL,,TLT,85.6200,,,,pending
-2026-05-01,UK Equity (EWU),CRITICAL,,EWU,47.0200,,,,pending
+2026-04-30,Bonds,CRITICAL,,TLT,85.6200,0.0304,,,pending
+2026-05-01,UK Equity (EWU),CRITICAL,,EWU,47.0200,0.0308,,,pending
 2026-05-06,Gold,CRITICAL,Q1,GLD,418.2700,,,,pending
 2026-05-06,Silver,CRITICAL,Q3,SLV,65.9100,,,,pending
 2026-05-07,Silver,CRITICAL,Q3,SLV,70.1300,,,,pending
@@ -50,3 +50,5 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-05-30,UK Equity (EWU),CRITICAL,Q3,EWU,46.9300,,,,pending
 2026-05-31,Silver,CRITICAL,Q3,SLV,68.3300,,,,pending
 2026-05-31,UK Equity (EWU),CRITICAL,Q3,EWU,46.9300,,,,pending
+2026-06-01,Silver,CRITICAL,Q3,SLV,67.9650,,,,pending
+2026-06-01,UK Equity (EWU),CRITICAL,Q3,EWU,46.7800,,,,pending
