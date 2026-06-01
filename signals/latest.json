@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-05-31T13:48:20+00:00",
-  "date": "2026-05-31",
+  "generated_at": "2026-06-01T17:43:02+00:00",
+  "date": "2026-06-01",
   "headline": {
     "regime_counts": {
       "CRITICAL": 6,
@@ -23,7 +23,7 @@
     "live_forward_detection": {
       "true_positives": 1,
       "false_positives": 7,
-      "pending": 43,
+      "pending": 45,
       "rate_pct": 12.5
     }
   },
@@ -36,7 +36,7 @@
       "elevated_threshold": "p90",
       "correlation": 0.13,
       "correlation_pct": 26.0,
-      "reflexivity": 34.0,
+      "reflexivity": 49.5,
       "quadrant": "Q1",
       "regime": "CRITICAL",
       "regime_source": "L",
@@ -52,13 +52,13 @@
       "elevated_threshold": "p75",
       "correlation": 0.29,
       "correlation_pct": 79.0,
-      "reflexivity": 34.0,
+      "reflexivity": 49.5,
       "quadrant": "Q3",
       "regime": "ELEVATED",
       "regime_source": "LC",
       "action": "Prepare",
       "changed_today": true,
-      "since": "2026-05-31"
+      "since": "2026-06-01"
     },
     {
       "market": "Silver",
@@ -68,39 +68,39 @@
       "elevated_threshold": "p90",
       "correlation": 0.25,
       "correlation_pct": 90.0,
-      "reflexivity": 34.0,
+      "reflexivity": 49.5,
       "quadrant": "Q3",
       "regime": "CRITICAL",
       "regime_source": "LC",
       "action": "Prepare",
       "changed_today": true,
-      "since": "2026-05-31"
+      "since": "2026-06-01"
     },
     {
       "market": "Crypto (BTC)",
-      "lambda_value": 3.54,
-      "lambda_pct": 3.0,
-      "elevated_days": 14,
+      "lambda_value": 3.57,
+      "lambda_pct": 4.0,
+      "elevated_days": 12,
       "elevated_threshold": "p75",
-      "correlation": 0.79,
-      "correlation_pct": 67.0,
-      "reflexivity": 64.0,
+      "correlation": 0.8,
+      "correlation_pct": 69.0,
+      "reflexivity": 64.5,
       "quadrant": "Q2",
       "regime": "ELEVATED",
       "regime_source": "L",
       "action": "Monitor",
       "changed_today": true,
-      "since": "2026-05-31"
+      "since": "2026-06-01"
     },
     {
       "market": "Ethereum",
-      "lambda_value": 3.84,
-      "lambda_pct": 21.0,
+      "lambda_value": 3.83,
+      "lambda_pct": 18.0,
       "elevated_days": 5,
       "elevated_threshold": "p90",
-      "correlation": 0.77,
-      "correlation_pct": 63.0,
-      "reflexivity": 64.0,
+      "correlation": 0.69,
+      "correlation_pct": 43.0,
+      "reflexivity": 64.5,
       "quadrant": "Q2",
       "regime": "CRITICAL",
       "regime_source": "L",
@@ -116,7 +116,7 @@
       "elevated_threshold": null,
       "correlation": 0.17,
       "correlation_pct": 3.0,
-      "reflexivity": 34.0,
+      "reflexivity": 49.5,
       "quadrant": "Q1",
       "regime": "Normal",
       "regime_source": null,
@@ -132,13 +132,13 @@
       "elevated_threshold": "p90",
       "correlation": 0.81,
       "correlation_pct": 97.0,
-      "reflexivity": 34.0,
+      "reflexivity": 49.5,
       "quadrant": "Q3",
       "regime": "CRITICAL",
       "regime_source": "LC",
       "action": "Prepare",
       "changed_today": true,
-      "since": "2026-05-31"
+      "since": "2026-06-01"
     },
     {
       "market": "Germany (EWG)",
@@ -147,8 +147,8 @@
       "elevated_days": 3,
       "elevated_threshold": "p90",
       "correlation": 0.77,
-      "correlation_pct": 93.0,
-      "reflexivity": 34.0,
+      "correlation_pct": 94.0,
+      "reflexivity": 49.5,
       "quadrant": "Q3",
       "regime": "CRITICAL",
       "regime_source": "LC",
@@ -164,7 +164,7 @@
       "elevated_threshold": "p90",
       "correlation": 0.88,
       "correlation_pct": 96.0,
-      "reflexivity": 34.0,
+      "reflexivity": 49.5,
       "quadrant": "Q1",
       "regime": "CRITICAL",
       "regime_source": "LC",
@@ -175,18 +175,18 @@
     {
       "market": "Emerging Markets",
       "lambda_value": 3.74,
-      "lambda_pct": 54.0,
-      "elevated_days": 10,
+      "lambda_pct": 55.0,
+      "elevated_days": 11,
       "elevated_threshold": "p75",
       "correlation": 0.54,
       "correlation_pct": 44.0,
-      "reflexivity": 34.0,
+      "reflexivity": 49.5,
       "quadrant": "Q1",
       "regime": "ELEVATED",
       "regime_source": "L",
       "action": "Maintain",
       "changed_today": true,
-      "since": "2026-05-31"
+      "since": "2026-06-01"
     }
   ]
 }
