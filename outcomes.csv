@@ -16,7 +16,7 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-03-27,Bonds,CRITICAL,,TLT,85.6400,0.0000,0.0306,,pending
 2026-03-28,Crypto (BTC),CRITICAL,,BTC-USD,66319.6953,0.0055,0.0055,,pending
 2026-04-01,Bonds,CRITICAL,,TLT,86.2600,0.0075,0.0376,,pending
-2026-04-04,Crypto (BTC),CRITICAL,,BTC-USD,67290.5156,0.0000,,,pending
+2026-04-04,Crypto (BTC),CRITICAL,,BTC-USD,67290.5156,0.0000,0.0209,,pending
 2026-04-12,Bonds,CRITICAL,,TLT,86.7500,0.0206,,,pending
 2026-04-12,UK Equity (EWU),CRITICAL,,EWU,47.8600,0.0391,,,pending
 2026-04-22,UK Equity (EWU),CRITICAL,,EWU,47.1500,0.0335,,,pending
