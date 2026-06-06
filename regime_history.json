@@ -8,8 +8,8 @@
     "since": "2026-05-14"
   },
   "Crypto (BTC)": {
-    "regime": "**CRITICAL** (L)",
-    "since": "2026-05-18"
+    "regime": "ELEVATED (L)",
+    "since": "2026-06-06"
   },
   "US Equity (SPY)": {
     "regime": "Normal",
@@ -28,8 +28,8 @@
     "since": "2026-05-14"
   },
   "Emerging Markets": {
-    "regime": "**CRITICAL** (L)",
-    "since": "2026-04-28"
+    "regime": "ELEVATED (L)",
+    "since": "2026-06-06"
   },
   "Silver": {
     "regime": "**CRITICAL** (L)",
