@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-07T10:18:08+00:00",
+  "generated_at": "2026-06-07T13:56:20+00:00",
   "date": "2026-06-07",
   "headline": {
     "regime_counts": {
@@ -23,7 +23,7 @@
     "live_forward_detection": {
       "true_positives": 1,
       "false_positives": 7,
-      "pending": 42,
+      "pending": 43,
       "rate_pct": 12.5
     }
   },
@@ -42,7 +42,7 @@
       "regime_source": "L",
       "action": "Monitor",
       "changed_today": false,
-      "since": "2026-05-28"
+      "since": "2026-05-02"
     },
     {
       "market": "Gold",
@@ -58,7 +58,7 @@
       "regime_source": "L",
       "action": "Reduce",
       "changed_today": false,
-      "since": "2026-06-04"
+      "since": "2026-05-14"
     },
     {
       "market": "Silver",
@@ -74,7 +74,7 @@
       "regime_source": "L",
       "action": "Reduce",
       "changed_today": false,
-      "since": "2026-05-29"
+      "since": "2026-05-07"
     },
     {
       "market": "Crypto (BTC)",
@@ -89,8 +89,8 @@
       "regime": "ELEVATED",
       "regime_source": "L",
       "action": "Maintain",
-      "changed_today": true,
-      "since": "2026-06-07"
+      "changed_today": false,
+      "since": "2026-06-06"
     },
     {
       "market": "Ethereum",
@@ -154,7 +154,7 @@
       "regime_source": "LC",
       "action": "Monitor",
       "changed_today": false,
-      "since": "2026-06-05"
+      "since": "2026-05-02"
     },
     {
       "market": "Bonds",
@@ -170,7 +170,7 @@
       "regime_source": "LC",
       "action": "Monitor",
       "changed_today": false,
-      "since": "2026-05-22"
+      "since": "2026-05-14"
     },
     {
       "market": "Emerging Markets",
@@ -185,8 +185,8 @@
       "regime": "CRITICAL",
       "regime_source": "L",
       "action": "Monitor",
-      "changed_today": false,
-      "since": "2026-05-28"
+      "changed_today": true,
+      "since": "2026-06-07"
     }
   ]
 }
