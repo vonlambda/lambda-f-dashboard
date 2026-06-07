@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-06T13:47:23+00:00",
-  "date": "2026-06-06",
+  "generated_at": "2026-06-07T10:18:08+00:00",
+  "date": "2026-06-07",
   "headline": {
     "regime_counts": {
-      "CRITICAL": 6,
-      "ELEVATED": 3,
+      "CRITICAL": 8,
+      "ELEVATED": 1,
       "NORMAL": 1
     },
     "quadrant_counts": {
@@ -23,7 +23,7 @@
     "live_forward_detection": {
       "true_positives": 1,
       "false_positives": 7,
-      "pending": 41,
+      "pending": 42,
       "rate_pct": 12.5
     }
   },
@@ -42,7 +42,7 @@
       "regime_source": "L",
       "action": "Monitor",
       "changed_today": false,
-      "since": "2026-05-02"
+      "since": "2026-05-28"
     },
     {
       "market": "Gold",
@@ -58,7 +58,7 @@
       "regime_source": "L",
       "action": "Reduce",
       "changed_today": false,
-      "since": "2026-05-14"
+      "since": "2026-06-04"
     },
     {
       "market": "Silver",
@@ -74,32 +74,32 @@
       "regime_source": "L",
       "action": "Reduce",
       "changed_today": false,
-      "since": "2026-05-07"
+      "since": "2026-05-29"
     },
     {
       "market": "Crypto (BTC)",
-      "lambda_value": 3.68,
-      "lambda_pct": 12.0,
-      "elevated_days": 9,
+      "lambda_value": 3.62,
+      "lambda_pct": 6.0,
+      "elevated_days": 8,
       "elevated_threshold": "p75",
-      "correlation": 0.8,
-      "correlation_pct": 71.0,
+      "correlation": 0.82,
+      "correlation_pct": 74.0,
       "reflexivity": 56.0,
       "quadrant": "Q1",
       "regime": "ELEVATED",
       "regime_source": "L",
       "action": "Maintain",
       "changed_today": true,
-      "since": "2026-06-06"
+      "since": "2026-06-07"
     },
     {
       "market": "Ethereum",
-      "lambda_value": 3.81,
-      "lambda_pct": 15.0,
+      "lambda_value": 3.75,
+      "lambda_pct": 10.0,
       "elevated_days": 5,
       "elevated_threshold": "p90",
-      "correlation": 0.71,
-      "correlation_pct": 47.0,
+      "correlation": 0.75,
+      "correlation_pct": 59.0,
       "reflexivity": 56.0,
       "quadrant": "Q1",
       "regime": "CRITICAL",
@@ -127,18 +127,18 @@
     {
       "market": "UK Equity (EWU)",
       "lambda_value": 3.81,
-      "lambda_pct": 30.0,
-      "elevated_days": 13,
-      "elevated_threshold": "p75",
+      "lambda_pct": 31.0,
+      "elevated_days": 3,
+      "elevated_threshold": "p90",
       "correlation": 0.75,
       "correlation_pct": 85.0,
       "reflexivity": 89.5,
       "quadrant": "Q2",
-      "regime": "ELEVATED",
-      "regime_source": "LC",
+      "regime": "CRITICAL",
+      "regime_source": "L",
       "action": "Monitor",
-      "changed_today": false,
-      "since": "2026-05-16"
+      "changed_today": true,
+      "since": "2026-06-07"
     },
     {
       "market": "Germany (EWG)",
@@ -154,12 +154,12 @@
       "regime_source": "LC",
       "action": "Monitor",
       "changed_today": false,
-      "since": "2026-05-02"
+      "since": "2026-06-05"
     },
     {
       "market": "Bonds",
       "lambda_value": 3.69,
-      "lambda_pct": 17.0,
+      "lambda_pct": 16.0,
       "elevated_days": 15,
       "elevated_threshold": "p90",
       "correlation": 0.89,
@@ -170,23 +170,23 @@
       "regime_source": "LC",
       "action": "Monitor",
       "changed_today": false,
-      "since": "2026-05-14"
+      "since": "2026-05-22"
     },
     {
       "market": "Emerging Markets",
       "lambda_value": 3.64,
-      "lambda_pct": 25.0,
-      "elevated_days": 11,
-      "elevated_threshold": "p75",
+      "lambda_pct": 26.0,
+      "elevated_days": 4,
+      "elevated_threshold": "p90",
       "correlation": 0.49,
       "correlation_pct": 37.0,
       "reflexivity": 89.5,
       "quadrant": "Q2",
-      "regime": "ELEVATED",
+      "regime": "CRITICAL",
       "regime_source": "L",
       "action": "Monitor",
-      "changed_today": true,
-      "since": "2026-06-06"
+      "changed_today": false,
+      "since": "2026-05-28"
     }
   ]
 }
