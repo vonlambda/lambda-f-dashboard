@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-06T13:47:23+00:00",
+  "generated_at": "2026-06-07T10:18:08+00:00",
   "count": 30,
   "history": [
     {
-      "date": "2026-06-06",
+      "date": "2026-06-07",
       "systemic_score": 12,
       "systemic_label": "WATCH",
       "n_q4": 2,
       "n_q3": 0,
-      "n_critical": 6,
+      "n_critical": 8,
       "markets": {
         "Commodities": {
           "lambda_pct": 22.0,
@@ -30,13 +30,13 @@
           "regime": "CRITICAL"
         },
         "Crypto (BTC)": {
-          "lambda_pct": 12.0,
+          "lambda_pct": 6.0,
           "reflexivity": 56.0,
           "quadrant": "Q1",
           "regime": "ELEVATED"
         },
         "Ethereum": {
-          "lambda_pct": 15.0,
+          "lambda_pct": 10.0,
           "reflexivity": 56.0,
           "quadrant": "Q1",
           "regime": "CRITICAL"
@@ -48,10 +48,10 @@
           "regime": "Normal"
         },
         "UK Equity (EWU)": {
-          "lambda_pct": 30.0,
+          "lambda_pct": 31.0,
           "reflexivity": 89.5,
           "quadrant": "Q2",
-          "regime": "ELEVATED"
+          "regime": "CRITICAL"
         },
         "Germany (EWG)": {
           "lambda_pct": 67.0,
@@ -60,16 +60,16 @@
           "regime": "CRITICAL"
         },
         "Bonds": {
-          "lambda_pct": 17.0,
+          "lambda_pct": 16.0,
           "reflexivity": 89.5,
           "quadrant": "Q2",
           "regime": "CRITICAL"
         },
         "Emerging Markets": {
-          "lambda_pct": 25.0,
+          "lambda_pct": 26.0,
           "reflexivity": 89.5,
           "quadrant": "Q2",
-          "regime": "ELEVATED"
+          "regime": "CRITICAL"
         }
       }
     },
