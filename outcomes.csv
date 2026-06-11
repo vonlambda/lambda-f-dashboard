@@ -51,5 +51,5 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-06-07,UK Equity (EWU),CRITICAL,Q2,EWU,46.3800,,,,pending
 2026-06-09,Germany (EWG),CRITICAL,Q2,EWG,42.0400,,,,pending
 2026-06-09,Silver,Q4,Q4,SLV,59.0100,,,,pending
-2026-06-10,Germany (EWG),CRITICAL,Q2,EWG,41.4700,,,,pending
-2026-06-10,Silver,Q4,Q4,SLV,58.5400,,,,pending
+2026-06-11,Emerging Markets,Q4,Q4,EEM,64.6600,,,,pending
+2026-06-11,UK Equity (EWU),CRITICAL,Q2,EWU,45.8100,,,,pending
