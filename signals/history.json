@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-12T11:00:20+00:00",
+  "generated_at": "2026-06-12T15:18:16+00:00",
   "count": 34,
   "history": [
     {
@@ -13,61 +13,61 @@
       "markets": {
         "Commodities": {
           "lambda_pct": 13.0,
-          "reflexivity": 77.0,
+          "reflexivity": 73.0,
           "quadrant": "Q2",
           "regime": "CRITICAL"
         },
         "Gold": {
           "lambda_pct": 86.0,
-          "reflexivity": 77.0,
+          "reflexivity": 73.0,
           "quadrant": "Q4",
           "regime": "CRITICAL"
         },
         "Silver": {
           "lambda_pct": 97.0,
-          "reflexivity": 77.0,
+          "reflexivity": 73.0,
           "quadrant": "Q4",
           "regime": "CRITICAL"
         },
         "Crypto (BTC)": {
           "lambda_pct": 2.0,
-          "reflexivity": 56.0,
+          "reflexivity": 6.0,
           "quadrant": "Q1",
           "regime": "ELEVATED"
         },
         "Ethereum": {
           "lambda_pct": 3.0,
-          "reflexivity": 56.0,
+          "reflexivity": 6.0,
           "quadrant": "Q1",
           "regime": "CRITICAL"
         },
         "US Equity (SPY)": {
           "lambda_pct": 31.0,
-          "reflexivity": 77.0,
+          "reflexivity": 73.0,
           "quadrant": "Q2",
           "regime": "Normal"
         },
         "UK Equity (EWU)": {
           "lambda_pct": 65.0,
-          "reflexivity": 77.0,
+          "reflexivity": 73.0,
           "quadrant": "Q2",
           "regime": "CRITICAL"
         },
         "Germany (EWG)": {
           "lambda_pct": 86.0,
-          "reflexivity": 77.0,
+          "reflexivity": 73.0,
           "quadrant": "Q4",
           "regime": "CRITICAL"
         },
         "Bonds": {
           "lambda_pct": 43.0,
-          "reflexivity": 77.0,
+          "reflexivity": 73.0,
           "quadrant": "Q2",
           "regime": "CRITICAL"
         },
         "Emerging Markets": {
           "lambda_pct": 96.0,
-          "reflexivity": 77.0,
+          "reflexivity": 73.0,
           "quadrant": "Q4",
           "regime": "CRITICAL"
         }
