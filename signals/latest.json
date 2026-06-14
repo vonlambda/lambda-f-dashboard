@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-13T14:03:15+00:00",
-  "date": "2026-06-13",
+  "generated_at": "2026-06-14T11:00:21+00:00",
+  "date": "2026-06-14",
   "headline": {
     "regime_counts": {
-      "CRITICAL": 8,
-      "ELEVATED": 1,
+      "CRITICAL": 7,
+      "ELEVATED": 2,
       "NORMAL": 1
     },
     "quadrant_counts": {
@@ -23,7 +23,7 @@
     "live_forward_detection": {
       "true_positives": 1,
       "false_positives": 10,
-      "pending": 47,
+      "pending": 44,
       "rate_pct": 9.1
     }
   },
@@ -31,7 +31,7 @@
     {
       "market": "Commodities",
       "lambda_value": 3.38,
-      "lambda_pct": 11.0,
+      "lambda_pct": 12.0,
       "elevated_days": 5,
       "elevated_threshold": "p90",
       "correlation": 0.14,
@@ -42,7 +42,7 @@
       "regime_source": "L",
       "action": "Monitor",
       "changed_today": false,
-      "since": "2026-05-02"
+      "since": "2026-05-28"
     },
     {
       "market": "Gold",
@@ -58,7 +58,7 @@
       "regime_source": "L",
       "action": "Reduce",
       "changed_today": false,
-      "since": "2026-05-14"
+      "since": "2026-06-04"
     },
     {
       "market": "Silver",
@@ -73,34 +73,34 @@
       "regime": "CRITICAL",
       "regime_source": "LC",
       "action": "Reduce",
-      "changed_today": true,
-      "since": "2026-06-13"
+      "changed_today": false,
+      "since": "2026-06-09"
     },
     {
       "market": "Crypto (BTC)",
-      "lambda_value": 3.53,
+      "lambda_value": 3.55,
       "lambda_pct": 4.0,
-      "elevated_days": 6,
+      "elevated_days": 5,
       "elevated_threshold": "p75",
-      "correlation": 0.84,
-      "correlation_pct": 78.0,
-      "reflexivity": 56.5,
+      "correlation": 0.83,
+      "correlation_pct": 75.0,
+      "reflexivity": 59.0,
       "quadrant": "Q1",
       "regime": "ELEVATED",
       "regime_source": "LC",
       "action": "Maintain",
-      "changed_today": true,
-      "since": "2026-06-13"
+      "changed_today": false,
+      "since": "2026-06-09"
     },
     {
       "market": "Ethereum",
-      "lambda_value": 3.59,
-      "lambda_pct": 4.0,
+      "lambda_value": 3.57,
+      "lambda_pct": 3.0,
       "elevated_days": 5,
       "elevated_threshold": "p90",
-      "correlation": 0.78,
-      "correlation_pct": 66.0,
-      "reflexivity": 56.5,
+      "correlation": 0.77,
+      "correlation_pct": 65.0,
+      "reflexivity": 59.0,
       "quadrant": "Q1",
       "regime": "CRITICAL",
       "regime_source": "L",
@@ -127,18 +127,18 @@
     {
       "market": "UK Equity (EWU)",
       "lambda_value": 3.79,
-      "lambda_pct": 23.0,
-      "elevated_days": 3,
-      "elevated_threshold": "p90",
+      "lambda_pct": 22.0,
+      "elevated_days": 10,
+      "elevated_threshold": "p75",
       "correlation": 0.77,
       "correlation_pct": 89.0,
       "reflexivity": 68.0,
       "quadrant": "Q2",
-      "regime": "CRITICAL",
-      "regime_source": "L",
+      "regime": "ELEVATED",
+      "regime_source": "LC",
       "action": "Monitor",
       "changed_today": true,
-      "since": "2026-06-13"
+      "since": "2026-06-14"
     },
     {
       "market": "Germany (EWG)",
@@ -154,13 +154,13 @@
       "regime_source": "LC",
       "action": "Monitor",
       "changed_today": false,
-      "since": "2026-05-02"
+      "since": "2026-06-13"
     },
     {
       "market": "Bonds",
       "lambda_value": 3.83,
-      "lambda_pct": 55.0,
-      "elevated_days": 9,
+      "lambda_pct": 56.0,
+      "elevated_days": 10,
       "elevated_threshold": "p90",
       "correlation": 0.89,
       "correlation_pct": 98.0,
@@ -170,13 +170,13 @@
       "regime_source": "LC",
       "action": "Monitor",
       "changed_today": false,
-      "since": "2026-05-14"
+      "since": "2026-05-22"
     },
     {
       "market": "Emerging Markets",
       "lambda_value": 3.89,
       "lambda_pct": 91.0,
-      "elevated_days": 4,
+      "elevated_days": 5,
       "elevated_threshold": "p90",
       "correlation": 0.56,
       "correlation_pct": 49.0,
@@ -185,8 +185,8 @@
       "regime": "CRITICAL",
       "regime_source": "L",
       "action": "Reduce",
-      "changed_today": true,
-      "since": "2026-06-13"
+      "changed_today": false,
+      "since": "2026-06-11"
     }
   ]
 }
