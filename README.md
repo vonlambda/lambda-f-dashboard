@@ -182,6 +182,8 @@ hard-coded numbers, no selection bias. Full ledger at
 <!-- RECENT_CALLS_START -->
 | Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
 |------|--------|--------|----------|---------|---------|---------|--------|
+| 2026-06-14 | Emerging Markets | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-06-14 | Silver | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-06-13 | Germany (EWG) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-06-11 | Emerging Markets | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-06-11 | UK Equity (EWU) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
@@ -243,12 +245,10 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
-| `GOLD-2026-06-12` | Gold | 2026-06-12 | Q4 | 86.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `CRYP-2026-06-07` | Crypto (BTC) | 2026-06-07 | Q1 | 6.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `ETHE-2026-06-07` | Ethereum | 2026-06-07 | Q1 | 10.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `COMM-2026-05-03` | Commodities | 2026-05-03 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `GOLD-2026-05-03` | Gold | 2026-05-03 | Q4 | 92.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-05-03` | Silver | 2026-05-03 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q4 | 92.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q2 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-05-03` | Germany (EWG) | 2026-05-03 | Q4 | 94.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-05-03` | Bonds | 2026-05-03 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `EMER-2026-05-03` | Emerging Markets | 2026-05-03 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
@@ -258,8 +258,10 @@ materialized as real events).
 | `US Equity (SPY)-2026-02-26` | US Equity (SPY) | 2026-02-26 |  | _n/a_ | RESOLVED | ⚪ FP | 8.3% |
 | `Crypto (BTC)-2026-02-07` | Crypto (BTC) | 2026-02-07 |  | _n/a_ | RESOLVED | ⚪ FP | 7.5% |
 | `Ethereum-2026-02-07` | Ethereum | 2026-02-07 |  | _n/a_ | RESOLVED | ⚪ FP | 11.4% |
+| `Ethereum-2026-02-04` | Ethereum | 2026-02-04 |  | _n/a_ | RESOLVED | ⚪ FP | 15.0% |
+| `Gold-2026-02-03` | Gold | 2026-02-03 |  | _n/a_ | RESOLVED | ⚪ FP | 11.8% |
 
-**9 open · 1 TP · 10 FP · Resolved hit-rate: 9.1% · Resolution rate: 11/55**
+**7 open · 1 TP · 10 FP · Resolved hit-rate: 9.1% · Resolution rate: 11/57**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
