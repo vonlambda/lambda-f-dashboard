@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-14T11:00:21+00:00",
+  "generated_at": "2026-06-14T14:06:40+00:00",
   "date": "2026-06-14",
   "headline": {
     "regime_counts": {
@@ -23,7 +23,7 @@
     "live_forward_detection": {
       "true_positives": 1,
       "false_positives": 10,
-      "pending": 44,
+      "pending": 46,
       "rate_pct": 9.1
     }
   },
@@ -42,7 +42,7 @@
       "regime_source": "L",
       "action": "Monitor",
       "changed_today": false,
-      "since": "2026-05-28"
+      "since": "2026-05-02"
     },
     {
       "market": "Gold",
@@ -58,7 +58,7 @@
       "regime_source": "L",
       "action": "Reduce",
       "changed_today": false,
-      "since": "2026-06-04"
+      "since": "2026-05-14"
     },
     {
       "market": "Silver",
@@ -73,8 +73,8 @@
       "regime": "CRITICAL",
       "regime_source": "LC",
       "action": "Reduce",
-      "changed_today": false,
-      "since": "2026-06-09"
+      "changed_today": true,
+      "since": "2026-06-14"
     },
     {
       "market": "Crypto (BTC)",
@@ -89,8 +89,8 @@
       "regime": "ELEVATED",
       "regime_source": "LC",
       "action": "Maintain",
-      "changed_today": false,
-      "since": "2026-06-09"
+      "changed_today": true,
+      "since": "2026-06-14"
     },
     {
       "market": "Ethereum",
@@ -137,8 +137,8 @@
       "regime": "ELEVATED",
       "regime_source": "LC",
       "action": "Monitor",
-      "changed_today": true,
-      "since": "2026-06-14"
+      "changed_today": false,
+      "since": "2026-05-16"
     },
     {
       "market": "Germany (EWG)",
@@ -154,7 +154,7 @@
       "regime_source": "LC",
       "action": "Monitor",
       "changed_today": false,
-      "since": "2026-06-13"
+      "since": "2026-05-02"
     },
     {
       "market": "Bonds",
@@ -170,7 +170,7 @@
       "regime_source": "LC",
       "action": "Monitor",
       "changed_today": false,
-      "since": "2026-05-22"
+      "since": "2026-05-14"
     },
     {
       "market": "Emerging Markets",
@@ -185,8 +185,8 @@
       "regime": "CRITICAL",
       "regime_source": "L",
       "action": "Reduce",
-      "changed_today": false,
-      "since": "2026-06-11"
+      "changed_today": true,
+      "since": "2026-06-14"
     }
   ]
 }
