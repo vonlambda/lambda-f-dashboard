@@ -68,8 +68,8 @@
     "peak_reflexivity": 89.5,
     "quadrant": "Q4",
     "peak_date": "2026-05-05",
-    "watermark_price": 64.48499908447266,
-    "watermark_date": "2026-05-29",
+    "watermark_price": 64.6120002746582,
+    "watermark_date": "2026-06-15",
     "status": "ACTIVE",
     "expiry_date": "2026-08-01",
     "normal_since": null
@@ -102,6 +102,36 @@
     "watermark_date": "2026-06-02",
     "status": "ACTIVE",
     "expiry_date": "2026-08-01",
+    "normal_since": null
+  },
+  "Crypto (BTC)": {
+    "episode_id": "CRYP-2026-06-16",
+    "start_date": "2026-06-16",
+    "trigger_type": "L",
+    "peak_lambda_pct": 7.0,
+    "peak_corr_pct": null,
+    "peak_reflexivity": 61.5,
+    "quadrant": "Q2",
+    "peak_date": "2026-06-16",
+    "watermark_price": 16870.3890876472,
+    "watermark_date": "2026-06-16",
+    "status": "ACTIVE",
+    "expiry_date": "2026-09-14",
+    "normal_since": null
+  },
+  "Ethereum": {
+    "episode_id": "ETHE-2026-06-16",
+    "start_date": "2026-06-16",
+    "trigger_type": "L",
+    "peak_lambda_pct": 5.0,
+    "peak_corr_pct": null,
+    "peak_reflexivity": 61.5,
+    "quadrant": "Q2",
+    "peak_date": "2026-06-16",
+    "watermark_price": 11349.637512182197,
+    "watermark_date": "2026-06-16",
+    "status": "ACTIVE",
+    "expiry_date": "2026-09-14",
     "normal_since": null
   }
 }

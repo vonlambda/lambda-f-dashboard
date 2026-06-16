@@ -28,12 +28,12 @@
     "since": "2026-05-14"
   },
   "Emerging Markets": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-06-06"
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-06-16"
   },
   "Silver": {
-    "regime": "**CRITICAL** (L)",
-    "since": "2026-05-07"
+    "regime": "**CRITICAL** (LC)",
+    "since": "2026-06-16"
   },
   "Ethereum": {
     "regime": "**CRITICAL** (L)",
