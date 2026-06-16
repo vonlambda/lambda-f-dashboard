@@ -59,13 +59,21 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name  "github-actions[bot]"
-          # PyGithub may have pushed README/charts/JSON during the run; rebase
-          # so our state-file commit goes on top.
-          git pull --rebase --autostash origin main || true
-          git add regime_history.json active_episodes.json signal_log.csv 2>/dev/null || true
+          # update_lambda.py already pushed README/charts/JSON to origin via
+          # PyGithub, so the local tree has divergent copies. Preserve ONLY our
+          # 3 state files, hard-reset everything else to origin, then layer the
+          # state-file commit on top. Avoids the daily rebase conflict on
+          # outcomes.csv that was failing this step.
+          STATE="regime_history.json active_episodes.json signal_log.csv"
+          tmp="$(mktemp -d)"
+          for f in $STATE; do [ -f "$f" ] && cp "$f" "$tmp/"; done
+          git fetch origin main
+          git reset --hard origin/main
+          for f in $STATE; do [ -f "$tmp/$f" ] && cp "$tmp/$f" "$f"; done
+          git add $STATE 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "no local state file changes to commit"
+            echo "no state file changes to commit"
           else
             git commit -m "Update state files $(date -u +'%Y-%m-%d')"
-            git push origin main
+            for i in 1 2 3; do git push origin main && break || { git pull --rebase origin main || true; sleep 5; }; done
           fi
