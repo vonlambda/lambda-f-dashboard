@@ -20,8 +20,8 @@
     "since": "2026-06-17"
   },
   "Germany (EWG)": {
-    "regime": "**CRITICAL** (LC)",
-    "since": "2026-05-02"
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-06-18"
   },
   "Bonds": {
     "regime": "**CRITICAL** (LC)",
@@ -32,8 +32,8 @@
     "since": "2026-06-16"
   },
   "Silver": {
-    "regime": "**CRITICAL** (LC)",
-    "since": "2026-06-16"
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-06-18"
   },
   "Ethereum": {
     "regime": "ELEVATED (L)",
