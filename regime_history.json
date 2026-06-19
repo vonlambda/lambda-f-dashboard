@@ -16,16 +16,16 @@
     "since": "2026-05-02"
   },
   "UK Equity (EWU)": {
-    "regime": "**CRITICAL** (C)",
-    "since": "2026-06-17"
+    "regime": "ELEVATED (LC)",
+    "since": "2026-06-19"
   },
   "Germany (EWG)": {
     "regime": "**CRITICAL** (L)",
     "since": "2026-06-18"
   },
   "Bonds": {
-    "regime": "**CRITICAL** (LC)",
-    "since": "2026-05-14"
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-06-19"
   },
   "Emerging Markets": {
     "regime": "**CRITICAL** (L)",
@@ -36,7 +36,7 @@
     "since": "2026-06-18"
   },
   "Ethereum": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-06-17"
+    "regime": "Normal",
+    "since": "2026-06-19"
   }
 }
