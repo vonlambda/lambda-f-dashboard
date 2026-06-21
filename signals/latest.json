@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-20T14:07:34+00:00",
-  "date": "2026-06-20",
+  "generated_at": "2026-06-21T14:14:05+00:00",
+  "date": "2026-06-21",
   "headline": {
     "regime_counts": {
       "CRITICAL": 6,
@@ -78,12 +78,12 @@
     },
     {
       "market": "Crypto (BTC)",
-      "lambda_value": 3.49,
-      "lambda_pct": 3.0,
+      "lambda_value": 3.66,
+      "lambda_pct": 11.0,
       "elevated_days": null,
       "elevated_threshold": null,
-      "correlation": 0.83,
-      "correlation_pct": 76.0,
+      "correlation": 0.84,
+      "correlation_pct": 78.0,
       "reflexivity": 61.5,
       "quadrant": "Q2",
       "regime": "ELEVATED",
@@ -94,12 +94,12 @@
     },
     {
       "market": "Ethereum",
-      "lambda_value": 3.66,
-      "lambda_pct": 7.0,
+      "lambda_value": 3.82,
+      "lambda_pct": 18.0,
       "elevated_days": null,
       "elevated_threshold": null,
       "correlation": 0.76,
-      "correlation_pct": 59.0,
+      "correlation_pct": 60.0,
       "reflexivity": 61.5,
       "quadrant": "Q2",
       "regime": "Normal",
