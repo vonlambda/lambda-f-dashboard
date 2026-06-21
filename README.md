@@ -24,8 +24,8 @@ _No regime changes since yesterday._
 | 🔴 Commodities | 3.42 | 18% | `▇▇▇█▇▆▅▃▂▂▁▁` | 5d* | 0.12 | 22% | 58 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-05-02 |
 | 🔴 Gold | 3.94 | 79% | `▃▆▂▁▁▃▆▅▄█▇▅` | 5d* | 0.28 | 77% | 58 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-05-14 |
 | 🔴 Silver | 3.90 | 82% | `▃▅▄▁▁▄▇█▅▆▅▄` | 17d* | 0.25 | 89% | 58 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-06-18 |
-| 🟠 Crypto (BTC) | 3.49 | 3% | `▇█▇▄▂▁▂▅▄▂▂▁` | -- | 0.83 | 76% | 62 | 🟡 Q2 | ELEVATED (C) | Monitor | 2026-06-17 |
-| 🟢 Ethereum | 3.66 | 7% | `█▇▆▅▅▅▅▆▅▃▂▁` | -- | 0.76 | 59% | 62 | 🟡 Q2 | Normal | Monitor | 2026-06-19 |
+| 🟠 Crypto (BTC) | 3.66 | 11% | `█▆▃▃▂▄▆▃▂▂▁▂` | -- | 0.84 | 78% | 62 | 🟡 Q2 | ELEVATED (C) | Monitor | 2026-06-17 |
+| 🟢 Ethereum | 3.82 | 18% | `█▆▅▅▅▆▆▄▃▁▁▂` | -- | 0.76 | 60% | 62 | 🟡 Q2 | Normal | Monitor | 2026-06-19 |
 | 🟢 US Equity (SPY) | 3.57 | 16% | `█▇▄▃▃▃▄▆▇▇▆▁` | -- | 0.13 | 2% | 58 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
 | 🟠 UK Equity (EWU) | 3.75 | 14% | `▄▅▄▅▆▆▆█▃▁▁▁` | 9d | 0.75 | 83% | 58 | 🟢 Q1 | ELEVATED (LC) | Maintain | 2026-06-19 |
 | 🔴 Germany (EWG) | 3.93 | 67% | `▅▃▄▃▁▁▃▅█▅▁▃` | 5d* | 0.68 | 73% | 58 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-18 |
