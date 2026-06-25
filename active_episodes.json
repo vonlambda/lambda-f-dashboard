@@ -1,34 +1,4 @@
 {
-  "Gold": {
-    "episode_id": "GOLD-2026-05-03",
-    "start_date": "2026-05-03",
-    "trigger_type": "L",
-    "peak_lambda_pct": 92.0,
-    "peak_corr_pct": null,
-    "peak_reflexivity": 89.5,
-    "quadrant": "Q4",
-    "peak_date": "2026-06-06",
-    "watermark_price": 142.10999838511148,
-    "watermark_date": "2026-05-11",
-    "status": "ACTIVE",
-    "expiry_date": "2026-08-01",
-    "normal_since": null
-  },
-  "Silver": {
-    "episode_id": "SILV-2026-05-03",
-    "start_date": "2026-05-03",
-    "trigger_type": "L",
-    "peak_lambda_pct": 99.0,
-    "peak_corr_pct": null,
-    "peak_reflexivity": 89.5,
-    "quadrant": "Q4",
-    "peak_date": "2026-05-03",
-    "watermark_price": 129.86333147684732,
-    "watermark_date": "2026-05-11",
-    "status": "ACTIVE",
-    "expiry_date": "2026-08-01",
-    "normal_since": null
-  },
   "UK Equity (EWU)": {
     "episode_id": "UKE-2026-05-03",
     "start_date": "2026-05-03",
@@ -102,7 +72,7 @@
     "watermark_date": "2026-06-16",
     "status": "ACTIVE",
     "expiry_date": "2026-09-14",
-    "normal_since": null
+    "normal_since": "2026-06-25"
   },
   "Ethereum": {
     "episode_id": "ETHE-2026-06-16",
@@ -117,6 +87,21 @@
     "watermark_date": "2026-06-16",
     "status": "ACTIVE",
     "expiry_date": "2026-09-14",
+    "normal_since": "2026-06-25"
+  },
+  "Commodities": {
+    "episode_id": "COMM-2026-06-25",
+    "start_date": "2026-06-25",
+    "trigger_type": "L",
+    "peak_lambda_pct": 28.0,
+    "peak_corr_pct": null,
+    "peak_reflexivity": 83.0,
+    "quadrant": "Q2",
+    "peak_date": "2026-06-25",
+    "watermark_price": 99.76500225067139,
+    "watermark_date": "2026-06-25",
+    "status": "ACTIVE",
+    "expiry_date": "2026-09-23",
     "normal_since": null
   }
 }
