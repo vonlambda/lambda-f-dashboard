@@ -13,7 +13,7 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-03-20,UK Equity (EWU),CRITICAL,,EWU,43.8500,0.0000,0.0471,0.0000,false_positive
 2026-03-21,Gold,CRITICAL,,GLD,404.0400,0.0084,0.0084,0.0729,false_positive
 2026-03-25,UK Equity (EWU),CRITICAL,,EWU,45.1400,0.0226,0.0226,0.0226,false_positive
-2026-03-27,Bonds,CRITICAL,,TLT,85.6400,0.0000,0.0306,,pending
+2026-03-27,Bonds,CRITICAL,,TLT,85.6400,0.0000,0.0306,0.0306,false_positive
 2026-03-28,Crypto (BTC),CRITICAL,,BTC-USD,66319.6953,0.0055,0.0055,,pending
 2026-04-01,Bonds,CRITICAL,,TLT,86.2600,0.0075,0.0376,,pending
 2026-04-04,Crypto (BTC),CRITICAL,,BTC-USD,67290.5156,0.0000,0.0487,,pending
