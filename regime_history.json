@@ -8,8 +8,8 @@
     "since": "2026-05-14"
   },
   "Crypto (BTC)": {
-    "regime": "Normal",
-    "since": "2026-06-25"
+    "regime": "ELEVATED (C)",
+    "since": "2026-06-26"
   },
   "US Equity (SPY)": {
     "regime": "Normal",
@@ -36,7 +36,7 @@
     "since": "2026-06-18"
   },
   "Ethereum": {
-    "regime": "Normal",
-    "since": "2026-06-25"
+    "regime": "ELEVATED (C)",
+    "since": "2026-06-26"
   }
 }
