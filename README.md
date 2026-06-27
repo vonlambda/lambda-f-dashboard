@@ -245,9 +245,11 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
+| `GOLD-2026-06-26` | Gold | 2026-06-26 | Q2 | 64.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `SILV-2026-06-26` | Silver | 2026-06-26 | Q4 | 84.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `COMM-2026-06-25` | Commodities | 2026-06-25 | Q2 | 28.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q1 | 70.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q3 | 75.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q3 | 93.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q3 | 88.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q2 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-05-03` | Germany (EWG) | 2026-05-03 | Q4 | 94.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-05-03` | Bonds | 2026-05-03 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
@@ -258,10 +260,8 @@ materialized as real events).
 | `Gold-2026-03-21` | Gold | 2026-03-21 |  | _n/a_ | RESOLVED | ⚪ FP | 7.3% |
 | `UK Equity (EWU)-2026-03-20` | UK Equity (EWU) | 2026-03-20 |  | _n/a_ | RESOLVED | ⚪ FP | 0.0% |
 | `Crypto (BTC)-2026-03-10` | Crypto (BTC) | 2026-03-10 |  | _n/a_ | RESOLVED | ⚪ FP | 13.0% |
-| `Emerging Markets-2026-03-09` | Emerging Markets | 2026-03-09 |  | _n/a_ | RESOLVED | ⚪ FP | 6.3% |
-| `Germany (EWG)-2026-03-09` | Germany (EWG) | 2026-03-09 |  | _n/a_ | RESOLVED | ⚪ FP | 1.3% |
 
-**7 open · 1 TP · 15 FP · Resolved hit-rate: 6.2% · Resolution rate: 16/63**
+**9 open · 1 TP · 15 FP · Resolved hit-rate: 6.2% · Resolution rate: 16/63**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
