@@ -1,0 +1,169 @@
+{
+ "generated": "2026-07-03T11:44:43",
+ "unit": "episodes (calls merged per market, gap <= 30 d); precision computed on RESOLVED episodes only",
+ "channels": {
+  "Q4_precision_channel": {
+   "episodes": 6,
+   "resolved": 0,
+   "open_censored": 6,
+   "tp": 0,
+   "fp": 0,
+   "precision_resolved_only": null
+  },
+  "all_critical_coverage_channel": {
+   "episodes": 18,
+   "resolved": 10,
+   "open_censored": 8,
+   "tp": 1,
+   "fp": 9,
+   "precision_resolved_only": 0.1
+  }
+ },
+ "note": "coverage-channel detection rate on the historical event ledger is a SENSITIVITY metric and lives in the validation section; it must not be quoted beside these precision numbers as if produced by the same rule.",
+ "episodes": [
+  {
+   "market": "Bonds",
+   "start": "2026-03-27",
+   "end": "2026-06-19",
+   "n_calls": 9,
+   "channel": "Q4",
+   "outcome": "OPEN"
+  },
+  {
+   "market": "Commodities",
+   "start": "2026-01-07",
+   "end": "2026-01-07",
+   "n_calls": 1,
+   "channel": "CRITICAL",
+   "outcome": "FP"
+  },
+  {
+   "market": "Commodities",
+   "start": "2026-05-28",
+   "end": "2026-05-28",
+   "n_calls": 1,
+   "channel": "CRITICAL",
+   "outcome": "OPEN"
+  },
+  {
+   "market": "Crypto (BTC)",
+   "start": "2026-02-07",
+   "end": "2026-02-07",
+   "n_calls": 1,
+   "channel": "CRITICAL",
+   "outcome": "FP"
+  },
+  {
+   "market": "Crypto (BTC)",
+   "start": "2026-03-10",
+   "end": "2026-04-04",
+   "n_calls": 3,
+   "channel": "CRITICAL",
+   "outcome": "FP"
+  },
+  {
+   "market": "Crypto (BTC)",
+   "start": "2026-05-18",
+   "end": "2026-05-18",
+   "n_calls": 1,
+   "channel": "Q4",
+   "outcome": "OPEN"
+  },
+  {
+   "market": "Emerging Markets",
+   "start": "2026-03-09",
+   "end": "2026-03-09",
+   "n_calls": 1,
+   "channel": "CRITICAL",
+   "outcome": "FP"
+  },
+  {
+   "market": "Emerging Markets",
+   "start": "2026-04-28",
+   "end": "2026-06-16",
+   "n_calls": 6,
+   "channel": "Q4",
+   "outcome": "OPEN"
+  },
+  {
+   "market": "Ethereum",
+   "start": "2026-02-04",
+   "end": "2026-02-07",
+   "n_calls": 2,
+   "channel": "CRITICAL",
+   "outcome": "FP"
+  },
+  {
+   "market": "Germany (EWG)",
+   "start": "2026-03-09",
+   "end": "2026-03-09",
+   "n_calls": 1,
+   "channel": "CRITICAL",
+   "outcome": "FP"
+  },
+  {
+   "market": "Germany (EWG)",
+   "start": "2026-05-19",
+   "end": "2026-06-18",
+   "n_calls": 7,
+   "channel": "Q4",
+   "outcome": "OPEN"
+  },
+  {
+   "market": "Gold",
+   "start": "2026-01-07",
+   "end": "2026-02-03",
+   "n_calls": 2,
+   "channel": "CRITICAL",
+   "outcome": "FP"
+  },
+  {
+   "market": "Gold",
+   "start": "2026-03-21",
+   "end": "2026-03-21",
+   "n_calls": 1,
+   "channel": "CRITICAL",
+   "outcome": "FP"
+  },
+  {
+   "market": "Gold",
+   "start": "2026-05-06",
+   "end": "2026-06-04",
+   "n_calls": 3,
+   "channel": "CRITICAL",
+   "outcome": "OPEN"
+  },
+  {
+   "market": "Silver",
+   "start": "2026-01-13",
+   "end": "2026-01-13",
+   "n_calls": 1,
+   "channel": "CRITICAL",
+   "outcome": "TP"
+  },
+  {
+   "market": "Silver",
+   "start": "2026-05-06",
+   "end": "2026-06-18",
+   "n_calls": 12,
+   "channel": "Q4",
+   "outcome": "OPEN"
+  },
+  {
+   "market": "UK Equity (EWU)",
+   "start": "2026-03-20",
+   "end": "2026-06-17",
+   "n_calls": 10,
+   "channel": "Q4",
+   "outcome": "OPEN"
+  },
+  {
+   "market": "US Equity (SPY)",
+   "start": "2026-02-26",
+   "end": "2026-02-26",
+   "n_calls": 1,
+   "channel": "CRITICAL",
+   "outcome": "FP"
+  }
+ ]
+}
