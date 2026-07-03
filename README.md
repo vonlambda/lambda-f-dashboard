@@ -11,7 +11,7 @@ A proprietary framework for detecting institutional regime shifts before price i
 
 🌐 **Systemic Regime Score: 12/30** — 🟠 *WATCH*
 
-🎯 **Hit rate: 1/18 resolved (5.6%)** · Resolution rate: 18/63 · 45 pending
+🎯 **Episode hit rate (resolved-only): 1/10 (10%)** · Q4 channel: 0 resolved · 6 open · 45 calls pending · [methodology](METHODOLOGY.md) / [scorecard](signals/scorecard.json)
 
 ### Δ since yesterday
 

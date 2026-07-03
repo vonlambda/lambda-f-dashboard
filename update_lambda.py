@@ -762,6 +762,31 @@ def _generate_diff_block(results):
     return "\n".join(lines)
 
 
+def refresh_honest_scorecard():
+    """Regenerate signals/scorecard.json (episode-level, resolved-only) and
+    return the scorecard dict -- the single source of truth for headline
+    precision numbers. Falls back to the committed JSON if regeneration
+    fails; returns None only if both paths fail."""
+    sc_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                           'signals', 'scorecard.json')
+    try:
+        import honest_scorecard as hs
+        calls = hs.load_calls()
+        eps = hs.merge_episodes(calls)
+        sc = hs.score(eps)
+        with open(sc_path, 'w', encoding='utf-8') as f:
+            json.dump({**sc, "episodes": eps.to_dict("records")}, f, indent=1)
+        return sc
+    except Exception as e:
+        print(f"[scorecard] regeneration failed ({e}); using committed JSON")
+    try:
+        with open(sc_path, encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"[scorecard] load failed ({e}); headline falls back to call-day stats")
+        return None
+
+
 def generate_table(results):
     """Generate markdown table from results with severity emojis, regime counts,
     quadrant counts, Δ-since-yesterday, NEW badges, and per-quadrant action.
@@ -803,9 +828,26 @@ def generate_table(results):
     systemic_line = (f"🌐 **Systemic Regime Score: {sys_score['score']}/{sys_score['max_score']}** "
                      f"— {sys_score['emoji']} *{sys_score['label']}*")
 
-    # Tier 3 T3.2 — live forward detection rate (auto-tracked outcomes)
+    # Tier 3 T3.2 — headline precision sourced from the honest scorecard
+    # (episode-level, calls merged per market <=30 d, resolved-only;
+    # signals/scorecard.json is the single source of truth). Call-day stats
+    # remain as bookkeeping and as the fallback if the scorecard is missing.
     stats = compute_detection_stats()
-    if stats['total_resolved'] > 0:
+    scorecard = refresh_honest_scorecard()
+    if scorecard:
+        al = scorecard['channels']['all_critical_coverage_channel']
+        q4 = scorecard['channels']['Q4_precision_channel']
+        al_p = (f"{al['precision_resolved_only'] * 100:.0f}%"
+                if al['precision_resolved_only'] is not None else "n/a")
+        q4_p = (f"{q4['tp']}/{q4['resolved']} ({q4['precision_resolved_only'] * 100:.0f}%)"
+                if q4['precision_resolved_only'] is not None
+                else f"0 resolved · {q4['open_censored']} open")
+        det_line = (f"🎯 **Episode hit rate (resolved-only): "
+                    f"{al['tp']}/{al['resolved']} ({al_p})** "
+                    f"· Q4 channel: {q4_p} "
+                    f"· {stats['pending']} calls pending "
+                    f"· [methodology](METHODOLOGY.md) / [scorecard](signals/scorecard.json)")
+    elif stats['total_resolved'] > 0:
         total_tracked = stats['total_resolved'] + stats['pending']
         det_line = (f"🎯 **Hit rate: {stats['true_positives']}/"
                     f"{stats['total_resolved']} resolved ({stats['detection_rate']:.1f}%)** "
