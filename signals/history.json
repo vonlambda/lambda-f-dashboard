@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-03T14:08:30+00:00",
+  "generated_at": "2026-07-03T19:42:24+00:00",
   "count": 55,
   "history": [
     {
@@ -13,19 +13,19 @@
       "markets": {
         "Commodities": {
           "lambda_pct": 43.0,
-          "reflexivity": 54.5,
+          "reflexivity": 53.5,
           "quadrant": "Q1",
           "regime": "ELEVATED"
         },
         "Gold": {
           "lambda_pct": 75.0,
-          "reflexivity": 54.5,
+          "reflexivity": 53.5,
           "quadrant": "Q3",
           "regime": "CRITICAL"
         },
         "Silver": {
           "lambda_pct": 96.0,
-          "reflexivity": 54.5,
+          "reflexivity": 53.5,
           "quadrant": "Q3",
           "regime": "CRITICAL"
         },
@@ -43,31 +43,31 @@
         },
         "US Equity (SPY)": {
           "lambda_pct": 6.0,
-          "reflexivity": 54.5,
+          "reflexivity": 53.5,
           "quadrant": "Q1",
           "regime": "Normal"
         },
         "UK Equity (EWU)": {
           "lambda_pct": 41.0,
-          "reflexivity": 54.5,
+          "reflexivity": 53.5,
           "quadrant": "Q1",
           "regime": "ELEVATED"
         },
         "Germany (EWG)": {
           "lambda_pct": 89.0,
-          "reflexivity": 54.5,
+          "reflexivity": 53.5,
           "quadrant": "Q3",
           "regime": "CRITICAL"
         },
         "Bonds": {
           "lambda_pct": 78.0,
-          "reflexivity": 54.5,
+          "reflexivity": 53.5,
           "quadrant": "Q3",
           "regime": "ELEVATED"
         },
         "Emerging Markets": {
           "lambda_pct": 80.0,
-          "reflexivity": 54.5,
+          "reflexivity": 53.5,
           "quadrant": "Q3",
           "regime": "CRITICAL"
         }
