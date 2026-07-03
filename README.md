@@ -15,9 +15,7 @@ A proprietary framework for detecting institutional regime shifts before price i
 
 ### Δ since yesterday
 
-- 🟠 **Crypto (BTC)**: ELEVATED → ELEVATED
-
-_Unchanged: Commodities, Gold, Silver, Ethereum, US Equity (SPY), UK Equity (EWU), Germany (EWG), Bonds, Emerging Markets._
+_No regime changes since yesterday._
 
 ### Live signal table
 
@@ -26,7 +24,7 @@ _Unchanged: Commodities, Gold, Silver, Ethereum, US Equity (SPY), UK Equity (EWU
 | 🟠 Commodities | 3.52 | 43% | `█▆▄▃▃▂▁▁▁▁▂▂` | 3d | 0.22 | 68% | 54 | 🟢 Q1 | ELEVATED (L) | Maintain | 2026-07-02 |
 | 🔴 Gold | 3.94 | 75% | `▁▄▆▄▆█▇▆▄▂▆▃` | 5d* | 0.21 | 35% | 54 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-05-14 |
 | 🔴 Silver | 3.99 | 96% | `▁▅▇▆▅▆▅█▂▁▃▇` | 17d* | 0.21 | 68% | 54 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-06-18 |
-| 🟠 🆕 Crypto (BTC) | 3.76 | 26% | `▅▃▂▂▁▂▁▁▃▆█▇` | 5d | 0.83 | 76% | 60 | 🟡 Q2 | ELEVATED (LC) | Monitor | 2026-07-03 |
+| 🟠 Crypto (BTC) | 3.76 | 26% | `▅▃▂▂▁▂▁▁▃▆█▇` | 5d | 0.83 | 76% | 60 | 🟡 Q2 | ELEVATED (LC) | Monitor | 2026-07-03 |
 | 🟠 Ethereum | 3.92 | 40% | `▆▄▃▁▁▁▁▂▄▆▇█` | 5d | 0.78 | 67% | 60 | 🟡 Q2 | ELEVATED (L) | Monitor | 2026-06-28 |
 | 🟢 US Equity (SPY) | 3.50 | 6% | `▆▆▆▇█▇▆▅▄▃▂▁` | -- | 0.07 | 0% | 54 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
 | 🟠 UK Equity (EWU) | 3.83 | 41% | `▇▆█▆▃▂▂▄▂▂▁▃` | 7d | 0.69 | 61% | 54 | 🟢 Q1 | ELEVATED (L) | Maintain | 2026-06-24 |
