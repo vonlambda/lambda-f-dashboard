@@ -28,6 +28,31 @@ Add-Content -Path $logFile -Value "==========================================" -
 # Change to script directory
 Set-Location $scriptDir
 
+# Sync the working copy before running. The updater pushes via the GitHub
+# API, so an unsynced local copy regenerates the README from stale content
+# and silently reverts upstream fixes on its next push (2026-07-03 incident:
+# honest-scorecard fix would have been overwritten by the next daily run).
+# A failed pull is logged but does not block the run.
+$pullStdout = Join-Path $logDir ("git_pull_" + $dateStamp + ".stdout.tmp")
+$pullStderr = Join-Path $logDir ("git_pull_" + $dateStamp + ".stderr.tmp")
+$pullProc = Start-Process -FilePath "git" `
+    -ArgumentList "pull", "--ff-only", "--autostash" `
+    -WorkingDirectory $scriptDir `
+    -RedirectStandardOutput $pullStdout `
+    -RedirectStandardError $pullStderr `
+    -NoNewWindow `
+    -PassThru `
+    -Wait
+foreach ($tmp in @($pullStdout, $pullStderr)) {
+    if (Test-Path $tmp) {
+        Get-Content -Path $tmp -Encoding utf8 | Add-Content -Path $logFile -Encoding utf8
+        Remove-Item -Path $tmp -Force
+    }
+}
+if ($pullProc.ExitCode -ne 0) {
+    Add-Content -Path $logFile -Value "WARNING: git pull failed (exit $($pullProc.ExitCode)); continuing with existing working copy" -Encoding utf8
+}
+
 # Run python via Start-Process so stdout and stderr go to separate files.
 # This bypasses PowerShell's NativeCommandError wrapping that previously
 # caused stderr-only crashes (import errors, syntax errors, etc.) to disappear.
