@@ -225,7 +225,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-04-22 | UK Equity (EWU) | CRITICAL |  | 3.4% | 3.6% | _pending_ | _pending_ |
 | 2026-04-12 | Bonds | CRITICAL |  | 2.1% | 4.3% | _pending_ | _pending_ |
 | 2026-04-12 | UK Equity (EWU) | CRITICAL |  | 3.9% | 4.8% | _pending_ | _pending_ |
-| 2026-04-04 | Crypto (BTC) | CRITICAL |  | 0.0% | 4.9% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
@@ -243,23 +242,23 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
-| `GOLD-2026-06-26` | Gold | 2026-06-26 | Q4 | 75.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `GOLD-2026-06-26` | Gold | 2026-06-26 | Q4 | 79.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-06-26` | Silver | 2026-06-26 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `COMM-2026-06-25` | Commodities | 2026-06-25 | Q2 | 30.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q3 | 93.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q3 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q2 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 41.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q1 | 93.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q1 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q1 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-05-03` | Germany (EWG) | 2026-05-03 | Q4 | 94.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-05-03` | Bonds | 2026-05-03 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `EMER-2026-05-03` | Emerging Markets | 2026-05-03 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `Crypto (BTC)-2026-04-04` | Crypto (BTC) | 2026-04-04 |  | _n/a_ | RESOLVED | ⚪ FP | 13.0% |
 | `Bonds-2026-04-01` | Bonds | 2026-04-01 |  | _n/a_ | RESOLVED | ⚪ FP | 3.8% |
 | `Crypto (BTC)-2026-03-28` | Crypto (BTC) | 2026-03-28 |  | _n/a_ | RESOLVED | ⚪ FP | 10.0% |
 | `Bonds-2026-03-27` | Bonds | 2026-03-27 |  | _n/a_ | RESOLVED | ⚪ FP | 3.1% |
 | `UK Equity (EWU)-2026-03-25` | UK Equity (EWU) | 2026-03-25 |  | _n/a_ | RESOLVED | ⚪ FP | 2.3% |
 | `Gold-2026-03-21` | Gold | 2026-03-21 |  | _n/a_ | RESOLVED | ⚪ FP | 7.3% |
-| `UK Equity (EWU)-2026-03-20` | UK Equity (EWU) | 2026-03-20 |  | _n/a_ | RESOLVED | ⚪ FP | 0.0% |
 
-**9 open · 1 TP · 16 FP · Resolved hit-rate: 5.9% · Resolution rate: 17/63**
+**9 open · 1 TP · 17 FP · Resolved hit-rate: 5.6% · Resolution rate: 18/63**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
