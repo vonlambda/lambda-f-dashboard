@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-04T13:36:18+00:00",
-  "date": "2026-07-04",
+  "generated_at": "2026-07-05T13:42:29+00:00",
+  "date": "2026-07-05",
   "headline": {
     "regime_counts": {
       "CRITICAL": 4,
@@ -47,7 +47,7 @@
     {
       "market": "Gold",
       "lambda_value": 3.93,
-      "lambda_pct": 75.0,
+      "lambda_pct": 74.0,
       "elevated_days": 5,
       "elevated_threshold": "p90",
       "correlation": 0.21,
@@ -84,7 +84,7 @@
       "elevated_threshold": "p75",
       "correlation": 0.83,
       "correlation_pct": 75.0,
-      "reflexivity": 61.0,
+      "reflexivity": 61.5,
       "quadrant": "Q2",
       "regime": "ELEVATED",
       "regime_source": "LC",
@@ -100,7 +100,7 @@
       "elevated_threshold": "p75",
       "correlation": 0.78,
       "correlation_pct": 65.0,
-      "reflexivity": 61.0,
+      "reflexivity": 61.5,
       "quadrant": "Q2",
       "regime": "ELEVATED",
       "regime_source": "L",
@@ -143,8 +143,8 @@
     {
       "market": "Germany (EWG)",
       "lambda_value": 4.02,
-      "lambda_pct": 89.0,
-      "elevated_days": 6,
+      "lambda_pct": 90.0,
+      "elevated_days": 7,
       "elevated_threshold": "p90",
       "correlation": 0.64,
       "correlation_pct": 60.0,
@@ -160,7 +160,7 @@
       "market": "Bonds",
       "lambda_value": 3.89,
       "lambda_pct": 70.0,
-      "elevated_days": 10,
+      "elevated_days": 11,
       "elevated_threshold": "p75",
       "correlation": 0.78,
       "correlation_pct": 59.0,
