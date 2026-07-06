@@ -192,9 +192,9 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-06-09 | Germany (EWG) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-06-09 | Silver | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-06-07 | UK Equity (EWU) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-06-05 | Germany (EWG) | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-06-04 | Germany (EWG) | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-06-04 | Gold | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-06-05 | Germany (EWG) | Q4 | Q4 | 3.7% | _pending_ | _pending_ | _pending_ |
+| 2026-06-04 | Germany (EWG) | CRITICAL | Q3 | 5.9% | _pending_ | _pending_ | _pending_ |
+| 2026-06-04 | Gold | CRITICAL | Q3 | 11.0% | _pending_ | _pending_ | _pending_ |
 | 2026-05-29 | Silver | CRITICAL | Q3 | 24.2% | _pending_ | _pending_ | _pending_ |
 | 2026-05-28 | Commodities | CRITICAL | Q1 | 11.0% | _pending_ | _pending_ | _pending_ |
 | 2026-05-28 | Emerging Markets | CRITICAL | Q1 | 5.9% | _pending_ | _pending_ | _pending_ |
@@ -213,9 +213,9 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-05-14 | Bonds | Q4 | Q4 | 2.2% | _pending_ | _pending_ | _pending_ |
 | 2026-05-14 | Gold | CRITICAL | Q2 | 12.3% | _pending_ | _pending_ | _pending_ |
 | 2026-05-12 | Bonds | CRITICAL | Q3 | 2.3% | _pending_ | _pending_ | _pending_ |
-| 2026-05-07 | Silver | CRITICAL | Q3 | 14.0% | _pending_ | _pending_ | _pending_ |
-| 2026-05-06 | Gold | CRITICAL | Q1 | 8.1% | _pending_ | _pending_ | _pending_ |
-| 2026-05-06 | Silver | CRITICAL | Q3 | 12.2% | _pending_ | _pending_ | _pending_ |
+| 2026-05-07 | Silver | CRITICAL | Q3 | 14.0% | 27.7% | _pending_ | _pending_ |
+| 2026-05-06 | Gold | CRITICAL | Q1 | 8.1% | 15.1% | _pending_ | _pending_ |
+| 2026-05-06 | Silver | CRITICAL | Q3 | 12.2% | 26.2% | _pending_ | _pending_ |
 | 2026-05-01 | UK Equity (EWU) | CRITICAL |  | 3.1% | 3.3% | _pending_ | _pending_ |
 | 2026-04-30 | Bonds | CRITICAL |  | 3.0% | 3.0% | _pending_ | _pending_ |
 | 2026-04-28 | Emerging Markets | CRITICAL |  | 0.5% | 0.5% | _pending_ | _pending_ |
