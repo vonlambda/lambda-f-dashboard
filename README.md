@@ -244,11 +244,11 @@ materialized as real events).
 |---------|--------|--------|----------|---------|--------|---------|----------|
 | `GOLD-2026-06-26` | Gold | 2026-06-26 | Q4 | 79.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-06-26` | Silver | 2026-06-26 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 43.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 54.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q2 | 93.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q2 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q1 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `GERM-2026-05-03` | Germany (EWG) | 2026-05-03 | Q4 | 94.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q3 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `GERM-2026-05-03` | Germany (EWG) | 2026-05-03 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-05-03` | Bonds | 2026-05-03 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `EMER-2026-05-03` | Emerging Markets | 2026-05-03 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `Crypto (BTC)-2026-04-04` | Crypto (BTC) | 2026-04-04 |  | _n/a_ | RESOLVED | ⚪ FP | 13.0% |
