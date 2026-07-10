@@ -1,15 +1,15 @@
 {
   "Commodities": {
-    "regime": "ELEVATED (C)",
-    "since": "2026-07-08"
+    "regime": "Normal",
+    "since": "2026-07-10"
   },
   "Gold": {
     "regime": "**CRITICAL** (L)",
     "since": "2026-05-14"
   },
   "Crypto (BTC)": {
-    "regime": "ELEVATED (LC)",
-    "since": "2026-07-09"
+    "regime": "ELEVATED (L)",
+    "since": "2026-07-10"
   },
   "US Equity (SPY)": {
     "regime": "Normal",
