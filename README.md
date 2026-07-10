@@ -192,8 +192,8 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-06-13 | Germany (EWG) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-06-11 | Emerging Markets | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-06-11 | UK Equity (EWU) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-06-09 | Germany (EWG) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-06-09 | Silver | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-06-09 | Germany (EWG) | CRITICAL | Q2 | 3.5% | _pending_ | _pending_ | _pending_ |
+| 2026-06-09 | Silver | Q4 | Q4 | 12.2% | _pending_ | _pending_ | _pending_ |
 | 2026-06-07 | UK Equity (EWU) | CRITICAL | Q2 | 2.1% | _pending_ | _pending_ | _pending_ |
 | 2026-06-05 | Germany (EWG) | Q4 | Q4 | 3.7% | _pending_ | _pending_ | _pending_ |
 | 2026-06-04 | Germany (EWG) | CRITICAL | Q3 | 5.9% | _pending_ | _pending_ | _pending_ |
@@ -243,15 +243,15 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
-| `GOLD-2026-06-26` | Gold | 2026-06-26 | Q4 | 79.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `GOLD-2026-06-26` | Gold | 2026-06-26 | Q4 | 86.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-06-26` | Silver | 2026-06-26 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 54.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 63.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q2 | 93.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q2 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q3 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `GERM-2026-05-03` | Germany (EWG) | 2026-05-03 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q1 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `GERM-2026-05-03` | Germany (EWG) | 2026-05-03 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-05-03` | Bonds | 2026-05-03 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `EMER-2026-05-03` | Emerging Markets | 2026-05-03 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `EMER-2026-05-03` | Emerging Markets | 2026-05-03 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `Crypto (BTC)-2026-04-04` | Crypto (BTC) | 2026-04-04 |  | _n/a_ | RESOLVED | ⚪ FP | 13.0% |
 | `Bonds-2026-04-01` | Bonds | 2026-04-01 |  | _n/a_ | RESOLVED | ⚪ FP | 3.8% |
 | `Crypto (BTC)-2026-03-28` | Crypto (BTC) | 2026-03-28 |  | _n/a_ | RESOLVED | ⚪ FP | 10.0% |
