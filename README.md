@@ -221,8 +221,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-04-28 | Emerging Markets | CRITICAL |  | 0.5% | 0.5% | _pending_ | _pending_ |
 | 2026-04-28 | UK Equity (EWU) | CRITICAL |  | 2.1% | 2.4% | _pending_ | _pending_ |
 | 2026-04-22 | UK Equity (EWU) | CRITICAL |  | 3.4% | 3.6% | _pending_ | _pending_ |
-| 2026-04-12 | Bonds | CRITICAL |  | 2.1% | 4.3% | _pending_ | _pending_ |
-| 2026-04-12 | UK Equity (EWU) | CRITICAL |  | 3.9% | 4.8% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
