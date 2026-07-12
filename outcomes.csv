@@ -62,3 +62,4 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-06-18,Germany (EWG),CRITICAL,Q2,EWG,41.6000,,,,pending
 2026-06-18,Silver,Q4,Q4,SLV,59.8000,,,,pending
 2026-06-19,Bonds,CRITICAL,Q2,TLT,86.7500,,,,pending
+2026-07-12,UK Equity (EWU),CRITICAL,Q3,EWU,46.6000,,,,pending
