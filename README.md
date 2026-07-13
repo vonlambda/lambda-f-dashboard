@@ -187,9 +187,9 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-06-16 | Silver | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-06-15 | Emerging Markets | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-06-15 | Silver | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-06-13 | Germany (EWG) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-06-11 | Emerging Markets | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-06-11 | UK Equity (EWU) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-06-13 | Germany (EWG) | CRITICAL | Q2 | 3.1% | _pending_ | _pending_ | _pending_ |
+| 2026-06-11 | Emerging Markets | Q4 | Q4 | 2.7% | _pending_ | _pending_ | _pending_ |
+| 2026-06-11 | UK Equity (EWU) | CRITICAL | Q2 | 3.1% | _pending_ | _pending_ | _pending_ |
 | 2026-06-09 | Germany (EWG) | CRITICAL | Q2 | 3.5% | _pending_ | _pending_ | _pending_ |
 | 2026-06-09 | Silver | Q4 | Q4 | 12.2% | _pending_ | _pending_ | _pending_ |
 | 2026-06-07 | UK Equity (EWU) | CRITICAL | Q2 | 2.1% | _pending_ | _pending_ | _pending_ |
@@ -211,9 +211,9 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-05-20 | UK Equity (EWU) | Q4 | Q4 | 3.4% | _pending_ | _pending_ | _pending_ |
 | 2026-05-19 | Germany (EWG) | CRITICAL | Q2 | 1.8% | _pending_ | _pending_ | _pending_ |
 | 2026-05-18 | Crypto (BTC) | Q4 | Q4 | 20.9% | _pending_ | _pending_ | _pending_ |
-| 2026-05-14 | Bonds | Q4 | Q4 | 2.2% | _pending_ | _pending_ | _pending_ |
-| 2026-05-14 | Gold | CRITICAL | Q2 | 12.3% | _pending_ | _pending_ | _pending_ |
-| 2026-05-12 | Bonds | CRITICAL | Q3 | 2.3% | _pending_ | _pending_ | _pending_ |
+| 2026-05-14 | Bonds | Q4 | Q4 | 2.2% | 2.2% | _pending_ | _pending_ |
+| 2026-05-14 | Gold | CRITICAL | Q2 | 12.3% | 14.3% | _pending_ | _pending_ |
+| 2026-05-12 | Bonds | CRITICAL | Q3 | 2.3% | 2.3% | _pending_ | _pending_ |
 | 2026-05-07 | Silver | CRITICAL | Q3 | 14.0% | 27.7% | _pending_ | _pending_ |
 | 2026-05-06 | Gold | CRITICAL | Q1 | 8.1% | 15.1% | _pending_ | _pending_ |
 | 2026-05-06 | Silver | CRITICAL | Q3 | 12.2% | 26.2% | _pending_ | _pending_ |
@@ -242,20 +242,20 @@ materialized as real events).
 | `GOLD-2026-06-26` | Gold | 2026-06-26 | Q4 | 86.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-06-26` | Silver | 2026-06-26 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 63.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q2 | 93.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q2 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q3 | 90.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q1 | 93.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q1 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q3 | 91.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-05-03` | Germany (EWG) | 2026-05-03 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-05-03` | Bonds | 2026-05-03 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `EMER-2026-05-03` | Emerging Markets | 2026-05-03 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `Bonds-2026-04-12` | Bonds | 2026-04-12 |  | _n/a_ | RESOLVED | ⚪ FP | 4.3% |
+| `UK Equity (EWU)-2026-04-12` | UK Equity (EWU) | 2026-04-12 |  | _n/a_ | RESOLVED | ⚪ FP | 5.0% |
 | `Crypto (BTC)-2026-04-04` | Crypto (BTC) | 2026-04-04 |  | _n/a_ | RESOLVED | ⚪ FP | 13.0% |
 | `Bonds-2026-04-01` | Bonds | 2026-04-01 |  | _n/a_ | RESOLVED | ⚪ FP | 3.8% |
 | `Crypto (BTC)-2026-03-28` | Crypto (BTC) | 2026-03-28 |  | _n/a_ | RESOLVED | ⚪ FP | 10.0% |
 | `Bonds-2026-03-27` | Bonds | 2026-03-27 |  | _n/a_ | RESOLVED | ⚪ FP | 3.1% |
-| `UK Equity (EWU)-2026-03-25` | UK Equity (EWU) | 2026-03-25 |  | _n/a_ | RESOLVED | ⚪ FP | 2.3% |
-| `Gold-2026-03-21` | Gold | 2026-03-21 |  | _n/a_ | RESOLVED | ⚪ FP | 7.3% |
 
-**9 open · 1 TP · 17 FP · Resolved hit-rate: 5.6% · Resolution rate: 18/64**
+**9 open · 1 TP · 19 FP · Resolved hit-rate: 5.0% · Resolution rate: 20/64**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
