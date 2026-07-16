@@ -185,8 +185,8 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-06-18 | Germany (EWG) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-06-18 | Silver | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-06-17 | UK Equity (EWU) | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-06-16 | Emerging Markets | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-06-16 | Silver | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-06-16 | Emerging Markets | Q4 | Q4 | 6.2% | _pending_ | _pending_ | _pending_ |
+| 2026-06-16 | Silver | Q4 | Q4 | 20.4% | _pending_ | _pending_ | _pending_ |
 | 2026-06-15 | Emerging Markets | CRITICAL | Q3 | 7.5% | _pending_ | _pending_ | _pending_ |
 | 2026-06-15 | Silver | CRITICAL | Q3 | 18.4% | _pending_ | _pending_ | _pending_ |
 | 2026-06-13 | Germany (EWG) | CRITICAL | Q2 | 3.1% | _pending_ | _pending_ | _pending_ |
