@@ -30,7 +30,7 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-05-12,Bonds,CRITICAL,Q3,TLT,85.5600,0.0232,0.0232,,pending
 2026-05-14,Bonds,Q4,Q4,TLT,84.8000,0.0224,0.0224,,pending
 2026-05-14,Gold,CRITICAL,Q2,GLD,430.5000,0.1232,0.1435,,pending
-2026-05-18,Crypto (BTC),Q4,Q4,BTC-USD,76719.3516,0.2090,,,pending
+2026-05-18,Crypto (BTC),Q4,Q4,BTC-USD,76719.3516,0.2090,0.2390,,pending
 2026-05-19,Germany (EWG),CRITICAL,Q2,EWG,42.3400,0.0183,,,pending
 2026-05-20,Bonds,Q4,Q4,TLT,83.0200,0.0000,,,pending
 2026-05-20,Silver,Q4,Q4,SLV,66.9000,0.1611,,,pending
@@ -58,7 +58,7 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-06-15,Silver,CRITICAL,Q3,SLV,63.4650,0.1842,,,pending
 2026-06-16,Emerging Markets,Q4,Q4,EEM,67.8800,0.0623,,,pending
 2026-06-16,Silver,Q4,Q4,SLV,61.2900,0.2037,,,pending
-2026-06-17,UK Equity (EWU),CRITICAL,Q1,EWU,46.5700,,,,pending
+2026-06-17,UK Equity (EWU),CRITICAL,Q1,EWU,46.5700,0.0102,,,pending
 2026-06-18,Germany (EWG),CRITICAL,Q2,EWG,41.6000,,,,pending
 2026-06-18,Silver,Q4,Q4,SLV,59.8000,,,,pending
 2026-06-19,Bonds,CRITICAL,Q2,TLT,86.7500,,,,pending
