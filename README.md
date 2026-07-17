@@ -182,7 +182,7 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-06-19 | Bonds | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-06-18 | Germany (EWG) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-06-18 | Silver | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-06-17 | UK Equity (EWU) | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-06-17 | UK Equity (EWU) | CRITICAL | Q1 | 1.0% | _pending_ | _pending_ | _pending_ |
 | 2026-06-16 | Emerging Markets | Q4 | Q4 | 6.2% | _pending_ | _pending_ | _pending_ |
 | 2026-06-16 | Silver | Q4 | Q4 | 20.4% | _pending_ | _pending_ | _pending_ |
 | 2026-06-15 | Emerging Markets | CRITICAL | Q3 | 7.5% | _pending_ | _pending_ | _pending_ |
@@ -210,7 +210,7 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-05-20 | Silver | Q4 | Q4 | 16.1% | _pending_ | _pending_ | _pending_ |
 | 2026-05-20 | UK Equity (EWU) | Q4 | Q4 | 3.4% | _pending_ | _pending_ | _pending_ |
 | 2026-05-19 | Germany (EWG) | CRITICAL | Q2 | 1.8% | _pending_ | _pending_ | _pending_ |
-| 2026-05-18 | Crypto (BTC) | Q4 | Q4 | 20.9% | _pending_ | _pending_ | _pending_ |
+| 2026-05-18 | Crypto (BTC) | Q4 | Q4 | 20.9% | 23.9% | _pending_ | _pending_ |
 | 2026-05-14 | Bonds | Q4 | Q4 | 2.2% | 2.2% | _pending_ | _pending_ |
 | 2026-05-14 | Gold | CRITICAL | Q2 | 12.3% | 14.3% | _pending_ | _pending_ |
 | 2026-05-12 | Bonds | CRITICAL | Q3 | 2.3% | 2.3% | _pending_ | _pending_ |
@@ -242,8 +242,8 @@ materialized as real events).
 | `GOLD-2026-06-26` | Gold | 2026-06-26 | Q4 | 86.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-06-26` | Silver | 2026-06-26 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 63.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q1 | 93.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q1 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q2 | 93.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q2 | 89.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q3 | 92.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-05-03` | Germany (EWG) | 2026-05-03 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-05-03` | Bonds | 2026-05-03 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
