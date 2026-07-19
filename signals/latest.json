@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-18T13:18:15+00:00",
-  "date": "2026-07-18",
+  "generated_at": "2026-07-19T13:20:08+00:00",
+  "date": "2026-07-19",
   "headline": {
     "regime_counts": {
       "CRITICAL": 5,
@@ -9,15 +9,15 @@
       "NORMAL": 1
     },
     "quadrant_counts": {
-      "Q4": 4,
+      "Q4": 5,
       "Q3": 0,
-      "Q2": 4,
-      "Q1": 2
+      "Q2": 5,
+      "Q1": 0
     },
     "systemic_score": {
-      "score": 16,
+      "score": 20,
       "max": 30,
-      "pct": 53.3,
+      "pct": 66.7,
       "label": "ELEVATED SYSTEMIC RISK"
     },
     "live_forward_detection": {
@@ -31,7 +31,7 @@
     {
       "market": "Commodities",
       "lambda_value": 3.54,
-      "lambda_pct": 53.0,
+      "lambda_pct": 52.0,
       "elevated_days": null,
       "elevated_threshold": null,
       "correlation": 0.25,
@@ -41,7 +41,7 @@
       "regime": "ELEVATED",
       "regime_source": "C",
       "action": "Monitor",
-      "changed_today": true,
+      "changed_today": false,
       "since": "2026-07-18"
     },
     {
@@ -78,40 +78,40 @@
     },
     {
       "market": "Crypto (BTC)",
-      "lambda_value": 3.78,
-      "lambda_pct": 33.0,
+      "lambda_value": 3.81,
+      "lambda_pct": 38.0,
       "elevated_days": 5,
       "elevated_threshold": "p75",
       "correlation": 0.84,
-      "correlation_pct": 78.0,
-      "reflexivity": 12.5,
-      "quadrant": "Q1",
+      "correlation_pct": 79.0,
+      "reflexivity": 64.0,
+      "quadrant": "Q2",
       "regime": "ELEVATED",
       "regime_source": "LC",
-      "action": "Maintain",
+      "action": "Monitor",
       "changed_today": false,
       "since": "2026-07-16"
     },
     {
       "market": "Ethereum",
       "lambda_value": 3.85,
-      "lambda_pct": 24.0,
-      "elevated_days": 8,
+      "lambda_pct": 23.0,
+      "elevated_days": 7,
       "elevated_threshold": "p75",
-      "correlation": 0.8,
-      "correlation_pct": 70.0,
-      "reflexivity": 12.5,
-      "quadrant": "Q1",
+      "correlation": 0.79,
+      "correlation_pct": 68.0,
+      "reflexivity": 64.0,
+      "quadrant": "Q2",
       "regime": "ELEVATED",
       "regime_source": "L",
-      "action": "Maintain",
+      "action": "Monitor",
       "changed_today": false,
       "since": "2026-06-28"
     },
     {
       "market": "US Equity (SPY)",
       "lambda_value": 3.55,
-      "lambda_pct": 16.0,
+      "lambda_pct": 17.0,
       "elevated_days": null,
       "elevated_threshold": null,
       "correlation": 0.03,
@@ -149,18 +149,18 @@
       "correlation": 0.47,
       "correlation_pct": 18.0,
       "reflexivity": 69.5,
-      "quadrant": "Q2",
+      "quadrant": "Q4",
       "regime": "CRITICAL",
       "regime_source": "L",
-      "action": "Monitor",
+      "action": "Reduce",
       "changed_today": false,
       "since": "2026-06-18"
     },
     {
       "market": "Bonds",
       "lambda_value": 3.97,
-      "lambda_pct": 83.0,
-      "elevated_days": 17,
+      "lambda_pct": 84.0,
+      "elevated_days": 18,
       "elevated_threshold": "p75",
       "correlation": 0.74,
       "correlation_pct": 46.0,
@@ -179,7 +179,7 @@
       "elevated_days": 10,
       "elevated_threshold": "p90",
       "correlation": 0.35,
-      "correlation_pct": 17.0,
+      "correlation_pct": 18.0,
       "reflexivity": 69.5,
       "quadrant": "Q4",
       "regime": "CRITICAL",
