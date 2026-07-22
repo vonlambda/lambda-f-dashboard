@@ -200,9 +200,9 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-05-28 | Commodities | CRITICAL | Q1 | 11.0% | _pending_ | _pending_ | _pending_ |
 | 2026-05-28 | Emerging Markets | CRITICAL | Q1 | 5.9% | _pending_ | _pending_ | _pending_ |
 | 2026-05-27 | Silver | CRITICAL | Q3 | 23.3% | _pending_ | _pending_ | _pending_ |
-| 2026-05-23 | Emerging Markets | CRITICAL | Q1 | 5.6% | _pending_ | _pending_ | _pending_ |
-| 2026-05-23 | Germany (EWG) | CRITICAL | Q1 | 5.7% | _pending_ | _pending_ | _pending_ |
-| 2026-05-23 | Silver | CRITICAL | Q3 | 17.3% | _pending_ | _pending_ | _pending_ |
+| 2026-05-23 | Emerging Markets | CRITICAL | Q1 | 5.6% | 7.5% | _pending_ | _pending_ |
+| 2026-05-23 | Germany (EWG) | CRITICAL | Q1 | 5.7% | 7.3% | _pending_ | _pending_ |
+| 2026-05-23 | Silver | CRITICAL | Q3 | 17.3% | 27.7% | _pending_ | _pending_ |
 | 2026-05-22 | Bonds | CRITICAL | Q3 | 0.1% | 1.4% | _pending_ | _pending_ |
 | 2026-05-22 | Silver | CRITICAL | Q3 | 15.7% | 26.3% | _pending_ | _pending_ |
 | 2026-05-21 | Silver | Q4 | Q4 | 17.0% | 27.4% | _pending_ | _pending_ |
