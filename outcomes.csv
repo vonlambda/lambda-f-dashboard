@@ -38,9 +38,9 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-05-21,Silver,Q4,Q4,SLV,68.7300,0.1698,0.2744,,pending
 2026-05-22,Bonds,CRITICAL,Q3,TLT,84.2200,0.0007,0.0135,,pending
 2026-05-22,Silver,CRITICAL,Q3,SLV,69.4500,0.1565,0.2629,,pending
-2026-05-23,Emerging Markets,CRITICAL,Q1,EEM,65.8800,0.0557,,,pending
-2026-05-23,Germany (EWG),CRITICAL,Q1,EWG,42.9100,0.0567,,,pending
-2026-05-23,Silver,CRITICAL,Q3,SLV,68.3600,0.1730,,,pending
+2026-05-23,Emerging Markets,CRITICAL,Q1,EEM,65.8800,0.0557,0.0747,,pending
+2026-05-23,Germany (EWG),CRITICAL,Q1,EWG,42.9100,0.0567,0.0731,,pending
+2026-05-23,Silver,CRITICAL,Q3,SLV,68.3600,0.1730,0.2773,,pending
 2026-05-27,Silver,CRITICAL,Q3,SLV,69.7200,0.2329,,,pending
 2026-05-28,Commodities,CRITICAL,Q1,DBC,29.4900,0.1100,,,pending
 2026-05-28,Emerging Markets,CRITICAL,Q1,EEM,68.3900,0.0586,,,pending
