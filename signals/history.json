@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-25T13:36:16+00:00",
-  "count": 77,
+  "generated_at": "2026-07-26T13:24:54+00:00",
+  "count": 78,
   "history": [
+    {
+      "date": "2026-07-26",
+      "systemic_score": 4,
+      "systemic_label": "CALM",
+      "n_q4": 0,
+      "n_q3": 2,
+      "n_critical": 5,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 23.0,
+          "reflexivity": 55.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 16.0,
+          "reflexivity": 55.0,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "Silver": {
+          "lambda_pct": 56.0,
+          "reflexivity": 55.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 83.0,
+          "reflexivity": 13.0,
+          "quadrant": "Q3",
+          "regime": "ELEVATED"
+        },
+        "Ethereum": {
+          "lambda_pct": 70.0,
+          "reflexivity": 13.0,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 16.0,
+          "reflexivity": 55.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 59.0,
+          "reflexivity": 55.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 48.0,
+          "reflexivity": 55.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Bonds": {
+          "lambda_pct": 92.0,
+          "reflexivity": 55.0,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 32.0,
+          "reflexivity": 55.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        }
+      }
+    },
     {
       "date": "2026-07-25",
       "systemic_score": 6,
