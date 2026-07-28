@@ -2,11 +2,12 @@
 
 Lambda-F uses the matrix commutator [F, Ḟ] to measure non-commutativity
 of factor covariance dynamics. Combined with a correlation synchronization
-signal, the two-signal system achieves **80.9% detection (38/47)** on the
-current validated event ledger under canonical Method C (see README
-validation section; the earlier 94.9%/100% figures were produced on the
-smaller 39-event ledger and are superseded — same methodology, larger
-event set).
+signal, the two-signal system is evaluated against historical stress events
+(`events.csv` is the committed event record) and scored live by the
+censoring-aware episode scorecard (`honest_scorecard.py`). Earlier published
+detection-rate headlines (94.9%/100% on a 39-event ledger; 80.9% on a
+47-event extension) referenced ledgers that were never committed to this
+repository and are **withdrawn** — see the Validation section below.
 
 ## Key Concepts
 - Factor covariance matrix evolution
@@ -82,12 +83,21 @@ ELEVATED/CRITICAL → Episode Created
 
 ## Validation
 
-Canonical number: **80.9% detection (38/47)** on the current extended event
-ledger under Method C (see README for per-market breakdown and the
-supersession note on the earlier 37/39 = 94.9% figure, which applied to the
-pre-expansion ledger). `events.csv` holds the audit trail; black swans
-(COVID, Terra/Luna, 3AC, FTX) remain design-excluded for the pre-event
-window per the mechanical exclusion rule.
+**Correction (2026-07-28): prior detection-rate headlines withdrawn.** The
+previously stated canonical number — **80.9% detection (38/47)** on an
+extended event ledger, and before it **37/39 = 94.9%** — could not be
+re-derived from any artifact committed to this repository: no 47-event (or
+39-event) ledger was ever materialized here. Under this project's own
+standard (a number must be recomputable from a committed artifact), those
+figures are **withdrawn, not restated**.
+
+What `events.csv` (the committed event record) actually contains: 33
+detected events and 4 design-excluded black swans (COVID, Terra/Luna, 3AC,
+FTX — excluded for the pre-event window per the mechanical exclusion rule),
+and **no missed-event rows**. A record without misses cannot ground a
+detection-rate claim, so no replacement rate is stated. A Method C detection
+rate will be restated if and when a complete trial ledger (detections
+**and** misses) is committed and the number recomputes from it.
 
 **Detection rate is a sensitivity metric** (did the signal fire inside a
 known event window). It is not comparable to, and must not be quoted

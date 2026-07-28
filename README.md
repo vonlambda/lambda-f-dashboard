@@ -68,30 +68,32 @@ flagged as ELEVATED but distinct from Q4.*
 
 
 <details open>
-<summary><b>📊 Validation Summary — 38/47 events (80.9%)</b> · click to collapse</summary>
+<summary><b>📊 Validation — correction notice (2026-07-28)</b> · click to collapse</summary>
 
-### Detection Rate: 38/47 events (80.9%) on extended event ledger
+### Correction: prior detection-rate headlines withdrawn
 
-Reproducible under the canonical **Method C** scoring rule — Method C is this project's breadth-tuned methodology that flags an event if **any** of `λ_days_p75 ≥ 3` (sustained elevated Λ-F), `λ_peak ≥ P90` (Λ-F percentile peak), `corr_days_p90 ≥ 3` (sustained high correlation), or `corr_peak ≥ P95` triggers within the event window, evaluated against the current 47-event validated ledger. See *Methodology* below for the full definition and rationale.
+Earlier versions of this page reported **37/39 (94.9%)** and later **38/47 (80.9%)** detection
+rates, with a per-market breakdown over the 47-event set. On audit, neither the 39-event nor the
+47-event ledger was ever committed to this repository, so those figures **could not be re-derived
+from any committed artifact**. Under this project's own standard — a published number must
+recompute from a committed artifact — they are **withdrawn, not restated**.
 
-| Market | Events | Detection Rate |
-|--------|--------|----------------|
-| Bonds | 5 | **100%** (5/5) |
-| Emerging Markets | 8 | **100%** (8/8) |
-| US Equity | 4 | **100%** (4/4) |
-| UK Equity | 1 | **100%** (1/1) |
-| Germany | 3 | **100%** (3/3) |
-| Commodities | 6 | 83% (5/6) |
-| Silver | 5 | 80% (4/5) |
-| Ethereum | 6 | 67% (4/6) |
-| Gold | 4 | 50% (2/4) |
-| Crypto (BTC) | 5 | 40% (2/5) |
+What the committed record (`events.csv`) actually contains: 33 detected events and 4
+design-excluded black swans (COVID, Terra/Luna, 3AC, FTX), and **no missed-event rows** — a
+record without misses cannot ground a detection rate, so no replacement figure is offered. A
+detection rate will be restated if and when a complete trial ledger (detections **and** misses)
+is committed and the number recomputes from it.
 
-**Where Lambda-F is strongest** — institutional rotation events in Bonds, Emerging Markets, US Equity, UK and Germany. Detection rates here approach 100% with mean lead times of 60–90 days.
+**Method C** (retained for reference) is this project's breadth-tuned scoring rule: an event is
+flagged if **any** of `λ_days_p75 ≥ 3` (sustained elevated Λ-F), `λ_peak ≥ P90` (Λ-F percentile
+peak), `corr_days_p90 ≥ 3` (sustained high correlation), or `corr_peak ≥ P95` triggers within
+the event window. See *Methodology* for the full definition.
 
-**Where Lambda-F is weaker** — Crypto and Gold. Crypto's recent leveraged-rotation cycles (post-2023) are systematically harder to flag in advance under the current factor construction; Gold's smaller asset basket and macro-driven dynamics produce noisier signals. Both are areas of active research.
-
-**On the prior "37/39 (94.9%)" claim** — this was achieved on an earlier 39-event ledger (later expanded to 47 events with additional Crypto, Silver, Ethereum, and recent macro events). Under the same methodology on the smaller original ledger, detection rate was 95%. On the expanded ledger it is 80.9%. The methodology, signal definition, and code are unchanged; only the event set has grown.
+The authoritative forward-performance record is the **live episode scorecard**
+(`honest_scorecard.py` / `signals/scorecard.json`): episode-merged, censoring-aware precision,
+with the strict Q4 channel scored separately from the breadth-tuned all-CRITICAL channel.
+Detection-in-window (sensitivity) and forward precision are different quantities and are never
+quoted as one number.
 
 ### Key Detections
 
