@@ -68,30 +68,24 @@ flagged as ELEVATED but distinct from Q4.*
 
 
 <details open>
-<summary><b>📊 Validation Summary — 38/47 events (80.9%)</b> · click to collapse</summary>
+<summary><b>⚠️ Validation Summary — RETRACTED (2026-07-28)</b> · click to collapse</summary>
 
-### Detection Rate: 38/47 events (80.9%) on extended event ledger
+### The "38/47 events (80.9%)" detection rate is withdrawn
 
-Reproducible under the canonical **Method C** scoring rule — Method C is this project's breadth-tuned methodology that flags an event if **any** of `λ_days_p75 ≥ 3` (sustained elevated Λ-F), `λ_peak ≥ P90` (Λ-F percentile peak), `corr_days_p90 ≥ 3` (sustained high correlation), or `corr_peak ≥ P95` triggers within the event window, evaluated against the current 47-event validated ledger. See *Methodology* below for the full definition and rationale.
+**This section previously reported a retrospective detection rate of 38/47 events (80.9%), with a per-market breakdown, evaluated against a "current 47-event validated ledger." That ledger does not exist and, as far as we can establish, never did.**
 
-| Market | Events | Detection Rate |
-|--------|--------|----------------|
-| Bonds | 5 | **100%** (5/5) |
-| Emerging Markets | 8 | **100%** (8/8) |
-| US Equity | 4 | **100%** (4/4) |
-| UK Equity | 1 | **100%** (1/1) |
-| Germany | 3 | **100%** (3/3) |
-| Commodities | 6 | 83% (5/6) |
-| Silver | 5 | 80% (4/5) |
-| Ethereum | 6 | 67% (4/6) |
-| Gold | 4 | 50% (2/4) |
-| Crypto (BTC) | 5 | 40% (2/5) |
+An internal provenance audit walked *every commit* of this repository's `events.csv`. The row count grows 22 → 23 → 25 → 29 → 33 → … → **37, and never reaches 39 or 47**. No 47-event ledger and no 39-event ledger were ever committed here or found on any machine searched. The per-market table published here summed to exactly 47 events and 38 detections — it was computed against a ledger with no materialized existence. The earlier **"37/39 (94.9%)"** claim rests on the same problem and is withdrawn with it.
 
-**Where Lambda-F is strongest** — institutional rotation events in Bonds, Emerging Markets, US Equity, UK and Germany. Detection rates here approach 100% with mean lead times of 60–90 days.
+**Withdrawn, not restated:**
 
-**Where Lambda-F is weaker** — Crypto and Gold. Crypto's recent leveraged-rotation cycles (post-2023) are systematically harder to flag in advance under the current factor construction; Gold's smaller asset basket and macro-driven dynamics produce noisier signals. Both are areas of active research.
+- 38/47 (80.9%) overall detection rate
+- the full per-market breakdown (Bonds, Emerging Markets, US Equity, UK, Germany, Commodities, Silver, Ethereum, Gold, Crypto)
+- "37/39 (94.9%)" and "100% on institutional events"
+- the "strongest / weaker markets" reading, which was an interpretation of that table
 
-**On the prior "37/39 (94.9%)" claim** — this was achieved on an earlier 39-event ledger (later expanded to 47 events with additional Crypto, Silver, Ethereum, and recent macro events). Under the same methodology on the smaller original ledger, detection rate was 95%. On the expanded ledger it is 80.9%. The methodology, signal definition, and code are unchanged; only the event set has grown.
+**No replacement number is offered.** Re-scoring the surviving 37-event ledger to produce a substitute headline would be manufacturing a figure under pressure — which is the failure being corrected, not a fix for it. Any future retrospective number will be pre-registered and published together with the ledger and the scoring script that produced it.
+
+**What remains valid:** the **Method C** scoring rule itself is unchanged and was never what was in question — it flags an event if **any** of `λ_days_p75 ≥ 3`, `λ_peak ≥ P90`, `corr_days_p90 ≥ 3`, or `corr_peak ≥ P95` triggers within the event window. What was withdrawn is the claim about what that rule scored. `events.csv` (**37 events**) is the materialized audit trail, and `signals/scorecard.json` carries the episode-level, censoring-aware **forward precision** record — generated from committed data by `honest_scorecard.py`. Those are the numbers to rely on, and they are deliberately less flattering than the ones withdrawn here.
 
 ### Key Detections
 
