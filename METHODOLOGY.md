@@ -49,7 +49,8 @@ Detailed methodology available to research partners under NDA.
 1. **Lambda-F (Rotation)**: Detects institutional factor rotation via commutator
 2. **Correlation (Synchronization)**: Detects panic selloffs via pairwise correlation
 
-Combined detection rate: 100% on institutional events (37/39 testable).
+(The combined detection-rate figure formerly quoted here is withdrawn — see the
+Validation section.)
 
 ## Game-Theoretic Enhancement
 

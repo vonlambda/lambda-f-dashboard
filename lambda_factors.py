@@ -245,10 +245,12 @@ def compute_lambda_f(factors: pd.DataFrame) -> Tuple[Optional[float], Optional[f
 # matrix (no CMKT/CSMB/CMOM/CVOL construction), with 14-day SMA output
 # smoothing and expanding ex-ante percentile reference.
 #
-# Backtest result (full period, avg of strict pre-window + lenient in-event
-# scoring rules on 47-event ledger): 78.7% detection at 26.85% FPR. Wins
-# both rules separately, stable across full / ex-2y / ex-5y subsets, longest
-# mean lead time, no per-market <50%. See docs/BAKEOFF_RESULTS.md.
+# Method C was selected in the 2026-05-02 bakeoff (won both scoring rules,
+# stable across full / ex-2y / ex-5y subsets, longest mean lead time). The
+# backtest figures formerly quoted here (78.7% detection at 26.85% FPR on a
+# 47-event ledger, citing docs/BAKEOFF_RESULTS.md) referenced a ledger and a
+# document never committed to this repository and are withdrawn (2026-07-28)
+# -- see METHODOLOGY.md, Validation.
 #
 # All production code paths (update_lambda.py + validate_*.py) should call
 # compute_lambda_method_c(prices). The legacy compute_lambda_f(factors) is
