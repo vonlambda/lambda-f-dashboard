@@ -4,8 +4,8 @@
     "since": "2026-07-25"
   },
   "Gold": {
-    "regime": "ELEVATED (LC)",
-    "since": "2026-07-28"
+    "regime": "**CRITICAL** (C)",
+    "since": "2026-07-29"
   },
   "Crypto (BTC)": {
     "regime": "ELEVATED (L)",
@@ -16,8 +16,8 @@
     "since": "2026-05-02"
   },
   "UK Equity (EWU)": {
-    "regime": "**CRITICAL** (L)",
-    "since": "2026-07-12"
+    "regime": "ELEVATED (L)",
+    "since": "2026-07-29"
   },
   "Germany (EWG)": {
     "regime": "**CRITICAL** (L)",
@@ -32,11 +32,11 @@
     "since": "2026-06-16"
   },
   "Silver": {
-    "regime": "**CRITICAL** (L)",
-    "since": "2026-06-18"
+    "regime": "**CRITICAL** (LC)",
+    "since": "2026-07-29"
   },
   "Ethereum": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-06-28"
+    "regime": "ELEVATED (LC)",
+    "since": "2026-07-29"
   }
 }
