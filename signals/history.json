@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-29T14:12:07+00:00",
-  "count": 81,
+  "generated_at": "2026-07-30T14:04:46+00:00",
+  "count": 82,
   "history": [
+    {
+      "date": "2026-07-30",
+      "systemic_score": 10,
+      "systemic_label": "WATCH",
+      "n_q4": 2,
+      "n_q3": 2,
+      "n_critical": 5,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 21.0,
+          "reflexivity": 42.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 20.0,
+          "reflexivity": 42.0,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "Silver": {
+          "lambda_pct": 67.0,
+          "reflexivity": 42.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 89.0,
+          "reflexivity": 64.0,
+          "quadrant": "Q4",
+          "regime": "ELEVATED"
+        },
+        "Ethereum": {
+          "lambda_pct": 95.0,
+          "reflexivity": 64.0,
+          "quadrant": "Q4",
+          "regime": "ELEVATED"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 18.0,
+          "reflexivity": 42.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 87.0,
+          "reflexivity": 42.0,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 43.0,
+          "reflexivity": 42.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Bonds": {
+          "lambda_pct": 91.0,
+          "reflexivity": 42.0,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 13.0,
+          "reflexivity": 42.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        }
+      }
+    },
     {
       "date": "2026-07-29",
       "systemic_score": 16,
