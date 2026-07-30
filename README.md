@@ -185,6 +185,9 @@ hard-coded numbers, no selection bias. Full ledger at
 <!-- RECENT_CALLS_START -->
 | Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
 |------|--------|--------|----------|---------|---------|---------|--------|
+| 2026-07-30 | Ethereum | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-07-30 | Silver | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-07-30 | UK Equity (EWU) | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-07-29 | Ethereum | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-07-29 | Gold | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-07-29 | Silver | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
@@ -228,7 +231,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-05-07 | Silver | CRITICAL | Q3 | 14.0% | 27.7% | _pending_ | _pending_ |
 | 2026-05-06 | Gold | CRITICAL | Q1 | 8.1% | 15.1% | _pending_ | _pending_ |
 | 2026-05-06 | Silver | CRITICAL | Q3 | 12.2% | 26.2% | _pending_ | _pending_ |
-| 2026-05-01 | UK Equity (EWU) | CRITICAL |  | 3.1% | 3.3% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
@@ -255,14 +257,14 @@ materialized as real events).
 | `UKE-2026-05-03` | UK Equity (EWU) | 2026-05-03 | Q4 | 92.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-05-03` | Germany (EWG) | 2026-05-03 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-05-03` | Bonds | 2026-05-03 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UK Equity (EWU)-2026-05-01` | UK Equity (EWU) | 2026-05-01 |  | _n/a_ | RESOLVED | ⚪ FP | 1.0% |
 | `Bonds-2026-04-30` | Bonds | 2026-04-30 |  | _n/a_ | RESOLVED | ⚪ FP | 3.0% |
 | `Emerging Markets-2026-04-28` | Emerging Markets | 2026-04-28 |  | _n/a_ | RESOLVED | ⚪ FP | 0.5% |
 | `UK Equity (EWU)-2026-04-28` | UK Equity (EWU) | 2026-04-28 |  | _n/a_ | RESOLVED | ⚪ FP | 2.4% |
 | `UK Equity (EWU)-2026-04-22` | UK Equity (EWU) | 2026-04-22 |  | _n/a_ | RESOLVED | ⚪ FP | 3.6% |
 | `Bonds-2026-04-12` | Bonds | 2026-04-12 |  | _n/a_ | RESOLVED | ⚪ FP | 4.3% |
-| `UK Equity (EWU)-2026-04-12` | UK Equity (EWU) | 2026-04-12 |  | _n/a_ | RESOLVED | ⚪ FP | 5.0% |
 
-**9 open · 1 TP · 23 FP · Resolved hit-rate: 4.2% · Resolution rate: 24/68**
+**9 open · 1 TP · 24 FP · Resolved hit-rate: 4.0% · Resolution rate: 25/71**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
