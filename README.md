@@ -7,18 +7,18 @@ A proprietary framework for detecting institutional regime shifts before price i
 <!-- LAMBDA_START -->
 🔴 **5 CRITICAL** · 🟠 **3 ELEVATED** · 🟢 **2 NORMAL**
 
-🔴 **3 Q4** *(Crash Risk)* · 🟠 **0 Q3** *(Rotating)* · 🟡 **7 Q2** *(Fragile)* · 🟢 **0 Q1** *(Stable)*
+🔴 **2 Q4** *(Crash Risk)* · 🟠 **2 Q3** *(Rotating)* · 🟡 **0 Q2** *(Fragile)* · 🟢 **6 Q1** *(Stable)*
 
-🌐 **Systemic Regime Score: 16/30** — 🔴 *ELEVATED SYSTEMIC RISK*
+🌐 **Systemic Regime Score: 10/30** — 🟠 *WATCH*
 
-🎯 **Episode hit rate (resolved-only): 1/10 (10%)** · Q4 channel: 0 resolved · 7 open · 44 calls pending · [methodology](METHODOLOGY.md) / [scorecard](signals/scorecard.json)
+🎯 **Episode hit rate (resolved-only): 1/10 (10%)** · Q4 channel: 0 resolved · 7 open · 46 calls pending · [methodology](METHODOLOGY.md) / [scorecard](signals/scorecard.json)
 
 ### Δ since yesterday
 
-- 🔴 **Gold**: ELEVATED ↑ CRITICAL
+- 🟠 **Gold**: CRITICAL ↓ ELEVATED
 - 🔴 **Silver**: CRITICAL → CRITICAL
 - 🟠 **Ethereum**: ELEVATED → ELEVATED
-- 🟠 **UK Equity (EWU)**: CRITICAL ↓ ELEVATED
+- 🔴 **UK Equity (EWU)**: ELEVATED ↑ CRITICAL
 
 _Unchanged: Commodities, Crypto (BTC), US Equity (SPY), Germany (EWG), Bonds, Emerging Markets._
 
@@ -26,16 +26,16 @@ _Unchanged: Commodities, Crypto (BTC), US Equity (SPY), Germany (EWG), Bonds, Em
 
 | Market | Λ-F | Λ% | 30d Trend | Elev | Corr | C% | R | Quadrant | Regime | Action | Since |
 |--------|-----|----|-----------|------|------|----|---|----------|--------|--------|-------|
-| 🟢 Commodities | 3.45 | 27% | `▁▁▃▃▂▄▅▆█▆▆▅` | -- | 0.22 | 67% | 60 | 🟡 Q2 | Normal | Monitor | 2026-07-25 |
-| 🔴 🆕 Gold | 3.77 | 21% | `▅▅█▄▅▅▆▇▅▃▄▁` | 9d | 0.32 | 91% | 60 | 🟡 Q2 | **CRITICAL** (C) | Monitor | 2026-07-29 |
-| 🔴 🆕 Silver | 3.81 | 55% | `▁▁▂▃▃▅▅█▇▅▅▁` | 17d* | 0.27 | 93% | 60 | 🟡 Q2 | **CRITICAL** (LC) | Monitor | 2026-07-29 |
-| 🟠 Crypto (BTC) | 3.98 | 81% | `▇▅▃▂▁▁▁▂▄▅▆█` | 8d | 0.82 | 69% | 64 | 🔴 Q4 | ELEVATED (L) | Reduce | 2026-07-20 |
-| 🟠 🆕 Ethereum | 4.08 | 87% | `█▆▅▄▂▁▁▂▃▃▄▇` | 7d | 0.82 | 78% | 64 | 🔴 Q4 | ELEVATED (LC) | Reduce | 2026-07-29 |
-| 🟢 US Equity (SPY) | 3.54 | 15% | `█▇▄▁▃▂▂▃▄▄▅▃` | -- | 0.02 | 1% | 60 | 🟡 Q2 | Normal | Monitor | 2026-05-02 |
-| 🟠 🆕 UK Equity (EWU) | 3.92 | 64% | `▂▂▁▃▃▄▃▅▅▇█▆` | 8d | 0.56 | 20% | 60 | 🟡 Q2 | ELEVATED (L) | Monitor | 2026-07-29 |
-| 🔴 Germany (EWG) | 3.85 | 42% | `▃▃▂▁▃▅▆▇█▃▄▃` | 6d* | 0.53 | 26% | 60 | 🟡 Q2 | **CRITICAL** (L) | Monitor | 2026-06-18 |
-| 🔴 Bonds | 4.03 | 91% | `▂▁▂▇▇▆▆▆▅▇▆█` | 4d* | 0.73 | 42% | 60 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-07-25 |
-| 🔴 Emerging Markets | 3.66 | 27% | `▅▃▁▃▁▂▃▄█▇▄▁` | 10d* | 0.27 | 7% | 60 | 🟡 Q2 | **CRITICAL** (L) | Monitor | 2026-06-16 |
+| 🟢 Commodities | 3.43 | 21% | `▁▃▃▂▄▅▆█▆▆▆▄` | -- | 0.24 | 71% | 42 | 🟢 Q1 | Normal | Maintain | 2026-07-25 |
+| 🟠 🆕 Gold | 3.77 | 20% | `▅▇▇▅▆▆█▇▄▅▄▁` | 8d | 0.30 | 85% | 42 | 🟢 Q1 | ELEVATED (LC) | Maintain | 2026-07-30 |
+| 🔴 🆕 Silver | 3.86 | 67% | `▂▃▄▄▆▅█▇▆▅▄▁` | 16d* | 0.24 | 82% | 42 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-07-30 |
+| 🟠 Crypto (BTC) | 4.02 | 89% | `▆▄▃▁▁▁▁▃▅▅▆█` | 9d | 0.81 | 67% | 64 | 🔴 Q4 | ELEVATED (L) | Reduce | 2026-07-20 |
+| 🟠 🆕 Ethereum | 4.14 | 95% | `▆▄▄▃▁▁▁▂▃▃▅█` | 7d | 0.80 | 70% | 64 | 🔴 Q4 | ELEVATED (L) | Reduce | 2026-07-30 |
+| 🟢 US Equity (SPY) | 3.55 | 18% | `█▄▁▃▂▂▄▄▄▅▄▃` | -- | 0.03 | 1% | 42 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
+| 🔴 🆕 UK Equity (EWU) | 3.99 | 87% | `▂▁▃▃▄▃▅▅▇█▆▆` | 3d* | 0.55 | 19% | 42 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-30 |
+| 🔴 Germany (EWG) | 3.86 | 43% | `▃▂▁▃▅▆▇█▃▄▄▁` | 6d* | 0.53 | 26% | 42 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-18 |
+| 🔴 Bonds | 4.03 | 91% | `▁▂▆▇▆▆▅▅▆▆▆█` | 5d* | 0.76 | 52% | 42 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-25 |
+| 🔴 Emerging Markets | 3.60 | 13% | `▅▃▄▃▄▄▅▇▇▅█▁` | 9d* | 0.34 | 17% | 42 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-16 |
 
 > **Quadrants** (patent §6.5): Q1 STABLE · Q2 FRAGILE · Q3 ROTATING · Q4 CRITICAL. Cuts at Λ-F percentile P75 and Reflexivity R≥60. *Asterisk* = reflexivity components partly unavailable.
 > **Actions** are diagnostic, not investment advice — see disclaimer at bottom of page.
