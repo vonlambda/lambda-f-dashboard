@@ -70,3 +70,4 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-07-30,Ethereum,Q4,Q4,ETH-USD,1924.3000,,,,pending
 2026-07-30,Silver,CRITICAL,Q1,SLV,52.8700,,,,pending
 2026-07-30,UK Equity (EWU),CRITICAL,Q3,EWU,48.5800,,,,pending
+2026-07-31,Gold,CRITICAL,Q1,GLD,369.2300,,,,pending
