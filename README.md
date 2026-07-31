@@ -5,37 +5,34 @@ A proprietary framework for detecting institutional regime shifts before price i
 ## Live Signal (Updated Daily)
 
 <!-- LAMBDA_START -->
-🔴 **5 CRITICAL** · 🟠 **3 ELEVATED** · 🟢 **2 NORMAL**
+🔴 **6 CRITICAL** · 🟠 **2 ELEVATED** · 🟢 **2 NORMAL**
 
 🔴 **2 Q4** *(Crash Risk)* · 🟠 **2 Q3** *(Rotating)* · 🟡 **0 Q2** *(Fragile)* · 🟢 **6 Q1** *(Stable)*
 
 🌐 **Systemic Regime Score: 10/30** — 🟠 *WATCH*
 
-🎯 **Episode hit rate (resolved-only): 1/10 (10%)** · Q4 channel: 0 resolved · 7 open · 46 calls pending · [methodology](METHODOLOGY.md) / [scorecard](signals/scorecard.json)
+🎯 **Episode hit rate (resolved-only): 1/10 (10%)** · Q4 channel: 0 resolved · 7 open · 47 calls pending · [methodology](METHODOLOGY.md) / [scorecard](signals/scorecard.json)
 
 ### Δ since yesterday
 
-- 🟠 **Gold**: CRITICAL ↓ ELEVATED
-- 🔴 **Silver**: CRITICAL → CRITICAL
-- 🟠 **Ethereum**: ELEVATED → ELEVATED
-- 🔴 **UK Equity (EWU)**: ELEVATED ↑ CRITICAL
+- 🔴 **Gold**: ELEVATED ↑ CRITICAL
 
-_Unchanged: Commodities, Crypto (BTC), US Equity (SPY), Germany (EWG), Bonds, Emerging Markets._
+_Unchanged: Commodities, Silver, Crypto (BTC), Ethereum, US Equity (SPY), UK Equity (EWU), Germany (EWG), Bonds, Emerging Markets._
 
 ### Live signal table
 
 | Market | Λ-F | Λ% | 30d Trend | Elev | Corr | C% | R | Quadrant | Regime | Action | Since |
 |--------|-----|----|-----------|------|------|----|---|----------|--------|--------|-------|
-| 🟢 Commodities | 3.43 | 21% | `▁▃▃▂▄▅▆█▆▆▆▄` | -- | 0.24 | 71% | 42 | 🟢 Q1 | Normal | Maintain | 2026-07-25 |
-| 🟠 🆕 Gold | 3.77 | 20% | `▅▇▇▅▆▆█▇▄▅▄▁` | 8d | 0.30 | 85% | 42 | 🟢 Q1 | ELEVATED (LC) | Maintain | 2026-07-30 |
-| 🔴 🆕 Silver | 3.86 | 67% | `▂▃▄▄▆▅█▇▆▅▄▁` | 16d* | 0.24 | 82% | 42 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-07-30 |
-| 🟠 Crypto (BTC) | 4.02 | 89% | `▆▄▃▁▁▁▁▃▅▅▆█` | 9d | 0.81 | 67% | 64 | 🔴 Q4 | ELEVATED (L) | Reduce | 2026-07-20 |
-| 🟠 🆕 Ethereum | 4.14 | 95% | `▆▄▄▃▁▁▁▂▃▃▅█` | 7d | 0.80 | 70% | 64 | 🔴 Q4 | ELEVATED (L) | Reduce | 2026-07-30 |
-| 🟢 US Equity (SPY) | 3.55 | 18% | `█▄▁▃▂▂▄▄▄▅▄▃` | -- | 0.03 | 1% | 42 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
-| 🔴 🆕 UK Equity (EWU) | 3.99 | 87% | `▂▁▃▃▄▃▅▅▇█▆▆` | 3d* | 0.55 | 19% | 42 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-30 |
-| 🔴 Germany (EWG) | 3.86 | 43% | `▃▂▁▃▅▆▇█▃▄▄▁` | 6d* | 0.53 | 26% | 42 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-18 |
-| 🔴 Bonds | 4.03 | 91% | `▁▂▆▇▆▆▅▅▆▆▆█` | 5d* | 0.76 | 52% | 42 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-25 |
-| 🔴 Emerging Markets | 3.60 | 13% | `▅▃▄▃▄▄▅▇▇▅█▁` | 9d* | 0.34 | 17% | 42 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-16 |
+| 🟢 Commodities | 3.46 | 30% | `▁▃▂▂▄▆▇█▆▆▆▃` | -- | 0.22 | 64% | 41 | 🟢 Q1 | Normal | Maintain | 2026-07-25 |
+| 🔴 🆕 Gold | 3.81 | 35% | `▅█▄▅▆▆▇▅▄▅▃▁` | 8d | 0.32 | 91% | 41 | 🟢 Q1 | **CRITICAL** (C) | Maintain | 2026-07-31 |
+| 🔴 Silver | 3.86 | 65% | `▂▄▃▆▅▆█▆▅▅▃▁` | 16d* | 0.24 | 85% | 41 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-07-30 |
+| 🟠 Crypto (BTC) | 4.03 | 93% | `▅▃▂▁▁▁▂▄▅▆▇█` | 9d | 0.80 | 64% | 62 | 🔴 Q4 | ELEVATED (L) | Reduce | 2026-07-20 |
+| 🟠 Ethereum | 4.18 | 98% | `▅▄▃▂▁▁▂▃▃▄▆█` | 6d | 0.79 | 67% | 62 | 🔴 Q4 | ELEVATED (L) | Reduce | 2026-07-30 |
+| 🟢 US Equity (SPY) | 3.54 | 16% | `█▁▁▂▁▂▄▄▅▅▃▄` | -- | 0.06 | 2% | 41 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
+| 🔴 UK Equity (EWU) | 3.97 | 85% | `▁▁▃▃▄▄▅▆█▇▆▆` | 3d* | 0.53 | 13% | 41 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-30 |
+| 🔴 Germany (EWG) | 3.91 | 56% | `▂▁▁▅▆▆█▅▃▄▃▁` | 6d* | 0.47 | 18% | 41 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-18 |
+| 🔴 Bonds | 4.01 | 87% | `▁▄▇▆▆▆▅▆▆▆▇█` | 5d* | 0.70 | 35% | 41 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-25 |
+| 🔴 Emerging Markets | 3.66 | 27% | `▅▅▄▄▅▅▇█▆▇▇▁` | 8d* | 0.35 | 18% | 41 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-16 |
 
 > **Quadrants** (patent §6.5): Q1 STABLE · Q2 FRAGILE · Q3 ROTATING · Q4 CRITICAL. Cuts at Λ-F percentile P75 and Reflexivity R≥60. *Asterisk* = reflexivity components partly unavailable.
 > **Actions** are diagnostic, not investment advice — see disclaimer at bottom of page.
