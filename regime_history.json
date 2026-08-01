@@ -4,12 +4,12 @@
     "since": "2026-07-25"
   },
   "Gold": {
-    "regime": "**CRITICAL** (C)",
-    "since": "2026-07-31"
+    "regime": "ELEVATED (LC)",
+    "since": "2026-08-01"
   },
   "Crypto (BTC)": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-07-20"
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-08-01"
   },
   "US Equity (SPY)": {
     "regime": "Normal",
@@ -36,7 +36,7 @@
     "since": "2026-07-30"
   },
   "Ethereum": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-07-30"
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-08-01"
   }
 }
