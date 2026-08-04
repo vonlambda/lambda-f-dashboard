@@ -4,8 +4,8 @@
     "since": "2026-07-25"
   },
   "Gold": {
-    "regime": "ELEVATED (LC)",
-    "since": "2026-08-01"
+    "regime": "**CRITICAL** (C)",
+    "since": "2026-08-04"
   },
   "Crypto (BTC)": {
     "regime": "**CRITICAL** (L)",
