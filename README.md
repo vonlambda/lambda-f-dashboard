@@ -227,7 +227,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-05-14 | Bonds | Q4 | Q4 | 2.2% | 2.2% | _pending_ | _pending_ |
 | 2026-05-14 | Gold | CRITICAL | Q2 | 12.3% | 14.3% | _pending_ | _pending_ |
 | 2026-05-12 | Bonds | CRITICAL | Q3 | 2.3% | 2.3% | _pending_ | _pending_ |
-| 2026-05-07 | Silver | CRITICAL | Q3 | 14.0% | 27.7% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
@@ -245,7 +244,7 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
-| `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q3 | 91.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q3 | 92.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-08-02` | Germany (EWG) | 2026-08-02 | Q1 | 44.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-08-02` | Bonds | 2026-08-02 | Q3 | 91.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `EMER-2026-07-19` | Emerging Markets | 2026-07-19 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
@@ -254,14 +253,14 @@ materialized as real events).
 | `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 63.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `Silver-2026-05-07` | Silver | 2026-05-07 | Q3 | _n/a_ | RESOLVED | ✅ TP | 29.6% |
 | `Gold-2026-05-06` | Gold | 2026-05-06 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 3.3% |
 | `Silver-2026-05-06` | Silver | 2026-05-06 | Q3 | _n/a_ | RESOLVED | ✅ TP | 28.1% |
 | `UK Equity (EWU)-2026-05-01` | UK Equity (EWU) | 2026-05-01 |  | _n/a_ | RESOLVED | ⚪ FP | 1.0% |
 | `Bonds-2026-04-30` | Bonds | 2026-04-30 |  | _n/a_ | RESOLVED | ⚪ FP | 3.0% |
 | `Emerging Markets-2026-04-28` | Emerging Markets | 2026-04-28 |  | _n/a_ | RESOLVED | ⚪ FP | 0.5% |
-| `UK Equity (EWU)-2026-04-28` | UK Equity (EWU) | 2026-04-28 |  | _n/a_ | RESOLVED | ⚪ FP | 2.4% |
 
-**9 open · 2 TP · 25 FP · Resolved hit-rate: 7.4% · Resolution rate: 27/75**
+**9 open · 3 TP · 25 FP · Resolved hit-rate: 10.7% · Resolution rate: 28/75**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
