@@ -244,7 +244,7 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
-| `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q3 | 92.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q1 | 92.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-08-02` | Germany (EWG) | 2026-08-02 | Q1 | 44.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-08-02` | Bonds | 2026-08-02 | Q3 | 92.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `EMER-2026-07-19` | Emerging Markets | 2026-07-19 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
