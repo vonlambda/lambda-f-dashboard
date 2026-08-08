@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-07T13:05:46+00:00",
-  "count": 90,
+  "generated_at": "2026-08-08T12:50:24+00:00",
+  "count": 91,
   "history": [
+    {
+      "date": "2026-08-08",
+      "systemic_score": 10,
+      "systemic_label": "WATCH",
+      "n_q4": 2,
+      "n_q3": 2,
+      "n_critical": 8,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 55.0,
+          "reflexivity": 13.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 23.0,
+          "reflexivity": 13.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Silver": {
+          "lambda_pct": 78.0,
+          "reflexivity": 13.0,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 91.0,
+          "reflexivity": 65.0,
+          "quadrant": "Q4",
+          "regime": "CRITICAL"
+        },
+        "Ethereum": {
+          "lambda_pct": 81.0,
+          "reflexivity": 65.0,
+          "quadrant": "Q4",
+          "regime": "CRITICAL"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 40.0,
+          "reflexivity": 13.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 25.0,
+          "reflexivity": 13.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 1.0,
+          "reflexivity": 13.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Bonds": {
+          "lambda_pct": 81.0,
+          "reflexivity": 13.0,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 24.0,
+          "reflexivity": 13.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        }
+      }
+    },
     {
       "date": "2026-08-07",
       "systemic_score": 8,
