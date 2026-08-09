@@ -21,14 +21,14 @@ _No regime changes since yesterday._
 
 | Market | Λ-F | Λ% | 30d Trend | Elev | Corr | C% | R | Quadrant | Regime | Action | Since |
 |--------|-----|----|-----------|------|------|----|---|----------|--------|--------|-------|
-| 🟢 Commodities | 3.55 | 55% | `▁▄▆▇█▆▆▆▄▂▁▄` | -- | 0.18 | 47% | 13 | 🟢 Q1 | Normal | Maintain | 2026-07-25 |
-| 🔴 Gold | 3.77 | 23% | `▆▆▇█▆▄▅▃▂▁▁▂` | 5d | 0.33 | 95% | 13 | 🟢 Q1 | **CRITICAL** (C) | Maintain | 2026-08-04 |
+| 🟢 Commodities | 3.55 | 56% | `▁▄▆▇█▆▆▆▄▂▁▄` | -- | 0.18 | 47% | 13 | 🟢 Q1 | Normal | Maintain | 2026-07-25 |
+| 🔴 Gold | 3.77 | 22% | `▆▆▇█▆▄▅▃▂▁▁▂` | 5d | 0.33 | 95% | 13 | 🟢 Q1 | **CRITICAL** (C) | Maintain | 2026-08-04 |
 | 🔴 Silver | 3.91 | 78% | `▆▅▆█▆▆▅▄▂▁▁▂` | 15d* | 0.22 | 73% | 13 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-30 |
-| 🔴 Crypto (BTC) | 4.03 | 91% | `▁▁▂▄▄▅▆▇▇▇▇█` | 9d* | 0.72 | 45% | 65 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-08-01 |
-| 🔴 Ethereum | 4.06 | 81% | `▁▁▁▂▃▃▄▅▅▆█▆` | 6d* | 0.61 | 16% | 65 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-08-01 |
-| 🟢 US Equity (SPY) | 3.64 | 40% | `▂▁▂▄▅▆▆▃▃▄▅█` | -- | 0.08 | 4% | 13 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
-| 🔴 UK Equity (EWU) | 3.80 | 25% | `▁▁▂▄▅█▆▅▅▄▅▅` | 6d* | 0.64 | 44% | 13 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-07-30 |
-| 🔴 Germany (EWG) | 3.53 | 1% | `▆▆▇█▆▅▆▅▅▄▃▁` | 6d* | 0.60 | 47% | 13 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-18 |
+| 🔴 Crypto (BTC) | 4.03 | 90% | `▁▁▃▄▅▆▇▇▇▇█▇` | 10d* | 0.72 | 45% | 66 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-08-01 |
+| 🔴 Ethereum | 4.08 | 86% | `▁▁▂▂▂▃▅▅▅▆█▆` | 6d* | 0.61 | 16% | 66 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-08-01 |
+| 🟢 US Equity (SPY) | 3.64 | 39% | `▂▁▂▄▅▆▆▃▃▄▅█` | -- | 0.08 | 4% | 13 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
+| 🔴 UK Equity (EWU) | 3.80 | 24% | `▁▁▂▄▅█▆▅▅▄▅▅` | 6d* | 0.64 | 44% | 13 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-07-30 |
+| 🔴 Germany (EWG) | 3.53 | 0% | `▆▆▇█▆▅▆▅▅▄▃▁` | 5d* | 0.60 | 47% | 13 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-18 |
 | 🔴 Bonds | 3.97 | 81% | `▄▃▂▁▄▄▃▅▆█▇▆` | 7d* | 0.68 | 32% | 13 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-25 |
 | 🔴 Emerging Markets | 3.66 | 24% | `▅▅▅▇█▆▇▇▄▂▁▁` | 8d* | 0.38 | 21% | 13 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-16 |
 
