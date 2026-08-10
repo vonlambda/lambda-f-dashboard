@@ -228,7 +228,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-05-18 | Crypto (BTC) | Q4 | Q4 | 20.9% | 23.9% | _pending_ | _pending_ |
 | 2026-05-14 | Bonds | Q4 | Q4 | 2.2% | 2.2% | _pending_ | _pending_ |
 | 2026-05-14 | Gold | CRITICAL | Q2 | 12.3% | 14.3% | _pending_ | _pending_ |
-| 2026-05-12 | Bonds | CRITICAL | Q3 | 2.3% | 2.3% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
