@@ -201,10 +201,10 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-06-15 | Emerging Markets | CRITICAL | Q3 | 7.5% | _pending_ | _pending_ | _pending_ |
 | 2026-06-15 | Silver | CRITICAL | Q3 | 18.4% | _pending_ | _pending_ | _pending_ |
 | 2026-06-13 | Germany (EWG) | CRITICAL | Q2 | 3.1% | _pending_ | _pending_ | _pending_ |
-| 2026-06-11 | Emerging Markets | Q4 | Q4 | 2.7% | _pending_ | _pending_ | _pending_ |
-| 2026-06-11 | UK Equity (EWU) | CRITICAL | Q2 | 3.1% | _pending_ | _pending_ | _pending_ |
-| 2026-06-09 | Germany (EWG) | CRITICAL | Q2 | 3.5% | _pending_ | _pending_ | _pending_ |
-| 2026-06-09 | Silver | Q4 | Q4 | 12.2% | _pending_ | _pending_ | _pending_ |
+| 2026-06-11 | Emerging Markets | Q4 | Q4 | 2.7% | 9.5% | _pending_ | _pending_ |
+| 2026-06-11 | UK Equity (EWU) | CRITICAL | Q2 | 3.1% | 3.1% | _pending_ | _pending_ |
+| 2026-06-09 | Germany (EWG) | CRITICAL | Q2 | 3.5% | 3.5% | _pending_ | _pending_ |
+| 2026-06-09 | Silver | Q4 | Q4 | 12.2% | 14.6% | _pending_ | _pending_ |
 | 2026-06-07 | UK Equity (EWU) | CRITICAL | Q2 | 2.1% | 2.1% | _pending_ | _pending_ |
 | 2026-06-05 | Germany (EWG) | Q4 | Q4 | 3.7% | 3.7% | _pending_ | _pending_ |
 | 2026-06-04 | Germany (EWG) | CRITICAL | Q3 | 5.9% | 5.9% | _pending_ | _pending_ |
@@ -252,14 +252,14 @@ materialized as real events).
 | `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 63.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `Bonds-2026-05-12` | Bonds | 2026-05-12 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 3.5% |
 | `Silver-2026-05-07` | Silver | 2026-05-07 | Q3 | _n/a_ | RESOLVED | ✅ TP | 29.6% |
 | `Gold-2026-05-06` | Gold | 2026-05-06 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 3.3% |
 | `Silver-2026-05-06` | Silver | 2026-05-06 | Q3 | _n/a_ | RESOLVED | ✅ TP | 28.1% |
 | `UK Equity (EWU)-2026-05-01` | UK Equity (EWU) | 2026-05-01 |  | _n/a_ | RESOLVED | ⚪ FP | 1.0% |
 | `Bonds-2026-04-30` | Bonds | 2026-04-30 |  | _n/a_ | RESOLVED | ⚪ FP | 3.0% |
-| `Emerging Markets-2026-04-28` | Emerging Markets | 2026-04-28 |  | _n/a_ | RESOLVED | ⚪ FP | 0.5% |
 
-**9 open · 3 TP · 25 FP · Resolved hit-rate: 10.7% · Resolution rate: 28/75**
+**9 open · 3 TP · 26 FP · Resolved hit-rate: 10.3% · Resolution rate: 29/75**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
