@@ -193,7 +193,7 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-07-29 | Gold | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-07-29 | Silver | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-07-25 | Bonds | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-07-12 | UK Equity (EWU) | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-07-12 | UK Equity (EWU) | CRITICAL | Q3 | 0.1% | _pending_ | _pending_ | _pending_ |
 | 2026-06-19 | Bonds | CRITICAL | Q2 | 2.5% | _pending_ | _pending_ | _pending_ |
 | 2026-06-18 | Germany (EWG) | CRITICAL | Q2 | 2.3% | _pending_ | _pending_ | _pending_ |
 | 2026-06-18 | Silver | Q4 | Q4 | 15.3% | _pending_ | _pending_ | _pending_ |
@@ -226,8 +226,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-05-20 | UK Equity (EWU) | Q4 | Q4 | 3.4% | 3.4% | _pending_ | _pending_ |
 | 2026-05-19 | Germany (EWG) | CRITICAL | Q2 | 1.8% | 3.5% | _pending_ | _pending_ |
 | 2026-05-18 | Crypto (BTC) | Q4 | Q4 | 20.9% | 23.9% | _pending_ | _pending_ |
-| 2026-05-14 | Bonds | Q4 | Q4 | 2.2% | 2.2% | _pending_ | _pending_ |
-| 2026-05-14 | Gold | CRITICAL | Q2 | 12.3% | 14.3% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
