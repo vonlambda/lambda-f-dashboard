@@ -5,34 +5,34 @@ A proprietary framework for detecting institutional regime shifts before price i
 ## Live Signal (Updated Daily)
 
 <!-- LAMBDA_START -->
-🔴 **6 CRITICAL** · 🟠 **2 ELEVATED** · 🟢 **2 NORMAL**
+🔴 **5 CRITICAL** · 🟠 **3 ELEVATED** · 🟢 **2 NORMAL**
 
-🔴 **2 Q4** *(Crash Risk)* · 🟠 **2 Q3** *(Rotating)* · 🟡 **0 Q2** *(Fragile)* · 🟢 **6 Q1** *(Stable)*
+🔴 **0 Q4** *(Crash Risk)* · 🟠 **1 Q3** *(Rotating)* · 🟡 **2 Q2** *(Fragile)* · 🟢 **7 Q1** *(Stable)*
 
-🌐 **Systemic Regime Score: 10/30** — 🟠 *WATCH*
+🌐 **Systemic Regime Score: 4/30** — 🟢 *CALM*
 
-🎯 **Episode hit rate (resolved-only): 2/11 (18%)** · Q4 channel: 1/1 (100%) · 46 calls pending · [methodology](METHODOLOGY.md) / [scorecard](signals/scorecard.json)
+🎯 **Episode hit rate (resolved-only): 2/11 (18%)** · Q4 channel: 1/1 (100%) · 44 calls pending · [methodology](METHODOLOGY.md) / [scorecard](signals/scorecard.json)
 
 ### Δ since yesterday
 
-- 🟠 **Gold**: CRITICAL ↓ ELEVATED
+- 🟠 **Bonds**: CRITICAL ↓ ELEVATED
 
-_Unchanged: Commodities, Silver, Crypto (BTC), Ethereum, US Equity (SPY), UK Equity (EWU), Germany (EWG), Bonds, Emerging Markets._
+_Unchanged: Commodities, Gold, Silver, Crypto (BTC), Ethereum, US Equity (SPY), UK Equity (EWU), Germany (EWG), Emerging Markets._
 
 ### Live signal table
 
 | Market | Λ-F | Λ% | 30d Trend | Elev | Corr | C% | R | Quadrant | Regime | Action | Since |
 |--------|-----|----|-----------|------|------|----|---|----------|--------|--------|-------|
-| 🟢 Commodities | 3.53 | 52% | `▄▆▇█▆▆▆▄▂▁▁▅` | -- | 0.24 | 71% | 12 | 🟢 Q1 | Normal | Maintain | 2026-07-25 |
-| 🟠 🆕 Gold | 3.78 | 23% | `▆▇█▆▄▅▃▂▁▁▁▂` | 5d | 0.31 | 88% | 12 | 🟢 Q1 | ELEVATED (LC) | Maintain | 2026-08-12 |
-| 🔴 Silver | 3.99 | 95% | `▅▆█▆▆▅▄▂▁▁▂▃` | 16d* | 0.18 | 48% | 12 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-30 |
-| 🔴 Crypto (BTC) | 4.03 | 89% | `▁▃▃▄▆▆▆▆▇█▇▇` | 10d* | 0.73 | 47% | 64 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-08-01 |
-| 🔴 Ethereum | 4.07 | 84% | `▁▂▂▂▄▅▅▆▇█▇▅` | 6d* | 0.63 | 21% | 64 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-08-01 |
-| 🟢 US Equity (SPY) | 3.68 | 47% | `▁▁▃▄▄▄▂▂▃▄▄█` | -- | 0.10 | 6% | 12 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
-| 🟠 UK Equity (EWU) | 3.70 | 4% | `▁▁▃▅█▆▄▅▃▄▆▁` | 12d | 0.66 | 49% | 12 | 🟢 Q1 | ELEVATED (L) | Maintain | 2026-08-10 |
-| 🔴 Germany (EWG) | 3.43 | 0% | `▇▇█▇▆▆▆▆▅▄▄▁` | 6d* | 0.60 | 46% | 12 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-18 |
-| 🔴 Bonds | 3.97 | 81% | `▃▂▁▄▄▃▅▆█▇▇▅` | 7d* | 0.71 | 38% | 12 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-25 |
-| 🔴 Emerging Markets | 3.57 | 7% | `▅▅▇█▆▇▇▅▂▁▁▁` | 6d* | 0.39 | 23% | 12 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-16 |
+| 🟢 Commodities | 3.62 | 71% | `▁▃▅▆▆▅▅▅▃▂▄█` | -- | 0.20 | 55% | 15 | 🟢 Q1 | Normal | Maintain | 2026-07-25 |
+| 🟠 Gold | 3.72 | 9% | `▆█▇▅▅▅▃▂▁▁▂▂` | 5d | 0.31 | 88% | 15 | 🟢 Q1 | ELEVATED (LC) | Maintain | 2026-08-12 |
+| 🔴 Silver | 4.03 | 98% | `▅▆█▆▆▅▄▂▁▁▂▃` | 16d* | 0.18 | 45% | 15 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-30 |
+| 🔴 Crypto (BTC) | 3.93 | 67% | `▁▂▃▅▆▆▇▆█▇▇▇` | 10d* | 0.77 | 55% | 64 | 🟡 Q2 | **CRITICAL** (L) | Monitor | 2026-08-01 |
+| 🔴 Ethereum | 4.00 | 67% | `▁▁▂▃▄▄▅▆█▇▅▅` | 6d* | 0.63 | 20% | 64 | 🟡 Q2 | **CRITICAL** (L) | Monitor | 2026-08-01 |
+| 🟢 US Equity (SPY) | 3.67 | 46% | `▁▁▃▄▄▆▄▁▃▄▂█` | -- | 0.09 | 5% | 15 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
+| 🟠 UK Equity (EWU) | 3.79 | 16% | `▁▁▂▄▅█▆▅▅▅▇▅` | 14d | 0.67 | 54% | 15 | 🟢 Q1 | ELEVATED (L) | Maintain | 2026-08-10 |
+| 🔴 Germany (EWG) | 3.50 | 0% | `▆▇▇█▆▆▆▆▅▅▃▁` | 6d* | 0.54 | 30% | 15 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-18 |
+| 🟠 🆕 Bonds | 3.82 | 51% | `▅▅▄▄▆▅▆▇█▂▄▁` | 25d | 0.76 | 52% | 15 | 🟢 Q1 | ELEVATED (L) | Maintain | 2026-08-13 |
+| 🔴 Emerging Markets | 3.47 | 0% | `▆▆▆▇█▆▇▇▅▄▂▁` | 6d* | 0.39 | 23% | 15 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-16 |
 
 > **Quadrants** (patent §6.5): Q1 STABLE · Q2 FRAGILE · Q3 ROTATING · Q4 CRITICAL. Cuts at Λ-F percentile P75 and Reflexivity R≥60. *Asterisk* = reflexivity components partly unavailable.
 > **Actions** are diagnostic, not investment advice — see disclaimer at bottom of page.
