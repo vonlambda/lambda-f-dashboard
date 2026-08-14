@@ -83,8 +83,8 @@
     "peak_reflexivity": 69.5,
     "quadrant": "Q4",
     "peak_date": "2026-07-19",
-    "watermark_price": 77.57599868774415,
-    "watermark_date": "2026-08-12",
+    "watermark_price": 77.87599868774414,
+    "watermark_date": "2026-08-13",
     "status": "ACTIVE",
     "expiry_date": "2026-10-17",
     "normal_since": null
@@ -113,8 +113,8 @@
     "peak_reflexivity": 30.5,
     "quadrant": "Q1",
     "peak_date": "2026-08-02",
-    "watermark_price": 65.69999923706055,
-    "watermark_date": "2026-08-12",
+    "watermark_price": 65.88400039672851,
+    "watermark_date": "2026-08-13",
     "status": "ACTIVE",
     "expiry_date": "2026-10-31",
     "normal_since": null
