@@ -24,8 +24,8 @@
     "since": "2026-06-18"
   },
   "Bonds": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-08-13"
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-08-17"
   },
   "Emerging Markets": {
     "regime": "**CRITICAL** (L)",
