@@ -74,3 +74,4 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-08-01,Crypto (BTC),Q4,Q4,BTC-USD,63028.8086,,,,pending
 2026-08-01,Ethereum,Q4,Q4,ETH-USD,1867.2000,,,,pending
 2026-08-04,Gold,CRITICAL,Q1,GLD,375.2900,,,,pending
+2026-08-17,Bonds,CRITICAL,Q1,TLT,82.0400,,,,pending
