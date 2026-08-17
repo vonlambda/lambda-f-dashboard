@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-16T12:40:05+00:00",
-  "count": 99,
+  "generated_at": "2026-08-17T12:45:12+00:00",
+  "count": 100,
   "history": [
+    {
+      "date": "2026-08-17",
+      "systemic_score": 6,
+      "systemic_label": "NORMAL",
+      "n_q4": 1,
+      "n_q3": 1,
+      "n_critical": 6,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 68.0,
+          "reflexivity": 16.0,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "Gold": {
+          "lambda_pct": 12.0,
+          "reflexivity": 16.0,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "Silver": {
+          "lambda_pct": 95.0,
+          "reflexivity": 16.0,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 81.0,
+          "reflexivity": 65.5,
+          "quadrant": "Q4",
+          "regime": "CRITICAL"
+        },
+        "Ethereum": {
+          "lambda_pct": 45.0,
+          "reflexivity": 65.5,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 47.0,
+          "reflexivity": 16.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 20.0,
+          "reflexivity": 16.0,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 1.0,
+          "reflexivity": 16.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Bonds": {
+          "lambda_pct": 72.0,
+          "reflexivity": 16.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 20.0,
+          "reflexivity": 16.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        }
+      }
+    },
     {
       "date": "2026-08-16",
       "systemic_score": 8,
