@@ -5,34 +5,34 @@ A proprietary framework for detecting institutional regime shifts before price i
 ## Live Signal (Updated Daily)
 
 <!-- LAMBDA_START -->
-🔴 **6 CRITICAL** · 🟠 **3 ELEVATED** · 🟢 **1 NORMAL**
+🔴 **6 CRITICAL** · 🟠 **2 ELEVATED** · 🟢 **2 NORMAL**
 
-🔴 **1 Q4** *(Crash Risk)* · 🟠 **1 Q3** *(Rotating)* · 🟡 **1 Q2** *(Fragile)* · 🟢 **7 Q1** *(Stable)*
+🔴 **1 Q4** *(Crash Risk)* · 🟠 **2 Q3** *(Rotating)* · 🟡 **1 Q2** *(Fragile)* · 🟢 **6 Q1** *(Stable)*
 
-🌐 **Systemic Regime Score: 6/30** — 🟡 *NORMAL*
+🌐 **Systemic Regime Score: 8/30** — 🟡 *NORMAL*
 
 🎯 **Episode hit rate (resolved-only): 3/12 (25%)** · Q4 channel: 2/2 (100%) · 44 calls pending · [methodology](METHODOLOGY.md) / [scorecard](signals/scorecard.json)
 
 ### Δ since yesterday
 
-- 🔴 **Bonds**: ELEVATED ↑ CRITICAL
+- 🟢 **Commodities**: ELEVATED ↓ Normal
 
-_Unchanged: Commodities, Gold, Silver, Crypto (BTC), Ethereum, US Equity (SPY), UK Equity (EWU), Germany (EWG), Emerging Markets._
+_Unchanged: Gold, Silver, Crypto (BTC), Ethereum, US Equity (SPY), UK Equity (EWU), Germany (EWG), Bonds, Emerging Markets._
 
 ### Live signal table
 
 | Market | Λ-F | Λ% | 30d Trend | Elev | Corr | C% | R | Quadrant | Regime | Action | Since |
 |--------|-----|----|-----------|------|------|----|---|----------|--------|--------|-------|
-| 🟠 Commodities | 3.60 | 68% | `▆█▆▅▆▄▃▁▁▂▄▆` | -- | 0.29 | 84% | 16 | 🟢 Q1 | ELEVATED (C) | Maintain | 2026-08-15 |
-| 🟠 Gold | 3.72 | 12% | `█▇▅▅▅▃▂▁▁▂▃▁` | 4d | 0.29 | 80% | 16 | 🟢 Q1 | ELEVATED (LC) | Maintain | 2026-08-12 |
-| 🔴 Silver | 3.99 | 95% | `█▇▆▆▅▃▁▁▁▁▂▄` | 15d* | 0.15 | 36% | 16 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-30 |
-| 🔴 Crypto (BTC) | 3.99 | 81% | `▁▃▆▅▆▆█▇▇▇▇▅` | 10d* | 0.75 | 52% | 66 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-08-01 |
-| 🔴 Ethereum | 3.93 | 45% | `▁▂▄▄▅▆█▇▅▄▅▄` | 6d* | 0.61 | 15% | 66 | 🟡 Q2 | **CRITICAL** (L) | Monitor | 2026-08-01 |
-| 🟢 US Equity (SPY) | 3.68 | 47% | `▂▂▂▃▂▁▁▂▂▃▂█` | -- | 0.10 | 6% | 16 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
-| 🟠 UK Equity (EWU) | 3.79 | 20% | `▃▄▅▇▆▅▅▄▅▆█▁` | 13d | 0.64 | 41% | 16 | 🟢 Q1 | ELEVATED (L) | Maintain | 2026-08-10 |
-| 🔴 Germany (EWG) | 3.53 | 1% | `▇█▆▆▆▆▆▅▅▅▃▁` | 4d* | 0.56 | 33% | 16 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-18 |
-| 🔴 🆕 Bonds | 3.90 | 72% | `▁▁▄▂▃▆▆█▇▆▆▂` | 7d* | 0.70 | 37% | 16 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-08-17 |
-| 🔴 Emerging Markets | 3.64 | 20% | `▆▇▇▆█▅▃▂▁▂▃▁` | 7d* | 0.30 | 11% | 16 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-16 |
+| 🟢 🆕 Commodities | 3.61 | 69% | `▇█▆▆▆▄▂▁▁▃▅▇` | -- | 0.25 | 72% | 22 | 🟢 Q1 | Normal | Maintain | 2026-08-18 |
+| 🟠 Gold | 3.75 | 17% | `█▆▄▅▄▂▁▁▂▂▃▁` | 4d | 0.30 | 84% | 22 | 🟢 Q1 | ELEVATED (LC) | Maintain | 2026-08-12 |
+| 🔴 Silver | 4.00 | 95% | `█▆▆▅▄▂▁▁▂▁▃▅` | 15d* | 0.16 | 37% | 22 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-30 |
+| 🔴 Crypto (BTC) | 4.02 | 87% | `▁▄▅▅▅▆█▆▇▇▆▄` | 10d* | 0.73 | 46% | 70 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-08-01 |
+| 🔴 Ethereum | 4.00 | 70% | `▁▂▄▃▅▇█▆▃▄▅▃` | 6d* | 0.61 | 15% | 70 | 🟡 Q2 | **CRITICAL** (L) | Monitor | 2026-08-01 |
+| 🟢 US Equity (SPY) | 3.67 | 47% | `▁▂▂▂▁▁▁▂▂▂▂█` | -- | 0.09 | 6% | 22 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
+| 🟠 UK Equity (EWU) | 3.79 | 18% | `▅▄▇█▅▅▆▄▆▇▇▁` | 14d | 0.57 | 21% | 22 | 🟢 Q1 | ELEVATED (L) | Maintain | 2026-08-10 |
+| 🔴 Germany (EWG) | 3.51 | 1% | `█▇▆▆▆▆▅▅▅▄▃▁` | 4d* | 0.53 | 26% | 22 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-18 |
+| 🔴 Bonds | 3.94 | 77% | `▁▄▄▃▅▆█▇▇▆▆▂` | 7d* | 0.71 | 39% | 22 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-08-17 |
+| 🔴 Emerging Markets | 3.63 | 18% | `▇█▆▇▇▅▂▁▁▂▂▁` | 8d* | 0.30 | 11% | 22 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-16 |
 
 > **Quadrants** (patent §6.5): Q1 STABLE · Q2 FRAGILE · Q3 ROTATING · Q4 CRITICAL. Cuts at Λ-F percentile P75 and Reflexivity R≥60. *Asterisk* = reflexivity components partly unavailable.
 > **Actions** are diagnostic, not investment advice — see disclaimer at bottom of page.
