@@ -1,7 +1,7 @@
 {
   "Commodities": {
-    "regime": "Normal",
-    "since": "2026-08-18"
+    "regime": "ELEVATED (C)",
+    "since": "2026-08-19"
   },
   "Gold": {
     "regime": "ELEVATED (LC)",
@@ -16,16 +16,16 @@
     "since": "2026-05-02"
   },
   "UK Equity (EWU)": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-08-10"
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-08-19"
   },
   "Germany (EWG)": {
     "regime": "**CRITICAL** (L)",
     "since": "2026-06-18"
   },
   "Bonds": {
-    "regime": "**CRITICAL** (L)",
-    "since": "2026-08-17"
+    "regime": "ELEVATED (L)",
+    "since": "2026-08-19"
   },
   "Emerging Markets": {
     "regime": "**CRITICAL** (L)",
