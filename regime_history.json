@@ -1,7 +1,7 @@
 {
   "Commodities": {
-    "regime": "ELEVATED (C)",
-    "since": "2026-08-19"
+    "regime": "Normal",
+    "since": "2026-08-21"
   },
   "Gold": {
     "regime": "ELEVATED (C)",
@@ -20,8 +20,8 @@
     "since": "2026-08-19"
   },
   "Germany (EWG)": {
-    "regime": "**CRITICAL** (L)",
-    "since": "2026-06-18"
+    "regime": "ELEVATED (L)",
+    "since": "2026-08-21"
   },
   "Bonds": {
     "regime": "**CRITICAL** (L)",
