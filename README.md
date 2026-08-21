@@ -5,35 +5,35 @@ A proprietary framework for detecting institutional regime shifts before price i
 ## Live Signal (Updated Daily)
 
 <!-- LAMBDA_START -->
-🔴 **7 CRITICAL** · 🟠 **2 ELEVATED** · 🟢 **1 NORMAL**
+🔴 **6 CRITICAL** · 🟠 **2 ELEVATED** · 🟢 **2 NORMAL**
 
-🔴 **1 Q4** *(Crash Risk)* · 🟠 **2 Q3** *(Rotating)* · 🟡 **1 Q2** *(Fragile)* · 🟢 **6 Q1** *(Stable)*
+🔴 **1 Q4** *(Crash Risk)* · 🟠 **1 Q3** *(Rotating)* · 🟡 **1 Q2** *(Fragile)* · 🟢 **7 Q1** *(Stable)*
 
-🌐 **Systemic Regime Score: 8/30** — 🟡 *NORMAL*
+🌐 **Systemic Regime Score: 6/30** — 🟡 *NORMAL*
 
-🎯 **Episode hit rate (resolved-only): 3/12 (25%)** · Q4 channel: 2/2 (100%) · 41 calls pending · [methodology](METHODOLOGY.md) / [scorecard](signals/scorecard.json)
+🎯 **Episode hit rate (resolved-only): 3/12 (25%)** · Q4 channel: 2/2 (100%) · 39 calls pending · [methodology](METHODOLOGY.md) / [scorecard](signals/scorecard.json)
 
 ### Δ since yesterday
 
-- 🟠 **Gold**: ELEVATED → ELEVATED
-- 🔴 **Bonds**: ELEVATED ↑ CRITICAL
+- 🟢 **Commodities**: ELEVATED ↓ Normal
+- 🟠 **Germany (EWG)**: CRITICAL ↓ ELEVATED
 
-_Unchanged: Commodities, Silver, Crypto (BTC), Ethereum, US Equity (SPY), UK Equity (EWU), Germany (EWG), Emerging Markets._
+_Unchanged: Gold, Silver, Crypto (BTC), Ethereum, US Equity (SPY), UK Equity (EWU), Bonds, Emerging Markets._
 
 ### Live signal table
 
 | Market | Λ-F | Λ% | 30d Trend | Elev | Corr | C% | R | Quadrant | Regime | Action | Since |
 |--------|-----|----|-----------|------|------|----|---|----------|--------|--------|-------|
-| 🟠 Commodities | 3.56 | 58% | `▄▇▄▃▄▂▁▂▃▆▇█` | -- | 0.28 | 81% | 16 | 🟢 Q1 | ELEVATED (C) | Maintain | 2026-08-19 |
-| 🟠 🆕 Gold | 3.68 | 7% | `█▆▇▅▃▁▁▂▃▅▂▁` | -- | 0.28 | 78% | 16 | 🟢 Q1 | ELEVATED (C) | Maintain | 2026-08-20 |
-| 🔴 Silver | 3.99 | 94% | `█▇▇▆▆▅▃▁▁▁▂▄` | 12d* | 0.14 | 31% | 16 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-30 |
-| 🔴 Crypto (BTC) | 3.93 | 67% | `▁▂▃▃▄█▅▇▆▅▄▁` | 10d* | 0.65 | 28% | 81 | 🟡 Q2 | **CRITICAL** (L) | Monitor | 2026-08-01 |
-| 🔴 Ethereum | 4.09 | 89% | `▁▂▂▄▇█▆▂▃▄▄▁` | 8d* | 0.48 | 5% | 81 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-08-01 |
-| 🟢 US Equity (SPY) | 3.74 | 58% | `▃▃▃▄▃▂▂▂▁▂▃█` | -- | 0.08 | 4% | 16 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
-| 🔴 UK Equity (EWU) | 3.66 | 3% | `▅▅▇▇▆▆▆▇█▇▆▁` | 3d* | 0.59 | 25% | 16 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-08-19 |
-| 🔴 Germany (EWG) | 3.44 | 1% | `▇█▆▇▆▆▆▅▄▄▄▁` | 4d* | 0.49 | 20% | 16 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-18 |
-| 🔴 🆕 Bonds | 4.07 | 96% | `▃▃▆▄▅▇█▁▃▁▁▅` | 3d* | 0.66 | 30% | 16 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-08-20 |
-| 🔴 Emerging Markets | 3.31 | 0% | `▆▇▇▆█▆▅▄▂▂▂▁` | 8d* | 0.35 | 17% | 16 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-16 |
+| 🟢 🆕 Commodities | 3.53 | 51% | `▆▆▆▅▃▁▁▃▄▆▆█` | -- | 0.20 | 55% | 12 | 🟢 Q1 | Normal | Maintain | 2026-08-21 |
+| 🟠 Gold | 3.68 | 8% | `▇█▇▅▃▂▂▄▄▄▂▁` | -- | 0.27 | 75% | 12 | 🟢 Q1 | ELEVATED (C) | Maintain | 2026-08-20 |
+| 🔴 Silver | 3.95 | 87% | `█▇▆▄▁▁▁▂▃▄▅▆` | 13d* | 0.14 | 31% | 12 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-30 |
+| 🔴 Crypto (BTC) | 3.93 | 67% | `▃▂▄▃█▇▆▇▅▅▁▁` | 10d* | 0.88 | 88% | 86 | 🟡 Q2 | **CRITICAL** (L) | Monitor | 2026-08-01 |
+| 🔴 Ethereum | 4.07 | 85% | `▁▁▂▄█▇▃▁▃▄▂▁` | 9d* | 0.69 | 35% | 86 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-08-01 |
+| 🟢 US Equity (SPY) | 3.74 | 59% | `▁▃▂▁▁▂▂▂▂▂▆█` | -- | 0.06 | 2% | 12 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
+| 🔴 UK Equity (EWU) | 3.61 | 1% | `▇█▆▆▆▅▇▇▇▆▂▁` | 3d* | 0.63 | 38% | 12 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-08-19 |
+| 🟠 🆕 Germany (EWG) | 3.57 | 3% | `▇█▇▇▇▆▅▆▄▂▁▁` | 7d | 0.49 | 19% | 12 | 🟢 Q1 | ELEVATED (L) | Maintain | 2026-08-21 |
+| 🔴 Bonds | 3.93 | 74% | `▄▃▄▆▆█▇▇▆▅▂▁` | 6d* | 0.75 | 50% | 12 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-08-20 |
+| 🔴 Emerging Markets | 3.58 | 9% | `▇▆█▅▃▂▁▂▃▂▁▁` | 6d* | 0.35 | 19% | 12 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-16 |
 
 > **Quadrants** (patent §6.5): Q1 STABLE · Q2 FRAGILE · Q3 ROTATING · Q4 CRITICAL. Cuts at Λ-F percentile P75 and Reflexivity R≥60. *Asterisk* = reflexivity components partly unavailable.
 > **Actions** are diagnostic, not investment advice — see disclaimer at bottom of page.
