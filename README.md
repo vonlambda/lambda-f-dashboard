@@ -219,9 +219,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-05-28 | Commodities | CRITICAL | Q1 | 11.0% | 11.0% | _pending_ | _pending_ |
 | 2026-05-28 | Emerging Markets | CRITICAL | Q1 | 5.9% | 8.1% | _pending_ | _pending_ |
 | 2026-05-27 | Silver | CRITICAL | Q3 | 23.3% | 25.4% | _pending_ | _pending_ |
-| 2026-05-23 | Emerging Markets | CRITICAL | Q1 | 5.6% | 7.5% | _pending_ | _pending_ |
-| 2026-05-23 | Germany (EWG) | CRITICAL | Q1 | 5.7% | 7.3% | _pending_ | _pending_ |
-| 2026-05-23 | Silver | CRITICAL | Q3 | 17.3% | 27.7% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
@@ -248,14 +245,14 @@ materialized as real events).
 | `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 68.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `Bonds-2026-05-22` | Bonds | 2026-05-22 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 3.9% |
+| `Silver-2026-05-22` | Silver | 2026-05-22 | Q3 | _n/a_ | RESOLVED | ✅ TP | 26.3% |
 | `Silver-2026-05-21` | Silver | 2026-05-21 | Q4 | _n/a_ | RESOLVED | ✅ TP | 27.4% |
 | `Bonds-2026-05-20` | Bonds | 2026-05-20 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 3.0% |
 | `Silver-2026-05-20` | Silver | 2026-05-20 | Q4 | _n/a_ | RESOLVED | ✅ TP | 26.7% |
 | `UK Equity (EWU)-2026-05-20` | UK Equity (EWU) | 2026-05-20 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 0.4% |
-| `Germany (EWG)-2026-05-19` | Germany (EWG) | 2026-05-19 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 3.5% |
-| `Crypto (BTC)-2026-05-18` | Crypto (BTC) | 2026-05-18 | Q4 | _n/a_ | RESOLVED | ✅ TP | 23.9% |
 
-**9 open · 6 TP · 31 FP · Resolved hit-rate: 16.2% · Resolution rate: 37/78**
+**9 open · 7 TP · 32 FP · Resolved hit-rate: 17.9% · Resolution rate: 39/78**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
