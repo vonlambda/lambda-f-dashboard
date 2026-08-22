@@ -237,21 +237,21 @@ materialized as real events).
 |---------|--------|--------|----------|---------|--------|---------|----------|
 | `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q1 | 92.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-08-02` | Germany (EWG) | 2026-08-02 | Q1 | 44.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `BOND-2026-08-02` | Bonds | 2026-08-02 | Q3 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `BOND-2026-08-02` | Bonds | 2026-08-02 | Q1 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `EMER-2026-07-19` | Emerging Markets | 2026-07-19 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GOLD-2026-06-26` | Gold | 2026-06-26 | Q4 | 86.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-06-26` | Silver | 2026-06-26 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 68.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `Emerging Markets-2026-05-23` | Emerging Markets | 2026-05-23 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 10.7% |
+| `Germany (EWG)-2026-05-23` | Germany (EWG) | 2026-05-23 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 7.3% |
+| `Silver-2026-05-23` | Silver | 2026-05-23 | Q3 | _n/a_ | RESOLVED | ✅ TP | 27.7% |
 | `Bonds-2026-05-22` | Bonds | 2026-05-22 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 3.9% |
 | `Silver-2026-05-22` | Silver | 2026-05-22 | Q3 | _n/a_ | RESOLVED | ✅ TP | 26.3% |
 | `Silver-2026-05-21` | Silver | 2026-05-21 | Q4 | _n/a_ | RESOLVED | ✅ TP | 27.4% |
-| `Bonds-2026-05-20` | Bonds | 2026-05-20 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 3.0% |
-| `Silver-2026-05-20` | Silver | 2026-05-20 | Q4 | _n/a_ | RESOLVED | ✅ TP | 26.7% |
-| `UK Equity (EWU)-2026-05-20` | UK Equity (EWU) | 2026-05-20 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 0.4% |
 
-**9 open · 7 TP · 32 FP · Resolved hit-rate: 17.9% · Resolution rate: 39/78**
+**9 open · 8 TP · 34 FP · Resolved hit-rate: 19.0% · Resolution rate: 42/78**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
