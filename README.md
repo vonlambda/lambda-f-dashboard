@@ -5,35 +5,34 @@ A proprietary framework for detecting institutional regime shifts before price i
 ## Live Signal (Updated Daily)
 
 <!-- LAMBDA_START -->
-🔴 **6 CRITICAL** · 🟠 **2 ELEVATED** · 🟢 **2 NORMAL**
+🔴 **6 CRITICAL** · 🟠 **1 ELEVATED** · 🟢 **3 NORMAL**
 
-🔴 **1 Q4** *(Crash Risk)* · 🟠 **1 Q3** *(Rotating)* · 🟡 **1 Q2** *(Fragile)* · 🟢 **7 Q1** *(Stable)*
+🔴 **0 Q4** *(Crash Risk)* · 🟠 **2 Q3** *(Rotating)* · 🟡 **2 Q2** *(Fragile)* · 🟢 **6 Q1** *(Stable)*
 
 🌐 **Systemic Regime Score: 6/30** — 🟡 *NORMAL*
 
-🎯 **Episode hit rate (resolved-only): 3/12 (25%)** · Q4 channel: 2/2 (100%) · 39 calls pending · [methodology](METHODOLOGY.md) / [scorecard](signals/scorecard.json)
+🎯 **Episode hit rate (resolved-only): 3/12 (25%)** · Q4 channel: 2/2 (100%) · 36 calls pending · [methodology](METHODOLOGY.md) / [scorecard](signals/scorecard.json)
 
 ### Δ since yesterday
 
-- 🟢 **Commodities**: ELEVATED ↓ Normal
-- 🟠 **Germany (EWG)**: CRITICAL ↓ ELEVATED
+- 🟢 **Gold**: ELEVATED ↓ Normal
 
-_Unchanged: Gold, Silver, Crypto (BTC), Ethereum, US Equity (SPY), UK Equity (EWU), Bonds, Emerging Markets._
+_Unchanged: Commodities, Silver, Crypto (BTC), Ethereum, US Equity (SPY), UK Equity (EWU), Germany (EWG), Bonds, Emerging Markets._
 
 ### Live signal table
 
 | Market | Λ-F | Λ% | 30d Trend | Elev | Corr | C% | R | Quadrant | Regime | Action | Since |
 |--------|-----|----|-----------|------|------|----|---|----------|--------|--------|-------|
-| 🟢 🆕 Commodities | 3.53 | 51% | `▆▆▆▅▃▁▁▃▄▆▆█` | -- | 0.20 | 55% | 12 | 🟢 Q1 | Normal | Maintain | 2026-08-21 |
-| 🟠 Gold | 3.68 | 8% | `▇█▇▅▃▂▂▄▄▄▂▁` | -- | 0.27 | 75% | 12 | 🟢 Q1 | ELEVATED (C) | Maintain | 2026-08-20 |
-| 🔴 Silver | 3.95 | 87% | `█▇▆▄▁▁▁▂▃▄▅▆` | 13d* | 0.14 | 31% | 12 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-30 |
-| 🔴 Crypto (BTC) | 3.93 | 67% | `▃▂▄▃█▇▆▇▅▅▁▁` | 10d* | 0.88 | 88% | 86 | 🟡 Q2 | **CRITICAL** (L) | Monitor | 2026-08-01 |
-| 🔴 Ethereum | 4.07 | 85% | `▁▁▂▄█▇▃▁▃▄▂▁` | 9d* | 0.69 | 35% | 86 | 🔴 Q4 | **CRITICAL** (L) | Reduce | 2026-08-01 |
-| 🟢 US Equity (SPY) | 3.74 | 59% | `▁▃▂▁▁▂▂▂▂▂▆█` | -- | 0.06 | 2% | 12 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
-| 🔴 UK Equity (EWU) | 3.61 | 1% | `▇█▆▆▆▅▇▇▇▆▂▁` | 3d* | 0.63 | 38% | 12 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-08-19 |
-| 🟠 🆕 Germany (EWG) | 3.57 | 3% | `▇█▇▇▇▆▅▆▄▂▁▁` | 7d | 0.49 | 19% | 12 | 🟢 Q1 | ELEVATED (L) | Maintain | 2026-08-21 |
-| 🔴 Bonds | 3.93 | 74% | `▄▃▄▆▆█▇▇▆▅▂▁` | 6d* | 0.75 | 50% | 12 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-08-20 |
-| 🔴 Emerging Markets | 3.58 | 9% | `▇▆█▅▃▂▁▂▃▂▁▁` | 6d* | 0.35 | 19% | 12 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-16 |
+| 🟢 Commodities | 3.46 | 28% | `▆▆▆▄▂▁▁▃▅▆▆█` | -- | 0.20 | 55% | 8 | 🟢 Q1 | Normal | Maintain | 2026-08-21 |
+| 🟢 🆕 Gold | 3.58 | 3% | `▆█▆▄▃▃▄▄▅▃▃▁` | -- | 0.26 | 74% | 8 | 🟢 Q1 | Normal | Maintain | 2026-08-22 |
+| 🔴 Silver | 3.92 | 80% | `█▇▅▂▁▁▂▂▄▄▆▆` | 12d* | 0.14 | 31% | 8 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-07-30 |
+| 🔴 Crypto (BTC) | 3.96 | 74% | `▃▄▄▅█▆▇▆▅▅▁▂` | 10d* | 0.81 | 66% | 86 | 🟡 Q2 | **CRITICAL** (L) | Monitor | 2026-08-01 |
+| 🔴 Ethereum | 4.02 | 74% | `▂▁▃▇█▆▁▂▄▄▁▁` | 9d* | 0.71 | 42% | 86 | 🟡 Q2 | **CRITICAL** (L) | Monitor | 2026-08-01 |
+| 🟢 US Equity (SPY) | 3.76 | 65% | `▂▁▁▁▁▁▁▂▁▄▆█` | -- | 0.09 | 6% | 8 | 🟢 Q1 | Normal | Maintain | 2026-05-02 |
+| 🔴 UK Equity (EWU) | 3.57 | 1% | `▇▇▆▆▆▆▇█▇▄▁▁` | 5d* | 0.65 | 46% | 8 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-08-19 |
+| 🟠 Germany (EWG) | 3.69 | 10% | `▇█▇▇▆▅▆▅▃▂▁▁` | 6d | 0.50 | 21% | 8 | 🟢 Q1 | ELEVATED (L) | Maintain | 2026-08-21 |
+| 🔴 Bonds | 3.94 | 78% | `▄▃▅▆█▇▇▆▆▄▂▁` | 7d* | 0.74 | 49% | 8 | 🟠 Q3 | **CRITICAL** (L) | Prepare | 2026-08-20 |
+| 🔴 Emerging Markets | 3.58 | 8% | `▆█▇▅▃▂▁▃▃▂▁▁` | 5d* | 0.39 | 25% | 8 | 🟢 Q1 | **CRITICAL** (L) | Maintain | 2026-06-16 |
 
 > **Quadrants** (patent §6.5): Q1 STABLE · Q2 FRAGILE · Q3 ROTATING · Q4 CRITICAL. Cuts at Λ-F percentile P75 and Reflexivity R≥60. *Asterisk* = reflexivity components partly unavailable.
 > **Actions** are diagnostic, not investment advice — see disclaimer at bottom of page.
