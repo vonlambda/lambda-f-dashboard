@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-24T12:52:04+00:00",
-  "count": 107,
+  "generated_at": "2026-08-25T12:49:37+00:00",
+  "count": 108,
   "history": [
+    {
+      "date": "2026-08-25",
+      "systemic_score": 6,
+      "systemic_label": "NORMAL",
+      "n_q4": 0,
+      "n_q3": 2,
+      "n_critical": 6,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 17.0,
+          "reflexivity": 14.5,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 3.0,
+          "reflexivity": 14.5,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Silver": {
+          "lambda_pct": 81.0,
+          "reflexivity": 14.5,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 33.0,
+          "reflexivity": 87.0,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "Ethereum": {
+          "lambda_pct": 27.0,
+          "reflexivity": 87.0,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 70.0,
+          "reflexivity": 14.5,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 1.0,
+          "reflexivity": 14.5,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 8.0,
+          "reflexivity": 14.5,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "Bonds": {
+          "lambda_pct": 76.0,
+          "reflexivity": 14.5,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 9.0,
+          "reflexivity": 14.5,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        }
+      }
+    },
     {
       "date": "2026-08-24",
       "systemic_score": 6,
