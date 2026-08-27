@@ -212,7 +212,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-06-05 | Germany (EWG) | Q4 | Q4 | 3.7% | 3.7% | _pending_ | _pending_ |
 | 2026-06-04 | Germany (EWG) | CRITICAL | Q3 | 5.9% | 5.9% | _pending_ | _pending_ |
 | 2026-06-04 | Gold | CRITICAL | Q3 | 11.0% | 11.3% | _pending_ | _pending_ |
-| 2026-05-29 | Silver | CRITICAL | Q3 | 24.2% | 26.2% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
@@ -232,21 +231,21 @@ materialized as real events).
 |---------|--------|--------|----------|---------|--------|---------|----------|
 | `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q1 | 92.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-08-02` | Germany (EWG) | 2026-08-02 | Q1 | 44.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `BOND-2026-08-02` | Bonds | 2026-08-02 | Q3 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `BOND-2026-08-02` | Bonds | 2026-08-02 | Q1 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `EMER-2026-07-19` | Emerging Markets | 2026-07-19 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GOLD-2026-06-26` | Gold | 2026-06-26 | Q4 | 86.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-06-26` | Silver | 2026-06-26 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 68.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `Silver-2026-05-29` | Silver | 2026-05-29 | Q3 | _n/a_ | RESOLVED | ✅ TP | 26.2% |
+| `Commodities-2026-05-28` | Commodities | 2026-05-28 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 11.0% |
+| `Emerging Markets-2026-05-28` | Emerging Markets | 2026-05-28 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 11.0% |
 | `Silver-2026-05-27` | Silver | 2026-05-27 | Q3 | _n/a_ | RESOLVED | ✅ TP | 25.4% |
 | `Emerging Markets-2026-05-23` | Emerging Markets | 2026-05-23 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 10.7% |
 | `Germany (EWG)-2026-05-23` | Germany (EWG) | 2026-05-23 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 7.3% |
-| `Silver-2026-05-23` | Silver | 2026-05-23 | Q3 | _n/a_ | RESOLVED | ✅ TP | 27.7% |
-| `Bonds-2026-05-22` | Bonds | 2026-05-22 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 3.9% |
-| `Silver-2026-05-22` | Silver | 2026-05-22 | Q3 | _n/a_ | RESOLVED | ✅ TP | 26.3% |
 
-**9 open · 9 TP · 34 FP · Resolved hit-rate: 20.9% · Resolution rate: 43/78**
+**9 open · 10 TP · 36 FP · Resolved hit-rate: 21.7% · Resolution rate: 46/78**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
