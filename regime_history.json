@@ -12,8 +12,8 @@
     "since": "2026-08-01"
   },
   "US Equity (SPY)": {
-    "regime": "Normal",
-    "since": "2026-05-02"
+    "regime": "ELEVATED (L)",
+    "since": "2026-08-28"
   },
   "UK Equity (EWU)": {
     "regime": "**CRITICAL** (L)",
@@ -28,8 +28,8 @@
     "since": "2026-08-20"
   },
   "Emerging Markets": {
-    "regime": "**CRITICAL** (L)",
-    "since": "2026-06-16"
+    "regime": "ELEVATED (L)",
+    "since": "2026-08-28"
   },
   "Silver": {
     "regime": "**CRITICAL** (L)",
