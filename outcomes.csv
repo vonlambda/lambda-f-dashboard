@@ -64,9 +64,9 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-06-19,Bonds,CRITICAL,Q2,TLT,86.7500,0.0246,0.0551,,pending
 2026-07-12,UK Equity (EWU),CRITICAL,Q3,EWU,46.6000,0.0011,,,pending
 2026-07-25,Bonds,CRITICAL,Q3,TLT,83.1700,0.0287,,,pending
-2026-07-29,Ethereum,Q4,Q4,ETH-USD,1901.4700,,,,pending
-2026-07-29,Gold,CRITICAL,Q2,GLD,366.8900,,,,pending
-2026-07-29,Silver,CRITICAL,Q2,SLV,51.4800,,,,pending
+2026-07-29,Ethereum,Q4,Q4,ETH-USD,1901.4700,0.0341,,,pending
+2026-07-29,Gold,CRITICAL,Q2,GLD,366.8900,0.0000,,,pending
+2026-07-29,Silver,CRITICAL,Q2,SLV,51.4800,0.0000,,,pending
 2026-07-30,Ethereum,Q4,Q4,ETH-USD,1924.3000,,,,pending
 2026-07-30,Silver,CRITICAL,Q1,SLV,52.8700,,,,pending
 2026-07-30,UK Equity (EWU),CRITICAL,Q3,EWU,48.5800,,,,pending
