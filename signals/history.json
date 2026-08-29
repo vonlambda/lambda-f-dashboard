@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-28T21:47:24+00:00",
-  "count": 111,
+  "generated_at": "2026-08-29T16:20:43+00:00",
+  "count": 112,
   "history": [
+    {
+      "date": "2026-08-29",
+      "systemic_score": 4,
+      "systemic_label": "CALM",
+      "n_q4": 0,
+      "n_q3": 1,
+      "n_critical": 5,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 7.0,
+          "reflexivity": 9.5,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 29.0,
+          "reflexivity": 9.5,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Silver": {
+          "lambda_pct": 88.0,
+          "reflexivity": 9.5,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 32.0,
+          "reflexivity": 84.0,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "Ethereum": {
+          "lambda_pct": 23.0,
+          "reflexivity": 84.0,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 67.0,
+          "reflexivity": 9.5,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 13.0,
+          "reflexivity": 9.5,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 39.0,
+          "reflexivity": 9.5,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "Bonds": {
+          "lambda_pct": 69.0,
+          "reflexivity": 9.5,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 32.0,
+          "reflexivity": 9.5,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        }
+      }
+    },
     {
       "date": "2026-08-28",
       "systemic_score": 6,
