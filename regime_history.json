@@ -20,16 +20,16 @@
     "since": "2026-08-19"
   },
   "Germany (EWG)": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-08-21"
+    "regime": "Normal",
+    "since": "2026-09-02"
   },
   "Bonds": {
     "regime": "**CRITICAL** (L)",
     "since": "2026-08-20"
   },
   "Emerging Markets": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-08-28"
+    "regime": "Normal",
+    "since": "2026-09-02"
   },
   "Silver": {
     "regime": "**CRITICAL** (L)",

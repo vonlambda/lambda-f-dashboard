@@ -87,7 +87,7 @@
     "watermark_date": "2026-08-27",
     "status": "ACTIVE",
     "expiry_date": "2026-10-17",
-    "normal_since": null
+    "normal_since": "2026-09-02"
   },
   "UK Equity (EWU)": {
     "episode_id": "UKE-2026-08-02",
@@ -117,7 +117,7 @@
     "watermark_date": "2026-08-25",
     "status": "ACTIVE",
     "expiry_date": "2026-10-31",
-    "normal_since": null
+    "normal_since": "2026-09-02"
   },
   "Bonds": {
     "episode_id": "BOND-2026-08-02",
@@ -140,7 +140,7 @@
     "trigger_type": "L",
     "peak_lambda_pct": 76.0,
     "peak_corr_pct": null,
-    "peak_reflexivity": 29.5,
+    "peak_reflexivity": 30.0,
     "quadrant": "Q1",
     "peak_date": "2026-08-28",
     "watermark_price": 114.16875076293945,
