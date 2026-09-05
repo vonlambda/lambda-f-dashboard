@@ -208,7 +208,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-06-11 | UK Equity (EWU) | CRITICAL | Q2 | 3.1% | 3.1% | _pending_ | _pending_ |
 | 2026-06-09 | Germany (EWG) | CRITICAL | Q2 | 3.5% | 3.5% | _pending_ | _pending_ |
 | 2026-06-09 | Silver | Q4 | Q4 | 12.2% | 14.6% | _pending_ | _pending_ |
-| 2026-06-07 | UK Equity (EWU) | CRITICAL | Q2 | 2.1% | 2.1% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
@@ -229,7 +228,7 @@ materialized as real events).
 | `USE-2026-08-28` | US Equity (SPY) | 2026-08-28 | Q1 | 76.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q1 | 92.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-08-02` | Germany (EWG) | 2026-08-02 | Q1 | 44.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `BOND-2026-08-02` | Bonds | 2026-08-02 | Q1 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `BOND-2026-08-02` | Bonds | 2026-08-02 | Q3 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `EMER-2026-07-19` | Emerging Markets | 2026-07-19 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GOLD-2026-06-26` | Gold | 2026-06-26 | Q4 | 86.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-06-26` | Silver | 2026-06-26 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
