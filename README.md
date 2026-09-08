@@ -234,13 +234,13 @@ materialized as real events).
 | `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 68.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `Germany (EWG)-2026-06-09` | Germany (EWG) | 2026-06-09 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 3.5% |
+| `Silver-2026-06-09` | Silver | 2026-06-09 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 14.6% |
+| `UK Equity (EWU)-2026-06-07` | UK Equity (EWU) | 2026-06-07 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 2.1% |
 | `Germany (EWG)-2026-06-05` | Germany (EWG) | 2026-06-05 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 3.7% |
 | `Germany (EWG)-2026-06-04` | Germany (EWG) | 2026-06-04 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 5.9% |
-| `Gold-2026-06-04` | Gold | 2026-06-04 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 11.3% |
-| `Silver-2026-05-29` | Silver | 2026-05-29 | Q3 | _n/a_ | RESOLVED | ✅ TP | 26.2% |
-| `Commodities-2026-05-28` | Commodities | 2026-05-28 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 11.0% |
 
-**10 open · 10 TP · 39 FP · Resolved hit-rate: 20.4% · Resolution rate: 49/79**
+**10 open · 10 TP · 42 FP · Resolved hit-rate: 19.2% · Resolution rate: 52/79**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
