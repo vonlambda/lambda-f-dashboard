@@ -205,8 +205,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-06-15 | Emerging Markets | CRITICAL | Q3 | 7.5% | 12.4% | _pending_ | _pending_ |
 | 2026-06-15 | Silver | CRITICAL | Q3 | 18.4% | 20.6% | _pending_ | _pending_ |
 | 2026-06-13 | Germany (EWG) | CRITICAL | Q2 | 3.1% | 3.1% | _pending_ | _pending_ |
-| 2026-06-11 | Emerging Markets | Q4 | Q4 | 2.7% | 9.5% | _pending_ | _pending_ |
-| 2026-06-11 | UK Equity (EWU) | CRITICAL | Q2 | 3.1% | 3.1% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
@@ -224,7 +222,7 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
-| `USE-2026-08-28` | US Equity (SPY) | 2026-08-28 | Q3 | 81.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `USE-2026-08-28` | US Equity (SPY) | 2026-08-28 | Q3 | 82.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q1 | 92.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-08-02` | Germany (EWG) | 2026-08-02 | Q1 | 44.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-08-02` | Bonds | 2026-08-02 | Q3 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
@@ -234,13 +232,13 @@ materialized as real events).
 | `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 68.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-06-16` | Crypto (BTC) | 2026-06-16 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-06-16` | Ethereum | 2026-06-16 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `Emerging Markets-2026-06-11` | Emerging Markets | 2026-06-11 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 9.5% |
+| `UK Equity (EWU)-2026-06-11` | UK Equity (EWU) | 2026-06-11 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 3.1% |
 | `Germany (EWG)-2026-06-09` | Germany (EWG) | 2026-06-09 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 3.5% |
 | `Silver-2026-06-09` | Silver | 2026-06-09 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 14.6% |
 | `UK Equity (EWU)-2026-06-07` | UK Equity (EWU) | 2026-06-07 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 2.1% |
-| `Germany (EWG)-2026-06-05` | Germany (EWG) | 2026-06-05 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 3.7% |
-| `Germany (EWG)-2026-06-04` | Germany (EWG) | 2026-06-04 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 5.9% |
 
-**10 open · 10 TP · 42 FP · Resolved hit-rate: 19.2% · Resolution rate: 52/79**
+**10 open · 10 TP · 44 FP · Resolved hit-rate: 18.5% · Resolution rate: 54/79**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
