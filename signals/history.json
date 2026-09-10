@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-09T16:04:54+00:00",
-  "count": 123,
+  "generated_at": "2026-09-10T15:58:51+00:00",
+  "count": 124,
   "history": [
+    {
+      "date": "2026-09-10",
+      "systemic_score": 8,
+      "systemic_label": "NORMAL",
+      "n_q4": 0,
+      "n_q3": 3,
+      "n_critical": 3,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 8.0,
+          "reflexivity": 44.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 44.0,
+          "reflexivity": 44.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Silver": {
+          "lambda_pct": 89.0,
+          "reflexivity": 44.0,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 69.0,
+          "reflexivity": 84.5,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Ethereum": {
+          "lambda_pct": 74.0,
+          "reflexivity": 84.5,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 86.0,
+          "reflexivity": 44.0,
+          "quadrant": "Q3",
+          "regime": "ELEVATED"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 63.0,
+          "reflexivity": 44.0,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 64.0,
+          "reflexivity": 44.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Bonds": {
+          "lambda_pct": 90.0,
+          "reflexivity": 44.0,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 13.0,
+          "reflexivity": 44.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        }
+      }
+    },
     {
       "date": "2026-09-09",
       "systemic_score": 8,
