@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T16:02:05+00:00",
-  "count": 125,
+  "generated_at": "2026-09-12T15:09:59+00:00",
+  "count": 126,
   "history": [
+    {
+      "date": "2026-09-12",
+      "systemic_score": 12,
+      "systemic_label": "WATCH",
+      "n_q4": 0,
+      "n_q3": 5,
+      "n_critical": 3,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 14.0,
+          "reflexivity": 28.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 86.0,
+          "reflexivity": 28.0,
+          "quadrant": "Q3",
+          "regime": "Normal"
+        },
+        "Silver": {
+          "lambda_pct": 93.0,
+          "reflexivity": 28.0,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 43.0,
+          "reflexivity": 81.5,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Ethereum": {
+          "lambda_pct": 52.0,
+          "reflexivity": 81.5,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 79.0,
+          "reflexivity": 28.0,
+          "quadrant": "Q3",
+          "regime": "ELEVATED"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 82.0,
+          "reflexivity": 28.0,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 42.0,
+          "reflexivity": 28.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Bonds": {
+          "lambda_pct": 83.0,
+          "reflexivity": 28.0,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 5.0,
+          "reflexivity": 28.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        }
+      }
+    },
     {
       "date": "2026-09-11",
       "systemic_score": 10,
