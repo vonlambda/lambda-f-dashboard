@@ -204,8 +204,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-06-17 | UK Equity (EWU) | CRITICAL | Q1 | 1.0% | 0.4% | _pending_ | _pending_ |
 | 2026-06-16 | Emerging Markets | Q4 | Q4 | 6.2% | 11.0% | _pending_ | _pending_ |
 | 2026-06-16 | Silver | Q4 | Q4 | 20.4% | 20.5% | _pending_ | _pending_ |
-| 2026-06-15 | Emerging Markets | CRITICAL | Q3 | 7.5% | 12.4% | _pending_ | _pending_ |
-| 2026-06-15 | Silver | CRITICAL | Q3 | 18.4% | 20.6% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
