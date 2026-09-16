@@ -4,8 +4,8 @@
     "since": "2026-08-21"
   },
   "Gold": {
-    "regime": "Normal",
-    "since": "2026-08-22"
+    "regime": "ELEVATED (L)",
+    "since": "2026-09-16"
   },
   "Crypto (BTC)": {
     "regime": "ELEVATED (L)",
@@ -24,8 +24,8 @@
     "since": "2026-09-02"
   },
   "Bonds": {
-    "regime": "ELEVATED (LC)",
-    "since": "2026-09-15"
+    "regime": "ELEVATED (L)",
+    "since": "2026-09-16"
   },
   "Emerging Markets": {
     "regime": "Normal",
