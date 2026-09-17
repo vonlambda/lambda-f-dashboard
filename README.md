@@ -199,7 +199,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-07-29 | Silver | CRITICAL | Q2 | 0.0% | _pending_ | _pending_ | _pending_ |
 | 2026-07-25 | Bonds | CRITICAL | Q3 | 2.9% | _pending_ | _pending_ | _pending_ |
 | 2026-07-12 | UK Equity (EWU) | CRITICAL | Q3 | 0.1% | 0.1% | _pending_ | _pending_ |
-| 2026-06-19 | Bonds | CRITICAL | Q2 | 2.5% | 5.5% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
@@ -217,23 +216,23 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
-| `CRYP-2026-09-15` | Crypto (BTC) | 2026-09-15 | Q2 | 26.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `CRYP-2026-09-15` | Crypto (BTC) | 2026-09-15 | Q2 | 29.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-09-15` | Ethereum | 2026-09-15 | Q2 | 38.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `USE-2026-08-28` | US Equity (SPY) | 2026-08-28 | Q1 | 87.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q3 | 92.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q3 | 93.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-08-02` | Germany (EWG) | 2026-08-02 | Q1 | 44.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-08-02` | Bonds | 2026-08-02 | Q3 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `EMER-2026-07-19` | Emerging Markets | 2026-07-19 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GOLD-2026-06-26` | Gold | 2026-06-26 | Q4 | 86.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-06-26` | Silver | 2026-06-26 | Q4 | 99.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `COMM-2026-06-25` | Commodities | 2026-06-25 | Q1 | 68.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `Bonds-2026-06-19` | Bonds | 2026-06-19 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 6.2% |
 | `Germany (EWG)-2026-06-18` | Germany (EWG) | 2026-06-18 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 2.3% |
 | `Silver-2026-06-18` | Silver | 2026-06-18 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 15.3% |
 | `UK Equity (EWU)-2026-06-17` | UK Equity (EWU) | 2026-06-17 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 1.0% |
 | `Emerging Markets-2026-06-16` | Emerging Markets | 2026-06-16 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 11.0% |
-| `Silver-2026-06-16` | Silver | 2026-06-16 | Q4 | _n/a_ | RESOLVED | ✅ TP | 20.5% |
 
-**10 open · 12 TP · 50 FP · Resolved hit-rate: 19.4% · Resolution rate: 62/80**
+**10 open · 12 TP · 51 FP · Resolved hit-rate: 19.0% · Resolution rate: 63/80**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
