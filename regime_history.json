@@ -4,8 +4,8 @@
     "since": "2026-08-21"
   },
   "Gold": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-09-16"
+    "regime": "ELEVATED (LC)",
+    "since": "2026-09-19"
   },
   "Crypto (BTC)": {
     "regime": "Normal",
@@ -24,8 +24,8 @@
     "since": "2026-09-02"
   },
   "Bonds": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-09-16"
+    "regime": "ELEVATED (LC)",
+    "since": "2026-09-19"
   },
   "Emerging Markets": {
     "regime": "Normal",
@@ -36,7 +36,7 @@
     "since": "2026-07-30"
   },
   "Ethereum": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-09-10"
+    "regime": "Normal",
+    "since": "2026-09-19"
   }
 }
