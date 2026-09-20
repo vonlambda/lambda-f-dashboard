@@ -217,7 +217,7 @@ materialized as real events).
 | `CRYP-2026-09-15` | Crypto (BTC) | 2026-09-15 | Q2 | 29.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-09-15` | Ethereum | 2026-09-15 | Q2 | 38.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `USE-2026-08-28` | US Equity (SPY) | 2026-08-28 | Q1 | 87.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q3 | 94.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q3 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-08-02` | Germany (EWG) | 2026-08-02 | Q1 | 44.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-08-02` | Bonds | 2026-08-02 | Q3 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `EMER-2026-07-19` | Emerging Markets | 2026-07-19 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
