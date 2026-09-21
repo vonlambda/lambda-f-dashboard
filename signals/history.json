@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-20T15:37:11+00:00",
-  "count": 134,
+  "generated_at": "2026-09-21T17:58:04+00:00",
+  "count": 135,
   "history": [
+    {
+      "date": "2026-09-21",
+      "systemic_score": 8,
+      "systemic_label": "NORMAL",
+      "n_q4": 0,
+      "n_q3": 3,
+      "n_critical": 2,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 21.0,
+          "reflexivity": 46.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 71.0,
+          "reflexivity": 46.0,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "Silver": {
+          "lambda_pct": 90.0,
+          "reflexivity": 46.0,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 19.0,
+          "reflexivity": 85.0,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Ethereum": {
+          "lambda_pct": 11.0,
+          "reflexivity": 85.0,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 58.0,
+          "reflexivity": 46.0,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 97.0,
+          "reflexivity": 46.0,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 66.0,
+          "reflexivity": 46.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Bonds": {
+          "lambda_pct": 91.0,
+          "reflexivity": 46.0,
+          "quadrant": "Q3",
+          "regime": "ELEVATED"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 8.0,
+          "reflexivity": 46.0,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        }
+      }
+    },
     {
       "date": "2026-09-20",
       "systemic_score": 8,
