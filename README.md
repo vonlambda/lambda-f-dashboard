@@ -182,6 +182,7 @@ hard-coded numbers, no selection bias. Full ledger at
 <!-- RECENT_CALLS_START -->
 | Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
 |------|--------|--------|----------|---------|---------|---------|--------|
+| 2026-09-23 | Bonds | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-09-14 | Bonds | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-09-07 | Ethereum | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-08-20 | Bonds | CRITICAL | Q3 | 2.0% | _pending_ | _pending_ | _pending_ |
@@ -197,7 +198,7 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-07-29 | Ethereum | Q4 | Q4 | 3.4% | _pending_ | _pending_ | _pending_ |
 | 2026-07-29 | Gold | CRITICAL | Q2 | 0.0% | _pending_ | _pending_ | _pending_ |
 | 2026-07-29 | Silver | CRITICAL | Q2 | 0.0% | _pending_ | _pending_ | _pending_ |
-| 2026-07-25 | Bonds | CRITICAL | Q3 | 2.9% | _pending_ | _pending_ | _pending_ |
+| 2026-07-25 | Bonds | CRITICAL | Q3 | 2.9% | 1.9% | _pending_ | _pending_ |
 | 2026-07-12 | UK Equity (EWU) | CRITICAL | Q3 | 0.1% | 0.1% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
@@ -219,7 +220,7 @@ materialized as real events).
 | `CRYP-2026-09-15` | Crypto (BTC) | 2026-09-15 | Q2 | 29.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-09-15` | Ethereum | 2026-09-15 | Q2 | 38.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `USE-2026-08-28` | US Equity (SPY) | 2026-08-28 | Q1 | 87.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q3 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q3 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-08-02` | Germany (EWG) | 2026-08-02 | Q1 | 44.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-08-02` | Bonds | 2026-08-02 | Q3 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `EMER-2026-07-19` | Emerging Markets | 2026-07-19 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
@@ -232,7 +233,7 @@ materialized as real events).
 | `Emerging Markets-2026-06-16` | Emerging Markets | 2026-06-16 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 11.0% |
 | `Silver-2026-06-16` | Silver | 2026-06-16 | Q4 | _n/a_ | RESOLVED | ✅ TP | 20.5% |
 
-**9 open · 12 TP · 51 FP · Resolved hit-rate: 19.0% · Resolution rate: 63/80**
+**9 open · 12 TP · 51 FP · Resolved hit-rate: 19.0% · Resolution rate: 63/81**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
