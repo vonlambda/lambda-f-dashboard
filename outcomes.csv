@@ -80,3 +80,4 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-09-07,Ethereum,CRITICAL,Q2,ETH-USD,2487.8999,,,,pending
 2026-09-14,Bonds,CRITICAL,Q3,TLT,81.1250,,,,pending
 2026-09-23,Bonds,CRITICAL,Q3,TLT,80.5500,,,,pending
+2026-09-25,Bonds,CRITICAL,Q3,TLT,79.1850,,,,pending
