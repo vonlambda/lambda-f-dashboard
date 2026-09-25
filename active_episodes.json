@@ -1,34 +1,4 @@
 {
-  "Gold": {
-    "episode_id": "GOLD-2026-06-26",
-    "start_date": "2026-06-26",
-    "trigger_type": "L",
-    "peak_lambda_pct": 86.0,
-    "peak_corr_pct": null,
-    "peak_reflexivity": 82.5,
-    "quadrant": "Q4",
-    "peak_date": "2026-07-08",
-    "watermark_price": 140.48356215159097,
-    "watermark_date": "2026-08-25",
-    "status": "ACTIVE",
-    "expiry_date": "2026-09-24",
-    "normal_since": null
-  },
-  "Silver": {
-    "episode_id": "SILV-2026-06-26",
-    "start_date": "2026-06-26",
-    "trigger_type": "L",
-    "peak_lambda_pct": 99.0,
-    "peak_corr_pct": null,
-    "peak_reflexivity": 82.5,
-    "quadrant": "Q4",
-    "peak_date": "2026-06-30",
-    "watermark_price": 125.74833488464355,
-    "watermark_date": "2026-08-25",
-    "status": "ACTIVE",
-    "expiry_date": "2026-09-24",
-    "normal_since": null
-  },
   "Emerging Markets": {
     "episode_id": "EMER-2026-07-19",
     "start_date": "2026-07-19",
@@ -133,5 +103,35 @@
     "status": "ACTIVE",
     "expiry_date": "2026-12-14",
     "normal_since": "2026-09-19"
+  },
+  "Gold": {
+    "episode_id": "GOLD-2026-09-25",
+    "start_date": "2026-09-25",
+    "trigger_type": "LC",
+    "peak_lambda_pct": 67.0,
+    "peak_corr_pct": null,
+    "peak_reflexivity": 47.5,
+    "quadrant": "Q1",
+    "peak_date": "2026-09-25",
+    "watermark_price": 128.26666673024496,
+    "watermark_date": "2026-09-25",
+    "status": "ACTIVE",
+    "expiry_date": "2026-12-24",
+    "normal_since": null
+  },
+  "Silver": {
+    "episode_id": "SILV-2026-09-25",
+    "start_date": "2026-09-25",
+    "trigger_type": "L",
+    "peak_lambda_pct": 67.0,
+    "peak_corr_pct": null,
+    "peak_reflexivity": 47.5,
+    "quadrant": "Q1",
+    "peak_date": "2026-09-25",
+    "watermark_price": 116.53166739145915,
+    "watermark_date": "2026-09-25",
+    "status": "ACTIVE",
+    "expiry_date": "2026-12-24",
+    "normal_since": null
   }
 }
