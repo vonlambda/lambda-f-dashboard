@@ -194,7 +194,7 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-07-30 | Ethereum | Q4 | Q4 | 3.9% | _pending_ | _pending_ | _pending_ |
 | 2026-07-30 | Silver | CRITICAL | Q1 | 2.1% | _pending_ | _pending_ | _pending_ |
 | 2026-07-30 | UK Equity (EWU) | CRITICAL | Q3 | 1.1% | _pending_ | _pending_ | _pending_ |
-| 2026-07-29 | Ethereum | Q4 | Q4 | 3.4% | _pending_ | _pending_ | _pending_ |
+| 2026-07-29 | Ethereum | Q4 | Q4 | 3.4% | 3.4% | _pending_ | _pending_ |
 | 2026-07-29 | Gold | CRITICAL | Q2 | 0.0% | _pending_ | _pending_ | _pending_ |
 | 2026-07-29 | Silver | CRITICAL | Q2 | 0.0% | _pending_ | _pending_ | _pending_ |
 | 2026-07-25 | Bonds | CRITICAL | Q3 | 2.9% | 1.9% | _pending_ | _pending_ |
