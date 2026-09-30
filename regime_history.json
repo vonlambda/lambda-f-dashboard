@@ -4,8 +4,8 @@
     "since": "2026-08-21"
   },
   "Gold": {
-    "regime": "ELEVATED (LC)",
-    "since": "2026-09-19"
+    "regime": "**CRITICAL** (C)",
+    "since": "2026-09-30"
   },
   "Crypto (BTC)": {
     "regime": "Normal",
@@ -24,16 +24,16 @@
     "since": "2026-09-02"
   },
   "Bonds": {
-    "regime": "**CRITICAL** (L)",
-    "since": "2026-09-29"
+    "regime": "**CRITICAL** (LC)",
+    "since": "2026-09-30"
   },
   "Emerging Markets": {
     "regime": "Normal",
     "since": "2026-09-02"
   },
   "Silver": {
-    "regime": "**CRITICAL** (L)",
-    "since": "2026-07-30"
+    "regime": "**CRITICAL** (LC)",
+    "since": "2026-09-30"
   },
   "Ethereum": {
     "regime": "Normal",
