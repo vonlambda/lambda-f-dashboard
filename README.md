@@ -182,6 +182,7 @@ hard-coded numbers, no selection bias. Full ledger at
 <!-- RECENT_CALLS_START -->
 | Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
 |------|--------|--------|----------|---------|---------|---------|--------|
+| 2026-10-02 | Bonds | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-09-30 | Bonds | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-09-30 | Gold | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-09-30 | Silver | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
@@ -222,14 +223,14 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
-| `GOLD-2026-09-25` | Gold | 2026-09-25 | Q1 | 72.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `SILV-2026-09-25` | Silver | 2026-09-25 | Q1 | 67.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `GOLD-2026-09-25` | Gold | 2026-09-25 | Q2 | 72.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `SILV-2026-09-25` | Silver | 2026-09-25 | Q2 | 67.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-09-15` | Crypto (BTC) | 2026-09-15 | Q2 | 29.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-09-15` | Ethereum | 2026-09-15 | Q2 | 38.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `USE-2026-08-28` | US Equity (SPY) | 2026-08-28 | Q1 | 87.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q3 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `USE-2026-08-28` | US Equity (SPY) | 2026-08-28 | Q2 | 87.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-08-02` | Germany (EWG) | 2026-08-02 | Q1 | 44.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `BOND-2026-08-02` | Bonds | 2026-08-02 | Q1 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `BOND-2026-08-02` | Bonds | 2026-08-02 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `EMER-2026-07-19` | Emerging Markets | 2026-07-19 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `Bonds-2026-06-19` | Bonds | 2026-06-19 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 6.2% |
 | `Germany (EWG)-2026-06-18` | Germany (EWG) | 2026-06-18 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 2.3% |
@@ -238,7 +239,7 @@ materialized as real events).
 | `Emerging Markets-2026-06-16` | Emerging Markets | 2026-06-16 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 11.0% |
 | `Silver-2026-06-16` | Silver | 2026-06-16 | Q4 | _n/a_ | RESOLVED | ✅ TP | 20.5% |
 
-**9 open · 12 TP · 51 FP · Resolved hit-rate: 19.0% · Resolution rate: 63/86**
+**9 open · 12 TP · 51 FP · Resolved hit-rate: 19.0% · Resolution rate: 63/87**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
