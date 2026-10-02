@@ -85,3 +85,4 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-09-30,Bonds,CRITICAL,Q1,TLT,77.6250,,,,pending
 2026-09-30,Gold,CRITICAL,Q1,GLD,380.6300,,,,pending
 2026-09-30,Silver,CRITICAL,Q1,SLV,54.3280,,,,pending
+2026-10-02,Bonds,CRITICAL,Q1,TLT,77.4200,,,,pending
