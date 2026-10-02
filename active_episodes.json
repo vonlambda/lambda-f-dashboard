@@ -1,19 +1,4 @@
 {
-  "Emerging Markets": {
-    "episode_id": "EMER-2026-07-19",
-    "start_date": "2026-07-19",
-    "trigger_type": "L",
-    "peak_lambda_pct": 96.0,
-    "peak_corr_pct": null,
-    "peak_reflexivity": 69.5,
-    "quadrant": "Q4",
-    "peak_date": "2026-07-19",
-    "watermark_price": 79.58200073242188,
-    "watermark_date": "2026-08-27",
-    "status": "ACTIVE",
-    "expiry_date": "2026-10-17",
-    "normal_since": "2026-09-02"
-  },
   "UK Equity (EWU)": {
     "episode_id": "UKE-2026-08-02",
     "start_date": "2026-08-02",
@@ -28,21 +13,6 @@
     "status": "ACTIVE",
     "expiry_date": "2026-10-31",
     "normal_since": null
-  },
-  "Germany (EWG)": {
-    "episode_id": "GERM-2026-08-02",
-    "start_date": "2026-08-02",
-    "trigger_type": "L",
-    "peak_lambda_pct": 44.0,
-    "peak_corr_pct": null,
-    "peak_reflexivity": 30.5,
-    "quadrant": "Q1",
-    "peak_date": "2026-08-02",
-    "watermark_price": 66.06800003051758,
-    "watermark_date": "2026-08-25",
-    "status": "ACTIVE",
-    "expiry_date": "2026-10-31",
-    "normal_since": "2026-09-02"
   },
   "Bonds": {
     "episode_id": "BOND-2026-08-02",
@@ -66,7 +36,7 @@
     "peak_lambda_pct": 87.0,
     "peak_corr_pct": null,
     "peak_reflexivity": 65.5,
-    "quadrant": "Q2",
+    "quadrant": "Q1",
     "peak_date": "2026-09-09",
     "watermark_price": 114.16875076293945,
     "watermark_date": "2026-08-28",
@@ -111,7 +81,7 @@
     "peak_lambda_pct": 72.0,
     "peak_corr_pct": null,
     "peak_reflexivity": 65.5,
-    "quadrant": "Q2",
+    "quadrant": "Q1",
     "peak_date": "2026-09-30",
     "watermark_price": 128.9116678237915,
     "watermark_date": "2026-09-25",
@@ -126,7 +96,7 @@
     "peak_lambda_pct": 67.0,
     "peak_corr_pct": null,
     "peak_reflexivity": 65.5,
-    "quadrant": "Q2",
+    "quadrant": "Q1",
     "peak_date": "2026-09-25",
     "watermark_price": 117.03333377838135,
     "watermark_date": "2026-09-25",
