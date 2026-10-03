@@ -103,5 +103,20 @@
     "status": "ACTIVE",
     "expiry_date": "2026-12-24",
     "normal_since": null
+  },
+  "Germany (EWG)": {
+    "episode_id": "GERM-2026-10-03",
+    "start_date": "2026-10-03",
+    "trigger_type": "L",
+    "peak_lambda_pct": 77.0,
+    "peak_corr_pct": null,
+    "peak_reflexivity": 52.5,
+    "quadrant": "Q3",
+    "peak_date": "2026-10-03",
+    "watermark_price": 62.79799880981445,
+    "watermark_date": "2026-10-03",
+    "status": "ACTIVE",
+    "expiry_date": "2027-01-01",
+    "normal_since": null
   }
 }
