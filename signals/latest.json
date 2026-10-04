@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-03T15:52:12+00:00",
-  "date": "2026-10-03",
+  "generated_at": "2026-10-04T16:35:11+00:00",
+  "date": "2026-10-04",
   "headline": {
     "regime_counts": {
       "CRITICAL": 4,
@@ -63,7 +63,7 @@
     {
       "market": "Silver",
       "lambda_value": 3.88,
-      "lambda_pct": 65.0,
+      "lambda_pct": 64.0,
       "elevated_days": 4,
       "elevated_threshold": "p90",
       "correlation": 0.29,
@@ -78,13 +78,13 @@
     },
     {
       "market": "Crypto (BTC)",
-      "lambda_value": 3.7,
-      "lambda_pct": 15.0,
+      "lambda_value": 3.72,
+      "lambda_pct": 18.0,
       "elevated_days": null,
       "elevated_threshold": null,
       "correlation": 0.68,
-      "correlation_pct": 32.0,
-      "reflexivity": 83.5,
+      "correlation_pct": 33.0,
+      "reflexivity": 82.5,
       "quadrant": "Q2",
       "regime": "Normal",
       "regime_source": null,
@@ -94,13 +94,13 @@
     },
     {
       "market": "Ethereum",
-      "lambda_value": 3.81,
-      "lambda_pct": 17.0,
+      "lambda_value": 3.86,
+      "lambda_pct": 25.0,
       "elevated_days": null,
       "elevated_threshold": null,
-      "correlation": 0.72,
-      "correlation_pct": 43.0,
-      "reflexivity": 83.5,
+      "correlation": 0.73,
+      "correlation_pct": 44.0,
+      "reflexivity": 82.5,
       "quadrant": "Q2",
       "regime": "Normal",
       "regime_source": null,
@@ -127,7 +127,7 @@
     {
       "market": "UK Equity (EWU)",
       "lambda_value": 3.95,
-      "lambda_pct": 77.0,
+      "lambda_pct": 78.0,
       "elevated_days": 11,
       "elevated_threshold": "p90",
       "correlation": 0.47,
@@ -153,14 +153,14 @@
       "regime": "ELEVATED",
       "regime_source": "L",
       "action": "Prepare",
-      "changed_today": true,
+      "changed_today": false,
       "since": "2026-10-03"
     },
     {
       "market": "Bonds",
       "lambda_value": 3.95,
-      "lambda_pct": 74.0,
-      "elevated_days": 6,
+      "lambda_pct": 73.0,
+      "elevated_days": 5,
       "elevated_threshold": "p90",
       "correlation": 0.87,
       "correlation_pct": 92.0,
@@ -169,7 +169,7 @@
       "regime": "CRITICAL",
       "regime_source": "LC",
       "action": "Maintain",
-      "changed_today": true,
+      "changed_today": false,
       "since": "2026-10-03"
     },
     {
