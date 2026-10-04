@@ -222,6 +222,7 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
+| `GERM-2026-10-03` | Germany (EWG) | 2026-10-03 | Q3 | 77.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GOLD-2026-09-25` | Gold | 2026-09-25 | Q1 | 72.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-09-25` | Silver | 2026-09-25 | Q1 | 67.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-09-15` | Crypto (BTC) | 2026-09-15 | Q2 | 29.0 | ACTIVE | 🟡 OPEN | _n/a_ |
@@ -236,9 +237,8 @@ materialized as real events).
 | `Emerging Markets-2026-06-16` | Emerging Markets | 2026-06-16 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 11.0% |
 | `Silver-2026-06-16` | Silver | 2026-06-16 | Q4 | _n/a_ | RESOLVED | ✅ TP | 20.5% |
 | `Emerging Markets-2026-06-15` | Emerging Markets | 2026-06-15 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 12.4% |
-| `Silver-2026-06-15` | Silver | 2026-06-15 | Q3 | _n/a_ | RESOLVED | ✅ TP | 20.6% |
 
-**7 open · 12 TP · 51 FP · Resolved hit-rate: 19.0% · Resolution rate: 63/88**
+**8 open · 12 TP · 51 FP · Resolved hit-rate: 19.0% · Resolution rate: 63/88**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
