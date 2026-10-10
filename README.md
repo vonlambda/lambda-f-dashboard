@@ -205,7 +205,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-07-29 | Gold | CRITICAL | Q2 | 0.0% | 0.0% | _pending_ | _pending_ |
 | 2026-07-29 | Silver | CRITICAL | Q2 | 0.0% | 0.0% | _pending_ | _pending_ |
 | 2026-07-25 | Bonds | CRITICAL | Q3 | 2.9% | 1.9% | _pending_ | _pending_ |
-| 2026-07-12 | UK Equity (EWU) | CRITICAL | Q3 | 0.1% | 0.1% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
@@ -223,7 +222,7 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
-| `GERM-2026-10-03` | Germany (EWG) | 2026-10-03 | Q3 | 77.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `GERM-2026-10-03` | Germany (EWG) | 2026-10-03 | Q3 | 81.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GOLD-2026-09-25` | Gold | 2026-09-25 | Q1 | 72.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-09-25` | Silver | 2026-09-25 | Q1 | 67.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-09-15` | Crypto (BTC) | 2026-09-15 | Q2 | 29.0 | ACTIVE | 🟡 OPEN | _n/a_ |
