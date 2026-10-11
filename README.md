@@ -222,7 +222,7 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
-| `GERM-2026-10-03` | Germany (EWG) | 2026-10-03 | Q3 | 81.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `GERM-2026-10-03` | Germany (EWG) | 2026-10-03 | Q1 | 81.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GOLD-2026-09-25` | Gold | 2026-09-25 | Q1 | 72.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-09-25` | Silver | 2026-09-25 | Q1 | 67.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-09-15` | Crypto (BTC) | 2026-09-15 | Q2 | 29.0 | ACTIVE | 🟡 OPEN | _n/a_ |
