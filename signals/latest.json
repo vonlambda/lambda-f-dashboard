@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-10T17:04:21+00:00",
-  "date": "2026-10-10",
+  "generated_at": "2026-10-11T17:27:38+00:00",
+  "date": "2026-10-11",
   "headline": {
     "regime_counts": {
       "CRITICAL": 4,
@@ -31,7 +31,7 @@
     {
       "market": "Commodities",
       "lambda_value": 3.27,
-      "lambda_pct": 4.0,
+      "lambda_pct": 5.0,
       "elevated_days": null,
       "elevated_threshold": null,
       "correlation": 0.08,
@@ -47,7 +47,7 @@
     {
       "market": "Gold",
       "lambda_value": 3.82,
-      "lambda_pct": 38.0,
+      "lambda_pct": 36.0,
       "elevated_days": 7,
       "elevated_threshold": "p75",
       "correlation": 0.36,
@@ -63,7 +63,7 @@
     {
       "market": "Silver",
       "lambda_value": 3.82,
-      "lambda_pct": 51.0,
+      "lambda_pct": 50.0,
       "elevated_days": 5,
       "elevated_threshold": "p90",
       "correlation": 0.29,
@@ -78,13 +78,13 @@
     },
     {
       "market": "Crypto (BTC)",
-      "lambda_value": 3.84,
-      "lambda_pct": 44.0,
+      "lambda_value": 3.91,
+      "lambda_pct": 63.0,
       "elevated_days": null,
       "elevated_threshold": null,
-      "correlation": 0.73,
-      "correlation_pct": 45.0,
-      "reflexivity": 82.0,
+      "correlation": 0.67,
+      "correlation_pct": 30.0,
+      "reflexivity": 80.5,
       "quadrant": "Q2",
       "regime": "Normal",
       "regime_source": null,
@@ -94,13 +94,13 @@
     },
     {
       "market": "Ethereum",
-      "lambda_value": 3.96,
-      "lambda_pct": 56.0,
+      "lambda_value": 4.02,
+      "lambda_pct": 73.0,
       "elevated_days": null,
       "elevated_threshold": null,
-      "correlation": 0.74,
-      "correlation_pct": 49.0,
-      "reflexivity": 82.0,
+      "correlation": 0.68,
+      "correlation_pct": 30.0,
+      "reflexivity": 80.5,
       "quadrant": "Q2",
       "regime": "Normal",
       "regime_source": null,
@@ -111,7 +111,7 @@
     {
       "market": "US Equity (SPY)",
       "lambda_value": 3.54,
-      "lambda_pct": 15.0,
+      "lambda_pct": 14.0,
       "elevated_days": 6,
       "elevated_threshold": "p75",
       "correlation": 0.22,
@@ -159,7 +159,7 @@
     {
       "market": "Bonds",
       "lambda_value": 3.92,
-      "lambda_pct": 69.0,
+      "lambda_pct": 68.0,
       "elevated_days": 6,
       "elevated_threshold": "p90",
       "correlation": 0.84,
