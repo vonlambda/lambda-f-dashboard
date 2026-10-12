@@ -230,15 +230,15 @@ materialized as real events).
 | `USE-2026-08-28` | US Equity (SPY) | 2026-08-28 | Q1 | 87.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-08-02` | Bonds | 2026-08-02 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UK Equity (EWU)-2026-07-12` | UK Equity (EWU) | 2026-07-12 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 1.0% |
 | `Bonds-2026-06-19` | Bonds | 2026-06-19 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 6.2% |
 | `Germany (EWG)-2026-06-18` | Germany (EWG) | 2026-06-18 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 2.3% |
 | `Silver-2026-06-18` | Silver | 2026-06-18 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 15.3% |
 | `UK Equity (EWU)-2026-06-17` | UK Equity (EWU) | 2026-06-17 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 1.0% |
 | `Emerging Markets-2026-06-16` | Emerging Markets | 2026-06-16 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 11.0% |
 | `Silver-2026-06-16` | Silver | 2026-06-16 | Q4 | _n/a_ | RESOLVED | ✅ TP | 20.5% |
-| `Emerging Markets-2026-06-15` | Emerging Markets | 2026-06-15 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 12.4% |
 
-**8 open · 12 TP · 51 FP · Resolved hit-rate: 19.0% · Resolution rate: 63/89**
+**8 open · 12 TP · 52 FP · Resolved hit-rate: 18.8% · Resolution rate: 64/89**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
