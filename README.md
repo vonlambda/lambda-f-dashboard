@@ -182,6 +182,7 @@ hard-coded numbers, no selection bias. Full ledger at
 <!-- RECENT_CALLS_START -->
 | Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
 |------|--------|--------|----------|---------|---------|---------|--------|
+| 2026-10-14 | Ethereum | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-07 | Bonds | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-03 | Bonds | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-02 | Bonds | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
@@ -191,7 +192,7 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-09-29 | Bonds | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-09-25 | Bonds | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-09-23 | Bonds | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-09-14 | Bonds | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-09-14 | Bonds | CRITICAL | Q3 | 4.7% | _pending_ | _pending_ | _pending_ |
 | 2026-09-07 | Ethereum | CRITICAL | Q2 | 3.7% | _pending_ | _pending_ | _pending_ |
 | 2026-08-20 | Bonds | CRITICAL | Q3 | 2.0% | _pending_ | _pending_ | _pending_ |
 | 2026-08-19 | UK Equity (EWU) | CRITICAL | Q1 | 2.8% | _pending_ | _pending_ | _pending_ |
@@ -240,7 +241,7 @@ materialized as real events).
 | `Emerging Markets-2026-06-16` | Emerging Markets | 2026-06-16 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 11.0% |
 | `Silver-2026-06-16` | Silver | 2026-06-16 | Q4 | _n/a_ | RESOLVED | ✅ TP | 20.5% |
 
-**8 open · 12 TP · 52 FP · Resolved hit-rate: 18.8% · Resolution rate: 64/89**
+**8 open · 12 TP · 52 FP · Resolved hit-rate: 18.8% · Resolution rate: 64/90**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
