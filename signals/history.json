@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-15T16:28:47+00:00",
-  "count": 159,
+  "generated_at": "2026-10-16T16:14:05+00:00",
+  "count": 160,
   "history": [
+    {
+      "date": "2026-10-16",
+      "systemic_score": 14,
+      "systemic_label": "WATCH",
+      "n_q4": 2,
+      "n_q3": 0,
+      "n_critical": 4,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 4.0,
+          "reflexivity": 63.0,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 64.0,
+          "reflexivity": 63.0,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Silver": {
+          "lambda_pct": 54.0,
+          "reflexivity": 63.0,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 91.0,
+          "reflexivity": 81.5,
+          "quadrant": "Q4",
+          "regime": "CRITICAL"
+        },
+        "Ethereum": {
+          "lambda_pct": 90.0,
+          "reflexivity": 81.5,
+          "quadrant": "Q4",
+          "regime": "ELEVATED"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 20.0,
+          "reflexivity": 63.0,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 52.0,
+          "reflexivity": 63.0,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 61.0,
+          "reflexivity": 63.0,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Bonds": {
+          "lambda_pct": 45.0,
+          "reflexivity": 63.0,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 17.0,
+          "reflexivity": 63.0,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        }
+      }
+    },
     {
       "date": "2026-10-15",
       "systemic_score": 14,
