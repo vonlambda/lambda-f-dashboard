@@ -4,12 +4,12 @@
     "since": "2026-08-21"
   },
   "Gold": {
-    "regime": "**CRITICAL** (C)",
-    "since": "2026-09-30"
+    "regime": "ELEVATED (LC)",
+    "since": "2026-10-16"
   },
   "Crypto (BTC)": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-10-15"
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-10-16"
   },
   "US Equity (SPY)": {
     "regime": "ELEVATED (L)",
