@@ -91,3 +91,5 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-10-14,Ethereum,Q4,Q4,ETH-USD,2441.8999,,,,pending
 2026-10-15,Crypto (BTC),Q4,Q4,BTC-USD,82030.0625,,,,pending
 2026-10-16,Crypto (BTC),Q4,Q4,BTC-USD,81460.0000,,,,pending
+2026-10-17,Ethereum,Q4,Q4,ETH-USD,2421.0200,,,,pending
+2026-10-17,Silver,CRITICAL,Q2,SLV,51.5100,,,,pending
