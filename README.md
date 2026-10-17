@@ -183,6 +183,8 @@ hard-coded numbers, no selection bias. Full ledger at
 <!-- RECENT_CALLS_START -->
 | Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
 |------|--------|--------|----------|---------|---------|---------|--------|
+| 2026-10-17 | Ethereum | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-10-17 | Silver | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-16 | Crypto (BTC) | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-15 | Crypto (BTC) | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-14 | Ethereum | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
@@ -244,7 +246,7 @@ materialized as real events).
 | `Emerging Markets-2026-06-16` | Emerging Markets | 2026-06-16 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 11.0% |
 | `Silver-2026-06-16` | Silver | 2026-06-16 | Q4 | _n/a_ | RESOLVED | ✅ TP | 20.5% |
 
-**8 open · 12 TP · 52 FP · Resolved hit-rate: 18.8% · Resolution rate: 64/92**
+**8 open · 12 TP · 52 FP · Resolved hit-rate: 18.8% · Resolution rate: 64/94**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
