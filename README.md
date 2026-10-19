@@ -196,8 +196,8 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-09-23 | Bonds | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-09-14 | Bonds | CRITICAL | Q3 | 4.7% | _pending_ | _pending_ | _pending_ |
 | 2026-09-07 | Ethereum | CRITICAL | Q2 | 3.7% | _pending_ | _pending_ | _pending_ |
-| 2026-08-20 | Bonds | CRITICAL | Q3 | 2.0% | _pending_ | _pending_ | _pending_ |
-| 2026-08-19 | UK Equity (EWU) | CRITICAL | Q1 | 2.8% | _pending_ | _pending_ | _pending_ |
+| 2026-08-20 | Bonds | CRITICAL | Q3 | 2.0% | 6.3% | _pending_ | _pending_ |
+| 2026-08-19 | UK Equity (EWU) | CRITICAL | Q1 | 2.8% | 5.5% | _pending_ | _pending_ |
 | 2026-08-17 | Bonds | CRITICAL | Q1 | 0.8% | 5.2% | _pending_ | _pending_ |
 | 2026-08-04 | Gold | CRITICAL | Q1 | 0.0% | 0.0% | _pending_ | _pending_ |
 | 2026-08-01 | Crypto (BTC) | Q4 | Q4 | 0.0% | 0.0% | _pending_ | _pending_ |
