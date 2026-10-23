@@ -12,8 +12,8 @@
     "since": "2026-10-16"
   },
   "US Equity (SPY)": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-08-28"
+    "regime": "Normal",
+    "since": "2026-10-23"
   },
   "UK Equity (EWU)": {
     "regime": "**CRITICAL** (L)",

@@ -42,7 +42,7 @@
     "watermark_date": "2026-10-21",
     "status": "ACTIVE",
     "expiry_date": "2026-11-26",
-    "normal_since": null
+    "normal_since": "2026-10-23"
   },
   "Crypto (BTC)": {
     "episode_id": "CRYP-2026-09-15",
