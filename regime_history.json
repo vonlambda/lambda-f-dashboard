@@ -1,15 +1,15 @@
 {
   "Commodities": {
-    "regime": "Normal",
-    "since": "2026-08-21"
+    "regime": "ELEVATED (C)",
+    "since": "2026-10-24"
   },
   "Gold": {
-    "regime": "ELEVATED (LC)",
-    "since": "2026-10-16"
+    "regime": "ELEVATED (L)",
+    "since": "2026-10-24"
   },
   "Crypto (BTC)": {
-    "regime": "**CRITICAL** (L)",
-    "since": "2026-10-16"
+    "regime": "**CRITICAL** (LC)",
+    "since": "2026-10-24"
   },
   "US Equity (SPY)": {
     "regime": "Normal",
@@ -32,8 +32,8 @@
     "since": "2026-09-02"
   },
   "Silver": {
-    "regime": "**CRITICAL** (L)",
-    "since": "2026-10-17"
+    "regime": "ELEVATED (L)",
+    "since": "2026-10-24"
   },
   "Ethereum": {
     "regime": "**CRITICAL** (L)",
