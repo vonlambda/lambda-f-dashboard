@@ -1,7 +1,7 @@
 {
   "Commodities": {
-    "regime": "ELEVATED (C)",
-    "since": "2026-10-24"
+    "regime": "Normal",
+    "since": "2026-10-27"
   },
   "Gold": {
     "regime": "ELEVATED (L)",
@@ -32,8 +32,8 @@
     "since": "2026-09-02"
   },
   "Silver": {
-    "regime": "**CRITICAL** (L)",
-    "since": "2026-10-26"
+    "regime": "ELEVATED (L)",
+    "since": "2026-10-27"
   },
   "Ethereum": {
     "regime": "**CRITICAL** (L)",
