@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-27T17:37:30+00:00",
-  "count": 171,
+  "generated_at": "2026-10-28T17:59:44+00:00",
+  "count": 172,
   "history": [
+    {
+      "date": "2026-10-28",
+      "systemic_score": 4,
+      "systemic_label": "CALM",
+      "n_q4": 0,
+      "n_q3": 1,
+      "n_critical": 4,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 2.0,
+          "reflexivity": 57.5,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 18.0,
+          "reflexivity": 57.5,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "Silver": {
+          "lambda_pct": 26.0,
+          "reflexivity": 57.5,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 40.0,
+          "reflexivity": 75.5,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "Ethereum": {
+          "lambda_pct": 71.0,
+          "reflexivity": 75.5,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 3.0,
+          "reflexivity": 57.5,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 77.0,
+          "reflexivity": 57.5,
+          "quadrant": "Q3",
+          "regime": "CRITICAL"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 25.0,
+          "reflexivity": 57.5,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "Bonds": {
+          "lambda_pct": 61.0,
+          "reflexivity": 57.5,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 1.0,
+          "reflexivity": 57.5,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        }
+      }
+    },
     {
       "date": "2026-10-27",
       "systemic_score": 14,
