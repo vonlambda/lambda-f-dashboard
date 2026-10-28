@@ -205,9 +205,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-08-01 | Crypto (BTC) | Q4 | Q4 | 0.0% | 0.0% | _pending_ | _pending_ |
 | 2026-08-01 | Ethereum | Q4 | Q4 | 0.0% | 0.0% | _pending_ | _pending_ |
 | 2026-07-31 | Gold | CRITICAL | Q1 | 0.0% | 0.0% | _pending_ | _pending_ |
-| 2026-07-30 | Ethereum | Q4 | Q4 | 3.9% | 3.9% | _pending_ | _pending_ |
-| 2026-07-30 | Silver | CRITICAL | Q1 | 2.1% | 2.1% | _pending_ | _pending_ |
-| 2026-07-30 | UK Equity (EWU) | CRITICAL | Q3 | 1.1% | 3.3% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
@@ -234,14 +231,14 @@ materialized as real events).
 | `USE-2026-08-28` | US Equity (SPY) | 2026-08-28 | Q2 | 87.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `UKE-2026-08-02` | UK Equity (EWU) | 2026-08-02 | Q4 | 98.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-08-02` | Bonds | 2026-08-02 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `Ethereum-2026-07-30` | Ethereum | 2026-07-30 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 3.9% |
+| `Silver-2026-07-30` | Silver | 2026-07-30 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 9.5% |
+| `UK Equity (EWU)-2026-07-30` | UK Equity (EWU) | 2026-07-30 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 5.7% |
 | `Ethereum-2026-07-29` | Ethereum | 2026-07-29 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 3.4% |
 | `Gold-2026-07-29` | Gold | 2026-07-29 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 1.2% |
 | `Silver-2026-07-29` | Silver | 2026-07-29 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 6.0% |
-| `Bonds-2026-07-25` | Bonds | 2026-07-25 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 7.9% |
-| `UK Equity (EWU)-2026-07-12` | UK Equity (EWU) | 2026-07-12 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 1.0% |
-| `Bonds-2026-06-19` | Bonds | 2026-06-19 | Q2 | _n/a_ | RESOLVED | ⚪ FP | 6.2% |
 
-**9 open · 12 TP · 56 FP · Resolved hit-rate: 17.6% · Resolution rate: 68/96**
+**9 open · 12 TP · 59 FP · Resolved hit-rate: 16.9% · Resolution rate: 71/96**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
