@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-29T18:09:00+00:00",
-  "count": 173,
+  "generated_at": "2026-10-30T17:47:50+00:00",
+  "count": 174,
   "history": [
+    {
+      "date": "2026-10-30",
+      "systemic_score": 16,
+      "systemic_label": "ELEVATED SYSTEMIC RISK",
+      "n_q4": 3,
+      "n_q3": 0,
+      "n_critical": 4,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 3.0,
+          "reflexivity": 65.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 18.0,
+          "reflexivity": 65.5,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Silver": {
+          "lambda_pct": 16.0,
+          "reflexivity": 65.5,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 55.0,
+          "reflexivity": 65.0,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "Ethereum": {
+          "lambda_pct": 80.0,
+          "reflexivity": 65.0,
+          "quadrant": "Q4",
+          "regime": "CRITICAL"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 2.0,
+          "reflexivity": 65.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 91.0,
+          "reflexivity": 65.5,
+          "quadrant": "Q4",
+          "regime": "CRITICAL"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 22.0,
+          "reflexivity": 65.5,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Bonds": {
+          "lambda_pct": 89.0,
+          "reflexivity": 65.5,
+          "quadrant": "Q4",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 0.0,
+          "reflexivity": 65.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        }
+      }
+    },
     {
       "date": "2026-10-29",
       "systemic_score": 6,
