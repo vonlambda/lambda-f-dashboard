@@ -182,6 +182,7 @@ hard-coded numbers, no selection bias. Full ledger at
 <!-- RECENT_CALLS_START -->
 | Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
 |------|--------|--------|----------|---------|---------|---------|--------|
+| 2026-10-31 | Crypto (BTC) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-30 | Crypto (BTC) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-26 | Silver | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-24 | Crypto (BTC) | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
@@ -223,9 +224,9 @@ materialized as real events).
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
 | `COMM-2026-10-24` | Commodities | 2026-10-24 | Q2 | 2.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `GERM-2026-10-03` | Germany (EWG) | 2026-10-03 | Q1 | 81.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `GERM-2026-10-03` | Germany (EWG) | 2026-10-03 | Q2 | 81.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GOLD-2026-09-25` | Gold | 2026-09-25 | Q4 | 75.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `SILV-2026-09-25` | Silver | 2026-09-25 | Q1 | 67.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `SILV-2026-09-25` | Silver | 2026-09-25 | Q2 | 67.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-09-15` | Crypto (BTC) | 2026-09-15 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `ETHE-2026-09-15` | Ethereum | 2026-09-15 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `USE-2026-08-28` | US Equity (SPY) | 2026-08-28 | Q2 | 87.0 | ACTIVE | 🟡 OPEN | _n/a_ |
@@ -238,7 +239,7 @@ materialized as real events).
 | `Silver-2026-07-30` | Silver | 2026-07-30 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 9.5% |
 | `UK Equity (EWU)-2026-07-30` | UK Equity (EWU) | 2026-07-30 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 5.7% |
 
-**9 open · 12 TP · 62 FP · Resolved hit-rate: 16.2% · Resolution rate: 74/97**
+**9 open · 12 TP · 62 FP · Resolved hit-rate: 16.2% · Resolution rate: 74/98**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
