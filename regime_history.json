@@ -8,8 +8,8 @@
     "since": "2026-10-24"
   },
   "Crypto (BTC)": {
-    "regime": "**CRITICAL** (LC)",
-    "since": "2026-10-31"
+    "regime": "**CRITICAL** (L)",
+    "since": "2026-11-01"
   },
   "US Equity (SPY)": {
     "regime": "Normal",

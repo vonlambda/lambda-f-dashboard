@@ -1,34 +1,4 @@
 {
-  "UK Equity (EWU)": {
-    "episode_id": "UKE-2026-08-02",
-    "start_date": "2026-08-02",
-    "trigger_type": "L",
-    "peak_lambda_pct": 98.0,
-    "peak_corr_pct": null,
-    "peak_reflexivity": 79.5,
-    "quadrant": "Q4",
-    "peak_date": "2026-09-22",
-    "watermark_price": 72.9774980545044,
-    "watermark_date": "2026-08-25",
-    "status": "ACTIVE",
-    "expiry_date": "2026-10-31",
-    "normal_since": null
-  },
-  "Bonds": {
-    "episode_id": "BOND-2026-08-02",
-    "start_date": "2026-08-02",
-    "trigger_type": "L",
-    "peak_lambda_pct": 96.0,
-    "peak_corr_pct": null,
-    "peak_reflexivity": 79.5,
-    "quadrant": "Q4",
-    "peak_date": "2026-08-19",
-    "watermark_price": 92.2466672261556,
-    "watermark_date": "2026-08-25",
-    "status": "ACTIVE",
-    "expiry_date": "2026-10-31",
-    "normal_since": null
-  },
   "US Equity (SPY)": {
     "episode_id": "USE-2026-08-28",
     "start_date": "2026-08-28",
@@ -133,5 +103,35 @@
     "status": "ACTIVE",
     "expiry_date": "2027-01-22",
     "normal_since": "2026-10-27"
+  },
+  "UK Equity (EWU)": {
+    "episode_id": "UKE-2026-11-01",
+    "start_date": "2026-11-01",
+    "trigger_type": "L",
+    "peak_lambda_pct": 51.0,
+    "peak_corr_pct": null,
+    "peak_reflexivity": 60.0,
+    "quadrant": "Q2",
+    "peak_date": "2026-11-01",
+    "watermark_price": 71.33999919891357,
+    "watermark_date": "2026-11-01",
+    "status": "ACTIVE",
+    "expiry_date": "2027-01-30",
+    "normal_since": null
+  },
+  "Bonds": {
+    "episode_id": "BOND-2026-11-01",
+    "start_date": "2026-11-01",
+    "trigger_type": "L",
+    "peak_lambda_pct": 93.0,
+    "peak_corr_pct": null,
+    "peak_reflexivity": 60.0,
+    "quadrant": "Q4",
+    "peak_date": "2026-11-01",
+    "watermark_price": 90.61499913533528,
+    "watermark_date": "2026-11-01",
+    "status": "ACTIVE",
+    "expiry_date": "2027-01-30",
+    "normal_since": null
   }
 }
