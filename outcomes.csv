@@ -97,3 +97,4 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-10-26,Silver,CRITICAL,Q2,SLV,48.8150,,,,pending
 2026-10-30,Crypto (BTC),CRITICAL,Q2,BTC-USD,77115.3594,,,,pending
 2026-10-31,Crypto (BTC),CRITICAL,Q2,BTC-USD,77468.8906,,,,pending
+2026-11-01,Crypto (BTC),CRITICAL,Q2,BTC-USD,77957.9297,,,,pending
