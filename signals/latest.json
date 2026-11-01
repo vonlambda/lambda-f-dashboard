@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-31T16:57:01+00:00",
-  "date": "2026-10-31",
+  "generated_at": "2026-11-01T17:43:19+00:00",
+  "date": "2026-11-01",
   "headline": {
     "regime_counts": {
       "CRITICAL": 4,
@@ -9,21 +9,21 @@
       "NORMAL": 3
     },
     "quadrant_counts": {
-      "Q4": 1,
+      "Q4": 2,
       "Q3": 0,
-      "Q2": 9,
+      "Q2": 8,
       "Q1": 0
     },
     "systemic_score": {
-      "score": 12,
+      "score": 14,
       "max": 30,
-      "pct": 40.0,
+      "pct": 46.7,
       "label": "WATCH"
     },
     "live_forward_detection": {
       "true_positives": 12,
       "false_positives": 62,
-      "pending": 24,
+      "pending": 25,
       "rate_pct": 16.2
     }
   },
@@ -47,7 +47,7 @@
     {
       "market": "Gold",
       "lambda_value": 3.68,
-      "lambda_pct": 10.0,
+      "lambda_pct": 9.0,
       "elevated_days": 3,
       "elevated_threshold": "p75",
       "correlation": 0.24,
@@ -63,7 +63,7 @@
     {
       "market": "Silver",
       "lambda_value": 3.59,
-      "lambda_pct": 14.0,
+      "lambda_pct": 15.0,
       "elevated_days": 4,
       "elevated_threshold": "p75",
       "correlation": 0.13,
@@ -78,33 +78,33 @@
     },
     {
       "market": "Crypto (BTC)",
-      "lambda_value": 3.85,
-      "lambda_pct": 44.0,
+      "lambda_value": 3.89,
+      "lambda_pct": 55.0,
       "elevated_days": 7,
       "elevated_threshold": "p90",
-      "correlation": 0.91,
-      "correlation_pct": 92.0,
-      "reflexivity": 65.0,
-      "quadrant": "Q2",
-      "regime": "CRITICAL",
-      "regime_source": "LC",
-      "action": "Monitor",
-      "changed_today": true,
-      "since": "2026-10-31"
-    },
-    {
-      "market": "Ethereum",
-      "lambda_value": 4.03,
-      "lambda_pct": 73.0,
-      "elevated_days": 5,
-      "elevated_threshold": "p90",
-      "correlation": 0.88,
+      "correlation": 0.89,
       "correlation_pct": 89.0,
-      "reflexivity": 65.0,
+      "reflexivity": 67.0,
       "quadrant": "Q2",
       "regime": "CRITICAL",
       "regime_source": "L",
       "action": "Monitor",
+      "changed_today": true,
+      "since": "2026-11-01"
+    },
+    {
+      "market": "Ethereum",
+      "lambda_value": 4.08,
+      "lambda_pct": 86.0,
+      "elevated_days": 7,
+      "elevated_threshold": "p90",
+      "correlation": 0.87,
+      "correlation_pct": 88.0,
+      "reflexivity": 67.0,
+      "quadrant": "Q4",
+      "regime": "CRITICAL",
+      "regime_source": "L",
+      "action": "Reduce",
       "changed_today": false,
       "since": "2026-10-17"
     },
@@ -127,7 +127,7 @@
     {
       "market": "UK Equity (EWU)",
       "lambda_value": 3.87,
-      "lambda_pct": 53.0,
+      "lambda_pct": 51.0,
       "elevated_days": 10,
       "elevated_threshold": "p90",
       "correlation": 0.69,
