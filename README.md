@@ -221,7 +221,7 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
-| `UKE-2026-11-01` | UK Equity (EWU) | 2026-11-01 | Q2 | 51.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-11-01` | UK Equity (EWU) | 2026-11-01 | Q2 | 53.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-11-01` | Bonds | 2026-11-01 | Q4 | 93.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `COMM-2026-10-24` | Commodities | 2026-10-24 | Q2 | 2.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-10-03` | Germany (EWG) | 2026-10-03 | Q2 | 81.0 | ACTIVE | 🟡 OPEN | _n/a_ |
