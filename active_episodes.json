@@ -57,7 +57,7 @@
     "watermark_date": "2026-09-25",
     "status": "ACTIVE",
     "expiry_date": "2026-12-24",
-    "normal_since": null
+    "normal_since": "2026-11-04"
   },
   "Silver": {
     "episode_id": "SILV-2026-09-25",
@@ -72,7 +72,7 @@
     "watermark_date": "2026-09-25",
     "status": "ACTIVE",
     "expiry_date": "2026-12-24",
-    "normal_since": null
+    "normal_since": "2026-11-04"
   },
   "Germany (EWG)": {
     "episode_id": "GERM-2026-10-03",
@@ -81,7 +81,7 @@
     "peak_lambda_pct": 81.0,
     "peak_corr_pct": null,
     "peak_reflexivity": 79.5,
-    "quadrant": "Q2",
+    "quadrant": "Q1",
     "peak_date": "2026-10-09",
     "watermark_price": 63.0640007019043,
     "watermark_date": "2026-10-29",
@@ -111,7 +111,7 @@
     "peak_lambda_pct": 53.0,
     "peak_corr_pct": null,
     "peak_reflexivity": 65.5,
-    "quadrant": "Q2",
+    "quadrant": "Q1",
     "peak_date": "2026-11-02",
     "watermark_price": 71.78499794006348,
     "watermark_date": "2026-11-02",
@@ -123,11 +123,11 @@
     "episode_id": "BOND-2026-11-01",
     "start_date": "2026-11-01",
     "trigger_type": "L",
-    "peak_lambda_pct": 93.0,
+    "peak_lambda_pct": 96.0,
     "peak_corr_pct": null,
     "peak_reflexivity": 65.5,
     "quadrant": "Q4",
-    "peak_date": "2026-11-01",
+    "peak_date": "2026-11-04",
     "watermark_price": 90.61499913533528,
     "watermark_date": "2026-11-01",
     "status": "ACTIVE",
