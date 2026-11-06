@@ -190,7 +190,7 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-10-16 | Crypto (BTC) | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-15 | Crypto (BTC) | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-14 | Ethereum | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-10-07 | Bonds | CRITICAL | Q3 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-10-07 | Bonds | CRITICAL | Q3 | 0.0% | _pending_ | _pending_ | _pending_ |
 | 2026-10-03 | Bonds | CRITICAL | Q1 | 0.0% | _pending_ | _pending_ | _pending_ |
 | 2026-10-02 | Bonds | CRITICAL | Q1 | 0.5% | _pending_ | _pending_ | _pending_ |
 | 2026-09-30 | Bonds | CRITICAL | Q1 | 0.9% | _pending_ | _pending_ | _pending_ |
@@ -200,7 +200,7 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-09-25 | Bonds | CRITICAL | Q3 | 2.8% | _pending_ | _pending_ | _pending_ |
 | 2026-09-23 | Bonds | CRITICAL | Q3 | 4.2% | _pending_ | _pending_ | _pending_ |
 | 2026-09-14 | Bonds | CRITICAL | Q3 | 4.7% | _pending_ | _pending_ | _pending_ |
-| 2026-09-07 | Ethereum | CRITICAL | Q2 | 3.7% | _pending_ | _pending_ | _pending_ |
+| 2026-09-07 | Ethereum | CRITICAL | Q2 | 3.7% | 10.6% | _pending_ | _pending_ |
 | 2026-08-20 | Bonds | CRITICAL | Q3 | 2.0% | 6.3% | _pending_ | _pending_ |
 | 2026-08-19 | UK Equity (EWU) | CRITICAL | Q1 | 2.8% | 5.5% | _pending_ | _pending_ |
 | 2026-08-17 | Bonds | CRITICAL | Q1 | 0.8% | 5.2% | _pending_ | _pending_ |
@@ -221,10 +221,10 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
-| `UKE-2026-11-01` | UK Equity (EWU) | 2026-11-01 | Q1 | 53.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `UKE-2026-11-01` | UK Equity (EWU) | 2026-11-01 | Q2 | 53.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-11-01` | Bonds | 2026-11-01 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `COMM-2026-10-24` | Commodities | 2026-10-24 | Q2 | 2.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `GERM-2026-10-03` | Germany (EWG) | 2026-10-03 | Q1 | 81.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `GERM-2026-10-03` | Germany (EWG) | 2026-10-03 | Q2 | 81.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GOLD-2026-09-25` | Gold | 2026-09-25 | Q4 | 75.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-09-25` | Silver | 2026-09-25 | Q2 | 67.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-09-15` | Crypto (BTC) | 2026-09-15 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
