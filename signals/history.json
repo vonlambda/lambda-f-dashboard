@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-08T17:43:14+00:00",
-  "count": 183,
+  "generated_at": "2026-11-09T22:00:30+00:00",
+  "count": 184,
   "history": [
+    {
+      "date": "2026-11-09",
+      "systemic_score": 14,
+      "systemic_label": "WATCH",
+      "n_q4": 2,
+      "n_q3": 0,
+      "n_critical": 4,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 0.0,
+          "reflexivity": 60.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 10.0,
+          "reflexivity": 60.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Silver": {
+          "lambda_pct": 12.0,
+          "reflexivity": 60.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 69.0,
+          "reflexivity": 64.5,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "Ethereum": {
+          "lambda_pct": 77.0,
+          "reflexivity": 64.5,
+          "quadrant": "Q4",
+          "regime": "CRITICAL"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 24.0,
+          "reflexivity": 60.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 62.0,
+          "reflexivity": 60.5,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 39.0,
+          "reflexivity": 60.5,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Bonds": {
+          "lambda_pct": 81.0,
+          "reflexivity": 60.5,
+          "quadrant": "Q4",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 1.0,
+          "reflexivity": 60.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        }
+      }
+    },
     {
       "date": "2026-11-08",
       "systemic_score": 16,
