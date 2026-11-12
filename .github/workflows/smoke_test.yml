@@ -31,6 +31,11 @@ jobs:
         run: |
           python -m unittest tests.smoke_test -v
 
+      - name: Check episode populations and generated artifacts
+        run: |
+          python -m unittest tests.test_scorecard -v
+          python honest_scorecard.py --check
+
       - name: Sanity check — main pipeline imports cleanly
         run: |
           python -c "import update_lambda; print('update_lambda imports OK')"

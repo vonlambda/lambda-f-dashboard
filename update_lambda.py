@@ -763,31 +763,16 @@ def _generate_diff_block(results):
 
 
 def refresh_honest_scorecard():
-    """Regenerate signals/scorecard.json (episode-level, resolved-only) and
-    return the scorecard dict -- the single source of truth for headline
-    precision numbers. Falls back to the committed JSON if regeneration
-    fails; returns None only if both paths fail."""
-    sc_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                           'signals', 'scorecard.json')
-    try:
-        import honest_scorecard as hs
-        calls = hs.load_calls()
-        eps = hs.merge_episodes(calls)
-        sc = hs.score(eps)
-        with open(sc_path, 'w', encoding='utf-8') as f:
-            json.dump({**sc, "episodes": eps.to_dict("records")}, f, indent=1)
-        return sc
-    except Exception as e:
-        print(f"[scorecard] regeneration failed ({e}); using committed JSON")
-    try:
-        with open(sc_path, encoding='utf-8') as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"[scorecard] load failed ({e}); headline falls back to call-day stats")
-        return None
+    """Recompute retained-call precision; never fall back to stale or call-day stats."""
+    import honest_scorecard as hs
+    sc = hs.build_scorecard()
+    path = os.path.join(SCRIPT_DIR, 'signals', 'scorecard.json')
+    with open(path, 'w', encoding='utf-8', newline='\n') as handle:
+        handle.write(hs.json_text(sc))
+    return sc
 
 
-def generate_table(results):
+def generate_table(results, scorecard=None):
     """Generate markdown table from results with severity emojis, regime counts,
     quadrant counts, Δ-since-yesterday, NEW badges, and per-quadrant action.
 
@@ -828,35 +813,10 @@ def generate_table(results):
     systemic_line = (f"🌐 **Systemic Regime Score: {sys_score['score']}/{sys_score['max_score']}** "
                      f"— {sys_score['emoji']} *{sys_score['label']}*")
 
-    # Tier 3 T3.2 — headline precision sourced from the honest scorecard
-    # (episode-level, calls merged per market <=30 d, resolved-only;
-    # signals/scorecard.json is the single source of truth). Call-day stats
-    # remain as bookkeeping and as the fallback if the scorecard is missing.
-    stats = compute_detection_stats()
-    scorecard = refresh_honest_scorecard()
-    if scorecard:
-        al = scorecard['channels']['all_critical_coverage_channel']
-        q4 = scorecard['channels']['Q4_precision_channel']
-        al_p = (f"{al['precision_resolved_only'] * 100:.0f}%"
-                if al['precision_resolved_only'] is not None else "n/a")
-        q4_p = (f"{q4['tp']}/{q4['resolved']} ({q4['precision_resolved_only'] * 100:.0f}%)"
-                if q4['precision_resolved_only'] is not None
-                else f"0 resolved · {q4['open_censored']} open")
-        det_line = (f"🎯 **Episode hit rate (resolved-only): "
-                    f"{al['tp']}/{al['resolved']} ({al_p})** "
-                    f"· Q4 channel: {q4_p} "
-                    f"· {stats['pending']} calls pending "
-                    f"· [methodology](METHODOLOGY.md) / [scorecard](signals/scorecard.json)")
-    elif stats['total_resolved'] > 0:
-        total_tracked = stats['total_resolved'] + stats['pending']
-        det_line = (f"🎯 **Hit rate: {stats['true_positives']}/"
-                    f"{stats['total_resolved']} resolved ({stats['detection_rate']:.1f}%)** "
-                    f"· Resolution rate: {stats['total_resolved']}/{total_tracked} "
-                    f"· {stats['pending']} pending")
-    elif stats['pending'] > 0:
-        det_line = f"🎯 **Live forward detection: 0/0 resolved** · {stats['pending']} tracking"
-    else:
-        det_line = "🎯 **Live forward detection: tracking begins on first CRITICAL/Q4 entry**"
+    import honest_scorecard as hs
+    if scorecard is None:
+        scorecard = refresh_honest_scorecard()
+    det_line = hs.markdown_headline(scorecard)
 
     diff_block = _generate_diff_block(results)
 
@@ -912,38 +872,6 @@ def generate_table(results):
     return "\n".join(lines)
 
 
-def push_outcomes_to_github():
-    """Push outcomes.csv to GitHub (Tier 3 Phase A — public outcome ledger)."""
-    if not GITHUB_TOKEN or not GITHUB_REPO:
-        return False
-    outcomes_path = os.path.join(SCRIPT_DIR, 'outcomes.csv')
-    if not os.path.exists(outcomes_path):
-        return False
-    try:
-        with open(outcomes_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        g = Github(GITHUB_TOKEN)
-        repo = g.get_repo(GITHUB_REPO)
-        try:
-            existing = repo.get_contents('outcomes.csv')
-            repo.update_file(
-                'outcomes.csv',
-                f'Update outcome ledger {datetime.now().strftime("%Y-%m-%d")}',
-                content,
-                existing.sha,
-            )
-        except Exception:
-            repo.create_file(
-                'outcomes.csv',
-                f'Create outcome ledger {datetime.now().strftime("%Y-%m-%d")}',
-                content,
-            )
-        print("  outcomes.csv pushed to GitHub")
-        return True
-    except Exception as e:
-        print(f"  outcomes.csv push failed: {e}")
-        return False
-
 
 def update_recent_calls_section():
     """Tier 3 Phase A — update Recent Calls table inside README markers."""
@@ -980,43 +908,33 @@ def update_recent_calls_section():
 
 
 def update_github_readme(results):
-    """Push updated README to GitHub"""
+    """Publish README, ledger and scorecard atomically, with no forced ref update."""
     if not GITHUB_TOKEN or not GITHUB_REPO:
         print("ERROR: GITHUB_TOKEN or GITHUB_REPO not set in .env")
         return False
-    
+
     try:
-        g = Github(GITHUB_TOKEN)
-        repo = g.get_repo(GITHUB_REPO)
-        
-        # Get current README
-        readme_file = repo.get_contents("README.md")
-        current_content = readme_file.decoded_content.decode('utf-8')
-        
-        # Generate new table
-        new_table = generate_table(results)
-        
-        # Replace between markers
+        import honest_scorecard as hs
+        from scorecard_publication import publish_snapshot
+
+        repo = Github(GITHUB_TOKEN).get_repo(GITHUB_REPO)
+        ref = repo.get_git_ref(f"heads/{repo.default_branch}")
+        parent = repo.get_git_commit(ref.object.sha)
+        current_content = repo.get_contents("README.md", ref=parent.sha).decoded_content.decode('utf-8')
+        with open(os.path.join(SCRIPT_DIR, 'outcomes.csv'), encoding='utf-8') as handle:
+            ledger_text = handle.read()
+        sc = hs.build_scorecard_text(ledger_text)
+        new_table = generate_table(results, scorecard=sc)
         pattern = r'<!-- LAMBDA_START -->.*?<!-- LAMBDA_END -->'
         replacement = f"<!-- LAMBDA_START -->\n{new_table}\n<!-- LAMBDA_END -->"
-        new_content = re.sub(pattern, replacement, current_content, flags=re.DOTALL)
-        
-        # Only update if changed
-        if new_content != current_content:
-            repo.update_file(
-                path="README.md",
-                message=f"Update Lambda-F signals {datetime.now().strftime('%Y-%m-%d')}",
-                content=new_content,
-                sha=readme_file.sha
-            )
-            print("README.md updated successfully on GitHub")
-        else:
-            print("No changes to README.md")
-        
+        new_content, count = re.subn(pattern, lambda _: replacement, current_content, flags=re.DOTALL)
+        if count != 1:
+            raise ValueError("Expected exactly one Lambda table marker pair")
+        sha = publish_snapshot(repo, ref, parent, new_content, ledger_text, sc)
+        print(f"Matched README/outcomes/scorecard published in {sha}")
         return True
-        
-    except Exception as e:
-        print(f"Error updating GitHub: {e}")
+    except Exception as exc:
+        print(f"Matched scorecard publication failed: {exc}")
         return False
 
 
@@ -1282,7 +1200,7 @@ if __name__ == "__main__":
         print("\n*** REGIME CHANGE DETECTED ***")
 
     # Tier 3 Phase A: outcome tracking — append new CRITICAL/Q4 calls,
-    # update pending rows with t+30/t+60/t+90 drawdowns, push outcomes.csv
+    # Update locally; ledger and scorecard publish together with the README.
     print("\n" + "-" * 60)
     print("Outcome tracking (Tier 3 Phase A)")
     print("-" * 60)
@@ -1290,7 +1208,6 @@ if __name__ == "__main__":
         added = track_new_calls(results)
         updated = update_pending_outcomes()
         print(f"  outcomes.csv: +{added} new tracked call(s), {updated} pending row(s) updated")
-        push_outcomes_to_github()
     except Exception as e:
         print(f"  Outcome tracking failed: {e}")
 
@@ -1307,7 +1224,8 @@ if __name__ == "__main__":
 
     # Update GitHub README table
     print("\nPushing table to GitHub...")
-    update_github_readme(results)
+    if not update_github_readme(results):
+        raise RuntimeError("Matched scorecard publication failed; stopping update")
     update_recent_calls_section()
     
     # Generate and upload live chart

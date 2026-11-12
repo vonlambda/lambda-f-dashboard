@@ -44,6 +44,37 @@ which threshold produced it.
 Full parameters documented in the provisional patent application.
 Detailed methodology available to research partners under NDA.
 
+### Channel-isolated scorecard (October 27 correction)
+
+The scorecard selects Q4 calls (signal type Q4 **or** recorded quadrant Q4)
+before merging episodes. It separately merges all retained CRITICAL/Q4 calls.
+The populations overlap; they are not two disjoint buckets. A non-Q4 call
+cannot join, extend, resolve or censor a Q4 episode.
+
+Within each channel and market, adjacent calls at most 30 calendar days apart
+merge. Any retained true-positive call resolves that episode as TP; all calls
+must be false-positive to resolve it as FP; otherwise it stays OPEN. This
+preserves the legacy >=20% / 90-calendar-day outcome contract, not the separate
+>=15% lifecycle analysis below. Success can resolve early while failure waits.
+Resolved-only precision is therefore descriptive and subject to informative
+censoring; it is not unconditional accuracy, calibrated crash probability,
+event recall, or evidence of a profitable strategy.
+
+Schema v2 contains independent `episodes_by_channel`, channel counts, pending
+call counts, the merge/outcome rules, and a SHA-256 of the exact UTF-8 ledger
+text with CRLF normalized to LF. Its latest call date is not an outcome
+availability timestamp. A deterministic artifact has no synthetic wall-clock
+generation time. The Git commit identifies the retained snapshot.
+
+`python honest_scorecard.py` regenerates both JSON and the marked README
+headline from the same local ledger. `python honest_scorecard.py --check`
+refuses stale JSON, headlines, or source hashes without writing. CI runs the
+check and offline regressions. The updater publishes ledger, JSON and README
+in one Git commit, and refuses a concurrent non-fast-forward branch advance.
+It does not silently substitute stale JSON or call-day percentages on error.
+The original outcome rows, event definitions and historical studies are not
+changed by this correction.
+
 ## Two-Signal Detection
 
 1. **Lambda-F (Rotation)**: Detects institutional factor rotation via commutator
@@ -61,9 +92,11 @@ The 2x2 classification matrix combines Lambda-F with reflexivity indicators:
 | Q1 | < P75 | < 60 | STABLE - Normal conditions |
 | Q2 | < P75 | >= 60 | FRAGILE - Leveraged but stable |
 | Q3 | >= P75 | < 60 | ROTATING - Factor shift, low cascade risk |
-| Q4 | >= P75 | >= 60 | CRITICAL - Maximum crash probability |
+| Q4 | >= P75 | >= 60 | CRITICAL - Joint high-signal category, not calibrated probability |
 
-Only Q4 episodes are classified as TRUE_POSITIVE when followed by correction.
+In the separate >=15% lifecycle analysis below, only Q4 episodes receive the
+TRUE_POSITIVE label. The >=20% outcome-ledger scorecard independently scores
+its Q4 and all-CRITICAL channels; this lifecycle rule does not define it.
 
 ## Signal-to-Correction Matching
 
