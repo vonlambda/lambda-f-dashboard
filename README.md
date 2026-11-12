@@ -228,11 +228,9 @@ materialized as real events).
 | `UKE-2026-11-01` | UK Equity (EWU) | 2026-11-01 | Q4 | 84.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-11-01` | Bonds | 2026-11-01 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `COMM-2026-10-24` | Commodities | 2026-10-24 | Q2 | 2.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `GERM-2026-10-03` | Germany (EWG) | 2026-10-03 | Q2 | 81.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `GERM-2026-10-03` | Germany (EWG) | 2026-10-03 | Q1 | 81.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GOLD-2026-09-25` | Gold | 2026-09-25 | Q4 | 75.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-09-25` | Silver | 2026-09-25 | Q2 | 67.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `CRYP-2026-09-15` | Crypto (BTC) | 2026-09-15 | Q4 | 96.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `ETHE-2026-09-15` | Ethereum | 2026-09-15 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `USE-2026-08-28` | US Equity (SPY) | 2026-08-28 | Q2 | 87.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `Gold-2026-08-04` | Gold | 2026-08-04 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 4.9% |
 | `Crypto (BTC)-2026-08-01` | Crypto (BTC) | 2026-08-01 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 9.1% |
@@ -240,8 +238,10 @@ materialized as real events).
 | `Gold-2026-07-31` | Gold | 2026-07-31 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 1.3% |
 | `Ethereum-2026-07-30` | Ethereum | 2026-07-30 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 3.9% |
 | `Silver-2026-07-30` | Silver | 2026-07-30 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 9.5% |
+| `UK Equity (EWU)-2026-07-30` | UK Equity (EWU) | 2026-07-30 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 5.7% |
+| `Ethereum-2026-07-29` | Ethereum | 2026-07-29 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 3.4% |
 
-**9 open · 12 TP · 63 FP · Resolved hit-rate: 16.0% · Resolution rate: 75/101**
+**7 open · 12 TP · 63 FP · Resolved hit-rate: 16.0% · Resolution rate: 75/101**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
