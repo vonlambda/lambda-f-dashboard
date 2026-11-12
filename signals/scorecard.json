@@ -11,31 +11,31 @@
   "channels": {
     "Q4_precision_channel": {
       "episodes": 10,
-      "resolved": 6,
-      "open_censored": 4,
+      "resolved": 8,
+      "open_censored": 2,
       "tp": 2,
-      "fp": 4,
-      "precision_resolved_only": 0.333
+      "fp": 6,
+      "precision_resolved_only": 0.25
     },
     "all_critical_coverage_channel": {
       "episodes": 28,
-      "resolved": 17,
-      "open_censored": 11,
+      "resolved": 21,
+      "open_censored": 7,
       "tp": 3,
-      "fp": 14,
-      "precision_resolved_only": 0.176
+      "fp": 18,
+      "precision_resolved_only": 0.143
     }
   },
   "note": "Descriptive legacy >=20% drawdown / 90-calendar-day call outcomes. Success may resolve early; failure waits for all calls. Resolved-only precision is subject to informative censoring, not unconditional accuracy or event recall. Channel populations overlap; do not add their counts.",
   "source": {
     "path": "outcomes.csv",
-    "sha256_utf8_lf": "3e8b4f16722d4d1d68e5ad0cb733f5e0224a4193df865f00192e53f45e60e484",
-    "latest_call_date": "2026-10-26",
+    "sha256_utf8_lf": "3c0fd98132e0239d126acf5ad7c6cc530b8765d920044cae880b3c735af79283",
+    "latest_call_date": "2026-11-08",
     "timing_note": "Latest call date is not an outcome availability or generation time."
   },
   "calls": {
-    "total": 96,
-    "pending": 28
+    "total": 101,
+    "pending": 26
   },
   "episodes_by_channel": {
     "Q4_precision_channel": [
@@ -58,7 +58,7 @@
         "start": "2026-08-01",
         "end": "2026-08-01",
         "n_calls": 1,
-        "outcome": "OPEN"
+        "outcome": "FP"
       },
       {
         "market": "Crypto (BTC)",
@@ -79,13 +79,13 @@
         "start": "2026-07-29",
         "end": "2026-08-01",
         "n_calls": 3,
-        "outcome": "OPEN"
+        "outcome": "FP"
       },
       {
         "market": "Ethereum",
         "start": "2026-10-14",
-        "end": "2026-10-17",
-        "n_calls": 2,
+        "end": "2026-11-08",
+        "n_calls": 4,
         "outcome": "OPEN"
       },
       {
@@ -165,13 +165,13 @@
         "start": "2026-08-01",
         "end": "2026-08-01",
         "n_calls": 1,
-        "outcome": "OPEN"
+        "outcome": "FP"
       },
       {
         "market": "Crypto (BTC)",
         "start": "2026-10-15",
-        "end": "2026-10-24",
-        "n_calls": 3,
+        "end": "2026-11-01",
+        "n_calls": 6,
         "outcome": "OPEN"
       },
       {
@@ -200,7 +200,7 @@
         "start": "2026-07-29",
         "end": "2026-08-01",
         "n_calls": 3,
-        "outcome": "OPEN"
+        "outcome": "FP"
       },
       {
         "market": "Ethereum",
@@ -212,8 +212,8 @@
       {
         "market": "Ethereum",
         "start": "2026-10-14",
-        "end": "2026-10-17",
-        "n_calls": 2,
+        "end": "2026-11-08",
+        "n_calls": 4,
         "outcome": "OPEN"
       },
       {
@@ -256,7 +256,7 @@
         "start": "2026-07-29",
         "end": "2026-08-04",
         "n_calls": 3,
-        "outcome": "OPEN"
+        "outcome": "FP"
       },
       {
         "market": "Gold",
@@ -284,7 +284,7 @@
         "start": "2026-07-29",
         "end": "2026-07-30",
         "n_calls": 2,
-        "outcome": "OPEN"
+        "outcome": "FP"
       },
       {
         "market": "Silver",
