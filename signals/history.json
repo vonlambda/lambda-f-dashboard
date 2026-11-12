@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-11T19:20:07+00:00",
-  "count": 186,
+  "generated_at": "2026-11-12T19:38:44+00:00",
+  "count": 187,
   "history": [
+    {
+      "date": "2026-11-12",
+      "systemic_score": 12,
+      "systemic_label": "WATCH",
+      "n_q4": 1,
+      "n_q3": 0,
+      "n_critical": 3,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 2.0,
+          "reflexivity": 61.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 39.0,
+          "reflexivity": 61.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Silver": {
+          "lambda_pct": 12.0,
+          "reflexivity": 61.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 29.0,
+          "reflexivity": 64.0,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "Ethereum": {
+          "lambda_pct": 31.0,
+          "reflexivity": 64.0,
+          "quadrant": "Q2",
+          "regime": "CRITICAL"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 22.0,
+          "reflexivity": 61.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 18.0,
+          "reflexivity": 61.5,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 24.0,
+          "reflexivity": 61.5,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Bonds": {
+          "lambda_pct": 97.0,
+          "reflexivity": 61.5,
+          "quadrant": "Q4",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 2.0,
+          "reflexivity": 61.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        }
+      }
+    },
     {
       "date": "2026-11-11",
       "systemic_score": 4,
