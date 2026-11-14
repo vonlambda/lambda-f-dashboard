@@ -4,8 +4,8 @@
     "since": "2026-10-27"
   },
   "Gold": {
-    "regime": "Normal",
-    "since": "2026-11-04"
+    "regime": "ELEVATED (C)",
+    "since": "2026-11-14"
   },
   "Crypto (BTC)": {
     "regime": "**CRITICAL** (L)",
@@ -16,8 +16,8 @@
     "since": "2026-10-23"
   },
   "UK Equity (EWU)": {
-    "regime": "ELEVATED (LC)",
-    "since": "2026-11-12"
+    "regime": "**CRITICAL** (C)",
+    "since": "2026-11-14"
   },
   "Germany (EWG)": {
     "regime": "ELEVATED (L)",
