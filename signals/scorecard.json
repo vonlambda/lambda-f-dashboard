@@ -18,9 +18,9 @@
       "precision_resolved_only": 0.25
     },
     "all_critical_coverage_channel": {
-      "episodes": 28,
+      "episodes": 29,
       "resolved": 21,
-      "open_censored": 7,
+      "open_censored": 8,
       "tp": 3,
       "fp": 18,
       "precision_resolved_only": 0.143
@@ -29,13 +29,13 @@
   "note": "Descriptive legacy >=20% drawdown / 90-calendar-day call outcomes. Success may resolve early; failure waits for all calls. Resolved-only precision is subject to informative censoring, not unconditional accuracy or event recall. Channel populations overlap; do not add their counts.",
   "source": {
     "path": "outcomes.csv",
-    "sha256_utf8_lf": "921879b312ccd8d718f74a38eb51f660d751a72c03728601783148dba09a0f79",
-    "latest_call_date": "2026-11-08",
+    "sha256_utf8_lf": "f92c5adc82f00f163f173d1639c0e98cc33b52312c6f2473995b76fd3d36a378",
+    "latest_call_date": "2026-11-14",
     "timing_note": "Latest call date is not an outcome availability or generation time."
   },
   "calls": {
-    "total": 101,
-    "pending": 26
+    "total": 102,
+    "pending": 27
   },
   "episodes_by_channel": {
     "Q4_precision_channel": [
@@ -298,6 +298,13 @@
         "start": "2026-03-20",
         "end": "2026-08-19",
         "n_calls": 13,
+        "outcome": "OPEN"
+      },
+      {
+        "market": "UK Equity (EWU)",
+        "start": "2026-11-14",
+        "end": "2026-11-14",
+        "n_calls": 1,
         "outcome": "OPEN"
       },
       {
