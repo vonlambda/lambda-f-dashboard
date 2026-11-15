@@ -192,7 +192,7 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-10-24 | Crypto (BTC) | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-17 | Ethereum | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-17 | Silver | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-10-16 | Crypto (BTC) | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-10-16 | Crypto (BTC) | Q4 | Q4 | 21.3% | _pending_ | _pending_ | _pending_ |
 | 2026-10-15 | Crypto (BTC) | Q4 | Q4 | 19.7% | _pending_ | _pending_ | _pending_ |
 | 2026-10-14 | Ethereum | Q4 | Q4 | 19.4% | _pending_ | _pending_ | _pending_ |
 | 2026-10-07 | Bonds | CRITICAL | Q3 | 0.0% | _pending_ | _pending_ | _pending_ |
@@ -208,7 +208,6 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-09-07 | Ethereum | CRITICAL | Q2 | 3.7% | 10.6% | _pending_ | _pending_ |
 | 2026-08-20 | Bonds | CRITICAL | Q3 | 2.0% | 6.3% | _pending_ | _pending_ |
 | 2026-08-19 | UK Equity (EWU) | CRITICAL | Q1 | 2.8% | 5.5% | _pending_ | _pending_ |
-| 2026-08-17 | Bonds | CRITICAL | Q1 | 0.8% | 5.2% | _pending_ | _pending_ |
 <!-- RECENT_CALLS_END -->
 
 </details>
@@ -226,8 +225,8 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
-| `CRYP-2026-11-12` | Crypto (BTC) | 2026-11-12 | Q2 | 29.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `ETHE-2026-11-12` | Ethereum | 2026-11-12 | Q2 | 31.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `CRYP-2026-11-12` | Crypto (BTC) | 2026-11-12 | Q1 | 29.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `ETHE-2026-11-12` | Ethereum | 2026-11-12 | Q1 | 31.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `UKE-2026-11-01` | UK Equity (EWU) | 2026-11-01 | Q4 | 84.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-11-01` | Bonds | 2026-11-01 | Q4 | 97.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `COMM-2026-10-24` | Commodities | 2026-10-24 | Q2 | 2.0 | ACTIVE | 🟡 OPEN | _n/a_ |
