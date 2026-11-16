@@ -29,13 +29,13 @@
   "note": "Descriptive legacy >=20% drawdown / 90-calendar-day call outcomes. Success may resolve early; failure waits for all calls. Resolved-only precision is subject to informative censoring, not unconditional accuracy or event recall. Channel populations overlap; do not add their counts.",
   "source": {
     "path": "outcomes.csv",
-    "sha256_utf8_lf": "65651a6d39ffdaefda12645102e2003bb2e78570f63a4262746150da964ce57d",
+    "sha256_utf8_lf": "233200617f9e80cec2597606843c776a138a1655719cb72f6cf86d9b12e8b51b",
     "latest_call_date": "2026-11-14",
     "timing_note": "Latest call date is not an outcome availability or generation time."
   },
   "calls": {
     "total": 102,
-    "pending": 27
+    "pending": 26
   },
   "episodes_by_channel": {
     "Q4_precision_channel": [
