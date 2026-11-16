@@ -190,8 +190,8 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-10-30 | Crypto (BTC) | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-26 | Silver | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-10-24 | Crypto (BTC) | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-10-17 | Ethereum | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
-| 2026-10-17 | Silver | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
+| 2026-10-17 | Ethereum | Q4 | Q4 | 26.3% | _pending_ | _pending_ | _pending_ |
+| 2026-10-17 | Silver | CRITICAL | Q2 | 17.8% | _pending_ | _pending_ | _pending_ |
 | 2026-10-16 | Crypto (BTC) | Q4 | Q4 | 21.3% | _pending_ | _pending_ | _pending_ |
 | 2026-10-15 | Crypto (BTC) | Q4 | Q4 | 19.7% | _pending_ | _pending_ | _pending_ |
 | 2026-10-14 | Ethereum | Q4 | Q4 | 19.4% | _pending_ | _pending_ | _pending_ |
@@ -234,14 +234,14 @@ materialized as real events).
 | `GOLD-2026-09-25` | Gold | 2026-09-25 | Q4 | 75.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `SILV-2026-09-25` | Silver | 2026-09-25 | Q2 | 67.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `USE-2026-08-28` | US Equity (SPY) | 2026-08-28 | Q2 | 87.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `Bonds-2026-08-17` | Bonds | 2026-08-17 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 5.2% |
 | `Gold-2026-08-04` | Gold | 2026-08-04 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 4.9% |
 | `Crypto (BTC)-2026-08-01` | Crypto (BTC) | 2026-08-01 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 9.1% |
 | `Ethereum-2026-08-01` | Ethereum | 2026-08-01 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 0.0% |
 | `Gold-2026-07-31` | Gold | 2026-07-31 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 1.3% |
 | `Ethereum-2026-07-30` | Ethereum | 2026-07-30 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 3.9% |
-| `Silver-2026-07-30` | Silver | 2026-07-30 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 9.5% |
 
-**9 open · 12 TP · 63 FP · Resolved hit-rate: 16.0% · Resolution rate: 75/102**
+**9 open · 12 TP · 64 FP · Resolved hit-rate: 15.8% · Resolution rate: 76/102**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
