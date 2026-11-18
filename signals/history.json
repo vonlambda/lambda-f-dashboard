@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-17T20:33:29+00:00",
-  "count": 192,
+  "generated_at": "2026-11-18T20:05:38+00:00",
+  "count": 193,
   "history": [
+    {
+      "date": "2026-11-18",
+      "systemic_score": 10,
+      "systemic_label": "WATCH",
+      "n_q4": 1,
+      "n_q3": 0,
+      "n_critical": 3,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 2.0,
+          "reflexivity": 91.0,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 66.0,
+          "reflexivity": 91.0,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Silver": {
+          "lambda_pct": 19.0,
+          "reflexivity": 91.0,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 19.0,
+          "reflexivity": 55.5,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "Ethereum": {
+          "lambda_pct": 13.0,
+          "reflexivity": 55.5,
+          "quadrant": "Q1",
+          "regime": "CRITICAL"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 34.0,
+          "reflexivity": 91.0,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 6.0,
+          "reflexivity": 91.0,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 32.0,
+          "reflexivity": 91.0,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Bonds": {
+          "lambda_pct": 98.0,
+          "reflexivity": 91.0,
+          "quadrant": "Q4",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 1.0,
+          "reflexivity": 91.0,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        }
+      }
+    },
     {
       "date": "2026-11-17",
       "systemic_score": 10,
