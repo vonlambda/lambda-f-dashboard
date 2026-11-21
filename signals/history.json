@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-20T19:42:07+00:00",
-  "count": 195,
+  "generated_at": "2026-11-21T18:47:53+00:00",
+  "count": 196,
   "history": [
+    {
+      "date": "2026-11-21",
+      "systemic_score": 10,
+      "systemic_label": "WATCH",
+      "n_q4": 1,
+      "n_q3": 0,
+      "n_critical": 1,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 6.0,
+          "reflexivity": 94.0,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 65.0,
+          "reflexivity": 94.0,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Silver": {
+          "lambda_pct": 21.0,
+          "reflexivity": 94.0,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 15.0,
+          "reflexivity": 56.0,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "Ethereum": {
+          "lambda_pct": 13.0,
+          "reflexivity": 56.0,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 35.0,
+          "reflexivity": 94.0,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 21.0,
+          "reflexivity": 94.0,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 17.0,
+          "reflexivity": 94.0,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Bonds": {
+          "lambda_pct": 93.0,
+          "reflexivity": 94.0,
+          "quadrant": "Q4",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 2.0,
+          "reflexivity": 94.0,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        }
+      }
+    },
     {
       "date": "2026-11-20",
       "systemic_score": 12,
