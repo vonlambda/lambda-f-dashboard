@@ -73,5 +73,35 @@
     "status": "ACTIVE",
     "expiry_date": "2027-01-30",
     "normal_since": null
+  },
+  "Crypto (BTC)": {
+    "episode_id": "CRYP-2026-11-21",
+    "start_date": "2026-11-21",
+    "trigger_type": "LC",
+    "peak_lambda_pct": 15.0,
+    "peak_corr_pct": null,
+    "peak_reflexivity": 56.0,
+    "quadrant": "Q1",
+    "peak_date": "2026-11-21",
+    "watermark_price": 15114.970991358161,
+    "watermark_date": "2026-11-21",
+    "status": "ACTIVE",
+    "expiry_date": "2027-02-19",
+    "normal_since": null
+  },
+  "Ethereum": {
+    "episode_id": "ETHE-2026-11-21",
+    "start_date": "2026-11-21",
+    "trigger_type": "LC",
+    "peak_lambda_pct": 13.0,
+    "peak_corr_pct": null,
+    "peak_reflexivity": 56.0,
+    "quadrant": "Q1",
+    "peak_date": "2026-11-21",
+    "watermark_price": 10166.504977859557,
+    "watermark_date": "2026-11-21",
+    "status": "ACTIVE",
+    "expiry_date": "2027-02-19",
+    "normal_since": null
   }
 }
