@@ -1,19 +1,4 @@
 {
-  "US Equity (SPY)": {
-    "episode_id": "USE-2026-08-28",
-    "start_date": "2026-08-28",
-    "trigger_type": "L",
-    "peak_lambda_pct": 87.0,
-    "peak_corr_pct": null,
-    "peak_reflexivity": 79.5,
-    "quadrant": "Q2",
-    "peak_date": "2026-09-09",
-    "watermark_price": 114.24374961853027,
-    "watermark_date": "2026-10-21",
-    "status": "ACTIVE",
-    "expiry_date": "2026-11-26",
-    "normal_since": "2026-10-23"
-  },
   "Germany (EWG)": {
     "episode_id": "GERM-2026-10-03",
     "start_date": "2026-10-03",
@@ -27,7 +12,7 @@
     "watermark_date": "2026-11-04",
     "status": "ACTIVE",
     "expiry_date": "2027-01-01",
-    "normal_since": null
+    "normal_since": "2026-11-22"
   },
   "Commodities": {
     "episode_id": "COMM-2026-10-24",
@@ -83,7 +68,7 @@
     "peak_reflexivity": 56.0,
     "quadrant": "Q1",
     "peak_date": "2026-11-21",
-    "watermark_price": 15114.970991358161,
+    "watermark_price": 15454.239458993077,
     "watermark_date": "2026-11-21",
     "status": "ACTIVE",
     "expiry_date": "2027-02-19",
@@ -98,7 +83,7 @@
     "peak_reflexivity": 56.0,
     "quadrant": "Q1",
     "peak_date": "2026-11-21",
-    "watermark_price": 10166.504977859557,
+    "watermark_price": 10394.102281942964,
     "watermark_date": "2026-11-21",
     "status": "ACTIVE",
     "expiry_date": "2027-02-19",

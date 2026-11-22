@@ -8,8 +8,8 @@
     "since": "2026-11-20"
   },
   "Crypto (BTC)": {
-    "regime": "ELEVATED (LC)",
-    "since": "2026-11-19"
+    "regime": "ELEVATED (C)",
+    "since": "2026-11-22"
   },
   "US Equity (SPY)": {
     "regime": "Normal",
@@ -20,8 +20,8 @@
     "since": "2026-11-21"
   },
   "Germany (EWG)": {
-    "regime": "ELEVATED (L)",
-    "since": "2026-10-03"
+    "regime": "Normal",
+    "since": "2026-11-22"
   },
   "Bonds": {
     "regime": "**CRITICAL** (L)",
