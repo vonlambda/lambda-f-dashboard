@@ -79,7 +79,7 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-08-20,Bonds,CRITICAL,Q3,TLT,83.0200,0.0198,0.0635,0.0635,false_positive
 2026-09-07,Ethereum,CRITICAL,Q2,ETH-USD,2487.8999,0.0369,0.1058,,pending
 2026-09-14,Bonds,CRITICAL,Q3,TLT,81.1250,0.0472,0.0472,,pending
-2026-09-23,Bonds,CRITICAL,Q3,TLT,80.5500,0.0416,,,pending
+2026-09-23,Bonds,CRITICAL,Q3,TLT,80.5500,0.0416,0.0416,,pending
 2026-09-25,Bonds,CRITICAL,Q3,TLT,79.1850,0.0279,,,pending
 2026-09-29,Bonds,CRITICAL,Q3,TLT,78.0350,0.0143,,,pending
 2026-09-30,Bonds,CRITICAL,Q1,TLT,77.6250,0.0086,,,pending
@@ -93,7 +93,7 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-10-16,Crypto (BTC),Q4,Q4,BTC-USD,81460.0000,0.2132,,,pending
 2026-10-17,Ethereum,Q4,Q4,ETH-USD,2421.0200,0.2628,,,pending
 2026-10-17,Silver,CRITICAL,Q2,SLV,51.5100,0.1775,,,pending
-2026-10-24,Crypto (BTC),Q4,Q4,BTC-USD,79380.8516,,,,pending
+2026-10-24,Crypto (BTC),Q4,Q4,BTC-USD,79380.8516,0.2722,,,pending
 2026-10-26,Silver,CRITICAL,Q2,SLV,48.8150,,,,pending
 2026-10-30,Crypto (BTC),CRITICAL,Q2,BTC-USD,77115.3594,,,,pending
 2026-10-31,Crypto (BTC),CRITICAL,Q2,BTC-USD,77468.8906,,,,pending
