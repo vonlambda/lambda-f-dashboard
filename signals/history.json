@@ -1,8 +1,78 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-22T19:09:33+00:00",
-  "count": 197,
+  "generated_at": "2026-11-23T23:30:35+00:00",
+  "count": 198,
   "history": [
+    {
+      "date": "2026-11-23",
+      "systemic_score": 10,
+      "systemic_label": "WATCH",
+      "n_q4": 1,
+      "n_q3": 0,
+      "n_critical": 1,
+      "markets": {
+        "Commodities": {
+          "lambda_pct": 6.0,
+          "reflexivity": 94.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Gold": {
+          "lambda_pct": 65.0,
+          "reflexivity": 94.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Silver": {
+          "lambda_pct": 21.0,
+          "reflexivity": 94.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Crypto (BTC)": {
+          "lambda_pct": 17.0,
+          "reflexivity": 55.5,
+          "quadrant": "Q1",
+          "regime": "Normal"
+        },
+        "Ethereum": {
+          "lambda_pct": 19.0,
+          "reflexivity": 55.5,
+          "quadrant": "Q1",
+          "regime": "ELEVATED"
+        },
+        "US Equity (SPY)": {
+          "lambda_pct": 34.0,
+          "reflexivity": 94.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "UK Equity (EWU)": {
+          "lambda_pct": 18.0,
+          "reflexivity": 94.5,
+          "quadrant": "Q2",
+          "regime": "ELEVATED"
+        },
+        "Germany (EWG)": {
+          "lambda_pct": 18.0,
+          "reflexivity": 94.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        },
+        "Bonds": {
+          "lambda_pct": 93.0,
+          "reflexivity": 94.5,
+          "quadrant": "Q4",
+          "regime": "CRITICAL"
+        },
+        "Emerging Markets": {
+          "lambda_pct": 2.0,
+          "reflexivity": 94.5,
+          "quadrant": "Q2",
+          "regime": "Normal"
+        }
+      }
+    },
     {
       "date": "2026-11-22",
       "systemic_score": 10,
