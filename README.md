@@ -207,7 +207,7 @@ hard-coded numbers, no selection bias. Full ledger at
 | 2026-09-30 | Gold | CRITICAL | Q1 | 6.6% | _pending_ | _pending_ | _pending_ |
 | 2026-09-30 | Silver | CRITICAL | Q1 | 18.6% | _pending_ | _pending_ | _pending_ |
 | 2026-09-29 | Bonds | CRITICAL | Q3 | 1.4% | _pending_ | _pending_ | _pending_ |
-| 2026-09-25 | Bonds | CRITICAL | Q3 | 2.8% | _pending_ | _pending_ | _pending_ |
+| 2026-09-25 | Bonds | CRITICAL | Q3 | 2.8% | 2.8% | _pending_ | _pending_ |
 | 2026-09-23 | Bonds | CRITICAL | Q3 | 4.2% | 4.2% | _pending_ | _pending_ |
 | 2026-09-14 | Bonds | CRITICAL | Q3 | 4.7% | 4.7% | _pending_ | _pending_ |
 | 2026-09-07 | Ethereum | CRITICAL | Q2 | 3.7% | 10.6% | _pending_ | _pending_ |
@@ -229,7 +229,7 @@ materialized as real events).
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
 | `CRYP-2026-11-21` | Crypto (BTC) | 2026-11-21 | Q1 | 15.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `ETHE-2026-11-21` | Ethereum | 2026-11-21 | Q1 | 13.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `ETHE-2026-11-21` | Ethereum | 2026-11-21 | Q1 | 19.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `UKE-2026-11-01` | UK Equity (EWU) | 2026-11-01 | Q4 | 84.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-11-01` | Bonds | 2026-11-01 | Q4 | 100.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `COMM-2026-10-24` | Commodities | 2026-10-24 | Q2 | 2.0 | ACTIVE | 🟡 OPEN | _n/a_ |
