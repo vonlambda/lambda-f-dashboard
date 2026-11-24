@@ -42,7 +42,7 @@
     "watermark_date": "2026-11-04",
     "status": "ACTIVE",
     "expiry_date": "2027-01-30",
-    "normal_since": null
+    "normal_since": "2026-11-24"
   },
   "Bonds": {
     "episode_id": "BOND-2026-11-01",
@@ -78,15 +78,30 @@
     "episode_id": "ETHE-2026-11-21",
     "start_date": "2026-11-21",
     "trigger_type": "LC",
-    "peak_lambda_pct": 19.0,
+    "peak_lambda_pct": 24.0,
     "peak_corr_pct": null,
     "peak_reflexivity": 56.0,
     "quadrant": "Q1",
-    "peak_date": "2026-11-23",
-    "watermark_price": 10580.45551221321,
-    "watermark_date": "2026-11-22",
+    "peak_date": "2026-11-24",
+    "watermark_price": 10586.361406323811,
+    "watermark_date": "2026-11-23",
     "status": "ACTIVE",
     "expiry_date": "2027-02-19",
+    "normal_since": null
+  },
+  "Gold": {
+    "episode_id": "GOLD-2026-11-24",
+    "start_date": "2026-11-24",
+    "trigger_type": "C",
+    "peak_lambda_pct": 51.0,
+    "peak_corr_pct": null,
+    "peak_reflexivity": 88.0,
+    "quadrant": "Q2",
+    "peak_date": "2026-11-24",
+    "watermark_price": 107.18499978383382,
+    "watermark_date": "2026-11-24",
+    "status": "ACTIVE",
+    "expiry_date": "2027-02-22",
     "normal_since": null
   }
 }
