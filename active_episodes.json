@@ -42,7 +42,7 @@
     "watermark_date": "2026-11-04",
     "status": "ACTIVE",
     "expiry_date": "2027-01-30",
-    "normal_since": "2026-11-24"
+    "normal_since": null
   },
   "Bonds": {
     "episode_id": "BOND-2026-11-01",
@@ -78,11 +78,11 @@
     "episode_id": "ETHE-2026-11-21",
     "start_date": "2026-11-21",
     "trigger_type": "LC",
-    "peak_lambda_pct": 24.0,
+    "peak_lambda_pct": 42.0,
     "peak_corr_pct": null,
-    "peak_reflexivity": 56.0,
+    "peak_reflexivity": 56.5,
     "quadrant": "Q1",
-    "peak_date": "2026-11-24",
+    "peak_date": "2026-11-25",
     "watermark_price": 10586.361406323811,
     "watermark_date": "2026-11-23",
     "status": "ACTIVE",
@@ -102,6 +102,36 @@
     "watermark_date": "2026-11-24",
     "status": "ACTIVE",
     "expiry_date": "2027-02-22",
+    "normal_since": null
+  },
+  "Silver": {
+    "episode_id": "SILV-2026-11-25",
+    "start_date": "2026-11-25",
+    "trigger_type": "C",
+    "peak_lambda_pct": 26.0,
+    "peak_corr_pct": null,
+    "peak_reflexivity": 84.5,
+    "quadrant": "Q2",
+    "peak_date": "2026-11-25",
+    "watermark_price": 96.96666812896729,
+    "watermark_date": "2026-11-25",
+    "status": "ACTIVE",
+    "expiry_date": "2027-02-23",
+    "normal_since": null
+  },
+  "US Equity (SPY)": {
+    "episode_id": "USE-2026-11-25",
+    "start_date": "2026-11-25",
+    "trigger_type": "C",
+    "peak_lambda_pct": 26.0,
+    "peak_corr_pct": null,
+    "peak_reflexivity": 84.5,
+    "quadrant": "Q2",
+    "peak_date": "2026-11-25",
+    "watermark_price": 109.96874952316284,
+    "watermark_date": "2026-11-25",
+    "status": "ACTIVE",
+    "expiry_date": "2027-02-23",
     "normal_since": null
   }
 }
