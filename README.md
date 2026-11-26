@@ -184,6 +184,7 @@ hard-coded numbers, no selection bias. Full ledger at
 <!-- RECENT_CALLS_START -->
 | Date | Market | Signal | Quadrant | T+30 DD | T+60 DD | T+90 DD | Status |
 |------|--------|--------|----------|---------|---------|---------|--------|
+| 2026-11-26 | Silver | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-11-25 | Gold | CRITICAL | Q2 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-11-20 | Ethereum | CRITICAL | Q1 | _pending_ | _pending_ | _pending_ | _pending_ |
 | 2026-11-20 | Gold | Q4 | Q4 | _pending_ | _pending_ | _pending_ | _pending_ |
@@ -228,9 +229,11 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
+| `SILV-2026-11-25` | Silver | 2026-11-25 | Q2 | 26.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `USE-2026-11-25` | US Equity (SPY) | 2026-11-25 | Q2 | 26.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GOLD-2026-11-24` | Gold | 2026-11-24 | Q2 | 51.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-11-21` | Crypto (BTC) | 2026-11-21 | Q1 | 15.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `ETHE-2026-11-21` | Ethereum | 2026-11-21 | Q1 | 24.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `ETHE-2026-11-21` | Ethereum | 2026-11-21 | Q1 | 42.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `UKE-2026-11-01` | UK Equity (EWU) | 2026-11-01 | Q4 | 84.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-11-01` | Bonds | 2026-11-01 | Q4 | 100.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `COMM-2026-10-24` | Commodities | 2026-10-24 | Q2 | 2.0 | ACTIVE | 🟡 OPEN | _n/a_ |
@@ -241,10 +244,8 @@ materialized as real events).
 | `Gold-2026-08-04` | Gold | 2026-08-04 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 4.9% |
 | `Crypto (BTC)-2026-08-01` | Crypto (BTC) | 2026-08-01 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 9.1% |
 | `Ethereum-2026-08-01` | Ethereum | 2026-08-01 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 0.0% |
-| `Gold-2026-07-31` | Gold | 2026-07-31 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 1.3% |
-| `Ethereum-2026-07-30` | Ethereum | 2026-07-30 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 3.9% |
 
-**7 open · 12 TP · 66 FP · Resolved hit-rate: 15.4% · Resolution rate: 78/105**
+**9 open · 12 TP · 66 FP · Resolved hit-rate: 15.4% · Resolution rate: 78/106**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
