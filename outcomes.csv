@@ -104,3 +104,4 @@ call_date,market,signal_type,quadrant,ticker,price_at_call,max_dd_30d,max_dd_60d
 2026-11-20,Ethereum,CRITICAL,Q1,ETH-USD,1604.3000,,,,pending
 2026-11-20,Gold,Q4,Q4,GLD,323.1900,,,,pending
 2026-11-25,Gold,CRITICAL,Q2,GLD,327.5100,,,,pending
+2026-11-26,Silver,CRITICAL,Q2,SLV,37.1000,,,,pending
