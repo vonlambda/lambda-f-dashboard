@@ -32,8 +32,8 @@
     "since": "2026-09-02"
   },
   "Silver": {
-    "regime": "ELEVATED (C)",
-    "since": "2026-11-25"
+    "regime": "**CRITICAL** (C)",
+    "since": "2026-11-26"
   },
   "Ethereum": {
     "regime": "ELEVATED (LC)",
