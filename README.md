@@ -227,14 +227,13 @@ materialized as real events).
 <!-- EPISODE_LEDGER_START -->
 | Episode | Market | Opened | Quadrant | Peak Λ% | Status | Outcome | Drawdown |
 |---------|--------|--------|----------|---------|--------|---------|----------|
-| `SILV-2026-11-25` | Silver | 2026-11-25 | Q2 | 26.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `SILV-2026-11-25` | Silver | 2026-11-25 | Q2 | 29.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `USE-2026-11-25` | US Equity (SPY) | 2026-11-25 | Q2 | 26.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `GOLD-2026-11-24` | Gold | 2026-11-24 | Q2 | 51.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `GOLD-2026-11-24` | Gold | 2026-11-24 | Q2 | 52.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `CRYP-2026-11-21` | Crypto (BTC) | 2026-11-21 | Q1 | 15.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `ETHE-2026-11-21` | Ethereum | 2026-11-21 | Q1 | 42.0 | ACTIVE | 🟡 OPEN | _n/a_ |
+| `ETHE-2026-11-21` | Ethereum | 2026-11-21 | Q1 | 70.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `UKE-2026-11-01` | UK Equity (EWU) | 2026-11-01 | Q4 | 84.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `BOND-2026-11-01` | Bonds | 2026-11-01 | Q4 | 100.0 | ACTIVE | 🟡 OPEN | _n/a_ |
-| `COMM-2026-10-24` | Commodities | 2026-10-24 | Q2 | 2.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `GERM-2026-10-03` | Germany (EWG) | 2026-10-03 | Q2 | 81.0 | ACTIVE | 🟡 OPEN | _n/a_ |
 | `Bonds-2026-08-20` | Bonds | 2026-08-20 | Q3 | _n/a_ | RESOLVED | ⚪ FP | 6.3% |
 | `UK Equity (EWU)-2026-08-19` | UK Equity (EWU) | 2026-08-19 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 5.5% |
@@ -242,8 +241,9 @@ materialized as real events).
 | `Gold-2026-08-04` | Gold | 2026-08-04 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 4.9% |
 | `Crypto (BTC)-2026-08-01` | Crypto (BTC) | 2026-08-01 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 9.1% |
 | `Ethereum-2026-08-01` | Ethereum | 2026-08-01 | Q4 | _n/a_ | RESOLVED | ⚪ FP | 0.0% |
+| `Gold-2026-07-31` | Gold | 2026-07-31 | Q1 | _n/a_ | RESOLVED | ⚪ FP | 1.3% |
 
-**9 open · 12 TP · 66 FP · Resolved hit-rate: 15.4% · Resolution rate: 78/106**
+**8 open · 12 TP · 66 FP · Resolved hit-rate: 15.4% · Resolution rate: 78/106**
 <!-- EPISODE_LEDGER_END -->
 
 </details>
